@@ -48,7 +48,7 @@ public class PauseGame : MonoBehaviour
 
     public void LoadMenu()
     {
-        _levelLoader.End();
+        _levelLoader.ToMenu();
         Time.timeScale= 1f;
     }
 

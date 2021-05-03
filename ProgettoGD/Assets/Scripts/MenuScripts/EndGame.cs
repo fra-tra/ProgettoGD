@@ -8,6 +8,6 @@ public class EndGame : MonoBehaviour
 
     public void EndGameClick()
     {
-        _levelLoader.End();
+        _levelLoader.ToMenu();
     }
 }
