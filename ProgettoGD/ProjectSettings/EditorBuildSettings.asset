@@ -18,6 +18,12 @@ EditorBuildSettings:
     path: Assets/Scenes/PoesiaEpica_Scene.unity
     guid: 52cb0d7d74826463083848f82880261f
   - enabled: 1
+    path: Assets/Scenes/PoesiaEpica_Intern1_Scene.unity
+    guid: afc4765d752514febbad967e72179b3e
+  - enabled: 1
+    path: Assets/Scenes/PoesiaEpica_Intern2_Scene.unity
+    guid: 57d884870e7c5474aa65371dfe7548a5
+  - enabled: 1
     path: Assets/Scenes/Commedia_Scene.unity
     guid: b0649b6fb1c99420287c83027c5ac1b4
   - enabled: 1

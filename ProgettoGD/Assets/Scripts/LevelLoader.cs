@@ -20,6 +20,11 @@ public class LevelLoader : MonoBehaviour
     {
         StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex +1));
     }
+    
+    public void LoadLevelFromThis (int n) //Per andare e tornare dagli interni (che sono +1 e +2 dal loro livello di riferimento)
+    {
+        StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + n));
+    }
 
     public void LoadNextLevel() //Funzione chiamata da Hub e dai livelli
     {
