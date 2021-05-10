@@ -15,6 +15,10 @@ public class LevelLoader : MonoBehaviour
     private bool _difficultLevel = true;
     private bool _dead = false;
 
+    public int CurrentLevel()
+    {
+        return SceneManager.GetActiveScene().buildIndex ;
+    }
 
     public void LoadNext() //Funziona da menu a caduta, da caduta a hub, da hubfinale a finale
     {
