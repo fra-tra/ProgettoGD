@@ -8,12 +8,14 @@ public class Counter : MonoBehaviour
     //Tiene le informazioni sulle scelte fatte all'inizio
     //Tiene le info sul numero di vite
 
-    private int _myMemoriesCounter = 0;
+    private int _myMemoriesCounter = 0; //Contatore che conta i ricordi ottenuti
+    private int _myLifeCounter; //Contatore che tiene conto delle vite
+
     [SerializeField] int _totalMemories; //numero totale ricordi
     [SerializeField] int _maxLives; //numero massimo vite
 
-    public static bool _takenMemoryZero = false;
-    public static bool _takenMemoryFour = false;
+    public bool _takenMemoryZero = false;
+    public bool _takenMemoryFour = false;
 
     //Variabili riferite agli oggetti speciali che tengono conto di quali sono stati scelti
     private int _firstChoosenObject;
@@ -25,6 +27,21 @@ public class Counter : MonoBehaviour
     //globe 5
     //gear 6
 
+    void Awake()
+    {
+        DontDestroyOnLoad(this.gameObject);
+    }
+
+    void Start()
+    {
+        _myLifeCounter =  _maxLives;
+    }
+    
+    void Update()
+    {
+        
+    }
+
     public int GetFirstObject()
     {
         return _firstChoosenObject;
@@ -35,31 +52,30 @@ public class Counter : MonoBehaviour
         return _secondChoosenObject;
     }
 
-    void Awake()
-    {
-        DontDestroyOnLoad(this.gameObject);
-    }
-
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void ChoosenObjects(int first, int second)
     {
         _firstChoosenObject = first;
         _secondChoosenObject = second;
     }
 
-    public void UpdateCounter() //MODIFICARE
+    public void UpdateCounter() //Gestisce il counter dei ricordi. Deve essere chiamato appena termini il livello definitivamente
     {
         _myMemoriesCounter++; //il counter fa +1
         Debug.Log(_myMemoriesCounter);
+    }
+
+    public bool UpdateCounterOnDeath() //Funzione che il DeathManager deve chiamare per decrementare il contatore di vite
+    {
+        _myLifeCounter = _myLifeCounter - 1;
+        Debug.Log(_myLifeCounter);
+
+        if (_myLifeCounter == 0)
+        {
+            return true; //Ritorna "True" a _livesFinished. Ci sarà una funzione che attiva la cutscene e chiama il level loader verso l'hub0
+        }
+        else
+        {
+            return false; //Ritorna "False" a come _livesFinished. Ci sarà una funzione che attiva la cutscene e chiama il level loader verso l'inizio del livello stesso
+        }
     }
 }

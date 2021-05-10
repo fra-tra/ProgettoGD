@@ -12,8 +12,9 @@ public class LevelLoader : MonoBehaviour
     private int _difficult;
     private bool _easyLevel = true;
     private bool _mediumLevel = false;
-    private bool _difficultLevel = true;
+    private bool _difficultLevel = false;
     private bool _dead = false;
+    private bool _lastDeath = false;
 
     public int CurrentLevel()
     {
@@ -49,6 +50,11 @@ public class LevelLoader : MonoBehaviour
             _dead = false;
             return (SceneManager.GetActiveScene().buildIndex);
         }
+        else if (_lastDeath)
+        {
+             _lastDeath = false;
+             return 2; //Numero dell'hub iniziale perché sei morto del tutto
+        }
 
         if(_easyLevel)
         {
@@ -73,6 +79,11 @@ public class LevelLoader : MonoBehaviour
     public void Death()
     {
         _dead = true;
+    }
+
+    public void LastDeath()
+    {
+        _lastDeath = true;
     }
 
     //DA MODIFICARE
