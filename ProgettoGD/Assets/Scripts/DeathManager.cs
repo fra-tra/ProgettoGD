@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DeathManager : MonoBehaviour
 {
-    [SerializeField] private Counter _myCounter;
+    private Counter _myCounter;
     [SerializeField] private LevelLoader _levelLoader;
     
     private bool _livesFinished = false;
@@ -12,7 +12,7 @@ public class DeathManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+         _myCounter = (Counter)FindObjectOfType(typeof(Counter));
     }
 
     // Update is called once per frame

@@ -18,11 +18,11 @@ public class SpecialObjects : MonoBehaviour
     public int _firstObject;
     public int _secondObject;
     [SerializeField] private LevelLoader _levelLoader;
-    [SerializeField] private Counter _myCounter;
+    private Counter _myCounter;
    
     void Start()
     {
-
+         _myCounter = (Counter)FindObjectOfType(typeof(Counter));
     }
 
     // Update is called once per frame

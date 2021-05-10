@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ChoiceSpecialObject : MonoBehaviour
 {
-    [SerializeField] private Counter _myCounter;
+    private Counter _myCounter;
 
     private int _firstChoosenObject;
     private int _secondChoosenObject;
@@ -13,7 +13,7 @@ public class ChoiceSpecialObject : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+         _myCounter = (Counter)FindObjectOfType(typeof(Counter));
     }
 
     // Update is called once per frame
