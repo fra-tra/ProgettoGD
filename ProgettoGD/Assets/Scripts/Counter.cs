@@ -17,6 +17,11 @@ public class Counter : MonoBehaviour
     public bool _takenMemoryZero = false;
     public bool _takenMemoryFour = false;
 
+    public bool _lowerRoomEntered = false;
+    public bool _upperRoomEntered = false;
+    //Vengono settati a true quando entri. Ci sarà un gestore del livello che appena lo apre controlla questa cosa.
+    //Se uno dei due è true sposta a “Davanti le porte di uscita” il TPC
+
     //Variabili riferite agli oggetti speciali che tengono conto di quali sono stati scelti
     private int _firstChoosenObject;
     private int _secondChoosenObject;
