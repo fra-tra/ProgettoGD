@@ -44,7 +44,7 @@ public class Counter : MonoBehaviour
     
     void Update()
     {
-        
+        //
     }
 
     public int GetFirstObject()
