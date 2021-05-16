@@ -21,9 +21,12 @@ public class SpecialObjects : MonoBehaviour
     public int _secondObject;
 
     [SerializeField] private LevelLoader _levelLoader;
-    //[SerializeField] private float _minDistanceHammer;
+    [SerializeField] private int _hammerDistance;
+    [SerializeField] private int _keyDistance;
 
     private Counter _myCounter;
+    private Statue _targetStatue;
+    private BreakableDoor _targetDoor;
    
     void Start()
     {
@@ -34,6 +37,16 @@ public class SpecialObjects : MonoBehaviour
     void Update()
     {
         xPressed();
+    }
+
+    public void xPressed()
+    {
+        if (Input.GetButton("SpecialObject") )//se il tasto del joypad o della tastiera è stato premuto 
+        {
+            Debug.Log("Got button");
+            //Prova se il bottone funziona dal manager dei bottoni (??)
+            UseSpecialObject();
+        }
     }
 
     public void UseSpecialObject()
@@ -81,16 +94,27 @@ public class SpecialObjects : MonoBehaviour
     public void useHammer()
     {
         Debug.Log("Special Object Hammer");
-       /* if (IsTargetWithinDistance(_minDistanceHammer))
-        {
-            
-        }*/
+
+        //ANIMAZIONE CHIAMATA COMUNQUE
 
         RaycastHit hit;
 
-        if(Physics.Raycast(transform.position, Vector3.forward, out hit))
+        if(Physics.Raycast(transform.position, Vector3.forward, out hit, _hammerDistance))
         {
-            var floortag = hit.collider.gameObject.tag;
+
+            var _objectTag = hit.collider.gameObject.tag;
+
+            
+            if (_objectTag == "BreakableDoor")
+            {
+                _targetDoor = (BreakableDoor)hit.collider.GetComponentInParent(typeof(BreakableDoor)); //Se non funziona prova GetComponent o GetComponentInChild
+                _targetDoor.hitHammer();
+            }
+            else if (_objectTag == "BreakableStatue")
+            {
+                _targetStatue = (Statue)hit.collider.GetComponentInParent(typeof(Statue)); //Se non funziona prova GetComponent
+                _targetStatue.hitHammer();
+            }
         }
 
     }
@@ -98,42 +122,46 @@ public class SpecialObjects : MonoBehaviour
     public void useKey()
     {
         Debug.Log("Special Object Key");
+        //ANIMAZIONE CHIAMATA COMUNQUE
+        RaycastHit hit;
+
+        if(Physics.Raycast(transform.position, Vector3.forward, out hit, _keyDistance))
+        {
+
+            var _objectTag = hit.collider.gameObject.tag;
+            
+            if (_objectTag == "KeyDoor")
+            {
+                
+                //Chiama il level loader che "Apre direttamente la porta e sticazzi è più veloce così senza fare la classe
+                _levelLoader.LoadLevelFromThis(1); //C'è un 1 perché progressivamente l'interno 1 è un +1 dal livello in cui è
+            }
+        }
     }
 
     public void useGlobe()
     {
         Debug.Log("Special Object Globe");
+        //ANIMAZIONE CHIAMATA COMUNQUE
     }
 
     public void useGear()
     {
         Debug.Log("Special Object Gear");
+        //ANIMAZIONE CHIAMATA COMUNQUE
     }
 
     public void useIvy()
     {
         Debug.Log("Special Object Ivy");
+        //ANIMAZIONE CHIAMATA COMUNQUE
     }
 
     public void useSling()
     {
         Debug.Log("Special Object Sling");
+        //ANIMAZIONE CHIAMATA COMUNQUE
     }
 
-
-    public void xPressed()
-    {
-        if (Input.GetButton("SpecialObject") )//se il tasto del joypad o della tastiera è stato premuto 
-        {
-            Debug.Log("Got button");
-            //Prova se il bottone funziona dal manager dei bottoni (??)
-            UseSpecialObject();
-        }
-    }
-
-    /*private bool IsTargetWithinDistance(float distance)
-    {
-        return (_target.transform.position - transform.position).sqrMagnitude <= distance * distance;
-    }*/
 
 }

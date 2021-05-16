@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Statue : MonoBehaviour
 {
+
+    [SerializeField] public GameObject _myPrefab; //DustCloud
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +21,8 @@ public class Statue : MonoBehaviour
     public void hitHammer()
     {
         //Statua colpita dal martello
+        //istanzia un particellare di polvere
+        DestroyStatue();
     }
 
     public void hitFloor()
@@ -29,7 +33,9 @@ public class Statue : MonoBehaviour
 
     public void DestroyStatue()
     {
-        //istanzia un particellare di polvere
+        //Istanzia un nuovo effetto particellare dello standard asset che si chiama Dust Cloud
+        Instantiate(_myPrefab, this.transform.position , Quaternion.identity);
+
         Destroy(this);//cancella l'oggetto
     }
 }
