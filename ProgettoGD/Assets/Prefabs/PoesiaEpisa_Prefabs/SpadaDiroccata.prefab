@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3193102763949822285}
   - component: {fileID: 2017601219429867240}
   - component: {fileID: 4331058590775503394}
+  - component: {fileID: 8381418050795135871}
   m_Layer: 0
   m_Name: SpadaDiroccata
   m_TagString: Untagged
@@ -79,3 +80,17 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &8381418050795135871
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2818125986443054071}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -8552026059699375812, guid: 79489fe4dc76c4c76b9677492843ff61, type: 3}
