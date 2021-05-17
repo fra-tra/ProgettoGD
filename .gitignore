@@ -36,3 +36,8 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+
+
+#Largefiles
+*.nc
+*.DS_store
