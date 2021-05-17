@@ -12,7 +12,7 @@ public class DeathManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-         _myCounter = (Counter)FindObjectOfType(typeof(Counter));
+        _myCounter = (Counter)FindObjectOfType(typeof(Counter));
     }
 
     // Update is called once per frame

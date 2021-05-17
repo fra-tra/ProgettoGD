@@ -30,7 +30,7 @@ public class SpecialObjects : MonoBehaviour
    
     void Start()
     {
-         _myCounter = (Counter)FindObjectOfType(typeof(Counter));
+        _myCounter = (Counter)FindObjectOfType(typeof(Counter));
     }
 
     // Update is called once per frame
