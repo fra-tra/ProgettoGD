@@ -14,8 +14,8 @@ namespace Invector.vCharacterController
         public KeyCode sprintInput = KeyCode.LeftShift;
 
         [Header("Camera Input")]
-        public string rotateCameraXInput = "Mouse X";
-        public string rotateCameraYInput = "Mouse Y";
+        public string rotateCameraXInput = "CameraAxH";
+        public string rotateCameraYInput = "CameraAxV";
 
         [HideInInspector] public vThirdPersonController cc;
         [HideInInspector] public vThirdPersonCamera tpCamera;
