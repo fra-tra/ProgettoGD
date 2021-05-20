@@ -2827,8 +2827,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 100, y: 100, z: 100}
-  m_Center: {x: 0, y: -50, z: 0}
+  m_Size: {x: 100, y: 203.64421, z: 100.000015}
+  m_Center: {x: 0, y: -101.822105, z: 0}
 --- !u!23 &1048457180
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2902,8 +2902,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec1d527cf0240904bb0d19c3191a203d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blurMaterial: {fileID: 0}
-  distortionMaterial: {fileID: 0}
+  blurMaterial: {fileID: 2100000, guid: aa2fe63e9860241e990e9510e5a9dcad, type: 2}
+  distortionMaterial: {fileID: 2100000, guid: b616722c547c54fa9b67469ab269d1bf, type: 2}
 --- !u!1 &1070274225
 GameObject:
   m_ObjectHideFlags: 0
