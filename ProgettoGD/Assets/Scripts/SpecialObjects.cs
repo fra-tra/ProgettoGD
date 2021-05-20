@@ -27,6 +27,9 @@ public class SpecialObjects : MonoBehaviour
     private Counter _myCounter;
     private Statue _targetStatue;
     private BreakableDoor _targetDoor;
+    private bool _pressable = true;
+    private bool _objectDetected = false;
+    private string _objectTag;
    
     void Start()
     {
@@ -36,16 +39,19 @@ public class SpecialObjects : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         xPressed();
     }
 
     public void xPressed()
     {
-        if (Input.GetButton("SpecialObject") )//se il tasto del joypad o della tastiera è stato premuto 
+        if (Input.GetButton("SpecialObject") && _pressable)//se il tasto del joypad o della tastiera è stato premuto 
         {
             Debug.Log("Got button");
+            _pressable = false;
             //Prova se il bottone funziona dal manager dei bottoni (??)
-            UseSpecialObject();
+            //UseSpecialObject();
+            useHammer();
         }
     }
 
@@ -97,35 +103,53 @@ public class SpecialObjects : MonoBehaviour
 
         //ANIMAZIONE CHIAMATA COMUNQUE
 
-        RaycastHit hit;
-
-        if(Physics.Raycast(transform.position, Vector3.forward, out hit, _hammerDistance))
+        //RaycastHit hit;
+        //bool variable = Physics.Raycast(transform.position, Vector3.forward, out hit/*, _hammerDistance*/);
+        
+        if(_objectDetected)
         {
 
-            var _objectTag = hit.collider.gameObject.tag;
 
+            Debug.Log("Inside hammer distance");
+
+            //var _objectTag = hit.collider.gameObject.tag;
             
             if (_objectTag == "BreakableDoor")
             {
-                _targetDoor = (BreakableDoor)hit.collider.GetComponentInParent(typeof(BreakableDoor)); //Se non funziona prova GetComponent o GetComponentInChild
-                _targetDoor.hitHammer();
+                //_targetDoor = (BreakableDoor)hit.collider.GetComponentInParent(typeof(BreakableDoor)); //Se non funziona prova GetComponent o GetComponentInChild
+                //_targetDoor.hitHammer();
             }
             else if (_objectTag == "BreakableStatue")
             {
-                _targetStatue = (Statue)hit.collider.GetComponentInParent(typeof(Statue)); //Se non funziona prova GetComponent
-                _targetStatue.hitHammer();
+                Debug.Log("Inside breakable statue");
+                //_targetStatue = (Statue)hit.collider.GetComponentInParent(typeof(Statue)); //Se non funziona prova GetComponent
+                //_targetStatue.hitHammer();
             }
         }
+        _pressable = true;
 
+    }
+
+     private void OnTriggerEnter(Collider other)
+    {
+        _objectDetected = true;
+        _objectTag = other.tag;
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        _objectDetected = true;
+        _objectTag = "";
     }
 
     public void useKey()
     {
         Debug.Log("Special Object Key");
         //ANIMAZIONE CHIAMATA COMUNQUE
+        Ray ray = new Ray (this.transform.position, Vector3.forward);
         RaycastHit hit;
-
-        if(Physics.Raycast(transform.position, Vector3.forward, out hit, _keyDistance))
+        
+        if(Physics.Raycast(ray, out hit, _keyDistance))
         {
 
             var _objectTag = hit.collider.gameObject.tag;
@@ -137,30 +161,40 @@ public class SpecialObjects : MonoBehaviour
                 _levelLoader.LoadLevelFromThis(1); //C'è un 1 perché progressivamente l'interno 1 è un +1 dal livello in cui è
             }
         }
+        _pressable = true;
+
     }
 
     public void useGlobe()
     {
         Debug.Log("Special Object Globe");
         //ANIMAZIONE CHIAMATA COMUNQUE
+        _pressable = true;
+
     }
 
     public void useGear()
     {
         Debug.Log("Special Object Gear");
         //ANIMAZIONE CHIAMATA COMUNQUE
+        _pressable = true;
+
     }
 
     public void useIvy()
     {
         Debug.Log("Special Object Ivy");
         //ANIMAZIONE CHIAMATA COMUNQUE
+        _pressable = true;
+
     }
 
     public void useSling()
     {
         Debug.Log("Special Object Sling");
         //ANIMAZIONE CHIAMATA COMUNQUE
+        _pressable = true;
+
     }
 
 

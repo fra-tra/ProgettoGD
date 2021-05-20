@@ -7,6 +7,7 @@ TagManager:
   - Mountain
   - FallingRock
   - MovingIsland
+  - BreakableStatue
   layers:
   - Default
   - TransparentFX
