@@ -74,10 +74,10 @@ Material:
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
-    - _Strength: 0.05
+    - _Strength: 1.05
     - _UVSec: 0
     - _XScale: 3
-    - _XSpeed: 0.3
+    - _XSpeed: 0.5
     - _YScale: 3
     - _YSpeed: 0.3
     - _ZWrite: 1
