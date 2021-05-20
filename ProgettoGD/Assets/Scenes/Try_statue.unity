@@ -132,6 +132,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ThirdPersonController
       objectReference: {fileID: 0}
+    - target: {fileID: 149790, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 408730, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -293,7 +297,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rockPrefab: {fileID: 7273956540791742907, guid: 9cb5e7465eef1af4988889e41a071493,
     type: 3}
-  _rocksToSpawn: 2
+  _rocksToSpawn: 5
   _space: {fileID: 709250684}
 --- !u!65 &709250684
 BoxCollider:
