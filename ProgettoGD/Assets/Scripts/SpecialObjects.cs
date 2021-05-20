@@ -30,6 +30,7 @@ public class SpecialObjects : MonoBehaviour
     private bool _pressable = true;
     private bool _objectDetected = false;
     private string _objectTag;
+    private Collider _target;
    
     void Start()
     {
@@ -39,7 +40,6 @@ public class SpecialObjects : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         xPressed();
     }
 
@@ -102,38 +102,32 @@ public class SpecialObjects : MonoBehaviour
         Debug.Log("Special Object Hammer");
 
         //ANIMAZIONE CHIAMATA COMUNQUE
-
-        //RaycastHit hit;
-        //bool variable = Physics.Raycast(transform.position, Vector3.forward, out hit/*, _hammerDistance*/);
         
         if(_objectDetected)
         {
 
 
             Debug.Log("Inside hammer distance");
-
-            //var _objectTag = hit.collider.gameObject.tag;
             
             if (_objectTag == "BreakableDoor")
             {
-                //_targetDoor = (BreakableDoor)hit.collider.GetComponentInParent(typeof(BreakableDoor)); //Se non funziona prova GetComponent o GetComponentInChild
-                //_targetDoor.hitHammer();
+                _targetDoor = (BreakableDoor)_target.GetComponentInParent(typeof(BreakableDoor)); //Se non funziona prova GetComponent
+                _targetDoor.hitHammer();
             }
             else if (_objectTag == "BreakableStatue")
             {
                 Debug.Log("Inside breakable statue");
-                //_targetStatue = (Statue)hit.collider.GetComponentInParent(typeof(Statue)); //Se non funziona prova GetComponent
-                //_targetStatue.hitHammer();
+                _targetStatue = (Statue)_target.GetComponentInParent(typeof(Statue)); //Se non funziona prova GetComponent
+                _targetStatue.hitHammer();
             }
         }
-        _pressable = true;
-
     }
 
      private void OnTriggerEnter(Collider other)
     {
         _objectDetected = true;
         _objectTag = other.tag;
+        _target = other;
     }
 
     private void OnTriggerExit(Collider other)
@@ -146,14 +140,11 @@ public class SpecialObjects : MonoBehaviour
     {
         Debug.Log("Special Object Key");
         //ANIMAZIONE CHIAMATA COMUNQUE
-        Ray ray = new Ray (this.transform.position, Vector3.forward);
-        RaycastHit hit;
+        //Ray ray = new Ray (this.transform.position, Vector3.forward);
+        //RaycastHit hit;
         
-        if(Physics.Raycast(ray, out hit, _keyDistance))
-        {
-
-            var _objectTag = hit.collider.gameObject.tag;
-            
+        if( _objectDetected)
+        {            
             if (_objectTag == "KeyDoor")
             {
                 

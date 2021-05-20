@@ -56,6 +56,6 @@ public class Statue : MonoBehaviour
         //Istanzia un nuovo effetto particellare dello standard asset che si chiama Dust Cloud
         Instantiate(_myPrefab, this.transform.position , Quaternion.identity);
 
-        Destroy(this);//cancella l'oggetto
+        Destroy(gameObject);//cancella l'oggetto
     }
 }
