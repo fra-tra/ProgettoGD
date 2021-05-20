@@ -105,8 +105,7 @@ public class SpecialObjects : MonoBehaviour
         
         if(_objectDetected)
         {
-
-
+            _objectDetected = false;
             Debug.Log("Inside hammer distance");
             
             if (_objectTag == "BreakableDoor")
@@ -121,6 +120,7 @@ public class SpecialObjects : MonoBehaviour
                 _targetStatue.hitHammer();
             }
         }
+         _pressable = true;
     }
 
      private void OnTriggerEnter(Collider other)
@@ -132,7 +132,7 @@ public class SpecialObjects : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        _objectDetected = true;
+        _objectDetected = false;
         _objectTag = "";
     }
 
