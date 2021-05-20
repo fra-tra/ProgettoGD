@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Mountain
   - FallingRock
+  - MovingIsland
   layers:
   - Default
   - TransparentFX

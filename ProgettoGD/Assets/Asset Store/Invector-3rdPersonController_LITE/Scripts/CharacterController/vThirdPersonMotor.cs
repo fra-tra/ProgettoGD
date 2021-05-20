@@ -53,7 +53,7 @@ namespace Invector.vCharacterController
         public float groundMinDistance = 0.25f;
         public float groundMaxDistance = 0.5f;
         [Tooltip("Max angle to walk")]
-        [Range(30, 80)] public float slopeLimit = 75f;
+        [Range(15, 80)] public float slopeLimit = 75f;
         #endregion
 
         #region Components
@@ -118,7 +118,7 @@ namespace Invector.vCharacterController
             frictionPhysics.frictionCombine = PhysicMaterialCombine.Multiply;
 
             // prevents the collider from slipping on ramps
-            maxFrictionPhysics = new PhysicMaterial();
+           maxFrictionPhysics = new PhysicMaterial();
             maxFrictionPhysics.name = "maxFrictionPhysics";
             maxFrictionPhysics.staticFriction = 1f;
             maxFrictionPhysics.dynamicFriction = 1f;
@@ -183,6 +183,7 @@ namespace Invector.vCharacterController
             bool useVerticalVelocity = true;
             if (useVerticalVelocity) targetVelocity.y = _rigidbody.velocity.y;
             _rigidbody.velocity = targetVelocity;
+
         }
 
         public virtual void CheckSlopeLimit()
@@ -328,9 +329,9 @@ namespace Invector.vCharacterController
             _capsuleCollider.material = (isGrounded && GroundAngle() <= slopeLimit + 1) ? frictionPhysics : slippyPhysics;
 
             if (isGrounded && input == Vector3.zero)
-                _capsuleCollider.material = maxFrictionPhysics;
+                _capsuleCollider.material = slippyPhysics; //maxFrictionPhysics;
             else if (isGrounded && input != Vector3.zero)
-                _capsuleCollider.material = frictionPhysics;
+                _capsuleCollider.material = slippyPhysics; //frictionPhysics;
             else
                 _capsuleCollider.material = slippyPhysics;
         }
