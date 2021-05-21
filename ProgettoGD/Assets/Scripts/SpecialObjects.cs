@@ -20,7 +20,7 @@ public class SpecialObjects : MonoBehaviour
     public int _firstObject;
     public int _secondObject;
 
-    [SerializeField] private LevelLoader _levelLoader;
+    //[SerializeField] private LevelLoader _levelLoader;
     [SerializeField] private int _hammerDistance;
     [SerializeField] private int _keyDistance;
 
@@ -55,7 +55,7 @@ public class SpecialObjects : MonoBehaviour
         }
     }
 
-    public void UseSpecialObject()
+    /*public void UseSpecialObject()
     {
         _currentLevel = _levelLoader.CurrentLevel();
         _firstObject = _myCounter.GetFirstObject();
@@ -95,7 +95,7 @@ public class SpecialObjects : MonoBehaviour
             }
         }
 
-    }
+    }*/
 
     public void useHammer()
     {
@@ -136,7 +136,7 @@ public class SpecialObjects : MonoBehaviour
         _objectTag = "";
     }
 
-    public void useKey()
+    /*public void useKey()
     {
         Debug.Log("Special Object Key");
         //ANIMAZIONE CHIAMATA COMUNQUE
@@ -154,7 +154,7 @@ public class SpecialObjects : MonoBehaviour
         }
         _pressable = true;
 
-    }
+    }*/
 
     public void useGlobe()
     {

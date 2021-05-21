@@ -172,7 +172,7 @@ GameObject:
   - component: {fileID: 3936818112695193792}
   m_Layer: 0
   m_Name: StatuaA3
-  m_TagString: Untagged
+  m_TagString: BreakableStatue
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -205,7 +205,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfb4b758a869943bc9981c21d42b6842, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _myPrefab: {fileID: 0}
+  _myPrefab: {fileID: 4547905154663776396, guid: 25efeb1c1a95b4b6ca4642193f9c44b0,
+    type: 3}
   rb: {fileID: 0}
 --- !u!54 &1951637756195113290
 Rigidbody:
