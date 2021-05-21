@@ -6611,17 +6611,17 @@ PrefabInstance:
     - target: {fileID: 495097214932585504, guid: a09beab150aa6bd4b8865d96d5bd9778,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -13.27
+      value: -0.13000011
       objectReference: {fileID: 0}
     - target: {fileID: 495097214932585504, guid: a09beab150aa6bd4b8865d96d5bd9778,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 14.3
+      value: 20.800001
       objectReference: {fileID: 0}
     - target: {fileID: 495097214932585504, guid: a09beab150aa6bd4b8865d96d5bd9778,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -9.33
+      value: -3.12
       objectReference: {fileID: 0}
     - target: {fileID: 495097214932585504, guid: a09beab150aa6bd4b8865d96d5bd9778,
         type: 3}
@@ -6662,6 +6662,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: vBasicController_Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 495097214932585534, guid: a09beab150aa6bd4b8865d96d5bd9778,
+        type: 3}
+      propertyPath: jumpHeight
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a09beab150aa6bd4b8865d96d5bd9778, type: 3}
@@ -6704,17 +6709,17 @@ PrefabInstance:
     - target: {fileID: 1656063500980240002, guid: 5ff7863489807ef4d8d58017da1c0292,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.13299997
+      value: 0.12
       objectReference: {fileID: 0}
     - target: {fileID: 1656063500980240002, guid: 5ff7863489807ef4d8d58017da1c0292,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 22.8
+      value: 22.6
       objectReference: {fileID: 0}
     - target: {fileID: 1656063500980240002, guid: 5ff7863489807ef4d8d58017da1c0292,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.2
+      value: -6.34
       objectReference: {fileID: 0}
     - target: {fileID: 1656063500980240002, guid: 5ff7863489807ef4d8d58017da1c0292,
         type: 3}
@@ -6756,6 +6761,21 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 446539642}
+    - target: {fileID: 1656063500980240005, guid: 5ff7863489807ef4d8d58017da1c0292,
+        type: 3}
+      propertyPath: yMaxLimit
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1656063500980240005, guid: 5ff7863489807ef4d8d58017da1c0292,
+        type: 3}
+      propertyPath: yMinLimit
+      value: -20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1656063500980240005, guid: 5ff7863489807ef4d8d58017da1c0292,
+        type: 3}
+      propertyPath: xMouseSensitivity
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 1656063500980240006, guid: 5ff7863489807ef4d8d58017da1c0292,
         type: 3}
       propertyPath: m_Name
