@@ -106,10 +106,10 @@ MonoBehaviour:
   defaultDistance: 2.5
   height: 1.4
   smoothFollow: 10
-  xMouseSensitivity: 3
+  xMouseSensitivity: 4
   yMouseSensitivity: 3
-  yMinLimit: 0
-  yMaxLimit: 50
+  yMinLimit: -20
+  yMaxLimit: 60
   indexList: 0
   indexLookPoint: 0
   offSetPlayerPivot: 0

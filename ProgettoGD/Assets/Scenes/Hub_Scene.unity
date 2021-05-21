@@ -564,13 +564,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7757764578240784085, guid: 997e3ee85c6934793a4a83060845f416,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7757764578240784085, guid: 997e3ee85c6934793a4a83060845f416,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7757764578240784085, guid: 997e3ee85c6934793a4a83060845f416,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7757764578240784085, guid: 997e3ee85c6934793a4a83060845f416,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.35
       objectReference: {fileID: 0}
     - target: {fileID: 7757764578240784085, guid: 997e3ee85c6934793a4a83060845f416,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.81
+      value: 1.4
       objectReference: {fileID: 0}
     - target: {fileID: 7757764578240784085, guid: 997e3ee85c6934793a4a83060845f416,
         type: 3}
@@ -1007,6 +1022,21 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 26905891}
+    - target: {fileID: 1656063500980240005, guid: 5ff7863489807ef4d8d58017da1c0292,
+        type: 3}
+      propertyPath: yMaxLimit
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1656063500980240005, guid: 5ff7863489807ef4d8d58017da1c0292,
+        type: 3}
+      propertyPath: yMinLimit
+      value: -20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1656063500980240005, guid: 5ff7863489807ef4d8d58017da1c0292,
+        type: 3}
+      propertyPath: xMouseSensitivity
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 1656063500980240006, guid: 5ff7863489807ef4d8d58017da1c0292,
         type: 3}
       propertyPath: m_Name
@@ -1172,6 +1202,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: vBasicController_Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 495097214932585534, guid: a09beab150aa6bd4b8865d96d5bd9778,
+        type: 3}
+      propertyPath: jumpTimer
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 495097214932585534, guid: a09beab150aa6bd4b8865d96d5bd9778,
+        type: 3}
+      propertyPath: jumpHeight
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 495097214932585534, guid: a09beab150aa6bd4b8865d96d5bd9778,
+        type: 3}
+      propertyPath: freeSpeed.walkSpeed
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 495097214932585534, guid: a09beab150aa6bd4b8865d96d5bd9778,
+        type: 3}
+      propertyPath: freeSpeed.sprintSpeed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 495097214932585534, guid: a09beab150aa6bd4b8865d96d5bd9778,
+        type: 3}
+      propertyPath: freeSpeed.runningSpeed
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a09beab150aa6bd4b8865d96d5bd9778, type: 3}
