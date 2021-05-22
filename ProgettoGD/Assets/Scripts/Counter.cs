@@ -57,9 +57,13 @@ public class Counter : MonoBehaviour
         return _secondChoosenObject;
     }
 
-    public void ChoosenObjects(int first, int second)
+    public void FirstChoosenObject(int first)
     {
         _firstChoosenObject = first;
+    }
+
+    public void SecondChoosenObject(int second)
+    {
         _secondChoosenObject = second;
     }
 

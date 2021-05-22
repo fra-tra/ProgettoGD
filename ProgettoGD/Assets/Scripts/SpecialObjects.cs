@@ -123,7 +123,7 @@ public class SpecialObjects : MonoBehaviour
          _pressable = true;
     }
 
-     private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         _objectDetected = true;
         _objectTag = other.tag;
