@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class PauseGame : MonoBehaviour
 {
@@ -10,6 +11,9 @@ public class PauseGame : MonoBehaviour
     public static bool GameIsPaused = false; 
 
     public GameObject pauseMenuUI;
+
+    [SerializeField] public GameObject _selectedButton;
+    [SerializeField] public GameObject _selectedButtonCommands;
 
     void Update()
     {
@@ -44,6 +48,10 @@ public class PauseGame : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         Time.timeScale = 0f; 
         GameIsPaused = true;
+
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(_selectedButton);
+
     }
 
     public void LoadMenu()
@@ -61,5 +69,7 @@ public class PauseGame : MonoBehaviour
     {
         pauseMenuUI.SetActive(false);
         _commandsMenu.SetActive(true);
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(_selectedButtonCommands);
     }
 }

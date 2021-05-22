@@ -14,7 +14,9 @@ public class SpecialObjectsFirstChoice : MonoBehaviour
     //[SerializeField] public gameObject _gameObjectC;
     private bool _inputGettable = true;
     public Counter _myCounter;
+    private Coroutine _coroutine;
     // Start is called before the first frame update
+    
     void Start()
     {
         _myCounter = (Counter)FindObjectOfType(typeof(Counter));//Si trova il counter
@@ -53,8 +55,16 @@ public class SpecialObjectsFirstChoice : MonoBehaviour
             _inputGettable = false;
             MoveSelection();
             Glow();
-            //Chiamata a coroutine che aspetta un tot e poi reimposta_inputGettable=true;
+            _coroutine = StartCoroutine(CoroutineWaitForChange());//Chiamata a coroutine che aspetta un tot e poi reimposta_inputGettable=true;
         }
+    }
+
+    public IEnumerator CoroutineWaitForChange()
+    {
+        yield return new WaitForSeconds(0.3f);
+        Debug.Log("After Yield");
+        _inputGettable  = true;
+        StopCoroutine(_coroutine);
     }
 
     private void MoveSelection()

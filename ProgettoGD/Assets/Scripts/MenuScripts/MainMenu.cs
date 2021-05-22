@@ -2,11 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 
 public class MainMenu : MonoBehaviour
 {
     [SerializeField] GameObject _infoMenu;
     [SerializeField] GameObject _commandsMenu;
+    [SerializeField] public GameObject _selectedButtonControls;
+    [SerializeField] public GameObject _selectedButtonInfo;
 
     public void PlayGame()
     {
@@ -24,11 +27,17 @@ public class MainMenu : MonoBehaviour
     {
         gameObject.SetActive(false);
         _infoMenu.SetActive(true);
+
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(_selectedButtonInfo);
     }
 
     public void DisplayCommands()
     {
         gameObject.SetActive(false);
         _commandsMenu.SetActive(true);
+
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(_selectedButtonControls);
     }
 }
