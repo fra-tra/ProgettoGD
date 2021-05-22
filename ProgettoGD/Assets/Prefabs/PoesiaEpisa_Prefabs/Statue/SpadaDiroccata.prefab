@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 3193102763949822285}
   - component: {fileID: 2017601219429867240}
   - component: {fileID: 4331058590775503394}
-  - component: {fileID: 8381418050795135871}
   m_Layer: 0
   m_Name: SpadaDiroccata
   m_TagString: Untagged
@@ -26,13 +25,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2818125986443054071}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+  m_LocalRotation: {x: -0.7069834, y: 0, z: 0, w: 0.7072302}
   m_LocalPosition: {x: 0.97, y: 0.17584778, z: 1.7306521}
-  m_LocalScale: {x: 100, y: 100, z: 100}
-  m_Children: []
+  m_LocalScale: {x: 50, y: 50, z: 50}
+  m_Children:
+  - {fileID: 1005203061834878675}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -89.98, y: 0, z: 0}
 --- !u!33 &2017601219429867240
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -80,17 +80,47 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &8381418050795135871
-MeshCollider:
+--- !u!1 &5924551256012702382
+GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2818125986443054071}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1005203061834878675}
+  - component: {fileID: 7586296948417310428}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1005203061834878675
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5924551256012702382}
+  m_LocalRotation: {x: 0.6998785, y: -0.100847326, z: 0.1008473, w: 0.6998784}
+  m_LocalPosition: {x: -0.00602, y: 0, z: 0.01857}
+  m_LocalScale: {x: 0.01, y: 0.010000002, z: 0.010000002}
+  m_Children: []
+  m_Father: {fileID: 3193102763949822285}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 90.00001, y: 0, z: 16.399}
+--- !u!65 &7586296948417310428
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5924551256012702382}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -8552026059699375812, guid: 79489fe4dc76c4c76b9677492843ff61, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 3.9822254, z: 0.32807943}
+  m_Center: {x: 0.0000000044585096, y: 0.07885622, z: 0.0064605367}
