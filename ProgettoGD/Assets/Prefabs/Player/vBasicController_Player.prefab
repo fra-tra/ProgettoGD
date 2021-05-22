@@ -1522,9 +1522,9 @@ MonoBehaviour:
     rotationSpeed: 16
     walkByDefault: 0
     rotateWithCamera: 0
-    walkSpeed: 2
-    runningSpeed: 4
-    sprintSpeed: 6
+    walkSpeed: 3
+    runningSpeed: 5
+    sprintSpeed: 7
   strafeSpeed:
     movementSmooth: 6
     animationSmooth: 0.2
@@ -1537,8 +1537,8 @@ MonoBehaviour:
   jumpWithRigidbodyForce: 0
   jumpAndRotate: 1
   jumpTimer: 0.3
-  jumpHeight: 5
-  airSpeed: 5
+  jumpHeight: 6
+  airSpeed: 6
   airSmooth: 6
   extraGravity: -10
   limitFallVelocity: -15
