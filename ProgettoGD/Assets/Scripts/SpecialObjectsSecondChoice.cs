@@ -2,21 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpecialObjectsFirstChoice : MonoBehaviour
+public class SpecialObjectsSecondChoice : MonoBehaviour
 {
     [SerializeField] public Rigidbody _playerRigidBody; //RigidBody del player 
     private float _analog;
-    private bool _objA = true; //Hammer
-    private bool _objB = false; //Ivy
-    private bool _objC = false; // Globe
-    //[SerializeField] public gameObject _gameObjectA; //Per applicargli il glow
-    //[SerializeField] public gameObject _gameObjectB;
-    //[SerializeField] public gameObject _gameObjectC;
+    private bool _objA = true; // key
+    private bool _objB = false; // sling
+    private bool _objC = false; // gear
+
     private bool _inputGettable = true;
     public Counter _myCounter;
+
     private Coroutine _coroutine;
+    private int _firstChoice;
+
+
+
     // Start is called before the first frame update
-    
     void Start()
     {
         _myCounter = (Counter)FindObjectOfType(typeof(Counter));//Si trova il counter
@@ -32,6 +34,7 @@ public class SpecialObjectsFirstChoice : MonoBehaviour
     {
          //Blocca la caduta dell’omino rendendolo Kinematic
         _playerRigidBody.isKinematic = true;
+       _firstChoice = _myCounter.GetFirstObject();
     }
 
     private void OnTriggerStay(Collider other)
@@ -42,9 +45,6 @@ public class SpecialObjectsFirstChoice : MonoBehaviour
             ExitChoice();
         }
     }
-
-    //Metti una coroutine con uno Yield così se è sempre premuto l’analogico non cambaia 993772 milioni di volte
-    
 
     private void CheckAnalog()
     {
@@ -65,6 +65,50 @@ public class SpecialObjectsFirstChoice : MonoBehaviour
         Debug.Log("After Yield");
         _inputGettable  = true;
         StopCoroutine(_coroutine);
+    }
+
+    private void Glow()
+    {
+        if(_objA)
+        { 
+
+        }//Glow di oggetto A}
+        else if(_objB)
+        { 
+
+        }//Glow di oggetto B}
+        else if(_objC)
+        {
+
+        }//Glow di oggetto C}
+    }
+
+    private bool CheckChoice()
+    {
+        if (Input.GetButton("SpecialObject"))
+        {
+            //Play suono oggetto scelto
+            //Scelta oggetto comunicata al counter
+            if (_objA)
+            { 
+                Debug.Log("Hammer choosen");
+                _myCounter.FirstChoosenObject(1); //Hammer
+            }
+            else if(_objB)
+            {
+                Debug.Log("Ivy choosen");
+                _myCounter.FirstChoosenObject(3); //ivy
+            }
+            else if(_objC)
+            { 
+                Debug.Log("Globe choosen");
+                _myCounter.FirstChoosenObject(5); //Globe
+            }
+
+            return true;
+        }
+
+        return false;
     }
 
     private void MoveSelection()
@@ -112,55 +156,9 @@ public class SpecialObjectsFirstChoice : MonoBehaviour
         }
     }
 
-    private void Glow()
-    {
-        if(_objA)
-        { 
-
-        }//Glow di oggetto A}
-        else if(_objB)
-        { 
-
-        }//Glow di oggetto B}
-        else if(_objC)
-        {
-
-        }//Glow di oggetto C}
-    }
-
-    private bool CheckChoice()
-    {
-        if (Input.GetButton("SpecialObject"))
-        {
-            //Play suono oggetto scelto
-            //Scelta oggetto comunicata al counter
-            if (_objA)
-            { 
-                Debug.Log("Hammer choosen");
-                _myCounter.FirstChoosenObject(1); //Hammer
-            }
-            else if(_objB)
-            {
-                Debug.Log("Ivy choosen");
-                _myCounter.FirstChoosenObject(3); //ivy
-            }
-            else if(_objC)
-            { 
-                Debug.Log("Globe choosen");
-                _myCounter.FirstChoosenObject(5); //Globe
-            }
-
-            return true;
-        }
-
-        return false;
-    }
-
     private void ExitChoice()
     {
-        //Fa partire il video
-        //coroutine con Yield oppure fine del fideo esplode (?)
-        _playerRigidBody.isKinematic = false;
+        //Fa partire il video di scelta oggetto e atterraggio nell'hub
+        
     }
-
 }
