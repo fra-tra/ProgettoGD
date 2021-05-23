@@ -463,6 +463,7 @@ GameObject:
   - component: {fileID: 3879605300443631416}
   - component: {fileID: 8754489213886016621}
   - component: {fileID: 1455376834320307083}
+  - component: {fileID: 7561817791883249310}
   m_Layer: 0
   m_Name: StatuaA
   m_TagString: BreakableStatue
@@ -501,7 +502,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myPrefab: {fileID: 4547905154663776396, guid: 25efeb1c1a95b4b6ca4642193f9c44b0,
     type: 3}
-  rb: {fileID: 0}
+  rb: {fileID: 1455376834320307083}
 --- !u!65 &8754489213886016621
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -513,8 +514,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.6574292, y: 7.8968596, z: 1.161505}
-  m_Center: {x: -0.055497214, y: 3.9094841, z: -0.0302428}
+  m_Size: {x: 1.6574292, y: 4.308236, z: 1.161505}
+  m_Center: {x: -0.055497214, y: 2.1151724, z: -0.0302428}
 --- !u!54 &1455376834320307083
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -531,6 +532,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &7561817791883249310
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5264951279715544459}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.15891954, y: 0.72045636, z: 1.6245964}
+  m_Center: {x: 0.55572784, y: 1.1889561, z: 1.3287776}
 --- !u!1 &5378894497899261358
 GameObject:
   m_ObjectHideFlags: 0

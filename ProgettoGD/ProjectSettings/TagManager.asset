@@ -8,6 +8,8 @@ TagManager:
   - FallingRock
   - MovingIsland
   - BreakableStatue
+  - BreakableDoor
+  - KeyDoor
   layers:
   - Default
   - TransparentFX

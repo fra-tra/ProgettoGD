@@ -136,12 +136,10 @@ public class SpecialObjects : MonoBehaviour
         _objectTag = "";
     }
 
-    /*public void useKey()
+    public void useKey()
     {
         Debug.Log("Special Object Key");
         //ANIMAZIONE CHIAMATA COMUNQUE
-        //Ray ray = new Ray (this.transform.position, Vector3.forward);
-        //RaycastHit hit;
         
         if( _objectDetected)
         {            
@@ -149,12 +147,12 @@ public class SpecialObjects : MonoBehaviour
             {
                 
                 //Chiama il level loader che "Apre direttamente la porta e sticazzi è più veloce così senza fare la classe
-                _levelLoader.LoadLevelFromThis(1); //C'è un 1 perché progressivamente l'interno 1 è un +1 dal livello in cui è
+                //_levelLoader.LoadLevelFromThis(1); //C'è un 1 perché progressivamente l'interno 1 è un +1 dal livello in cui è
             }
         }
         _pressable = true;
 
-    }*/
+    }
 
     public void useGlobe()
     {

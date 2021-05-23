@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6029106020162196859}
   - component: {fileID: 2008910105497144435}
   - component: {fileID: 5756385180003560555}
+  - component: {fileID: 2126439043930887569}
   m_Layer: 0
   m_Name: StatuaRicordoCorpo_cell.007
   m_TagString: Untagged
@@ -79,6 +80,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &2126439043930887569
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 458175960283919571}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.26105464, y: 0.34823903, z: 0.782587}
+  m_Center: {x: 0.9040324, y: 0.18231316, z: -0.36628667}
 --- !u!1 &716507669098432844
 GameObject:
   m_ObjectHideFlags: 0
@@ -90,6 +104,7 @@ GameObject:
   - component: {fileID: 5272234562114488285}
   - component: {fileID: 3966552327490530132}
   - component: {fileID: 5469102287286325351}
+  - component: {fileID: 3511278063443582831}
   m_Layer: 0
   m_Name: StatuaRicordoCorpo_cell.021
   m_TagString: Untagged
@@ -105,7 +120,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 716507669098432844}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalPosition: {x: 1.57, y: 0, z: 0.26}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2475140983059122064}
@@ -158,6 +173,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &3511278063443582831
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 716507669098432844}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.59420687, y: 0.52025676, z: 0.85045415}
+  m_Center: {x: -1.0374742, y: 0.2655323, z: -0.9273008}
 --- !u!1 &962834593598050903
 GameObject:
   m_ObjectHideFlags: 0
@@ -169,6 +197,7 @@ GameObject:
   - component: {fileID: 7186102453293137374}
   - component: {fileID: 1405436268842019798}
   - component: {fileID: 2708712419772642083}
+  - component: {fileID: 2581444640175826625}
   m_Layer: 0
   m_Name: StatuaRicordoCorpo_cell.003
   m_TagString: Untagged
@@ -184,7 +213,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 962834593598050903}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.35, y: -0.077, z: -1.729}
+  m_LocalPosition: {x: 0.56, y: -0.077, z: -2.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2475140983059122064}
@@ -237,6 +266,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &2581444640175826625
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 962834593598050903}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.124845296, y: 0.39826965, z: 0.3969064}
+  m_Center: {x: -2.4582138, y: 0.20117399, z: 0.6805995}
 --- !u!1 &1246670274604031889
 GameObject:
   m_ObjectHideFlags: 0
@@ -248,6 +290,7 @@ GameObject:
   - component: {fileID: 8322022940795088677}
   - component: {fileID: 6753340937207093189}
   - component: {fileID: 7434415470581911989}
+  - component: {fileID: 2094456537889811076}
   m_Layer: 0
   m_Name: StatuaRicordoCorpo_cell.017
   m_TagString: Untagged
@@ -316,6 +359,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &2094456537889811076
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1246670274604031889}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.42784014, y: 0.24438712, z: 0.5247841}
+  m_Center: {x: 0.004962459, y: 0.1330107, z: -0.8437114}
 --- !u!1 &1420107247055283394
 GameObject:
   m_ObjectHideFlags: 0
@@ -327,6 +383,7 @@ GameObject:
   - component: {fileID: 2779234403871206161}
   - component: {fileID: 6117596194727735869}
   - component: {fileID: 5570615089316657507}
+  - component: {fileID: 5762873436219036251}
   m_Layer: 0
   m_Name: StatuaRicordoCorpo_cell.010
   m_TagString: Untagged
@@ -342,7 +399,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1420107247055283394}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalPosition: {x: -1.32, y: 0, z: -0.53}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2475140983059122064}
@@ -395,6 +452,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &5762873436219036251
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1420107247055283394}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.39644384, y: 0.18391126, z: 0.24441987}
+  m_Center: {x: 2.7205598, y: 0.08843325, z: 0.67484546}
 --- !u!1 &2959611732469767466
 GameObject:
   m_ObjectHideFlags: 0
@@ -446,6 +516,7 @@ GameObject:
   - component: {fileID: 554697816565179391}
   - component: {fileID: 2918141147705724012}
   - component: {fileID: 220394670055306240}
+  - component: {fileID: 1032789517288023036}
   m_Layer: 0
   m_Name: StatuaRicordoCorpo_cell.002
   m_TagString: Untagged
@@ -461,7 +532,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4467103198327143073}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalPosition: {x: -0, y: 0, z: 0.75}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2475140983059122064}
@@ -514,6 +585,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &1032789517288023036
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4467103198327143073}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.48015237, y: 0.70460236, z: 0.53209674}
+  m_Center: {x: 0.81614065, y: 0.35782486, z: -2.0528433}
 --- !u!1 &6267957633523197357
 GameObject:
   m_ObjectHideFlags: 0
@@ -525,6 +609,7 @@ GameObject:
   - component: {fileID: 1952271573703704756}
   - component: {fileID: 7094360440837714210}
   - component: {fileID: 2056350684742930426}
+  - component: {fileID: 7026853012347498272}
   m_Layer: 0
   m_Name: StatuaRicordoCorpo_cell.015
   m_TagString: Untagged
@@ -540,7 +625,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6267957633523197357}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalPosition: {x: 1.348, y: 0, z: -0.281}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2475140983059122064}
@@ -593,6 +678,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &7026853012347498272
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6267957633523197357}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5783441, y: 0.34815764, z: 1.3060697}
+  m_Center: {x: -1.6186659, y: 0.18022454, z: 0.34886318}
 --- !u!1 &6300692525418123735
 GameObject:
   m_ObjectHideFlags: 0
@@ -604,6 +702,7 @@ GameObject:
   - component: {fileID: 7807299134447273241}
   - component: {fileID: 5191833753001207384}
   - component: {fileID: 4821668104707485011}
+  - component: {fileID: 6136640003479864770}
   m_Layer: 0
   m_Name: StatuaRicordoCorpo_cell.013
   m_TagString: Untagged
@@ -619,7 +718,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6300692525418123735}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.52, y: 0, z: 0.51}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2475140983059122064}
@@ -672,6 +771,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &6136640003479864770
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6300692525418123735}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.7943431, y: 0.36741585, z: 0.22691572}
+  m_Center: {x: -0.51581174, y: 0.18970925, z: -1.9049695}
 --- !u!1 &6645445302261362889
 GameObject:
   m_ObjectHideFlags: 0
@@ -683,6 +795,7 @@ GameObject:
   - component: {fileID: 5683654390072064261}
   - component: {fileID: 7210387256531456178}
   - component: {fileID: 2562069777947051014}
+  - component: {fileID: 6781760239042781448}
   m_Layer: 0
   m_Name: StatuaRicordoCorpo_cell.021 (1)
   m_TagString: Untagged
@@ -698,7 +811,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6645445302261362889}
   m_LocalRotation: {x: 0.116030306, y: -0.108207844, z: 0.9872519, w: -0.012717505}
-  m_LocalPosition: {x: -1.037684, y: 0.19, z: 1.8226607}
+  m_LocalPosition: {x: -0.361, y: 0.19, z: 1.222}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2475140983059122064}
@@ -751,6 +864,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &6781760239042781448
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6645445302261362889}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5942068, y: 0.52025676, z: 0.85045415}
+  m_Center: {x: -1.037474, y: 0.26553237, z: -0.9273008}
 --- !u!1 &8687371189317519184
 GameObject:
   m_ObjectHideFlags: 0
@@ -762,6 +888,7 @@ GameObject:
   - component: {fileID: 5019659274830602829}
   - component: {fileID: 7859881841928430208}
   - component: {fileID: 8434861467002484758}
+  - component: {fileID: 7466849714926367775}
   m_Layer: 0
   m_Name: StatuaRicordoCorpo_cell.020
   m_TagString: Untagged
@@ -777,7 +904,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8687371189317519184}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.08, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2475140983059122064}
@@ -830,3 +957,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &7466849714926367775
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8687371189317519184}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6482153, y: 0.45191437, z: 1.3337996}
+  m_Center: {x: 1.4934802, y: 0.2320574, z: -0.8454137}

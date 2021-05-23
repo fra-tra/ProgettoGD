@@ -170,6 +170,8 @@ GameObject:
   - component: {fileID: 51550475240279628}
   - component: {fileID: 5245194453601146671}
   - component: {fileID: 2627016903460016120}
+  - component: {fileID: 976814118221205674}
+  - component: {fileID: 153092659668323518}
   m_Layer: 0
   m_Name: StatuaA1
   m_TagString: BreakableStatue
@@ -237,8 +239,34 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.8292545, y: 6.596424, z: 1.5233219}
-  m_Center: {x: -0.13499483, y: 3.2610514, z: -0.26166078}
+  m_Size: {x: 1.5179724, y: 4.2034435, z: 1.7373288}
+  m_Center: {x: 0.020646155, y: 2.0645618, z: -0.15465751}
+--- !u!65 &976814118221205674
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4672188013881407330}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.64202, y: 1.544742, z: 2.147856}
+  m_Center: {x: 1.6245039, y: 3.6381123, z: -1.3326771}
+--- !u!65 &153092659668323518
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4672188013881407330}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6887181, y: 1.2918279, z: 1.2723722}
+  m_Center: {x: -1.0700324, y: 2.3832543, z: -0.33073708}
 --- !u!1 &8649679934061880218
 GameObject:
   m_ObjectHideFlags: 0
