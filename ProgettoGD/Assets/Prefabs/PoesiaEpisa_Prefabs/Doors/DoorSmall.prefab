@@ -1,6 +1,10 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+<<<<<<< HEAD
 --- !u!65 &4361614276648642825
+=======
+--- !u!65 &4201706635719461836
+>>>>>>> 086c80771fb3c3011b689773ebd8cb4922d0a56c
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -11,8 +15,13 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
+<<<<<<< HEAD
   m_Size: {x: 2.5182595, y: 10.718922, z: 4.004564}
   m_Center: {x: 1.3217841, y: 4.859461, z: 2.0444677}
+=======
+  m_Size: {x: 3.0454116, y: 9.764675, z: 4.0734534}
+  m_Center: {x: 1.4940135, y: 5.174883, z: 1.9784849}
+>>>>>>> 086c80771fb3c3011b689773ebd8cb4922d0a56c
 --- !u!1 &957397522263597740
 GameObject:
   m_ObjectHideFlags: 0
@@ -47,6 +56,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -7.1320004, z: 0}
+<<<<<<< HEAD
 --- !u!65 &2316412377251752463
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -61,6 +71,9 @@ BoxCollider:
   m_Size: {x: 2.7058103, y: 3.9909208, z: 1.6618737}
   m_Center: {x: -0.05363595, y: 1.942046, z: -0.6395203}
 --- !u!65 &9083630662188077916
+=======
+--- !u!65 &1159819177846551304
+>>>>>>> 086c80771fb3c3011b689773ebd8cb4922d0a56c
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -71,8 +84,13 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
+<<<<<<< HEAD
   m_Size: {x: 2.6307423, y: 10.419437, z: 3.9369454}
   m_Center: {x: 1.1900567, y: 4.7097187, z: 2.016377}
+=======
+  m_Size: {x: 3.014726, y: 9.997772, z: 4.096573}
+  m_Center: {x: 1.4818587, y: 5.0583305, z: 1.9900491}
+>>>>>>> 086c80771fb3c3011b689773ebd8cb4922d0a56c
 --- !u!64 &7265206103316522305
 MeshCollider:
   m_ObjectHideFlags: 0
