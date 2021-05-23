@@ -23,8 +23,8 @@ public class Counter : MonoBehaviour
     //Se uno dei due è true sposta a “Davanti le porte di uscita” il TPC
 
     //Variabili riferite agli oggetti speciali che tengono conto di quali sono stati scelti
-    private int _firstChoosenObject;
-    private int _secondChoosenObject;
+    private int _firstChoosenObject = 0;
+    private int _secondChoosenObject = 0;
     //hammer 1
     //key 2
     //ivy 3

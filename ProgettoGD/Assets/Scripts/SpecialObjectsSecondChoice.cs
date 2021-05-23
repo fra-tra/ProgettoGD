@@ -5,18 +5,29 @@ using UnityEngine;
 public class SpecialObjectsSecondChoice : MonoBehaviour
 {
     [SerializeField] public Rigidbody _playerRigidBody; //RigidBody del player 
+    [SerializeField] public GameObject _gameObjectA; //Key    Per applicargli il glow ed istanziarli
+    [SerializeField] public GameObject _gameObjectB; // sling
+    [SerializeField] public GameObject _gameObjectC; // gear
+    [SerializeField] public LevelLoader _levelLoader;
+
+    private bool _objOne = true;
+    private bool _objTwo = false;
+    private GameObject _One;
+    private GameObject _Two;
+
     private float _analog;
-    private bool _objA = true; // key
-    private bool _objB = false; // sling
-    private bool _objC = false; // gear
-
     private bool _inputGettable = true;
-    public Counter _myCounter;
-
+    private bool _notChoosen = true;
+    private bool _instantiateObjects = true;
     private Coroutine _coroutine;
+    public Counter _myCounter;
+    
+    private int _numberOfObjOne;
+    private int _numberOfObjTwo;
     private int _firstChoice;
-
-
+    //hammer 1 (key 2)
+    //ivy 3 (sling 4)
+    //globe 5 (gear 6)
 
     // Start is called before the first frame update
     void Start()
@@ -27,7 +38,41 @@ public class SpecialObjectsSecondChoice : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        ActivateCorrectObjects();        
+    }
+
+    private void  ActivateCorrectObjects()
+    {
+        if (_myCounter.GetFirstObject() != 0 && _instantiateObjects)
+        {
+            _instantiateObjects = false;
+
+            if (_myCounter.GetFirstObject() == 1)
+            {
+                _gameObjectA.SetActive(false);
+                _One = _gameObjectB; // sling
+                _numberOfObjOne = 4;
+                _Two = _gameObjectC; // gear
+                _numberOfObjTwo = 6;
+            }
+            else if (_myCounter.GetFirstObject() == 3)
+            {
+                _gameObjectB.SetActive(false);
+                _One = _gameObjectA; // key
+                _numberOfObjOne = 2;
+                _Two = _gameObjectC; // gear
+                _numberOfObjTwo = 6;
+            }
+            else if (_myCounter.GetFirstObject() == 5)
+            {
+                _gameObjectC.SetActive(false);
+                _One = _gameObjectA; // key
+                _numberOfObjOne = 2;
+                _Two = _gameObjectB; // sling
+                _numberOfObjTwo = 4;
+            }
+            
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -48,7 +93,7 @@ public class SpecialObjectsSecondChoice : MonoBehaviour
 
     private void CheckAnalog()
     {
-        _analog = Input.GetAxis("Horizontal"); //Si prende sia il joystick che A e Da
+        _analog = Input.GetAxisRaw("Horizontal"); //Si prende sia il joystick che A e Da
         if (_analog != 0 && _inputGettable)
         {
             Debug.Log("Change choice");
@@ -69,40 +114,32 @@ public class SpecialObjectsSecondChoice : MonoBehaviour
 
     private void Glow()
     {
-        if(_objA)
+        if(_objOne)
         { 
-
-        }//Glow di oggetto A}
-        else if(_objB)
+            //Glow _One
+        }
+        else if(_objTwo)
         { 
-
-        }//Glow di oggetto B}
-        else if(_objC)
-        {
-
-        }//Glow di oggetto C}
+            //Glow _Two
+        }
     }
 
     private bool CheckChoice()
     {
-        if (Input.GetButton("SpecialObject"))
+        if (Input.GetButton("SpecialObject") && _notChoosen)
         {
+            _notChoosen = false;
             //Play suono oggetto scelto
             //Scelta oggetto comunicata al counter
-            if (_objA)
+            if (_objOne)
             { 
-                Debug.Log("Hammer choosen");
-                _myCounter.FirstChoosenObject(1); //Hammer
+                Debug.Log("One choosen");
+                _myCounter.SecondChoosenObject(_numberOfObjOne); // key
             }
-            else if(_objB)
+            else if(_objTwo)
             {
-                Debug.Log("Ivy choosen");
-                _myCounter.FirstChoosenObject(3); //ivy
-            }
-            else if(_objC)
-            { 
-                Debug.Log("Globe choosen");
-                _myCounter.FirstChoosenObject(5); //Globe
+                Debug.Log("Two choosen");
+                _myCounter.SecondChoosenObject(_numberOfObjTwo); // sling
             }
 
             return true;
@@ -115,50 +152,29 @@ public class SpecialObjectsSecondChoice : MonoBehaviour
     {
         //Play suono cambio scelta
         
-        if (_objA)
+        if (_objOne)
         {
-            _objA = false;
-
-            if(_analog == 1)
-            {
-                _objB = true;
-            }
-            else
-            {
-                _objC = true;
-            }
+            _objOne = false;
+            _objTwo = true;
         }
-        else if(_objB)
+        else if(_objTwo)
         {
-            _objB = false;
-
-            if(_analog == 1)
-            {
-                _objB = true;
-            }
-            else
-            {
-                _objA = true;
-            }
+            _objTwo = false;
+            _objOne = true;
         }
-        else if(_objC)
-        {
-            _objC = false;
+    }
 
-            if(_analog == 1)
-            {
-                _objA = true;
-            }
-            else
-            { 
-                _objB = true;
-            }
-        }
+    public IEnumerator CoroutinePlayVideo()
+    {
+        //PLAY VIDEO
+        yield return new WaitForSeconds(0.3f); //Da cambiare valore
+        Debug.Log("After Yield Video");
+        StopCoroutine(_coroutine);
     }
 
     private void ExitChoice()
     {
-        //Fa partire il video di scelta oggetto e atterraggio nell'hub
-        
+        _coroutine = StartCoroutine(CoroutinePlayVideo());//Fa partire il video di scelta oggetto e atterraggio nell'hub
+        _levelLoader.LoadNext(); //Level loader
     }
 }

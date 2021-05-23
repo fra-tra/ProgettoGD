@@ -5,14 +5,18 @@ using UnityEngine;
 public class SpecialObjectsFirstChoice : MonoBehaviour
 {
     [SerializeField] public Rigidbody _playerRigidBody; //RigidBody del player 
-    private float _analog;
+    [SerializeField] public GameObject _gameObjectA; //Per applicargli il glow
+    [SerializeField] public GameObject _gameObjectB;
+    [SerializeField] public GameObject _gameObjectC;
+    [SerializeField] public LevelLoader _levelLoader;
+
     private bool _objA = true; //Hammer
     private bool _objB = false; //Ivy
     private bool _objC = false; // Globe
-    //[SerializeField] public gameObject _gameObjectA; //Per applicargli il glow
-    //[SerializeField] public gameObject _gameObjectB;
-    //[SerializeField] public gameObject _gameObjectC;
+
+    private float _analog;
     private bool _inputGettable = true;
+    private bool _notChoosen = true;
     public Counter _myCounter;
     private Coroutine _coroutine;
     // Start is called before the first frame update
@@ -37,10 +41,7 @@ public class SpecialObjectsFirstChoice : MonoBehaviour
     private void OnTriggerStay(Collider other)
     {
         CheckAnalog();
-        if (CheckChoice())
-        {
-            ExitChoice();
-        }
+        CheckChoice();
     }
 
     //Metti una coroutine con uno Yield così se è sempre premuto l’analogico non cambaia 993772 milioni di volte
@@ -48,9 +49,11 @@ public class SpecialObjectsFirstChoice : MonoBehaviour
 
     private void CheckAnalog()
     {
-        _analog = Input.GetAxis("Horizontal"); //Si prende sia il joystick che A e Da
+        _analog = Input.GetAxisRaw("Horizontal"); //Si prende sia il joystick che A e D
+
         if (_analog != 0 && _inputGettable)
         {
+            Debug.Log(_analog);
             Debug.Log("Change choice");
             _inputGettable = false;
             MoveSelection();
@@ -128,12 +131,14 @@ public class SpecialObjectsFirstChoice : MonoBehaviour
         }//Glow di oggetto C}
     }
 
-    private bool CheckChoice()
+    private void CheckChoice()
     {
-        if (Input.GetButton("SpecialObject"))
+        if (Input.GetButton("SpecialObject") && _notChoosen)
         {
             //Play suono oggetto scelto
             //Scelta oggetto comunicata al counter
+            _notChoosen = false;
+
             if (_objA)
             { 
                 Debug.Log("Hammer choosen");
@@ -150,17 +155,27 @@ public class SpecialObjectsFirstChoice : MonoBehaviour
                 _myCounter.FirstChoosenObject(5); //Globe
             }
 
-            return true;
+            ExitChoice();
         }
 
-        return false;
+    }
+
+    public IEnumerator CoroutinePlayVideo()
+    {
+        //PLAY VIDEO
+        yield return new WaitForSeconds(0.3f); //Da cambiare valore
+        Debug.Log("After Yield Video");
+        StopCoroutine(_coroutine);
     }
 
     private void ExitChoice()
     {
+        Debug.Log("ExitChoice");
+        _coroutine = StartCoroutine(CoroutinePlayVideo());
         //Fa partire il video
         //coroutine con Yield oppure fine del fideo esplode (?)
-        _playerRigidBody.isKinematic = false;
+        //LevelLoaderMannaggia
+        _levelLoader.LoadNext();
     }
 
 }
