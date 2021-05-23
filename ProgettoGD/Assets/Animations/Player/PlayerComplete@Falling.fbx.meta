@@ -4,9 +4,59 @@ ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable:
   - first:
-      74: -203655887218126122
+      74: 2073693694548410006
     second: Falling
-  externalObjects: {}
+  - first:
+      74: 495427370130382429
+    second: Armature.001|Armature.001|mixamo.com|Layer0.001
+  - first:
+      74: -6734315199927337518
+    second: Armature.001|Armature|mixamo.com|Layer0
+  - first:
+      74: 5228067795773068300
+    second: Armature.001|Armature|mixamo.com|Layer0.001
+  - first:
+      74: 6925220218922271411
+    second: Armature.001|Armature|mixamo.com|Layer0.002
+  - first:
+      74: -203655887218126122
+    second: mixamo.com
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chiave
+    second: {fileID: 2100000, guid: 3be49fc6867ff46efa37984975921afb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Edera
+    second: {fileID: 2100000, guid: b63ff35cd8ffd43f89c8f36d8f42dd02, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Fionda
+    second: {fileID: 2100000, guid: b555b855955554ed185debc606cf03d5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ingranaggio
+    second: {fileID: 2100000, guid: 8df5d83c30e754dbf99c19e5b2a12128, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Martello e Scalpello
+    second: {fileID: 2100000, guid: 2a928c14fda784efb919c3988d40a8f9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Player
+    second: {fileID: 2100000, guid: 1052fd8f855d140cd9177026695cd485, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SferaArmillare
+    second: {fileID: 2100000, guid: e13a35ed884294b9f907791705b6e11c, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
@@ -36,10 +86,10 @@ ModelImporter:
     clipAnimations:
     - serializedVersion: 16
       name: Falling
-      takeName: mixamo.com
+      takeName: Armature.001|Armature.001|mixamo.com|Layer0
       internalID: 0
       firstFrame: 0
-      lastFrame: 270
+      lastFrame: 2
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -48,8 +98,153 @@ ModelImporter:
       hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 1
-      loopBlendOrientation: 1
-      loopBlendPositionY: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature.001|Armature.001|mixamo.com|Layer0.001
+      takeName: Armature.001|Armature.001|mixamo.com|Layer0.001
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 2
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature.001|Armature|mixamo.com|Layer0
+      takeName: Armature.001|Armature|mixamo.com|Layer0
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 2
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature.001|Armature|mixamo.com|Layer0.001
+      takeName: Armature.001|Armature|mixamo.com|Layer0.001
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 2
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature.001|Armature|mixamo.com|Layer0.002
+      takeName: Armature.001|Armature|mixamo.com|Layer0.002
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 2
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: mixamo.com
+      takeName: mixamo.com
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 356
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
       loopBlendPositionXZ: 0
       keepOriginalOrientation: 0
       keepOriginalPositionY: 1
@@ -273,6 +468,22 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
+    - boneName: Vita_2
+      humanName: LeftEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Vita_3
+      humanName: RightEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
     - boneName: mixamorig:LeftHandThumb1
       humanName: Left Thumb Proximal
       limit:
@@ -378,13 +589,13 @@ ModelImporter:
         length: 0
         modified: 0
     skeleton:
-    - name: Player(Clone)
+    - name: Emme(Clone)
       parentName: 
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Armature.001
-      parentName: Player(Clone)
+      parentName: Emme(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0.000000081460335, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
@@ -403,6 +614,11 @@ ModelImporter:
       position: {x: 0.014638425, y: -0.055579, z: 0.004380253}
       rotation: {x: -0.7022249, y: 4.995504e-12, z: 5.9751214e-12, w: 0.7119552}
       scale: {x: 99.99998, y: 100, z: 100.000015}
+    - name: Edera
+      parentName: mixamorig:Spine
+      position: {x: 0.07702175, y: 0.011458582, z: 0.005302885}
+      rotation: {x: -0.6689967, y: 0.21641338, z: -0.2134557, w: 0.6782664}
+      scale: {x: 99.99999, y: 100, z: 100.00001}
     - name: mixamorig:Spine1
       parentName: mixamorig:Spine
       position: {x: -3.6861134e-13, y: 0.07762417, z: -2.980232e-10}
@@ -433,6 +649,21 @@ ModelImporter:
       position: {x: 0.0000026709329, y: -1.035024, z: -0.0013632021}
       rotation: {x: -0.7071068, y: 5.6777087e-12, z: 5.2958536e-12, w: 0.7071067}
       scale: {x: 100.00001, y: 100.00001, z: 100.00004}
+    - name: Vita_1
+      parentName: mixamorig:Head
+      position: {x: 0.0000026709333, y: 0.62952715, z: -0.0013634718}
+      rotation: {x: -0.7071068, y: 5.6777087e-12, z: 5.2958536e-12, w: 0.7071067}
+      scale: {x: 100.00001, y: 100.00001, z: 100.00004}
+    - name: Vita_2
+      parentName: mixamorig:Head
+      position: {x: -0.17999734, y: 0.57952714, z: -0.0013634637}
+      rotation: {x: -0.6963643, y: -0.122787766, z: 0.12278781, w: 0.6963642}
+      scale: {x: 100.00001, y: 100.00001, z: 100.00002}
+    - name: Vita_3
+      parentName: mixamorig:Head
+      position: {x: 0.18000269, y: 0.57952714, z: -0.0013634637}
+      rotation: {x: -0.6963643, y: 0.122787766, z: -0.12278781, w: 0.6963642}
+      scale: {x: 100.00001, y: 100.00001, z: 100.00002}
     - name: mixamorig:HeadTop_End
       parentName: mixamorig:Head
       position: {x: -1.0562372e-13, y: 0.39954817, z: 0.028869417}
@@ -455,14 +686,24 @@ ModelImporter:
       scale: {x: 1, y: 0.9999998, z: 1.0000001}
     - name: Chiave.001
       parentName: mixamorig:LeftArm
-      position: {x: 0.0012734168, y: 0.10466192, z: 0.018014675}
+      position: {x: 0.00487884, y: 0.104661845, z: -0.00022209524}
       rotation: {x: -0.7037418, y: 0.70374256, z: -0.0688996, w: 0.068896785}
       scale: {x: 100.000015, y: 100.00001, z: 100.00001}
+    - name: Testa Martello.001
+      parentName: mixamorig:LeftArm
+      position: {x: -0.058768675, y: 0.2091667, z: -0.00016434431}
+      rotation: {x: 0.86650103, y: -0.48957336, z: 0.08483358, w: -0.047929257}
+      scale: {x: 3.1001208, y: 4.362966, z: 3.1410263}
     - name: mixamorig:LeftForeArm
       parentName: mixamorig:LeftArm
       position: {x: -3.174864e-10, y: 0.19175981, z: -0.00000003627574}
       rotation: {x: -0.00000005646106, y: -0.0014669467, z: 0.00000022007079, w: 0.9999989}
       scale: {x: 0.99999994, y: 0.9999998, z: 0.9999999}
+    - name: Scalpello.001
+      parentName: mixamorig:LeftForeArm
+      position: {x: 0.0013995003, y: 0.025699615, z: 0.002527794}
+      rotation: {x: -0.54568106, y: 0.44970453, z: 0.449702, w: 0.5456795}
+      scale: {x: -2.2438502, y: -2.2438505, z: -2.2438507}
     - name: mixamorig:LeftHand
       parentName: mixamorig:LeftForeArm
       position: {x: -0.0000000075508435, y: 0.16964708, z: 0.00000013031429}
@@ -649,23 +890,23 @@ ModelImporter:
       position: {x: -0, y: 0.05697287, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: Mezzatesta.002
-      parentName: Player(Clone)
+    - name: Mezzatesta
+      parentName: Emme(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
       scale: {x: 100, y: 100, z: 100}
-    - name: Fianco.002
-      parentName: Player(Clone)
+    - name: Fianco
+      parentName: Emme(Clone)
       position: {x: -0.0000000047683715, y: -0.00000001847744, z: 7.450279e-11}
       rotation: {x: -0.7071068, y: -0.0000000016858742, z: -1.3733189e-16, w: 0.7071067}
       scale: {x: 100, y: 100, z: 100}
-    - name: Braccio.002
-      parentName: Player(Clone)
+    - name: Braccio
+      parentName: Emme(Clone)
       position: {x: -0.000000017657875, y: -0.0000000047683715, z: -0.0000000011920934}
       rotation: {x: -0.7071068, y: -9.483043e-10, z: 8.4293705e-10, w: 0.7071067}
       scale: {x: 100, y: 100, z: 100}
-    - name: Corpo.002
-      parentName: Player(Clone)
+    - name: Corpo
+      parentName: Emme(Clone)
       position: {x: 0.0000000029802318, y: 3.7253565e-11, z: -0.0000000040605665}
       rotation: {x: -0.7071068, y: -0.000000001899901, z: -5.3671395e-10, w: 0.7071067}
       scale: {x: 100, y: 100, z: 100}
@@ -681,7 +922,7 @@ ModelImporter:
     hasTranslationDoF: 0
     hasExtraRoot: 1
     skeletonHasParents: 1
-  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: b44591d2795311243836130ed940cc21,
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: c92ccc44480f04166b693cf6b159c0c6,
     type: 3}
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 3
