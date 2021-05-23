@@ -96,6 +96,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myPrefab: {fileID: 4547905154663776396, guid: 25efeb1c1a95b4b6ca4642193f9c44b0,
     type: 3}
+  _myPrefabBrokenPieces: {fileID: 2959611732469767466, guid: eed82e42a4b0a4f40be54f723d9c6203,
+    type: 3}
   rb: {fileID: 5458129342240702105}
 --- !u!54 &5458129342240702105
 Rigidbody:

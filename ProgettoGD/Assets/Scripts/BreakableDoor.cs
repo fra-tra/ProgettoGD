@@ -9,7 +9,7 @@ public class BreakableDoor : MonoBehaviour
     [SerializeField] private LevelLoader _levelLoader;
     [SerializeField] private GameObject _brokenDoor;
     [SerializeField] private GameObject _doorToBreak;
-    [SerializeField] public GameObject _myPrefab; //DustCloud
+    [SerializeField] public GameObject _myPrefabDust; //DustCloud
 
     private bool _isOpened = false; //Pilota la possibilità della porta di funzionare come un trigger
 
@@ -28,8 +28,8 @@ public class BreakableDoor : MonoBehaviour
     public void hitHammer()
     {
         //Porta colpita dal martello
-        Instantiate(_myPrefab, this.transform.position , Quaternion.identity);
-        gameObject.SetActive(false);
+        Instantiate(_myPrefabDust, this.transform.position , Quaternion.identity);
+        _doorToBreak.SetActive(false);
         _brokenDoor.SetActive(true);//cambio del game object con la versione rotta
         _isOpened = true;
     }

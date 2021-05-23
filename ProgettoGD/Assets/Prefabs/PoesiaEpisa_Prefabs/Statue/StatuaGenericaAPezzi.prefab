@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2008910105497144435}
   - component: {fileID: 5756385180003560555}
   - component: {fileID: 2126439043930887569}
+  - component: {fileID: 5270765989690015116}
   m_Layer: 0
   m_Name: StatuaRicordoCorpo_cell.007
   m_TagString: Untagged
@@ -93,6 +94,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.26105464, y: 0.34823903, z: 0.782587}
   m_Center: {x: 0.9040324, y: 0.18231316, z: -0.36628667}
+--- !u!54 &5270765989690015116
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 458175960283919571}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &716507669098432844
 GameObject:
   m_ObjectHideFlags: 0
@@ -105,6 +122,7 @@ GameObject:
   - component: {fileID: 3966552327490530132}
   - component: {fileID: 5469102287286325351}
   - component: {fileID: 3511278063443582831}
+  - component: {fileID: 9016173564799908304}
   m_Layer: 0
   m_Name: StatuaRicordoCorpo_cell.021
   m_TagString: Untagged
@@ -186,6 +204,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.59420687, y: 0.52025676, z: 0.85045415}
   m_Center: {x: -1.0374742, y: 0.2655323, z: -0.9273008}
+--- !u!54 &9016173564799908304
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 716507669098432844}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &962834593598050903
 GameObject:
   m_ObjectHideFlags: 0
@@ -198,6 +232,7 @@ GameObject:
   - component: {fileID: 1405436268842019798}
   - component: {fileID: 2708712419772642083}
   - component: {fileID: 2581444640175826625}
+  - component: {fileID: 7179044351264488447}
   m_Layer: 0
   m_Name: StatuaRicordoCorpo_cell.003
   m_TagString: Untagged
@@ -277,8 +312,24 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.124845296, y: 0.39826965, z: 0.3969064}
-  m_Center: {x: -2.4582138, y: 0.20117399, z: 0.6805995}
+  m_Size: {x: 0.124845475, y: 0.32672238, z: 0.3969064}
+  m_Center: {x: -2.4582138, y: 0.23694763, z: 0.6805995}
+--- !u!54 &7179044351264488447
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 962834593598050903}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1246670274604031889
 GameObject:
   m_ObjectHideFlags: 0
@@ -291,6 +342,7 @@ GameObject:
   - component: {fileID: 6753340937207093189}
   - component: {fileID: 7434415470581911989}
   - component: {fileID: 2094456537889811076}
+  - component: {fileID: 3736353789924480561}
   m_Layer: 0
   m_Name: StatuaRicordoCorpo_cell.017
   m_TagString: Untagged
@@ -370,8 +422,24 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.42784014, y: 0.24438712, z: 0.5247841}
-  m_Center: {x: 0.004962459, y: 0.1330107, z: -0.8437114}
+  m_Size: {x: 0.42784014, y: 0.20707402, z: 0.5247841}
+  m_Center: {x: 0.004962459, y: 0.15166725, z: -0.8437114}
+--- !u!54 &3736353789924480561
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1246670274604031889}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1420107247055283394
 GameObject:
   m_ObjectHideFlags: 0
@@ -384,6 +452,7 @@ GameObject:
   - component: {fileID: 6117596194727735869}
   - component: {fileID: 5570615089316657507}
   - component: {fileID: 5762873436219036251}
+  - component: {fileID: 7809968968068967198}
   m_Layer: 0
   m_Name: StatuaRicordoCorpo_cell.010
   m_TagString: Untagged
@@ -465,6 +534,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.39644384, y: 0.18391126, z: 0.24441987}
   m_Center: {x: 2.7205598, y: 0.08843325, z: 0.67484546}
+--- !u!54 &7809968968068967198
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1420107247055283394}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &2959611732469767466
 GameObject:
   m_ObjectHideFlags: 0
@@ -517,6 +602,7 @@ GameObject:
   - component: {fileID: 2918141147705724012}
   - component: {fileID: 220394670055306240}
   - component: {fileID: 1032789517288023036}
+  - component: {fileID: 7443890819879324831}
   m_Layer: 0
   m_Name: StatuaRicordoCorpo_cell.002
   m_TagString: Untagged
@@ -596,8 +682,24 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.48015237, y: 0.70460236, z: 0.53209674}
-  m_Center: {x: 0.81614065, y: 0.35782486, z: -2.0528433}
+  m_Size: {x: 0.48015237, y: 0.68606913, z: 0.53209686}
+  m_Center: {x: 0.81614065, y: 0.36709148, z: -2.0528433}
+--- !u!54 &7443890819879324831
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4467103198327143073}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &6267957633523197357
 GameObject:
   m_ObjectHideFlags: 0
@@ -610,6 +712,7 @@ GameObject:
   - component: {fileID: 7094360440837714210}
   - component: {fileID: 2056350684742930426}
   - component: {fileID: 7026853012347498272}
+  - component: {fileID: 916192142644108986}
   m_Layer: 0
   m_Name: StatuaRicordoCorpo_cell.015
   m_TagString: Untagged
@@ -689,8 +792,24 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.5783441, y: 0.34815764, z: 1.3060697}
-  m_Center: {x: -1.6186659, y: 0.18022454, z: 0.34886318}
+  m_Size: {x: 0.4205165, y: 0.32166052, z: 1.161394}
+  m_Center: {x: -1.5397522, y: 0.1934731, z: 0.27652532}
+--- !u!54 &916192142644108986
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6267957633523197357}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &6300692525418123735
 GameObject:
   m_ObjectHideFlags: 0
@@ -703,6 +822,7 @@ GameObject:
   - component: {fileID: 5191833753001207384}
   - component: {fileID: 4821668104707485011}
   - component: {fileID: 6136640003479864770}
+  - component: {fileID: 5421587720235609662}
   m_Layer: 0
   m_Name: StatuaRicordoCorpo_cell.013
   m_TagString: Untagged
@@ -784,6 +904,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.7943431, y: 0.36741585, z: 0.22691572}
   m_Center: {x: -0.51581174, y: 0.18970925, z: -1.9049695}
+--- !u!54 &5421587720235609662
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6300692525418123735}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &6645445302261362889
 GameObject:
   m_ObjectHideFlags: 0
@@ -796,6 +932,7 @@ GameObject:
   - component: {fileID: 7210387256531456178}
   - component: {fileID: 2562069777947051014}
   - component: {fileID: 6781760239042781448}
+  - component: {fileID: 6192798697166774959}
   m_Layer: 0
   m_Name: StatuaRicordoCorpo_cell.021 (1)
   m_TagString: Untagged
@@ -875,8 +1012,24 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.5942068, y: 0.52025676, z: 0.85045415}
-  m_Center: {x: -1.037474, y: 0.26553237, z: -0.9273008}
+  m_Size: {x: 0.59420687, y: 0.35391703, z: 0.8504541}
+  m_Center: {x: -1.0374736, y: 0.18566772, z: -0.92730075}
+--- !u!54 &6192798697166774959
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6645445302261362889}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &8687371189317519184
 GameObject:
   m_ObjectHideFlags: 0
@@ -889,6 +1042,7 @@ GameObject:
   - component: {fileID: 7859881841928430208}
   - component: {fileID: 8434861467002484758}
   - component: {fileID: 7466849714926367775}
+  - component: {fileID: 3916902022238404432}
   m_Layer: 0
   m_Name: StatuaRicordoCorpo_cell.020
   m_TagString: Untagged
@@ -968,5 +1122,21 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.6482153, y: 0.45191437, z: 1.3337996}
-  m_Center: {x: 1.4934802, y: 0.2320574, z: -0.8454137}
+  m_Size: {x: 0.5303397, y: 0.35082224, z: 1.3337996}
+  m_Center: {x: 1.4869316, y: 0.22407643, z: -0.8454137}
+--- !u!54 &3916902022238404432
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8687371189317519184}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0

@@ -88,6 +88,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3204672043486886904}
+  - component: {fileID: 3655041799618748530}
+  - component: {fileID: 1045079039224506109}
+  - component: {fileID: 3345534691229985804}
   m_Layer: 0
   m_Name: PortaDiPietraDistrutta
   m_TagString: Untagged
@@ -112,6 +115,45 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &3655041799618748530
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2824487669400691010}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.8540974, y: 2.9389296, z: 0.9263468}
+  m_Center: {x: -0.028970242, y: 3.1132646, z: 0.25778723}
+--- !u!65 &1045079039224506109
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2824487669400691010}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.1013956, y: 1.6582131, z: 0.734848}
+  m_Center: {x: -0.89083576, y: 0.81521964, z: 0.1767683}
+--- !u!65 &3345534691229985804
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2824487669400691010}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0441923, y: 1.6628809, z: 0.7495785}
+  m_Center: {x: 0.9501295, y: 0.81755304, z: 0.16940308}
 --- !u!1 &3216048749185239963
 GameObject:
   m_ObjectHideFlags: 0

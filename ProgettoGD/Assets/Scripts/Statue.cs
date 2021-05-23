@@ -7,7 +7,8 @@ public class Statue : MonoBehaviour
     //DEVONO ESSERE RIGIDBODY PER PPOTER ESSERE SPINTE
 
     [SerializeField] public GameObject _myPrefab; //DustCloud
-    
+    [SerializeField] public GameObject _myPrefabBrokenPieces; 
+
     private Counter _myCounter;
     public Rigidbody rb;
 
@@ -55,7 +56,7 @@ public class Statue : MonoBehaviour
         Debug.Log("Destroy statue");
         //Istanzia un nuovo effetto particellare dello standard asset che si chiama Dust Cloud
         Instantiate(_myPrefab, this.transform.position , Quaternion.identity);
-
+        Instantiate(_myPrefabBrokenPieces, this.transform.position , Quaternion.identity);
         Destroy(gameObject);//cancella l'oggetto
     }
 }
