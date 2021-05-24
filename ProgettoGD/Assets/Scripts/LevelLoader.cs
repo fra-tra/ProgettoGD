@@ -2,11 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Video;
 
 public class LevelLoader : MonoBehaviour
 {
-    public Animator transition;
-    public float transitionTime=1f;
+    [SerializeField] public VideoPlayer _video;
+    [SerializeField] public GameObject _videoPanel;
+
+    public float transitionTime;
     private int _easy;
     private int _medium;
     private int _difficult;
@@ -97,9 +100,12 @@ public class LevelLoader : MonoBehaviour
 
     IEnumerator LoadLevel (int levelIndex)
     {
-        transition.SetTrigger("Start");
-        
-        yield return new WaitForSeconds(transitionTime);
+        _videoPanel.SetActive(true);
+        _video.playOnAwake = false;
+
+        _video.Play();
+        transitionTime = (float) _video.length;
+        yield return new WaitForSeconds(transitionTime + 0.1f);
 
         SceneManager.LoadScene(levelIndex);
 
