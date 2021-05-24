@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,13 +6,22 @@ public class SpecialObjectsFirstChoice : MonoBehaviour
 {
     [SerializeField] public Rigidbody _playerRigidBody; //RigidBody del player 
     [SerializeField] public GameObject _gameObjectA; //Per applicargli il glow
-    [SerializeField] public GameObject _gameObjectB;
+    [SerializeField] public GameObject _gameObjectB; 
     [SerializeField] public GameObject _gameObjectC;
     [SerializeField] public LevelLoader _levelLoader;
+    [SerializeField] Material _emissionMaterialA;
+    [SerializeField] Material _emissionMaterialB;
+    [SerializeField] Material _emissionMaterialC;
 
     private bool _objA = true; //Hammer
     private bool _objB = false; //Ivy
     private bool _objC = false; // Globe
+
+    private Material _matA;
+    private Material _matB; 
+    private Material _matC; 
+     
+    
 
     private float _analog;
     private bool _inputGettable = true;
@@ -24,6 +33,10 @@ public class SpecialObjectsFirstChoice : MonoBehaviour
     void Start()
     {
         _myCounter = (Counter)FindObjectOfType(typeof(Counter));//Si trova il counter
+        _matA = _gameObjectA.GetComponent<MeshRenderer> ().material; 
+        _matB = _gameObjectB.GetComponent<MeshRenderer> ().material; 
+        _matC = _gameObjectC.GetComponent<MeshRenderer> ().material; 
+
     }
 
     // Update is called once per frame
@@ -119,15 +132,18 @@ public class SpecialObjectsFirstChoice : MonoBehaviour
     {
         if(_objA)
         { 
-
+           _gameObjectA.GetComponent<MeshRenderer> ().material = _emissionMaterialA;
+           UnGlow();
         }//Glow di oggetto A}
         else if(_objB)
         { 
-
+           _gameObjectB.GetComponent<MeshRenderer> ().material = _emissionMaterialB;
+           UnGlow();
         }//Glow di oggetto B}
         else if(_objC)
         {
-
+           _gameObjectC.GetComponent<MeshRenderer> ().material = _emissionMaterialC;
+           UnGlow();
         }//Glow di oggetto C}
     }
 
@@ -177,5 +193,25 @@ public class SpecialObjectsFirstChoice : MonoBehaviour
         //LevelLoaderMannaggia
         _levelLoader.LoadNext();
     }
+
+    public void UnGlow()
+    {
+        if(_objA)
+        { 
+           _gameObjectB.GetComponent<MeshRenderer> ().material = _matB;
+           _gameObjectC.GetComponent<MeshRenderer> ().material = _matC;
+        }//Glow di oggetto A}
+        else if(_objB)
+        { 
+            _gameObjectA.GetComponent<MeshRenderer> ().material = _matA;
+            _gameObjectC.GetComponent<MeshRenderer> ().material = _matC;
+        }//Glow di oggetto B}
+        else if(_objC)
+        {
+            _gameObjectA.GetComponent<MeshRenderer> ().material = _matA;
+            _gameObjectB.GetComponent<MeshRenderer> ().material = _matB;
+        }//Glow di oggetto C}
+    }
+
 
 }

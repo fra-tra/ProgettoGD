@@ -9,11 +9,20 @@ public class SpecialObjectsSecondChoice : MonoBehaviour
     [SerializeField] public GameObject _gameObjectB; // sling
     [SerializeField] public GameObject _gameObjectC; // gear
     [SerializeField] public LevelLoader _levelLoader;
+    [SerializeField] Material _emissionMaterialA;
+    [SerializeField] Material _emissionMaterialB;
+    [SerializeField] Material _emissionMaterialC;
 
     private bool _objOne = true;
     private bool _objTwo = false;
     private GameObject _One;
     private GameObject _Two;
+    private Material _matOne;
+    private Material _matTwo;
+    private Material _emissionOne;
+    private Material _emissionTwo;
+
+
 
     private float _analog;
     private bool _inputGettable = true;
@@ -50,26 +59,44 @@ public class SpecialObjectsSecondChoice : MonoBehaviour
             if (_myCounter.GetFirstObject() == 1)
             {
                 _gameObjectA.SetActive(false);
+
                 _One = _gameObjectB; // sling
                 _numberOfObjOne = 4;
+                _matOne = _gameObjectB.GetComponent<MeshRenderer> ().material;
+                _emissionOne = _emissionMaterialB;
+
                 _Two = _gameObjectC; // gear
                 _numberOfObjTwo = 6;
+                _matTwo= _gameObjectC.GetComponent<MeshRenderer> ().material;
+                _emissionTwo = _emissionMaterialC;
             }
             else if (_myCounter.GetFirstObject() == 3)
             {
                 _gameObjectB.SetActive(false);
+
                 _One = _gameObjectA; // key
                 _numberOfObjOne = 2;
+                _matOne= _gameObjectA.GetComponent<MeshRenderer> ().material;
+                _emissionOne = _emissionMaterialA;
+
                 _Two = _gameObjectC; // gear
                 _numberOfObjTwo = 6;
+                _matTwo= _gameObjectC.GetComponent<MeshRenderer> ().material;
+                _emissionTwo = _emissionMaterialC;
             }
             else if (_myCounter.GetFirstObject() == 5)
             {
                 _gameObjectC.SetActive(false);
+
                 _One = _gameObjectA; // key
                 _numberOfObjOne = 2;
+                _matOne= _gameObjectA.GetComponent<MeshRenderer> ().material;
+                _emissionOne = _emissionMaterialA;
+
                 _Two = _gameObjectB; // sling
                 _numberOfObjTwo = 4;
+                _matOne= _gameObjectB.GetComponent<MeshRenderer> ().material;
+                _emissionTwo = _emissionMaterialB;
             }
             
         }
@@ -117,10 +144,14 @@ public class SpecialObjectsSecondChoice : MonoBehaviour
         if(_objOne)
         { 
             //Glow _One
+            _One.GetComponent<MeshRenderer> ().material = _emissionOne;
+            UnGlow();
         }
         else if(_objTwo)
         { 
             //Glow _Two
+            _Two.GetComponent<MeshRenderer> ().material = _emissionTwo;
+            UnGlow();
         }
     }
 
@@ -177,4 +208,22 @@ public class SpecialObjectsSecondChoice : MonoBehaviour
         _coroutine = StartCoroutine(CoroutinePlayVideo());//Fa partire il video di scelta oggetto e atterraggio nell'hub
         _levelLoader.LoadNext(); //Level loader
     }
+
+
+    private void UnGlow()
+    {
+        if(_objOne)
+        { 
+            //UnGlow _Two
+            _Two.GetComponent<MeshRenderer> ().material = _matTwo;
+        }
+        else if(_objTwo)
+        { 
+            //UnGlow _One
+            _One.GetComponent<MeshRenderer> ().material = _matOne;
+        }
+    }
+    
+
+    
 }
