@@ -18,6 +18,7 @@ public class LevelLoader : MonoBehaviour
     private bool _difficultLevel = false;
     private bool _dead = false;
     private bool _lastDeath = false;
+    private bool _PlayVideoOnLoad = true;
 
     public int CurrentLevel()
     {
@@ -51,13 +52,17 @@ public class LevelLoader : MonoBehaviour
         if(_dead)
         {
             _dead = false;
+            _PlayVideoOnLoad = false;
             return (SceneManager.GetActiveScene().buildIndex);
         }
         else if (_lastDeath)
         {
-             _lastDeath = false;
-             return 2; //Numero dell'hub iniziale perché sei morto del tutto
+            _lastDeath = false;
+            _PlayVideoOnLoad = false;
+            return 2; //Numero dell'hub iniziale perché sei morto del tutto
         }
+
+        _PlayVideoOnLoad = true;
 
         if(_easyLevel)
         {
@@ -100,12 +105,15 @@ public class LevelLoader : MonoBehaviour
 
     IEnumerator LoadLevel (int levelIndex)
     {
-        _videoPanel.SetActive(true);
-        _video.playOnAwake = false;
+        if (_PlayVideoOnLoad)
+        {
+            _videoPanel.SetActive(true);
+            _video.playOnAwake = false;
 
-        _video.Play();
-        transitionTime = (float) _video.length;
-        yield return new WaitForSeconds(transitionTime + 0.1f);
+            _video.Play();
+            transitionTime = (float) _video.length;
+            yield return new WaitForSeconds(transitionTime + 0.1f);
+        }
 
         SceneManager.LoadScene(levelIndex);
 

@@ -25,13 +25,15 @@ public class DeathManager : MonoBehaviour
 
     public void CheckDeadlySituation ()
     {
-        //Chiama isDead nel momento in cui il raycasting incontra un posto in cui si muore (Dove puoi risolverla col raycasting della camminata)
+        //Chiama isDead nel momento in cui si è in una DeadlySituation
+        //Lava, Oceano e Pietre già gestite
     }
 
 
     private void OnCollisionEnter(Collision collision)	//Se attaccato al controller si accerta che non ci siano collisioni con rocce, in caso decrementa la vita
     {
         //Dovrebbe essere chiamata automaticamente ad ogni collisione
+        Debug.Log("Colpito da oggetto");
         if (collision.gameObject.tag == "FallingRock")
         {
             Debug.Log("Colpito da una roccia aaaah ahia");
@@ -49,12 +51,10 @@ public class DeathManager : MonoBehaviour
         {
             _myCounter._takenMemoryZero = false;
            _levelLoader.LastDeath(); //è morto definitivamente, setta la variabile morto 
-            //CUT SCENE COME?
         }
         else
         {
             _levelLoader.Death(); //ha perso una vita, setta la variabile morto
-            //CUT SCENE COME?
         }
         _levelLoader.LoadNextLevel();
     }

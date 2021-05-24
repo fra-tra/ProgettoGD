@@ -65,7 +65,7 @@ public class RocksGenerator : MonoBehaviour
         {
             Debug.Log("Spawn");
             Object obj = Instantiate(_rockPrefab, GetRandomPosition(), Quaternion.identity);
-            Destroy(obj, 5);
+            Destroy(obj, 2);
         }
     }
 
