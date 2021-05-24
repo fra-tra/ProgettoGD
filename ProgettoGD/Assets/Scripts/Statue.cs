@@ -33,7 +33,6 @@ public class Statue : MonoBehaviour
     public void hitHammer()
     {
         //Statua colpita dal martello
-        //istanzia un particellare di polvere
         DestroyStatue();
     }
 

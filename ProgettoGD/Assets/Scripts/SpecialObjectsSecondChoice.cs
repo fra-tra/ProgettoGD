@@ -120,7 +120,7 @@ public class SpecialObjectsSecondChoice : MonoBehaviour
 
     private void CheckAnalog()
     {
-        _analog = Input.GetAxisRaw("Horizontal"); //Si prende sia il joystick che A e Da
+        _analog = Input.GetAxisRaw("ChooseAxis"); //Si prende sia il joystick che A e Da
         if (_analog != 0 && _inputGettable)
         {
             Debug.Log("Change choice");

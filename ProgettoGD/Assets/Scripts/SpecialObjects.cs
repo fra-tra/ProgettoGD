@@ -40,10 +40,10 @@ public class SpecialObjects : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        xPressed();
+        SpecialObjPressed();
     }
 
-    public void xPressed()
+    public void SpecialObjPressed()
     {
         if (Input.GetButton("SpecialObject") && _pressable)//se il tasto del joypad o della tastiera è stato premuto 
         {
@@ -128,6 +128,7 @@ public class SpecialObjects : MonoBehaviour
         _objectDetected = true;
         _objectTag = other.tag;
         _target = other;
+        Debug.Log(_objectTag);
     }
 
     private void OnTriggerExit(Collider other)
