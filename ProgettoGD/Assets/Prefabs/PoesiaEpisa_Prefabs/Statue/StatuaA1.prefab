@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4752220691564767293}
   m_Layer: 0
   m_Name: StatuaVer.A.002
-  m_TagString: Untagged
+  m_TagString: BreakableStatue
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 2077949099576880606}
   m_Layer: 0
   m_Name: Scudo.A.001
-  m_TagString: Untagged
+  m_TagString: BreakableStatue
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -172,6 +172,7 @@ GameObject:
   - component: {fileID: 2627016903460016120}
   - component: {fileID: 976814118221205674}
   - component: {fileID: 153092659668323518}
+  - component: {fileID: 2043446790813757512}
   m_Layer: 0
   m_Name: StatuaA1
   m_TagString: BreakableStatue
@@ -222,7 +223,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4672188013881407330}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 60
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -269,6 +270,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.6887181, y: 4.3050117, z: 1.2723722}
   m_Center: {x: -1.0700324, y: 3.8898482, z: -0.33073708}
+--- !u!65 &2043446790813757512
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4672188013881407330}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.932618, y: 3.639673, z: 2.3669763}
+  m_Center: {x: 0.047136396, y: 2.7810836, z: -0.3770962}
 --- !u!1 &8649679934061880218
 GameObject:
   m_ObjectHideFlags: 0
@@ -361,7 +375,7 @@ GameObject:
   - component: {fileID: 7299322952617693055}
   m_Layer: 0
   m_Name: Spada.A.001
-  m_TagString: Untagged
+  m_TagString: BreakableStatue
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

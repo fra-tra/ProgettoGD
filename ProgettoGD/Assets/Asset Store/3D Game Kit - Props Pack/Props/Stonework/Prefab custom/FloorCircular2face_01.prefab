@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8993528565373913990}
   m_Layer: 0
   m_Name: FloorCircular2face_01
-  m_TagString: Untagged
+  m_TagString: RockFloor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -70,6 +70,18 @@ PrefabInstance:
     - target: {fileID: 100000, guid: a54d6465548cc574099694cb8ca39133, type: 3}
       propertyPath: m_Name
       value: FloorCircular02
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a54d6465548cc574099694cb8ca39133, type: 3}
+      propertyPath: m_TagString
+      value: RockFloor
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: a54d6465548cc574099694cb8ca39133, type: 3}
+      propertyPath: m_TagString
+      value: RockFloor
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: a54d6465548cc574099694cb8ca39133, type: 3}
+      propertyPath: m_TagString
+      value: RockFloor
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a54d6465548cc574099694cb8ca39133, type: 3}
       propertyPath: m_RootOrder
@@ -139,6 +151,18 @@ PrefabInstance:
     - target: {fileID: 100000, guid: a54d6465548cc574099694cb8ca39133, type: 3}
       propertyPath: m_Name
       value: FloorCircular02 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a54d6465548cc574099694cb8ca39133, type: 3}
+      propertyPath: m_TagString
+      value: RockFloor
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: a54d6465548cc574099694cb8ca39133, type: 3}
+      propertyPath: m_TagString
+      value: RockFloor
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: a54d6465548cc574099694cb8ca39133, type: 3}
+      propertyPath: m_TagString
+      value: RockFloor
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a54d6465548cc574099694cb8ca39133, type: 3}
       propertyPath: m_RootOrder

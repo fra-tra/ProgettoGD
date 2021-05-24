@@ -20,7 +20,7 @@ public class SpecialObjects : MonoBehaviour
     public int _firstObject;
     public int _secondObject;
 
-    //[SerializeField] private LevelLoader _levelLoader;
+    [SerializeField] private LevelLoader _levelLoader;
     [SerializeField] private int _hammerDistance;
     [SerializeField] private int _keyDistance;
 
@@ -49,9 +49,8 @@ public class SpecialObjects : MonoBehaviour
         {
             Debug.Log("Got button");
             _pressable = false;
-            //Prova se il bottone funziona dal manager dei bottoni (??)
             //UseSpecialObject();
-            useHammer();
+            useKey();
         }
     }
 
@@ -146,9 +145,8 @@ public class SpecialObjects : MonoBehaviour
         {            
             if (_objectTag == "KeyDoor")
             {
-                
                 //Chiama il level loader che "Apre direttamente la porta e sticazzi è più veloce così senza fare la classe
-                //_levelLoader.LoadLevelFromThis(1); //C'è un 1 perché progressivamente l'interno 1 è un +1 dal livello in cui è
+                _levelLoader.LoadLevelFromThis(1); //C'è un 1 perché progressivamente l'interno 1 è un +1 dal livello in cui è
             }
         }
         _pressable = true;

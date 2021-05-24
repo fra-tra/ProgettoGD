@@ -8,11 +8,13 @@ public class MainMenu : MonoBehaviour
 {
     [SerializeField] GameObject _infoMenu;
     [SerializeField] GameObject _commandsMenu;
+    [SerializeField] GameObject _mainMenu;
     [SerializeField] public GameObject _selectedButtonControls;
     [SerializeField] public GameObject _selectedButtonInfo;
 
     public void PlayGame()
     {
+        _mainMenu.SetActive(false);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +1);
     }
 

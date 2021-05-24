@@ -20,6 +20,16 @@ public class LevelLoader : MonoBehaviour
     private bool _lastDeath = false;
     private bool _PlayVideoOnLoad = true;
 
+    private Counter _myCounter;
+
+     /*void Start()
+     {
+        _myCounter = (Counter)FindObjectOfType(typeof(Counter));
+        _easy = _myCounter.easy;
+        _medium = _myCounter.medium;
+        _difficult = _myCounter.difficult;
+     }*/
+
     public int CurrentLevel()
     {
         return SceneManager.GetActiveScene().buildIndex ;
@@ -27,24 +37,19 @@ public class LevelLoader : MonoBehaviour
 
     public void LoadNext() //Funziona da menu a caduta, da caduta a hub, da hubfinale a finale
     {
+        _PlayVideoOnLoad = true;
         StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex +1));
     }
     
     public void LoadLevelFromThis (int n) //Per andare e tornare dagli interni (che sono +1 e +2 dal loro livello di riferimento)
     {
+         _PlayVideoOnLoad = false;
         StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + n));
     }
 
     public void LoadNextLevel() //Funzione chiamata da Hub e dai livelli
     {
         StartCoroutine( LoadLevel(WhatNextLevel()) );
-    }
-
-    public void SetLevelOrder(int f, int m, int d)
-    {
-        _easy = f;
-        _medium = m;
-        _difficult = d;
     }
 
     public int WhatNextLevel()
@@ -59,7 +64,7 @@ public class LevelLoader : MonoBehaviour
         {
             _lastDeath = false;
             _PlayVideoOnLoad = false;
-            return 2; //Numero dell'hub iniziale perché sei morto del tutto
+            return 3; //Numero dell'hub iniziale perché sei morto del tutto
         }
 
         _PlayVideoOnLoad = true;
@@ -81,7 +86,7 @@ public class LevelLoader : MonoBehaviour
             _difficultLevel = false;
             return _difficult;
         }
-        else return 6; //Valore del level loader per l'hub finale (Questa sarà chiamata dal livello difficile)
+        else return 9; //Valore del level loader per l'hub finale (Questa sarà chiamata dal livello difficile)
     }
 
     public void Death()
@@ -93,15 +98,6 @@ public class LevelLoader : MonoBehaviour
     {
         _lastDeath = true;
     }
-
-    //DA MODIFICARE
-   /* public void ExitGame()
-    {
-        if (condizione di  uscita)
-        {
-            ToMenu();
-        }
-    } */
 
     IEnumerator LoadLevel (int levelIndex)
     {

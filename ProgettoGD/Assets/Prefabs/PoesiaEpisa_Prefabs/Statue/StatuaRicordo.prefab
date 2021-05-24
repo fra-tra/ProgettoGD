@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7221817566219652907}
   m_Layer: 0
   m_Name: SpadaStatuaRicordo
-  m_TagString: Untagged
+  m_TagString: BreakableStatue
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -171,7 +171,7 @@ GameObject:
   - component: {fileID: 4729079323997253628}
   m_Layer: 0
   m_Name: StatuaRicordoCorpo
-  m_TagString: Untagged
+  m_TagString: BreakableStatue
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -251,6 +251,10 @@ GameObject:
   - component: {fileID: 2835743886020548057}
   - component: {fileID: 3314556701715008383}
   - component: {fileID: 2834785009051147358}
+  - component: {fileID: 5435957374983293857}
+  - component: {fileID: 8518193183836020623}
+  - component: {fileID: 3242428175529356093}
+  - component: {fileID: 6617642788952649786}
   m_Layer: 0
   m_Name: StatuaRicordo
   m_TagString: BreakableStatue
@@ -300,7 +304,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9055519986078857812}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 150
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -319,8 +323,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.0720527, y: 3.291269, z: 1.5764205}
-  m_Center: {x: 0.03602624, y: 1.6067705, z: 0.02882098}
+  m_Size: {x: 0.82364815, y: 1.8771747, z: 0.5176236}
+  m_Center: {x: -0.040406086, y: 2.0716789, z: 0.029005507}
 --- !u!65 &3314556701715008383
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -332,8 +336,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.2305683, y: 2.1240194, z: 1.9222722}
-  m_Center: {x: 0.2882098, y: 3.5882118, z: 0.014410913}
+  m_Size: {x: 1.0418603, y: 2.1240194, z: 0.52843034}
+  m_Center: {x: 0.19385585, y: 3.5882118, z: 0.56617206}
 --- !u!65 &2834785009051147358
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -345,5 +349,57 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.5100437, y: 0.40916997, z: 0.56768566}
-  m_Center: {x: -0.7493452, y: 1.8085167, z: -0.38908306}
+  m_Size: {x: 0.5482598, y: 0.40916997, z: 0.56768566}
+  m_Center: {x: -0.7302371, y: 1.8085167, z: -0.38908306}
+--- !u!65 &5435957374983293857
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9055519986078857812}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.7021439, y: 3.8372636, z: 1.8730057}
+  m_Center: {x: -0.13999332, y: 2.7645154, z: 0.036375225}
+--- !u!65 &8518193183836020623
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9055519986078857812}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.4172042, y: 1.5590063, z: 0.8146417}
+  m_Center: {x: -0.2913979, y: 0.7618858, z: -0.2021102}
+--- !u!65 &3242428175529356093
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9055519986078857812}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.4056401, y: 1.4019862, z: 0.5645168}
+  m_Center: {x: 0.29717997, y: 0.6967757, z: 0.31823912}
+--- !u!65 &6617642788952649786
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9055519986078857812}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.697731, y: 0.9712163, z: 1.056231}
+  m_Center: {x: 0.03598464, y: 4.174193, z: -0.22962779}

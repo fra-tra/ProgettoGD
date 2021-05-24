@@ -26,7 +26,10 @@ public class ExitLevelDoor : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        ExitLevel();
+        if (other.tag == "Player")
+        {
+            ExitLevel();
+        }
     }
 
     public void ExitLevel() //(Chiamata on trigger enter)

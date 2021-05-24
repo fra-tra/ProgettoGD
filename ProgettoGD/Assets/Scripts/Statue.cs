@@ -20,7 +20,7 @@ public class Statue : MonoBehaviour
 
         //if (_myCounter.GetFirstObject() == 1) //Se si ha il martello
         //{
-            rb.isKinematic = true; //Le statue non sono più rompibili
+        //    rb.isKinematic = true; //Le statue non sono più rompibili
         //}
     }
 

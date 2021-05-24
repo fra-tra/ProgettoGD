@@ -32,6 +32,13 @@ public class Counter : MonoBehaviour
     //globe 5
     //gear 6
 
+    public int easy;
+    public int medium;
+    public int difficult;
+    // Epic poetry 4
+    // Comedy 7
+    // Astronomy 8
+
     void Awake()
     {
         DontDestroyOnLoad(this.gameObject);
@@ -60,11 +67,59 @@ public class Counter : MonoBehaviour
     public void FirstChoosenObject(int first)
     {
         _firstChoosenObject = first;
+        if(first == 1)//hammer
+        {
+            easy = 4; //epic
+        }
+        else if (first == 3) //ivy
+        {
+            easy = 7; //comm
+        }
+        else //globe
+        {
+            easy = 8; //Astro
+        }
     }
 
     public void SecondChoosenObject(int second)
     {
         _secondChoosenObject = second;
+        if(second == 2) //key
+        {
+            medium = 4; //epic
+            if (_firstChoosenObject == 3) //ivy
+            {
+                difficult = 8; //astro
+            }
+            else
+            {
+                difficult = 7; //comm
+            }
+        }
+        else if (second == 4) //Sling
+        {
+            medium = 7; //comm
+            if (_firstChoosenObject == 1) //hammer
+            {
+                difficult = 8; //astro
+            }
+            else //
+            {
+                difficult = 4; //epic
+            }
+        }
+        else //gear
+        {
+            medium = 8; //astro
+            if (_firstChoosenObject == 3)
+            {
+                difficult = 7;
+            }
+            else
+            {
+                difficult = 3;
+            }
+        }
     }
 
     public void UpdateCounter() //Gestisce il counter dei ricordi. Deve essere chiamato appena termini il livello definitivamente

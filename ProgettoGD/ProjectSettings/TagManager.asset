@@ -10,6 +10,7 @@ TagManager:
   - BreakableStatue
   - BreakableDoor
   - KeyDoor
+  - RockFloor
   layers:
   - Default
   - TransparentFX

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5801541574444298773}
   m_Layer: 0
   m_Name: FloorPanel2face_2x1
-  m_TagString: Untagged
+  m_TagString: RockFloor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -70,6 +70,18 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 22088e35eb9dd2a43a4d623a86bf8fb7, type: 3}
       propertyPath: m_Name
       value: FloorPanel2x1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 22088e35eb9dd2a43a4d623a86bf8fb7, type: 3}
+      propertyPath: m_TagString
+      value: RockFloor
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 22088e35eb9dd2a43a4d623a86bf8fb7, type: 3}
+      propertyPath: m_TagString
+      value: RockFloor
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 22088e35eb9dd2a43a4d623a86bf8fb7, type: 3}
+      propertyPath: m_TagString
+      value: RockFloor
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 22088e35eb9dd2a43a4d623a86bf8fb7, type: 3}
       propertyPath: m_RootOrder
@@ -143,6 +155,18 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 22088e35eb9dd2a43a4d623a86bf8fb7, type: 3}
       propertyPath: m_Name
       value: FloorPanel2x1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 22088e35eb9dd2a43a4d623a86bf8fb7, type: 3}
+      propertyPath: m_TagString
+      value: RockFloor
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 22088e35eb9dd2a43a4d623a86bf8fb7, type: 3}
+      propertyPath: m_TagString
+      value: RockFloor
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 22088e35eb9dd2a43a4d623a86bf8fb7, type: 3}
+      propertyPath: m_TagString
+      value: RockFloor
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 22088e35eb9dd2a43a4d623a86bf8fb7, type: 3}
       propertyPath: m_RootOrder
