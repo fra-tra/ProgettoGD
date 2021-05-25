@@ -15,6 +15,8 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 		[SerializeField] float m_MoveSpeedMultiplier = 1f;
 		[SerializeField] float m_AnimSpeedMultiplier = 1f;
 		[SerializeField] float m_GroundCheckDistance = 0.1f;
+
+		[SerializeField] SpecialObjects specialObj;
 	
 
 		Rigidbody m_Rigidbody;
@@ -29,8 +31,8 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 		Vector3 m_CapsuleCenter;
 		CapsuleCollider m_Capsule;
 		bool m_Crouching;
+		bool m_Objects = false;
 
-		 
 
 		void Start()
 		{
@@ -44,7 +46,8 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 			m_OrigGroundCheckDistance = m_GroundCheckDistance;
 		}
 
-		public void Move(Vector3 move, bool crouch, bool jump)
+
+		public void Move(Vector3 move, bool crouch, bool jump, bool UseObjects)
 		{
 
 			// convert the world relative moveInput vector into a local-relative
@@ -62,7 +65,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 			// control and velocity handling is different when grounded and airborne:
 			if (m_IsGrounded)
 			{
-				HandleGroundedMovement(crouch, jump);
+				HandleGroundedMovement(crouch, jump, UseObjects);
 			}
 			else
 			{
@@ -76,6 +79,16 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 			UpdateAnimator(move);
 		}
 
+
+		void HandleObjects(bool m_Objects)
+		{
+			bool _use = SpecialObjects.useObjects;
+			if(m_Objects && _use)
+			{
+				//specialObj.useKey();
+				specialObj.SpecialObjPressed();
+			}
+		}
 
 		void ScaleCapsuleForCrouching(bool crouch)
 		{
@@ -123,6 +136,8 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 			m_Animator.SetFloat("Turn", m_TurnAmount, 0.1f, Time.deltaTime);
 			m_Animator.SetBool("Crouch", m_Crouching);
 			m_Animator.SetBool("OnGround", m_IsGrounded);
+			m_Animator.SetBool("UseObjects", m_Objects);
+
 			if (!m_IsGrounded)
 			{
 				m_Animator.SetFloat("Jump", m_Rigidbody.velocity.y);
@@ -164,7 +179,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 		}
 
 
-		void HandleGroundedMovement(bool crouch, bool jump)
+		void HandleGroundedMovement(bool crouch, bool jump, bool obj)
 		{
 			// check whether conditions are right to allow a jump:
 			if (jump && !crouch && m_Animator.GetCurrentAnimatorStateInfo(0).IsName("Grounded"))
@@ -175,6 +190,11 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 				m_Animator.applyRootMotion = false;
 				m_GroundCheckDistance = 0.1f;
 			}
+			if(obj)
+				{
+					m_Objects = obj;
+					HandleObjects(m_Objects);
+				}
 		}
 
 		void ApplyExtraTurnRotation()

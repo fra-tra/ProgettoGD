@@ -31,10 +31,14 @@ public class SpecialObjects : MonoBehaviour
     private bool _objectDetected = false;
     private string _objectTag;
     private Collider _target;
+    Animator m_Animator;
+
+    public static bool useObjects = false;
    
     void Start()
     {
         _myCounter = (Counter)FindObjectOfType(typeof(Counter));
+        m_Animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -49,6 +53,7 @@ public class SpecialObjects : MonoBehaviour
         {
             Debug.Log("Got button");
             _pressable = false;
+            useObjects = true;
             //UseSpecialObject();
             useKey();
         }
@@ -101,6 +106,9 @@ public class SpecialObjects : MonoBehaviour
         Debug.Log("Special Object Hammer");
 
         //ANIMAZIONE CHIAMATA COMUNQUE
+        m_Animator.SetBool("useHammer", true);
+        m_Animator.SetBool("useHammer", false);
+        useObjects = false;
         
         if(_objectDetected)
         {
@@ -140,6 +148,10 @@ public class SpecialObjects : MonoBehaviour
     {
         Debug.Log("Special Object Key");
         //ANIMAZIONE CHIAMATA COMUNQUE
+
+        m_Animator.SetBool("useKey", true);
+        m_Animator.SetBool("useKey", false);
+        useObjects = false;
         
         if( _objectDetected)
         {            
