@@ -9,7 +9,8 @@ public class LevelLoader : MonoBehaviour
     [SerializeField] public VideoPlayer _video;
     [SerializeField] public GameObject _videoPanel;
 
-    public float transitionTime;
+    public float transitionTime = 1f;
+    public Animator transition;
     private int _easy;
     private int _medium;
     private int _difficult;
@@ -109,6 +110,11 @@ public class LevelLoader : MonoBehaviour
             _video.Play();
             transitionTime = (float) _video.length;
             yield return new WaitForSeconds(transitionTime + 0.1f);
+        }
+        else
+        {
+            transition.SetTrigger("Start");
+            yield return new WaitForSeconds(transitionTime);
         }
 
         SceneManager.LoadScene(levelIndex);
