@@ -329,7 +329,7 @@ namespace Invector.vCharacterController
             _capsuleCollider.material = (isGrounded && GroundAngle() <= slopeLimit + 1) ? frictionPhysics : slippyPhysics;
 
             if (isGrounded && input == Vector3.zero)
-                _capsuleCollider.material = slippyPhysics; //maxFrictionPhysics;
+                _capsuleCollider.material = frictionPhysics; //maxFrictionPhysics;
             else if (isGrounded && input != Vector3.zero)
                 _capsuleCollider.material = slippyPhysics; //frictionPhysics;
             else
