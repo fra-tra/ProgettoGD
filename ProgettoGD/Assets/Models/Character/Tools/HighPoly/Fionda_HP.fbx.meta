@@ -7,18 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Corda
-    second: {fileID: 2100000, guid: 01fcd61c83ae1694682136bd63e257e6, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Fascia
-    second: {fileID: 2100000, guid: c9ff5e13cddd1cd42bf6d66d87dae1ad, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Legno
-    second: {fileID: 2100000, guid: 5a8c9c84ace888647b5ca233de512ef6, type: 2}
+      name: Fionda
+    second: {fileID: 2100000, guid: 3a44ff67a0fb96f4a8481da3c038c738, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
