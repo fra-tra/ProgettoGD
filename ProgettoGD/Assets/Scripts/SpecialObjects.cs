@@ -106,8 +106,7 @@ public class SpecialObjects : MonoBehaviour
         Debug.Log("Special Object Hammer");
 
         //ANIMAZIONE CHIAMATA COMUNQUE
-        m_Animator.SetBool("useHammer", true);
-        m_Animator.SetBool("useHammer", false);
+        m_Animator.SetTrigger("useHammer");
         useObjects = false;
         
         if(_objectDetected)
@@ -149,8 +148,7 @@ public class SpecialObjects : MonoBehaviour
         Debug.Log("Special Object Key");
         //ANIMAZIONE CHIAMATA COMUNQUE
 
-        m_Animator.SetBool("useKey", true);
-        m_Animator.SetBool("useKey", false);
+        m_Animator.SetTrigger("useKey");
         useObjects = false;
         
         if( _objectDetected)

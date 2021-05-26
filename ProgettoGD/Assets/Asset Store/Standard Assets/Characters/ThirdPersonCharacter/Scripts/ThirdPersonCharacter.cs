@@ -136,7 +136,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 			m_Animator.SetFloat("Turn", m_TurnAmount, 0.1f, Time.deltaTime);
 			m_Animator.SetBool("Crouch", m_Crouching);
 			m_Animator.SetBool("OnGround", m_IsGrounded);
-			m_Animator.SetBool("UseObjects", m_Objects);
+
 
 			if (!m_IsGrounded)
 			{
