@@ -24,6 +24,7 @@ public class SpecialObjects : MonoBehaviour
     [SerializeField] private int _hammerDistance;
     [SerializeField] private int _keyDistance;
 
+    private Coroutine _coroutine;
     private Counter _myCounter;
     private Statue _targetStatue;
     private BreakableDoor _targetDoor;
@@ -54,18 +55,17 @@ public class SpecialObjects : MonoBehaviour
             Debug.Log("Got button");
             _pressable = false;
             useObjects = true;
-            //UseSpecialObject();
-            useKey();
+            _coroutine = StartCoroutine( UseSpecialObject());
         }
     }
 
-    /*public void UseSpecialObject()
+    public IEnumerator UseSpecialObject()
     {
-        _currentLevel = _levelLoader.CurrentLevel();
-        _firstObject = _myCounter.GetFirstObject();
-        _secondObject = _myCounter.GetSecondObject();
+        //_currentLevel = _levelLoader.CurrentLevel();
+        //_firstObject = _myCounter.GetFirstObject();
+        //_secondObject = _myCounter.GetSecondObject();
 
-        if( _currentLevel == 3) //Poesia Epica
+        /*if( _currentLevel == 3) //Poesia Epica
         {
             if(_firstObject == 1) //martello
             {
@@ -97,9 +97,16 @@ public class SpecialObjects : MonoBehaviour
             {
                 useSling();//Funzionamento di x
             }
-        }
+        }*/
+        useKey();
 
-    }*/
+        
+        yield return new WaitForSeconds(0.5f);
+        _pressable = true;
+        Debug.Log("Dopo Yield coroutine use object");
+        StopCoroutine(_coroutine);
+
+    }
 
     public void useHammer()
     {
@@ -126,7 +133,7 @@ public class SpecialObjects : MonoBehaviour
                 _targetStatue.hitHammer();
             }
         }
-         _pressable = true;
+
     }
 
     private void OnTriggerEnter(Collider other)
@@ -159,7 +166,7 @@ public class SpecialObjects : MonoBehaviour
                 _levelLoader.LoadLevelFromThis(1); //C'è un 1 perché progressivamente l'interno 1 è un +1 dal livello in cui è
             }
         }
-        _pressable = true;
+
 
     }
 
@@ -167,7 +174,7 @@ public class SpecialObjects : MonoBehaviour
     {
         Debug.Log("Special Object Globe");
         //ANIMAZIONE CHIAMATA COMUNQUE
-        _pressable = true;
+
 
     }
 
@@ -175,7 +182,7 @@ public class SpecialObjects : MonoBehaviour
     {
         Debug.Log("Special Object Gear");
         //ANIMAZIONE CHIAMATA COMUNQUE
-        _pressable = true;
+
 
     }
 
@@ -183,7 +190,7 @@ public class SpecialObjects : MonoBehaviour
     {
         Debug.Log("Special Object Ivy");
         //ANIMAZIONE CHIAMATA COMUNQUE
-        _pressable = true;
+
 
     }
 
@@ -191,7 +198,7 @@ public class SpecialObjects : MonoBehaviour
     {
         Debug.Log("Special Object Sling");
         //ANIMAZIONE CHIAMATA COMUNQUE
-        _pressable = true;
+
 
     }
 

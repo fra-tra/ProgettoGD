@@ -30,6 +30,7 @@ public class WoodenBoard : MonoBehaviour
             Debug.Log("Broken");
             rb.isKinematic = false; //Si rompe e cade nella lava
         }
+        StopCoroutine(_coroutine);
     }
 
     private void OnTriggerExit(Collider other)
