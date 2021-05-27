@@ -10,6 +10,7 @@ public class Statue : MonoBehaviour
     [SerializeField] public GameObject _myPrefabBrokenPieces; 
 
     private Counter _myCounter;
+    private Coroutine _coroutine;
     public Rigidbody rb;
 
     // Start is called before the first frame update
@@ -20,7 +21,8 @@ public class Statue : MonoBehaviour
 
         //if (_myCounter.GetFirstObject() == 1) //Se si ha il martello
         //{
-        //    rb.isKinematic = true; //Le statue non sono più rompibili
+           rb.isKinematic = true; //Le statue non sono più rompibili
+
         //}
     }
 
@@ -33,7 +35,7 @@ public class Statue : MonoBehaviour
     public void hitHammer()
     {
         //Statua colpita dal martello
-        DestroyStatue();
+        _coroutine = StartCoroutine(delayDestroyHammer());
     }
 
     public void hitFloor()
@@ -57,5 +59,15 @@ public class Statue : MonoBehaviour
         Instantiate(_myPrefab, this.transform.position , Quaternion.identity);
         Instantiate(_myPrefabBrokenPieces, this.transform.position , Quaternion.identity);
         Destroy(gameObject);//cancella l'oggetto
+    }
+
+     public IEnumerator delayDestroyHammer()
+    {
+         yield return new WaitForSeconds(1f);
+
+        Debug.Log("Dopo Yield coroutine use object");
+        DestroyStatue();
+        StopCoroutine(_coroutine);
+
     }
 }

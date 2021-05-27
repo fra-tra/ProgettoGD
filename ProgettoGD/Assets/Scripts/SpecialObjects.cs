@@ -98,7 +98,8 @@ public class SpecialObjects : MonoBehaviour
                 useSling();//Funzionamento di x
             }
         }*/
-        useKey();
+        //useKey();
+        useHammer();
 
         
         yield return new WaitForSeconds(0.5f);
@@ -173,6 +174,7 @@ public class SpecialObjects : MonoBehaviour
     public void useGlobe()
     {
         Debug.Log("Special Object Globe");
+         m_Animator.SetTrigger("useGlobe");
         //ANIMAZIONE CHIAMATA COMUNQUE
 
 
@@ -181,6 +183,7 @@ public class SpecialObjects : MonoBehaviour
     public void useGear()
     {
         Debug.Log("Special Object Gear");
+         m_Animator.SetTrigger("useGear");
         //ANIMAZIONE CHIAMATA COMUNQUE
 
 
