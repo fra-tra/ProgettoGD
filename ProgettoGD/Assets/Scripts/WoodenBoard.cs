@@ -23,7 +23,7 @@ public class WoodenBoard : MonoBehaviour
     //Coroutine
     public IEnumerator CoroutineCountdown()
     {
-        yield return new WaitForSeconds(Random.Range(2f , 4f));
+        yield return new WaitForSeconds(Random.Range(1.5f , 3f));
         Debug.Log("Waited");
         if (_playerStanding)
         {
