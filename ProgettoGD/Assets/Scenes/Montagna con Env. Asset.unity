@@ -11848,11 +11848,6 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1079066819}
-    - target: {fileID: 1656063500980240005, guid: 5ff7863489807ef4d8d58017da1c0292,
-        type: 3}
-      propertyPath: xMouseSensitivity
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 1656063500980240006, guid: 5ff7863489807ef4d8d58017da1c0292,
         type: 3}
       propertyPath: m_Name
