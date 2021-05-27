@@ -127,80 +127,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 854414945}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &28793820
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 495097214932585504, guid: a09beab150aa6bd4b8865d96d5bd9778,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 495097214932585504, guid: a09beab150aa6bd4b8865d96d5bd9778,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -8.254948
-      objectReference: {fileID: 0}
-    - target: {fileID: 495097214932585504, guid: a09beab150aa6bd4b8865d96d5bd9778,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 4.364113
-      objectReference: {fileID: 0}
-    - target: {fileID: 495097214932585504, guid: a09beab150aa6bd4b8865d96d5bd9778,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -26.713133
-      objectReference: {fileID: 0}
-    - target: {fileID: 495097214932585504, guid: a09beab150aa6bd4b8865d96d5bd9778,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: -0.8614137
-      objectReference: {fileID: 0}
-    - target: {fileID: 495097214932585504, guid: a09beab150aa6bd4b8865d96d5bd9778,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 495097214932585504, guid: a09beab150aa6bd4b8865d96d5bd9778,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.50790393
-      objectReference: {fileID: 0}
-    - target: {fileID: 495097214932585504, guid: a09beab150aa6bd4b8865d96d5bd9778,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 495097214932585504, guid: a09beab150aa6bd4b8865d96d5bd9778,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 495097214932585504, guid: a09beab150aa6bd4b8865d96d5bd9778,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -421.049
-      objectReference: {fileID: 0}
-    - target: {fileID: 495097214932585504, guid: a09beab150aa6bd4b8865d96d5bd9778,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 495097214932585530, guid: a09beab150aa6bd4b8865d96d5bd9778,
-        type: 3}
-      propertyPath: m_Name
-      value: vBasicController_Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 495097214932585530, guid: a09beab150aa6bd4b8865d96d5bd9778,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a09beab150aa6bd4b8865d96d5bd9778, type: 3}
 --- !u!1001 &57672502
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -307,7 +233,7 @@ PrefabInstance:
     - target: {fileID: 198083985805472251, guid: 78551990fef614798a322f4989afbda0,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 198083985805472251, guid: 78551990fef614798a322f4989afbda0,
         type: 3}
@@ -402,7 +328,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 216401836}
     m_Modifications:
     - target: {fileID: 1492331790315966, guid: 112d1c300f463414c8c495db4546b57d, type: 3}
       propertyPath: m_Name
@@ -434,7 +360,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4984538111233972, guid: 112d1c300f463414c8c495db4546b57d, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4984538111233972, guid: 112d1c300f463414c8c495db4546b57d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -535,10 +461,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 769105044}
     m_Modifications:
+    - target: {fileID: 2036480183541862990, guid: 027593c1922b84f91b20f5f241dfb4dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5986498716211515576, guid: 027593c1922b84f91b20f5f241dfb4dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8499300896890795772, guid: 027593c1922b84f91b20f5f241dfb4dc,
         type: 3}
       propertyPath: m_Name
       value: Tavola Ponte (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8499300896890795772, guid: 027593c1922b84f91b20f5f241dfb4dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9131124724790062150, guid: 027593c1922b84f91b20f5f241dfb4dc,
         type: 3}
@@ -792,6 +733,46 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 161506011}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &179722571 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4984538111233972, guid: 112d1c300f463414c8c495db4546b57d,
+    type: 3}
+  m_PrefabInstance: {fileID: 131807730}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &216401835
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 216401836}
+  m_Layer: 0
+  m_Name: Lava
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &216401836
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 216401835}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 179722571}
+  - {fileID: 926764376}
+  - {fileID: 1357988611}
+  - {fileID: 871700778}
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &245646846 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9131124724790062150, guid: 027593c1922b84f91b20f5f241dfb4dc,
@@ -1221,7 +1202,7 @@ Transform:
   - {fileID: 1920558674}
   - {fileID: 1389976902}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: -0.73200005, y: -83.93301, z: -2.723}
 --- !u!1001 &419032775
 PrefabInstance:
@@ -1396,7 +1377,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 216401836}
     m_Modifications:
     - target: {fileID: 166314, guid: 68f76254f82149543b636dc9fb14c18a, type: 3}
       propertyPath: m_Name
@@ -1412,7 +1393,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 418682, guid: 68f76254f82149543b636dc9fb14c18a, type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 418682, guid: 68f76254f82149543b636dc9fb14c18a, type: 3}
       propertyPath: m_LocalScale.x
@@ -1444,15 +1425,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 418682, guid: 68f76254f82149543b636dc9fb14c18a, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 418682, guid: 68f76254f82149543b636dc9fb14c18a, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 418682, guid: 68f76254f82149543b636dc9fb14c18a, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 418682, guid: 68f76254f82149543b636dc9fb14c18a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1556,10 +1537,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 769105044}
     m_Modifications:
+    - target: {fileID: 2036480183541862990, guid: 027593c1922b84f91b20f5f241dfb4dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5986498716211515576, guid: 027593c1922b84f91b20f5f241dfb4dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8499300896890795772, guid: 027593c1922b84f91b20f5f241dfb4dc,
         type: 3}
       propertyPath: m_Name
       value: Tavola Ponte (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8499300896890795772, guid: 027593c1922b84f91b20f5f241dfb4dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9131124724790062150, guid: 027593c1922b84f91b20f5f241dfb4dc,
         type: 3}
@@ -1820,10 +1816,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 769105044}
     m_Modifications:
+    - target: {fileID: 2036480183541862990, guid: 027593c1922b84f91b20f5f241dfb4dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5986498716211515576, guid: 027593c1922b84f91b20f5f241dfb4dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8499300896890795772, guid: 027593c1922b84f91b20f5f241dfb4dc,
         type: 3}
       propertyPath: m_Name
       value: Tavola Ponte (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8499300896890795772, guid: 027593c1922b84f91b20f5f241dfb4dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9131124724790062150, guid: 027593c1922b84f91b20f5f241dfb4dc,
         type: 3}
@@ -1904,10 +1915,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 769105044}
     m_Modifications:
+    - target: {fileID: 2036480183541862990, guid: 027593c1922b84f91b20f5f241dfb4dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5986498716211515576, guid: 027593c1922b84f91b20f5f241dfb4dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8499300896890795772, guid: 027593c1922b84f91b20f5f241dfb4dc,
         type: 3}
       propertyPath: m_Name
       value: Tavola Ponte (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8499300896890795772, guid: 027593c1922b84f91b20f5f241dfb4dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9131124724790062150, guid: 027593c1922b84f91b20f5f241dfb4dc,
         type: 3}
@@ -2081,12 +2107,12 @@ PrefabInstance:
     - target: {fileID: 1624631166013607613, guid: 5b6dc4d5944024eb9b97e2c2629f395c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1624631166013607613, guid: 5b6dc4d5944024eb9b97e2c2629f395c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.16
+      value: -6.99
       objectReference: {fileID: 0}
     - target: {fileID: 1624631166013607613, guid: 5b6dc4d5944024eb9b97e2c2629f395c,
         type: 3}
@@ -2096,12 +2122,12 @@ PrefabInstance:
     - target: {fileID: 1624631166013607613, guid: 5b6dc4d5944024eb9b97e2c2629f395c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -23.94
+      value: -27.21
       objectReference: {fileID: 0}
     - target: {fileID: 1624631166013607613, guid: 5b6dc4d5944024eb9b97e2c2629f395c,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.99849296
+      value: -0.79688823
       objectReference: {fileID: 0}
     - target: {fileID: 1624631166013607613, guid: 5b6dc4d5944024eb9b97e2c2629f395c,
         type: 3}
@@ -2111,7 +2137,7 @@ PrefabInstance:
     - target: {fileID: 1624631166013607613, guid: 5b6dc4d5944024eb9b97e2c2629f395c,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.054880626
+      value: 0.6041268
       objectReference: {fileID: 0}
     - target: {fileID: 1624631166013607613, guid: 5b6dc4d5944024eb9b97e2c2629f395c,
         type: 3}
@@ -2126,7 +2152,7 @@ PrefabInstance:
     - target: {fileID: 1624631166013607613, guid: 5b6dc4d5944024eb9b97e2c2629f395c,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -353.708
+      value: -434.332
       objectReference: {fileID: 0}
     - target: {fileID: 1624631166013607613, guid: 5b6dc4d5944024eb9b97e2c2629f395c,
         type: 3}
@@ -2349,10 +2375,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 769105044}
     m_Modifications:
+    - target: {fileID: 2036480183541862990, guid: 027593c1922b84f91b20f5f241dfb4dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5986498716211515576, guid: 027593c1922b84f91b20f5f241dfb4dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8499300896890795772, guid: 027593c1922b84f91b20f5f241dfb4dc,
         type: 3}
       propertyPath: m_Name
       value: Tavola Ponte (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8499300896890795772, guid: 027593c1922b84f91b20f5f241dfb4dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9131124724790062150, guid: 027593c1922b84f91b20f5f241dfb4dc,
         type: 3}
@@ -2532,7 +2573,7 @@ PrefabInstance:
     - target: {fileID: 1656063500980240002, guid: 5ff7863489807ef4d8d58017da1c0292,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1656063500980240002, guid: 5ff7863489807ef4d8d58017da1c0292,
         type: 3}
@@ -2587,7 +2628,7 @@ PrefabInstance:
     - target: {fileID: 1656063500980240003, guid: 5ff7863489807ef4d8d58017da1c0292,
         type: 3}
       propertyPath: near clip plane
-      value: 1
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 1656063500980240005, guid: 5ff7863489807ef4d8d58017da1c0292,
         type: 3}
@@ -2612,7 +2653,7 @@ PrefabInstance:
     - target: {fileID: 1656063500980240005, guid: 5ff7863489807ef4d8d58017da1c0292,
         type: 3}
       propertyPath: defaultDistance
-      value: 2.5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1656063500980240005, guid: 5ff7863489807ef4d8d58017da1c0292,
         type: 3}
@@ -2740,10 +2781,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 769105044}
     m_Modifications:
+    - target: {fileID: 2036480183541862990, guid: 027593c1922b84f91b20f5f241dfb4dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5986498716211515576, guid: 027593c1922b84f91b20f5f241dfb4dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8499300896890795772, guid: 027593c1922b84f91b20f5f241dfb4dc,
         type: 3}
       propertyPath: m_Name
       value: Tavola Ponte (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8499300896890795772, guid: 027593c1922b84f91b20f5f241dfb4dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9131124724790062150, guid: 027593c1922b84f91b20f5f241dfb4dc,
         type: 3}
@@ -2828,7 +2884,7 @@ GameObject:
   - component: {fileID: 769105044}
   m_Layer: 0
   m_Name: Primo ponte_interno
-  m_TagString: Untagged
+  m_TagString: Ponte
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2868,7 +2924,7 @@ Transform:
   - {fileID: 1135212532}
   - {fileID: 1170374671}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &780397549
 PrefabInstance:
@@ -2967,10 +3023,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 769105044}
     m_Modifications:
+    - target: {fileID: 2036480183541862990, guid: 027593c1922b84f91b20f5f241dfb4dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5986498716211515576, guid: 027593c1922b84f91b20f5f241dfb4dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8499300896890795772, guid: 027593c1922b84f91b20f5f241dfb4dc,
         type: 3}
       propertyPath: m_Name
       value: Tavola Ponte (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8499300896890795772, guid: 027593c1922b84f91b20f5f241dfb4dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9131124724790062150, guid: 027593c1922b84f91b20f5f241dfb4dc,
         type: 3}
@@ -3221,12 +3292,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 871700774}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 12.321, y: 12.321, z: 12.321}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_Father: {fileID: 216401836}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &872975555
 PrefabInstance:
@@ -3330,85 +3401,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 428882955}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &926764376 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 418682, guid: 68f76254f82149543b636dc9fb14c18a,
+    type: 3}
+  m_PrefabInstance: {fileID: 431488228}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &953521048 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9131124724790062150, guid: 027593c1922b84f91b20f5f241dfb4dc,
     type: 3}
   m_PrefabInstance: {fileID: 1851183235}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &955991138
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 149790, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
-      propertyPath: m_Name
-      value: ThirdPersonController
-      objectReference: {fileID: 0}
-    - target: {fileID: 149790, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 149790, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 408730, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 408730, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -15.18
-      objectReference: {fileID: 0}
-    - target: {fileID: 408730, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 4.344265
-      objectReference: {fileID: 0}
-    - target: {fileID: 408730, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -24.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 408730, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 408730, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 408730, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 408730, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 408730, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 408730, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 408730, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9579096, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
-      propertyPath: m_Avatar
-      value: 
-      objectReference: {fileID: 9000000, guid: b44591d2795311243836130ed940cc21, type: 3}
-    - target: {fileID: 9579096, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 16b2be5b678d943aaa755f798bfdf0dc, type: 2}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
 --- !u!1001 &956199333
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3691,107 +3695,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1798563135}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1038291393
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 100004, guid: 49a0e923d39ec3c4c8bb97699e2f2903, type: 3}
-      propertyPath: m_Name
-      value: FreeLookCameraRig
-      objectReference: {fileID: 0}
-    - target: {fileID: 100004, guid: 49a0e923d39ec3c4c8bb97699e2f2903, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 100004, guid: 49a0e923d39ec3c4c8bb97699e2f2903, type: 3}
-      propertyPath: m_TagString
-      value: MainCamera
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 49a0e923d39ec3c4c8bb97699e2f2903, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -1.4099998
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 49a0e923d39ec3c4c8bb97699e2f2903, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.32999992
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 49a0e923d39ec3c4c8bb97699e2f2903, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -1.210001
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 49a0e923d39ec3c4c8bb97699e2f2903, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.99322164
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 49a0e923d39ec3c4c8bb97699e2f2903, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.11623569
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 49a0e923d39ec3c4c8bb97699e2f2903, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.00000006289577
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 49a0e923d39ec3c4c8bb97699e2f2903, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.000000007360625
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 49a0e923d39ec3c4c8bb97699e2f2903, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 13.35
-      objectReference: {fileID: 0}
-    - target: {fileID: 400004, guid: 49a0e923d39ec3c4c8bb97699e2f2903, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 400004, guid: 49a0e923d39ec3c4c8bb97699e2f2903, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -5.092813
-      objectReference: {fileID: 0}
-    - target: {fileID: 400004, guid: 49a0e923d39ec3c4c8bb97699e2f2903, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 4.4578953
-      objectReference: {fileID: 0}
-    - target: {fileID: 400004, guid: 49a0e923d39ec3c4c8bb97699e2f2903, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -29.553808
-      objectReference: {fileID: 0}
-    - target: {fileID: 400004, guid: 49a0e923d39ec3c4c8bb97699e2f2903, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 400004, guid: 49a0e923d39ec3c4c8bb97699e2f2903, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400004, guid: 49a0e923d39ec3c4c8bb97699e2f2903, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400004, guid: 49a0e923d39ec3c4c8bb97699e2f2903, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400004, guid: 49a0e923d39ec3c4c8bb97699e2f2903, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400004, guid: 49a0e923d39ec3c4c8bb97699e2f2903, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400004, guid: 49a0e923d39ec3c4c8bb97699e2f2903, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 49a0e923d39ec3c4c8bb97699e2f2903, type: 3}
-      propertyPath: m_Target
-      value: 
-      objectReference: {fileID: 2010554104}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 49a0e923d39ec3c4c8bb97699e2f2903, type: 3}
 --- !u!1001 &1046613098
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3799,10 +3702,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 769105044}
     m_Modifications:
+    - target: {fileID: 2036480183541862990, guid: 027593c1922b84f91b20f5f241dfb4dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5986498716211515576, guid: 027593c1922b84f91b20f5f241dfb4dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8499300896890795772, guid: 027593c1922b84f91b20f5f241dfb4dc,
         type: 3}
       propertyPath: m_Name
       value: Tavola Ponte (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8499300896890795772, guid: 027593c1922b84f91b20f5f241dfb4dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9131124724790062150, guid: 027593c1922b84f91b20f5f241dfb4dc,
         type: 3}
@@ -4063,10 +3981,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 769105044}
     m_Modifications:
+    - target: {fileID: 1331956979495697435, guid: 9f7ec4f58c6ef4a7896fadf152927aab,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5037424658220722910, guid: 9f7ec4f58c6ef4a7896fadf152927aab,
         type: 3}
       propertyPath: m_Name
       value: Tavola Ponte Rotta (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5037424658220722910, guid: 9f7ec4f58c6ef4a7896fadf152927aab,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5666469122657644644, guid: 9f7ec4f58c6ef4a7896fadf152927aab,
         type: 3}
@@ -4339,10 +4267,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 769105044}
     m_Modifications:
+    - target: {fileID: 2036480183541862990, guid: 027593c1922b84f91b20f5f241dfb4dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5986498716211515576, guid: 027593c1922b84f91b20f5f241dfb4dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8499300896890795772, guid: 027593c1922b84f91b20f5f241dfb4dc,
         type: 3}
       propertyPath: m_Name
       value: Tavola Ponte (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8499300896890795772, guid: 027593c1922b84f91b20f5f241dfb4dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9131124724790062150, guid: 027593c1922b84f91b20f5f241dfb4dc,
         type: 3}
@@ -4429,10 +4372,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 769105044}
     m_Modifications:
+    - target: {fileID: 2036480183541862990, guid: 027593c1922b84f91b20f5f241dfb4dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5986498716211515576, guid: 027593c1922b84f91b20f5f241dfb4dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8499300896890795772, guid: 027593c1922b84f91b20f5f241dfb4dc,
         type: 3}
       propertyPath: m_Name
       value: Tavola Ponte (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8499300896890795772, guid: 027593c1922b84f91b20f5f241dfb4dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9131124724790062150, guid: 027593c1922b84f91b20f5f241dfb4dc,
         type: 3}
@@ -4633,7 +4591,7 @@ Transform:
   - {fileID: 1950541673}
   - {fileID: 613177198}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1194104821 stripped
 Transform:
@@ -4654,10 +4612,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 769105044}
     m_Modifications:
+    - target: {fileID: 2036480183541862990, guid: 027593c1922b84f91b20f5f241dfb4dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5986498716211515576, guid: 027593c1922b84f91b20f5f241dfb4dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8499300896890795772, guid: 027593c1922b84f91b20f5f241dfb4dc,
         type: 3}
       propertyPath: m_Name
       value: Tavola Ponte (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8499300896890795772, guid: 027593c1922b84f91b20f5f241dfb4dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9131124724790062150, guid: 027593c1922b84f91b20f5f241dfb4dc,
         type: 3}
@@ -4918,10 +4891,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 769105044}
     m_Modifications:
+    - target: {fileID: 2036480183541862990, guid: 027593c1922b84f91b20f5f241dfb4dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5986498716211515576, guid: 027593c1922b84f91b20f5f241dfb4dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8499300896890795772, guid: 027593c1922b84f91b20f5f241dfb4dc,
         type: 3}
       propertyPath: m_Name
       value: Tavola Ponte (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8499300896890795772, guid: 027593c1922b84f91b20f5f241dfb4dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9131124724790062150, guid: 027593c1922b84f91b20f5f241dfb4dc,
         type: 3}
@@ -5108,7 +5096,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
+  m_Intensity: 0.3
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -5169,8 +5157,14 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!4 &1357988611 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 409370, guid: e0b8bb2fdaecc9747bcf077933496391,
+    type: 3}
+  m_PrefabInstance: {fileID: 1471383952}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1363274213
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5268,10 +5262,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 769105044}
     m_Modifications:
+    - target: {fileID: 2036480183541862990, guid: 027593c1922b84f91b20f5f241dfb4dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5986498716211515576, guid: 027593c1922b84f91b20f5f241dfb4dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8499300896890795772, guid: 027593c1922b84f91b20f5f241dfb4dc,
         type: 3}
       propertyPath: m_Name
       value: Tavola Ponte (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8499300896890795772, guid: 027593c1922b84f91b20f5f241dfb4dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9131124724790062150, guid: 027593c1922b84f91b20f5f241dfb4dc,
         type: 3}
@@ -5626,7 +5635,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 216401836}
     m_Modifications:
     - target: {fileID: 158240, guid: e0b8bb2fdaecc9747bcf077933496391, type: 3}
       propertyPath: m_Name
@@ -5634,7 +5643,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 409370, guid: e0b8bb2fdaecc9747bcf077933496391, type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 409370, guid: e0b8bb2fdaecc9747bcf077933496391, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5782,7 +5791,7 @@ PrefabInstance:
     - target: {fileID: 6802929807813654834, guid: fb28ef058a3c640e0b754e6b62c39d57,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6802929807813654834, guid: fb28ef058a3c640e0b754e6b62c39d57,
         type: 3}
@@ -6108,10 +6117,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 769105044}
     m_Modifications:
+    - target: {fileID: 2036480183541862990, guid: 027593c1922b84f91b20f5f241dfb4dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5986498716211515576, guid: 027593c1922b84f91b20f5f241dfb4dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8499300896890795772, guid: 027593c1922b84f91b20f5f241dfb4dc,
         type: 3}
       propertyPath: m_Name
       value: Tavola Ponte (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8499300896890795772, guid: 027593c1922b84f91b20f5f241dfb4dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9131124724790062150, guid: 027593c1922b84f91b20f5f241dfb4dc,
         type: 3}
@@ -6396,7 +6420,7 @@ Transform:
   - {fileID: 480859081}
   - {fileID: 1426006271}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1798563135
 PrefabInstance:
@@ -6405,10 +6429,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 769105044}
     m_Modifications:
+    - target: {fileID: 2036480183541862990, guid: 027593c1922b84f91b20f5f241dfb4dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5986498716211515576, guid: 027593c1922b84f91b20f5f241dfb4dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8499300896890795772, guid: 027593c1922b84f91b20f5f241dfb4dc,
         type: 3}
       propertyPath: m_Name
       value: Tavola Ponte (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8499300896890795772, guid: 027593c1922b84f91b20f5f241dfb4dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9131124724790062150, guid: 027593c1922b84f91b20f5f241dfb4dc,
         type: 3}
@@ -6579,10 +6618,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 769105044}
     m_Modifications:
+    - target: {fileID: 2036480183541862990, guid: 027593c1922b84f91b20f5f241dfb4dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5986498716211515576, guid: 027593c1922b84f91b20f5f241dfb4dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8499300896890795772, guid: 027593c1922b84f91b20f5f241dfb4dc,
         type: 3}
       propertyPath: m_Name
       value: Tavola Ponte (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8499300896890795772, guid: 027593c1922b84f91b20f5f241dfb4dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9131124724790062150, guid: 027593c1922b84f91b20f5f241dfb4dc,
         type: 3}
@@ -6669,10 +6723,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 769105044}
     m_Modifications:
+    - target: {fileID: 2036480183541862990, guid: 027593c1922b84f91b20f5f241dfb4dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5986498716211515576, guid: 027593c1922b84f91b20f5f241dfb4dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8499300896890795772, guid: 027593c1922b84f91b20f5f241dfb4dc,
         type: 3}
       propertyPath: m_Name
       value: Tavola Ponte (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8499300896890795772, guid: 027593c1922b84f91b20f5f241dfb4dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9131124724790062150, guid: 027593c1922b84f91b20f5f241dfb4dc,
         type: 3}
@@ -7125,10 +7194,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 769105044}
     m_Modifications:
+    - target: {fileID: 2036480183541862990, guid: 027593c1922b84f91b20f5f241dfb4dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5986498716211515576, guid: 027593c1922b84f91b20f5f241dfb4dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8499300896890795772, guid: 027593c1922b84f91b20f5f241dfb4dc,
         type: 3}
       propertyPath: m_Name
       value: Tavola Ponte (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8499300896890795772, guid: 027593c1922b84f91b20f5f241dfb4dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9131124724790062150, guid: 027593c1922b84f91b20f5f241dfb4dc,
         type: 3}
@@ -7214,12 +7298,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 57672502}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &2010554104 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 408730, guid: 7737647c22c1fc64a88d5cd030c352ce,
-    type: 3}
-  m_PrefabInstance: {fileID: 955991138}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2014064072
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7227,10 +7305,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 769105044}
     m_Modifications:
+    - target: {fileID: 2036480183541862990, guid: 027593c1922b84f91b20f5f241dfb4dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5986498716211515576, guid: 027593c1922b84f91b20f5f241dfb4dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8499300896890795772, guid: 027593c1922b84f91b20f5f241dfb4dc,
         type: 3}
       propertyPath: m_Name
       value: Tavola Ponte (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8499300896890795772, guid: 027593c1922b84f91b20f5f241dfb4dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9131124724790062150, guid: 027593c1922b84f91b20f5f241dfb4dc,
         type: 3}
@@ -7311,10 +7404,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 769105044}
     m_Modifications:
+    - target: {fileID: 2036480183541862990, guid: 027593c1922b84f91b20f5f241dfb4dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5986498716211515576, guid: 027593c1922b84f91b20f5f241dfb4dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8499300896890795772, guid: 027593c1922b84f91b20f5f241dfb4dc,
         type: 3}
       propertyPath: m_Name
       value: Tavola Ponte (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8499300896890795772, guid: 027593c1922b84f91b20f5f241dfb4dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9131124724790062150, guid: 027593c1922b84f91b20f5f241dfb4dc,
         type: 3}
@@ -7755,10 +7863,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 769105044}
     m_Modifications:
+    - target: {fileID: 2036480183541862990, guid: 027593c1922b84f91b20f5f241dfb4dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5986498716211515576, guid: 027593c1922b84f91b20f5f241dfb4dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8499300896890795772, guid: 027593c1922b84f91b20f5f241dfb4dc,
         type: 3}
       propertyPath: m_Name
       value: Tavola Ponte
+      objectReference: {fileID: 0}
+    - target: {fileID: 8499300896890795772, guid: 027593c1922b84f91b20f5f241dfb4dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9131124724790062150, guid: 027593c1922b84f91b20f5f241dfb4dc,
         type: 3}
@@ -8027,7 +8150,7 @@ PrefabInstance:
     - target: {fileID: 7312792117281781540, guid: 1ae6b2962dbd840d2963122c842abb8e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7312792117281781540, guid: 1ae6b2962dbd840d2963122c842abb8e,
         type: 3}
@@ -8161,7 +8284,7 @@ PrefabInstance:
     - target: {fileID: 7070472941206406080, guid: 97fb1c6b9d7f84fd2a438981d510fb97,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7070472941206406080, guid: 97fb1c6b9d7f84fd2a438981d510fb97,
         type: 3}
@@ -8227,10 +8350,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 769105044}
     m_Modifications:
+    - target: {fileID: 1331956979495697435, guid: 9f7ec4f58c6ef4a7896fadf152927aab,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5037424658220722910, guid: 9f7ec4f58c6ef4a7896fadf152927aab,
         type: 3}
       propertyPath: m_Name
       value: Tavola Ponte Rotta
+      objectReference: {fileID: 0}
+    - target: {fileID: 5037424658220722910, guid: 9f7ec4f58c6ef4a7896fadf152927aab,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5666469122657644644, guid: 9f7ec4f58c6ef4a7896fadf152927aab,
         type: 3}

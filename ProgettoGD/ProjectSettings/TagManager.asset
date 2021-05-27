@@ -11,6 +11,7 @@ TagManager:
   - BreakableDoor
   - KeyDoor
   - RockFloor
+  - Ponte
   layers:
   - Default
   - TransparentFX
