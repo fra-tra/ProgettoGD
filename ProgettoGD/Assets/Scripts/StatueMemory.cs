@@ -2,16 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Statue : MonoBehaviour
+public class StatueMemory : MonoBehaviour
 {
-    //DEVONO ESSERE RIGIDBODY PER PPOTER ESSERE SPINTE
-
     [SerializeField] public GameObject _myPrefab; //DustCloud
     [SerializeField] public GameObject _myPrefabBrokenPieces;
+    [SerializeField] public GameObject _statue;
 
     private Counter _myCounter;
     private Coroutine _coroutine;
-    public Rigidbody rb;
+    private Rigidbody rb;
+    private bool _destroyable = true;
 
     // Start is called before the first frame update
     void Start()
@@ -29,7 +29,7 @@ public class Statue : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void hitHammer()
@@ -46,8 +46,9 @@ public class Statue : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "RockFloor") //Controlla che abbia colpito il terreno
+        if (other.tag == "RockFloor" && _destroyable) //Controlla che abbia colpito il terreno
         {
+            _destroyable = false;
             hitFloor();
         }
     }
@@ -58,7 +59,7 @@ public class Statue : MonoBehaviour
         //Istanzia un nuovo effetto particellare dello standard asset che si chiama Dust Cloud
         Instantiate(_myPrefab, this.transform.position , Quaternion.identity);
         Instantiate(_myPrefabBrokenPieces, this.transform.position , Quaternion.identity);
-        Destroy(gameObject);//cancella l'oggetto
+        Destroy(_statue); 
     }
 
      public IEnumerator delayDestroyHammer()
