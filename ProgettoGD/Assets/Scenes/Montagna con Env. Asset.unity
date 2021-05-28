@@ -5021,6 +5021,7 @@ GameObject:
   - component: {fileID: 1048457179}
   - component: {fileID: 1048457178}
   - component: {fileID: 1048457183}
+  - component: {fileID: 1048457184}
   m_Layer: 0
   m_Name: Ocean2
   m_TagString: Untagged
@@ -5074,7 +5075,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c7577ab290a6e45b1a3b50b99b49a055, type: 2}
+  - {fileID: 2100000, guid: 52b7d70b1de7c4ce09662b77c14d9fda, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5131,6 +5132,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blurMaterial: {fileID: 2100000, guid: aa2fe63e9860241e990e9510e5a9dcad, type: 2}
   distortionMaterial: {fileID: 2100000, guid: b616722c547c54fa9b67469ab269d1bf, type: 2}
+--- !u!114 &1048457184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1048457177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d2f50a8e0bb841a5aaa90ae55db8849, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1058106962
 GameObject:
   m_ObjectHideFlags: 0
