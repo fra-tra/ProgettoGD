@@ -59,7 +59,8 @@ public class StatueMemory : MonoBehaviour
         //Istanzia un nuovo effetto particellare dello standard asset che si chiama Dust Cloud
         Instantiate(_myPrefab, this.transform.position , Quaternion.identity);
         Instantiate(_myPrefabBrokenPieces, this.transform.position , Quaternion.identity);
-        Destroy(_statue); 
+        Destroy(_statue);
+        Destroy(rb);
     }
 
      public IEnumerator delayDestroyHammer()
