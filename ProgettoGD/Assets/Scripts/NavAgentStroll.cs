@@ -11,17 +11,16 @@ public class NavAgentStroll : MonoBehaviour
     void Start()
     {
         _navMeshAgent = GetComponent<NavMeshAgent>();
-        SetDestination();
+        _navMeshAgent.SetDestination( GetRandomPositionOnGround() );
     }
 
-    // Update is called once per frame
     void Update()
     {
         if(DestinationReached())
-            SetDestination();
+            SetNewDestination();
     }
 
-    private void SetDestination()
+    private void SetNewDestination()
     {
         UnityEngine.AI.NavMeshPath path = new UnityEngine.AI.NavMeshPath();
         Vector3 randomPosition = GetRandomPositionOnGround();
