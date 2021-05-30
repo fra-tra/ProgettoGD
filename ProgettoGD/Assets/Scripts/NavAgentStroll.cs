@@ -6,6 +6,7 @@ using UnityEngine.AI;
 public class NavAgentStroll : MonoBehaviour
 {
     private UnityEngine.AI.NavMeshAgent _navMeshAgent;
+    [SerializeField] private Collider _groundCollider;
 
     void Start()
     {
@@ -23,11 +24,11 @@ public class NavAgentStroll : MonoBehaviour
     private void SetDestination()
     {
         UnityEngine.AI.NavMeshPath path = new UnityEngine.AI.NavMeshPath();
-        Vector3 randomPosition = NavAgentSpawner.Instance.GetRandomPositionOnGround();
+        Vector3 randomPosition = GetRandomPositionOnGround();
         
         while (!_navMeshAgent.CalculatePath(randomPosition, path))
         {
-            randomPosition = NavAgentSpawner.Instance.GetRandomPositionOnGround();
+            randomPosition = GetRandomPositionOnGround();
         }  
         _navMeshAgent.SetDestination(randomPosition);
         
@@ -43,5 +44,12 @@ public class NavAgentStroll : MonoBehaviour
                     }
                     
         return false;
+    }
+
+    public Vector3 GetRandomPositionOnGround()
+    {
+        Vector3 min = _groundCollider.bounds.min;
+        Vector3 max = _groundCollider.bounds.max;
+        return new Vector3(Random.Range(min.x, max.x), 0.1f, Random.Range(min.z, max.z)); //_altezzaTerreno è la misura per farlo stare poggiato coi piedi sul ground
     }
 }
