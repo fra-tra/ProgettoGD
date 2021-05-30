@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.25013176, g: 0.398381, b: 0.5770473, a: 1}
+  m_IndirectSpecularColor: {r: 0.25013176, g: 0.39838102, b: 0.5770473, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1920,6 +1920,11 @@ PrefabInstance:
       propertyPath: _videoPanel
       value: 
       objectReference: {fileID: 1554459569}
+    - target: {fileID: 8921951513347856191, guid: fb28ef058a3c640e0b754e6b62c39d57,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb28ef058a3c640e0b754e6b62c39d57, type: 3}
 --- !u!1 &1742571691
