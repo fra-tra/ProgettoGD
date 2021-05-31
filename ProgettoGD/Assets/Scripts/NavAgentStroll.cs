@@ -7,6 +7,9 @@ public class NavAgentStroll : MonoBehaviour
 {
     private UnityEngine.AI.NavMeshAgent _navMeshAgent;
     [SerializeField] private Collider _groundCollider;
+    [SerializeField] private GameObject _target;
+    [SerializeField] private float _minChaseDistance = 3f;
+    private bool _Patrolling = true;
 
     void Start()
     {
@@ -16,8 +19,17 @@ public class NavAgentStroll : MonoBehaviour
 
     void Update()
     {
-        if(DestinationReached())
-            SetNewDestination();
+        if ( DistanceFromTarget() <= _minChaseDistance)
+        {
+            _Patrolling = false;
+                ChaseTarget();
+        }
+        else
+        {
+             if( DestinationReached() && _Patrolling)
+                SetNewDestination();
+        }
+            
     }
 
     private void SetNewDestination()
@@ -31,6 +43,12 @@ public class NavAgentStroll : MonoBehaviour
         }  
         _navMeshAgent.SetDestination(randomPosition);
         
+    }
+
+    private void ChaseTarget()
+    {
+        Debug.Log("ChaseTarget");
+        _navMeshAgent.SetDestination(_target.transform.position);
     }
 
     private bool DestinationReached()
@@ -51,4 +69,6 @@ public class NavAgentStroll : MonoBehaviour
         Vector3 max = _groundCollider.bounds.max;
         return new Vector3(Random.Range(min.x, max.x), 0.1f, Random.Range(min.z, max.z)); //_altezzaTerreno è la misura per farlo stare poggiato coi piedi sul ground
     }
+
+    private float DistanceFromTarget() => Vector3.Distance(_target.transform.position, transform.position);
 }
