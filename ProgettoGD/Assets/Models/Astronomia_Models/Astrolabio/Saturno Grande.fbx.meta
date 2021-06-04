@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Saturno unico
-    second: {fileID: 2100000, guid: 55f9ba0b455d946b6991e3d4ed270796, type: 2}
+    second: {fileID: 509975363026782987, guid: 26e038eff816f417b81f0301a06c4f10, type: 3}
   materials:
     materialImportMode: 1
     materialName: 0
