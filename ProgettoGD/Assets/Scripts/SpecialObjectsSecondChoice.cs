@@ -95,7 +95,7 @@ public class SpecialObjectsSecondChoice : MonoBehaviour
 
                 _Two = _gameObjectB; // sling
                 _numberOfObjTwo = 4;
-                _matOne= _gameObjectB.GetComponent<MeshRenderer> ().material;
+                _matTwo= _gameObjectB.GetComponent<MeshRenderer> ().material;
                 _emissionTwo = _emissionMaterialB;
             }
             
