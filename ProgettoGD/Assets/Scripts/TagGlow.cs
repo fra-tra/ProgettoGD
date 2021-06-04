@@ -9,6 +9,7 @@ public class TagGlow : MonoBehaviour
     [SerializeField] Material _glowMaterial; //Material for glowing tag
     [SerializeField] int _numlevel;
     [SerializeField] int _numObj;
+    [SerializeField] GameObject _post;
 
     [SerializeField] public LevelLoader _levelLoader;
 
@@ -16,6 +17,7 @@ public class TagGlow : MonoBehaviour
     public int _firstObject;
     public int _secondObject;
     private Counter _myCounter;
+    private bool done = false;
 
 
     void Start()
@@ -26,31 +28,31 @@ public class TagGlow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        glowTag();
+        if(done == false)
+            glowTag();
     }
 
 
     public void glowTag()
     {
-        _currentLevel = _levelLoader.CurrentLevel();
+       /* _currentLevel = _levelLoader.CurrentLevel();
         _firstObject = _myCounter.GetFirstObject();
-        _secondObject = _myCounter.GetSecondObject();
+        _secondObject = _myCounter.GetSecondObject();*/
 
-        if( _currentLevel == 3) //Poesia Epica
-        {
-            if(_firstObject == _numObj) //martello
-            {
-                
-            }
-            else if(_secondObject == _numObj) //chiave
-            {
-                
-            }
-        }
+        
+        //if( _currentLevel == 3) //Poesia Epica
+        //{
+            //if(_firstObject == _numObj) //martello
+            //{
+                Glow();
+                done = true;
+            //}
+       // }
     }
 
     public void Glow()
     {
         _tagObjectA.GetComponent<MeshRenderer> ().material = _glowMaterial;
+        _post.SetActive(true);
     }
 }
