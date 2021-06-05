@@ -9,7 +9,6 @@ public class Rotation_GearCommanded : MonoBehaviour
     [SerializeField] float _rotationTime = 5f;
     [SerializeField] float  _rotationAngle = 360;
     [SerializeField] float _waitingTime=5f;
-    [SerializeField] Transform playerTransform;
 
     private Sequence moveSequence;
     private bool  _isPlayerOn = false;
@@ -26,15 +25,6 @@ public class Rotation_GearCommanded : MonoBehaviour
     void Update()
     {
         GearPower();
-        PlayerOn();
-    }
-
-    private void PlayerOn()
-    {
-        if ( _isPlayerOn)
-        {
-            //splayerTransform.position = Vector3.MoveTowards(playerTransform.position, destination, Time.deltaTime * movingSpeed);
-        }
     }
 
     
@@ -65,17 +55,18 @@ public class Rotation_GearCommanded : MonoBehaviour
 
 
 
-    void OnCollisionEnter(Collision collision)
+    void OnTriggerEnter(Collider other)
     { 
-        if (collision.collider.name == "Player")
+        if (other.tag == "Player")
         {
             _isPlayerOn = true;
+             Debug.Log(_isPlayerOn);
         }
     }
-    
-    void OnCollisionExit(Collision collision)
+
+    void OnTriggerExit(Collider other)
     { 
-        if (collision.collider.name == "Player")
+        if (other.tag == "Player")
         {
             _isPlayerOn = false;
         }
