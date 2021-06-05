@@ -12,6 +12,9 @@ TagManager:
   - KeyDoor
   - RockFloor
   - Ponte
+  - SpaceDeath
+  - LevelArea
+  - Attractor
   layers:
   - Default
   - TransparentFX
