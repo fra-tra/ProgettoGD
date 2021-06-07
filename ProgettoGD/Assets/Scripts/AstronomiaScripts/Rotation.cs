@@ -4,11 +4,13 @@ using UnityEngine;
 using DG.Tweening;
 
 
-public class Rotation_GearCommanded : MonoBehaviour
+public class Rotation: MonoBehaviour
 {
     [SerializeField] float _waitingTime=5f;
     [SerializeField] GameObject _player;
     [SerializeField] GameObject _platform;
+    private float _rotationAngle = 360f;
+    private float _rotationTime = 30f;
     //[SerializeField] GameObject _trueplatform;
 
     private Sequence moveSequence;
@@ -18,8 +20,8 @@ public class Rotation_GearCommanded : MonoBehaviour
     private Rigidbody _playerRB;
     private bool _isGrounded = false;
 
-    [SerializeField] private Transform _waypointsRoot;
-    [SerializeField] private float _pathDuration;
+    //[SerializeField] private Transform _waypointsRoot;
+    //[SerializeField] private float _pathDuration;
 
 
     // Start is called before the first frame update
@@ -28,7 +30,8 @@ public class Rotation_GearCommanded : MonoBehaviour
         //_trueplatform.transform.SetParent(_platform.transform,true);
 
         _playerRB = _player.GetComponent<Rigidbody>();
-        MoveAlongPath();
+        //MoveAlongPath();
+        SimpleRotation();
     }
 
     // Update is called once per frame
@@ -110,16 +113,16 @@ public class Rotation_GearCommanded : MonoBehaviour
         }
     }
 
-    /*private void SimpleRotation() //Levo giuro
+    private void SimpleRotation() //Levo giuro
     {
         Debug.Log("Rotate!");
         moveSequence = DOTween.Sequence();
         moveSequence.Append(transform.DORotate(new Vector3(0, _rotationAngle,0), _rotationTime, RotateMode.LocalAxisAdd)).SetLoops(-1, LoopType.Incremental).SetEase(Ease.Linear);
         moveSequence.Play();
-    }*/
+    }
 
 
-    private void MoveAlongPath()
+   /* private void MoveAlongPath()
     {
         if (_waypointsRoot != null && _waypointsRoot.childCount > 0)
         {
@@ -131,5 +134,5 @@ public class Rotation_GearCommanded : MonoBehaviour
             moveSequence.Append( transform.DOPath(pathPositions, _pathDuration, PathType.CatmullRom, PathMode.Full3D, resolution: 10, Color.yellow) ).SetLoops(-1, LoopType.Incremental).SetEase(Ease.Linear);
             moveSequence.Play();
         } 
-    }
+    }*/
 }
