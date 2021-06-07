@@ -6,19 +6,30 @@ using DG.Tweening;
 
 public class Rotation_GearCommanded : MonoBehaviour
 {
-    [SerializeField] float _rotationTime = 5f;
-    [SerializeField] float  _rotationAngle = 360;
+    //[SerializeField] float _rotationTime = 5f;
+    //[SerializeField] float  _rotationAngle = 360;
     [SerializeField] float _waitingTime=5f;
+    [SerializeField] GameObject _player;
+    [SerializeField] GameObject _platform;
+    [SerializeField] GameObject _trueplatform;
 
     private Sequence moveSequence;
     private bool  _isPlayerOn = false;
     private bool _rotationStopped = false;
     private Coroutine _coroutine;
 
+    //NUOVE COSE
+    [SerializeField] private Transform _waypointsRoot;
+    [SerializeField] private float _pathDuration;
+    //
+
+
     // Start is called before the first frame update
     void Start()
     {
-        SimpleRotation();
+        //_trueplatform.transform.SetParent(_platform.transform,true);
+        MoveAlongPath();
+        //SimpleRotation();
     }
 
     // Update is called once per frame
@@ -37,7 +48,7 @@ public class Rotation_GearCommanded : MonoBehaviour
                 Debug.Log("Paused");
                 moveSequence.Pause();
                 _rotationStopped = true;
-                 _coroutine = StartCoroutine(WaitRestartRotation());
+                _coroutine = StartCoroutine(WaitRestartRotation());
 
             }
         }
@@ -60,7 +71,10 @@ public class Rotation_GearCommanded : MonoBehaviour
         if (other.tag == "Player")
         {
             _isPlayerOn = true;
-             Debug.Log(_isPlayerOn);
+            Debug.Log(_isPlayerOn);
+            //_player.transform.parent = _platform.transform;
+            _trueplatform.transform.SetParent(_platform.transform,true);
+            _player.transform.SetParent(_platform.transform,true);
         }
     }
 
@@ -69,14 +83,32 @@ public class Rotation_GearCommanded : MonoBehaviour
         if (other.tag == "Player")
         {
             _isPlayerOn = false;
+            //_player.transform.parent = null;
+            _player.transform.SetParent(_platform.transform,false);
         }
     }
 
-    private void SimpleRotation() //MOVIMENTO ASSI
+    /*private void SimpleRotation() //Levo giuro
     {
         Debug.Log("Rotate!");
         moveSequence = DOTween.Sequence();
         moveSequence.Append(transform.DORotate(new Vector3(0, _rotationAngle,0), _rotationTime, RotateMode.LocalAxisAdd)).SetLoops(-1, LoopType.Incremental).SetEase(Ease.Linear);
         moveSequence.Play();
+    }*/
+
+
+    private void MoveAlongPath()
+    {
+        if (_waypointsRoot != null && _waypointsRoot.childCount > 0)
+        {
+            Vector3[] pathPositions = new Vector3[_waypointsRoot.childCount];
+            for (int i = 0; i < _waypointsRoot.childCount; i++)
+                pathPositions[i] = _waypointsRoot.GetChild(i).position;
+
+            //var tween = 
+            moveSequence = DOTween.Sequence();
+            moveSequence.Append( transform.DOPath(pathPositions, _pathDuration, PathType.CatmullRom, PathMode.Full3D, resolution: 10, Color.yellow) ).SetLoops(-1, LoopType.Incremental).SetEase(Ease.Linear);
+            moveSequence.Play();
+        } 
     }
 }
