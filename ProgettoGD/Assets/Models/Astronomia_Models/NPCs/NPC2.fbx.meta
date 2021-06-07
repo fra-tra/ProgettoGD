@@ -17,7 +17,7 @@ ModelImporter:
     second: NPC2|NPC2Action
   - first:
       74: 5668961080806503790
-    second: NPC2|NPC2Action (1)
+    second: NPC2|NPC2Action (2)
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -52,7 +52,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: NPC2|NPC2Action (1)
+      name: NPC2|NPC2Action (2)
       takeName: NPC2|NPC2Action
       internalID: 0
       firstFrame: 0
