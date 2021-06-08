@@ -9,7 +9,6 @@ public class Rotation_GearCommanded : MonoBehaviour
     [SerializeField] float _waitingTime=5f;
     [SerializeField] GameObject _player;
     [SerializeField] GameObject _platform;
-    //[SerializeField] GameObject _trueplatform;
 
     private Sequence moveSequence;
     private bool  _isPlayerOn = false;

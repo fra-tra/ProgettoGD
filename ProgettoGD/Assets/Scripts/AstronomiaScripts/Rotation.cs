@@ -6,31 +6,25 @@ using DG.Tweening;
 
 public class Rotation: MonoBehaviour
 {
-    [SerializeField] float _waitingTime=5f;
+    //Rotation stoppable trough gear-power
+
+    [SerializeField] float _waitingTime = 5f;
+    [SerializeField] float _rotationAngle = 360f;
+    [SerializeField] float _rotationTime = 30f;
     [SerializeField] GameObject _player;
     [SerializeField] GameObject _platform;
-    private float _rotationAngle = 360f;
-    private float _rotationTime = 30f;
-    //[SerializeField] GameObject _trueplatform;
 
     private Sequence moveSequence;
     private bool  _isPlayerOn = false;
     private bool _rotationStopped = false;
     private Coroutine _coroutine;
     private Rigidbody _playerRB;
-    private bool _isGrounded = false;
-
-    //[SerializeField] private Transform _waypointsRoot;
-    //[SerializeField] private float _pathDuration;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        //_trueplatform.transform.SetParent(_platform.transform,true);
-
         _playerRB = _player.GetComponent<Rigidbody>();
-        //MoveAlongPath();
         SimpleRotation();
     }
 
@@ -39,7 +33,6 @@ public class Rotation: MonoBehaviour
     {
         GearPower();
     }
-
     
     private void GearPower()
     {
@@ -66,8 +59,6 @@ public class Rotation: MonoBehaviour
         StopCoroutine(_coroutine);
     }
 
-
-
     void OnTriggerEnter(Collider other)
     { 
         if (other.tag == "Player")
@@ -83,26 +74,12 @@ public class Rotation: MonoBehaviour
     { 
         if (other.tag == "Player")
         {
-            //if (_isGrounded)
-            //{
                 if (Input.GetButton("Horizontal") || Input.GetButton("Vertical") ||  Input.GetButton("Jump") )
                 {
                     _playerRB.isKinematic = false;
                 }
-            //}
         }
     }
-
-    /*void OnCollisionStay(Collision collision)
-    {
-        _isGrounded = true;
-    }
-
-    void OnCollisionExit(Collision collision)
-    {
-        _isGrounded = false;
-    }*/
-
     void OnTriggerExit(Collider other)
     { 
         if (other.tag == "Player")
@@ -113,26 +90,11 @@ public class Rotation: MonoBehaviour
         }
     }
 
-    private void SimpleRotation() //Levo giuro
+    private void SimpleRotation()
     {
         Debug.Log("Rotate!");
         moveSequence = DOTween.Sequence();
         moveSequence.Append(transform.DORotate(new Vector3(0, _rotationAngle,0), _rotationTime, RotateMode.LocalAxisAdd)).SetLoops(-1, LoopType.Incremental).SetEase(Ease.Linear);
         moveSequence.Play();
     }
-
-
-   /* private void MoveAlongPath()
-    {
-        if (_waypointsRoot != null && _waypointsRoot.childCount > 0)
-        {
-            Vector3[] pathPositions = new Vector3[_waypointsRoot.childCount];
-            for (int i = 0; i < _waypointsRoot.childCount; i++)
-                pathPositions[i] = _waypointsRoot.GetChild(i).position;
-
-            moveSequence = DOTween.Sequence();
-            moveSequence.Append( transform.DOPath(pathPositions, _pathDuration, PathType.CatmullRom, PathMode.Full3D, resolution: 10, Color.yellow) ).SetLoops(-1, LoopType.Incremental).SetEase(Ease.Linear);
-            moveSequence.Play();
-        } 
-    }*/
 }
