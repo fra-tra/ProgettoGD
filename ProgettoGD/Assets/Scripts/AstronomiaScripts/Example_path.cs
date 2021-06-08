@@ -4,7 +4,7 @@ using UnityEngine;
 using DG.Tweening;
 
 
-public class Rotation_GearCommanded : MonoBehaviour
+public class Example_path : MonoBehaviour
 {
     [SerializeField] float _waitingTime=5f;
     [SerializeField] GameObject _player;
