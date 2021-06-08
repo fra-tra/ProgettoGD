@@ -18,7 +18,7 @@ public class PauseGame : MonoBehaviour
     void Update()
     {
 
-        if(Input.GetKeyDown(KeyCode.Escape))
+        if(Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown("joystick button 9"))
         {
            if(GameIsPaused)
            {
