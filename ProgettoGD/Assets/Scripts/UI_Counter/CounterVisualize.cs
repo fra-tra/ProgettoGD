@@ -60,7 +60,7 @@ public class CounterVisualize : MonoBehaviour
     {
         if(!_paused)
         {
-            if (Input.GetKeyDown(KeyCode.Tab) || Input.GetKeyDown("joystick button 6") ) // && !_activeInfo)
+            if (Input.GetKeyDown(KeyCode.Tab) || Input.GetKeyDown("joystick button 6") ) //Ciao Edoardo, lo sappiamo che questo linea di codice e la sua simile sono un abominio, ma altrimenti non funzionava #propotipo
             {
                 _buttonCounterPressed=true;
             }
