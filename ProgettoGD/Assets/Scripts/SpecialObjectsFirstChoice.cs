@@ -64,14 +64,17 @@ public class SpecialObjectsFirstChoice : MonoBehaviour
     {
         _analog = Input.GetAxisRaw("ChooseAxis"); //Si prende sia il joystick che A e D
 
-        if (_analog != 0 && _inputGettable)
+        if (_analog !=0  && _inputGettable)
         {
-            Debug.Log(_analog);
-            Debug.Log("Change choice");
-            _inputGettable = false;
-            MoveSelection();
-            Glow();
-            _coroutine = StartCoroutine(CoroutineWaitForChange());//Chiamata a coroutine che aspetta un tot e poi reimposta_inputGettable=true;
+            if(_analog <= -0.5 || _analog >= 0.5)
+            {
+                Debug.Log(_analog);
+                Debug.Log("Change choice");
+                _inputGettable = false;
+                MoveSelection();
+                Glow();
+                _coroutine = StartCoroutine(CoroutineWaitForChange());//Chiamata a coroutine che aspetta un tot e poi reimposta_inputGettable=true;
+            }
         }
     }
 
