@@ -1547,7 +1547,7 @@ MonoBehaviour:
   _gameObjectC: {fileID: 1419952975}
   _levelLoader: {fileID: 93987983}
   _emissionMaterialA: {fileID: 2100000, guid: ce5d0a30272c548cf85105b67d1348bb, type: 2}
-  _emissionMaterialB: {fileID: 2100000, guid: 42a50eedc62094ef584c6e4fd1ae105a, type: 2}
+  _emissionMaterialB: {fileID: 2100000, guid: ccbc47eb7e0044120a418ead8e272b80, type: 2}
   _emissionMaterialC: {fileID: 2100000, guid: 1fecd4f0f27de4745b0640f9426598ff, type: 2}
   _myCounter: {fileID: 1342326778}
 --- !u!65 &2046255533
