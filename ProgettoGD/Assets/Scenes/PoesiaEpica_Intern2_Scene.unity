@@ -1873,6 +1873,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1656063500980240003, guid: 5ff7863489807ef4d8d58017da1c0292,
+        type: 3}
+      propertyPath: near clip plane
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1656063500980240005, guid: 5ff7863489807ef4d8d58017da1c0292,
         type: 3}
       propertyPath: target
