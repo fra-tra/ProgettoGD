@@ -40,6 +40,14 @@ public class CounterVisualize : MonoBehaviour
         }
     }
 
+    public void MemoryTakenUI()
+    {
+        _uiActive = true;
+        _animator.SetBool("IsOpen", true);
+        _buttonCounterPressed = false;
+        Debug.Log("Open");
+    }
+
     public void CloseCounter()
     {
         if(_uiActive)
