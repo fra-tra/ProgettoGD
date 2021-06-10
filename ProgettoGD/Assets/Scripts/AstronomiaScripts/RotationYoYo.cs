@@ -17,12 +17,14 @@ public class RotationYoYo : MonoBehaviour
     private bool _rotationStopped = false;
     private Coroutine _coroutine;
     private Rigidbody _playerRB;
+    private Counter _myCounter;
 
 
     // Start is called before the first frame update
     void Start()
     {
         _playerRB = _player.GetComponent<Rigidbody>();
+        //_myCounter = (Counter)FindObjectOfType(typeof(Counter));
         YoYoRotation();
     }
 

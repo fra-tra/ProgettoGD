@@ -13,18 +13,21 @@ public class Rotation: MonoBehaviour
     [SerializeField] float _rotationTime = 30f;
     [SerializeField] GameObject _player;
     [SerializeField] GameObject _platform;
+    //[SerializeField] Rigidbody _playerRB;
 
     private Sequence moveSequence;
     private bool  _isPlayerOn = false;
     private bool _rotationStopped = false;
     private Coroutine _coroutine;
     private Rigidbody _playerRB;
+    private Counter _myCounter;
 
 
     // Start is called before the first frame update
     void Start()
     {
         _playerRB = _player.GetComponent<Rigidbody>();
+        //_myCounter = (Counter)FindObjectOfType(typeof(Counter));
         SimpleRotation();
     }
 
@@ -67,18 +70,19 @@ public class Rotation: MonoBehaviour
             Debug.Log(_isPlayerOn);
             _player.transform.SetParent(_platform.transform,true);
             _playerRB.isKinematic = true;
+            Debug.Log("porcatroia");
         }
     }
     
     void OnTriggerStay(Collider other)
     { 
-        if (other.tag == "Player")
+        /*if (other.tag == "Player")
         {
                 if (Input.GetButton("Horizontal") || Input.GetButton("Vertical") ||  Input.GetButton("Jump") )
                 {
                     _playerRB.isKinematic = false;
                 }
-        }
+        }*/
     }
     void OnTriggerExit(Collider other)
     { 

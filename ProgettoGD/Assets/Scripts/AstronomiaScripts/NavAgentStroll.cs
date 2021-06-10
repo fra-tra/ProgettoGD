@@ -9,32 +9,62 @@ public class NavAgentStroll : MonoBehaviour
     [SerializeField] private Collider _groundCollider;
     [SerializeField] private GameObject _target;
     [SerializeField] private float _minChaseDistance = 1f;
+    [SerializeField] float _waitingTime = 6f;
+
     private bool _Patrolling = true;
+    private Counter _myCounter;
+    private bool _stopped = false;
+    private Coroutine _coroutine;
+    private int _firstObject;
 
     void Start()
     {
         Debug.Log("Start");
         _navMeshAgent = GetComponent<NavMeshAgent>();
         _navMeshAgent.SetDestination( GetRandomPositionOnGround() );
+        //_myCounter = (Counter)FindObjectOfType(typeof(Counter));
+        //_firstObject = _myCounter.GetFirstObject();
 
     }
 
     void Update()
     {
 
-        if ( DistanceFromTarget() <= _minChaseDistance)
+        if (!_stopped)
         {
-            _Patrolling = false;
-            ChaseTarget();
-        }
-       else
-        {
-            if( DestinationReached() && _Patrolling)
+            if ( DistanceFromTarget() <= _minChaseDistance)
             {
-                SetNewDestination();
+                _Patrolling = false;
+                ChaseTarget();
+                CheckGlobe();
+            }
+            else
+            {
+                if( DestinationReached() && _Patrolling)
+                {
+                    SetNewDestination();
+                }
             }
         }
+        
             
+    }
+
+    private void CheckGlobe()
+    {
+        if ( /* _firstObject ==  5 &&*/ Input.GetButton("SpecialObject"))
+        {
+            _stopped = true;
+            _coroutine = StartCoroutine(WaitRestartChasing());
+        }
+    }
+
+    public IEnumerator WaitRestartChasing()
+    {
+        yield return new WaitForSeconds(_waitingTime);
+        Debug.Log("Chasing paused");
+        _stopped = false;
+        StopCoroutine(_coroutine);
     }
 
     private void SetNewDestination()
