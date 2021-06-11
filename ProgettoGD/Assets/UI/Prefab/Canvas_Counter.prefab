@@ -33845,7 +33845,6 @@ GameObject:
   - component: {fileID: 7152264352789409290}
   - component: {fileID: 7152264352789409289}
   - component: {fileID: 7152264352789409291}
-  - component: {fileID: 7152264352789409292}
   m_Layer: 5
   m_Name: CounterUI
   m_TagString: Untagged
@@ -33932,19 +33931,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &7152264352789409292
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7152264352789409303}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23a55453e4a8945c19ecbf286596a3fe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _animator: {fileID: 7152264352789409291}
 --- !u!1 &7152264352795862766
 GameObject:
   m_ObjectHideFlags: 0
@@ -33957,6 +33943,7 @@ GameObject:
   - component: {fileID: 7152264352795862753}
   - component: {fileID: 7152264352795862752}
   - component: {fileID: 7152264352795862767}
+  - component: {fileID: 5593534390707248231}
   m_Layer: 5
   m_Name: Canvas_Counter
   m_TagString: Untagged
@@ -34044,6 +34031,20 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &5593534390707248231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7152264352795862766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23a55453e4a8945c19ecbf286596a3fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animator: {fileID: 7152264352789409291}
+  _ui: {fileID: 7152264352789409303}
 --- !u!1 &7152264353014544728
 GameObject:
   m_ObjectHideFlags: 0

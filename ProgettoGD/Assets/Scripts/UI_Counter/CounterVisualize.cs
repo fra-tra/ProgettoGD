@@ -6,6 +6,7 @@ public class CounterVisualize : MonoBehaviour
 {
     // Start is called before the first frame update
     [SerializeField] Animator _animator;
+    [SerializeField] GameObject _ui;
     
 
     private bool _buttonCounterPressed = false;
@@ -32,6 +33,7 @@ public class CounterVisualize : MonoBehaviour
         {  
             if(_buttonCounterPressed)
             {
+                _ui.SetActive(true);
                 _uiActive = true;
                 _animator.SetBool("IsOpen", true);
                 _buttonCounterPressed = false;
@@ -42,6 +44,7 @@ public class CounterVisualize : MonoBehaviour
 
     public void MemoryTakenUI()
     {
+        _ui.SetActive(true);
         _uiActive = true;
         _animator.SetBool("IsOpen", true);
         _buttonCounterPressed = false;
@@ -54,6 +57,7 @@ public class CounterVisualize : MonoBehaviour
         {
             if(_buttonCounterPressed)
             {
+                _ui.SetActive(false);
                 _buttonCounterPressed=false;
                 _animator.SetBool("IsOpen", false);
                 Debug.Log("Close");
