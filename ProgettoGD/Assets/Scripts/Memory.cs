@@ -6,11 +6,14 @@ public class Memory : MonoBehaviour
 {
     private bool _memoryTaken = false;
     [SerializeField] private float _minDistance;
-    [SerializeField] private GameObject _target;
-    [SerializeField] private GameObject _AnelloUI; 
-    [SerializeField] private GameObject _NucleoUI;  //Deve essere il third person controller
+    [SerializeField] private GameObject _target; //Deve essere il third person controller
+    [SerializeField] private GameObject _AnelloUIThis; 
+    [SerializeField] private GameObject _NucleoUIThis; 
+    
+ 
     [SerializeField] private CounterVisualize _uiCounter;
 
+    
     // Start is called before the first frame update
 
     void Update()
@@ -46,8 +49,8 @@ public class Memory : MonoBehaviour
         //La gestisce comunque la stessa variabile
         ObtainedMemory();
         gameObject.SetActive(false); //Non lo distruggo, lo faccio sparire, perché mi serve ancora che ci sia questo codice attivo per ottenere dati
-        _AnelloUI.SetActive(true);
-        _NucleoUI.SetActive(true);
+        _AnelloUIThis.SetActive(true);
+        _NucleoUIThis.SetActive(true);
         _uiCounter.MemoryTakenUI();
 
     }

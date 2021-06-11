@@ -1877,6 +1877,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 854800216}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &854800220 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7152264352504106742, guid: dd50365ac591f4610b2d25b60325f9ad,
+    type: 3}
+  m_PrefabInstance: {fileID: 854800216}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &854800221 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7152264353014544728, guid: dd50365ac591f4610b2d25b60325f9ad,
+    type: 3}
+  m_PrefabInstance: {fileID: 854800216}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &858990477 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1656063500980240002, guid: 5ff7863489807ef4d8d58017da1c0292,
@@ -3070,6 +3082,26 @@ PrefabInstance:
       propertyPath: _minDistance
       value: 0.3
       objectReference: {fileID: 0}
+    - target: {fileID: 1511447532114145000, guid: 997e3ee85c6934793a4a83060845f416,
+        type: 3}
+      propertyPath: _AnelloUIThis
+      value: 
+      objectReference: {fileID: 854800219}
+    - target: {fileID: 1511447532114145000, guid: 997e3ee85c6934793a4a83060845f416,
+        type: 3}
+      propertyPath: _NucleoUIThis
+      value: 
+      objectReference: {fileID: 854800218}
+    - target: {fileID: 1511447532114145000, guid: 997e3ee85c6934793a4a83060845f416,
+        type: 3}
+      propertyPath: _AnelloUIOther
+      value: 
+      objectReference: {fileID: 854800221}
+    - target: {fileID: 1511447532114145000, guid: 997e3ee85c6934793a4a83060845f416,
+        type: 3}
+      propertyPath: _NucleoUIOther
+      value: 
+      objectReference: {fileID: 854800220}
     - target: {fileID: 2401121225844689846, guid: 997e3ee85c6934793a4a83060845f416,
         type: 3}
       propertyPath: m_LocalScale.x

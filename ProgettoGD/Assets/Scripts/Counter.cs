@@ -69,6 +69,11 @@ public class Counter : MonoBehaviour
         return _myLifeCounter;
     }
 
+    public int GetMemoryCounter()
+    {
+        return _myMemoriesCounter;
+    }
+
     public void FirstChoosenObject(int first)
     {
         _firstChoosenObject = first;
