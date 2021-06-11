@@ -1859,7 +1859,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 854800216}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 854800222}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 23a55453e4a8945c19ecbf286596a3fe, type: 3}
@@ -1889,6 +1889,27 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 854800216}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &854800222 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7152264352795862766, guid: dd50365ac591f4610b2d25b60325f9ad,
+    type: 3}
+  m_PrefabInstance: {fileID: 854800216}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &854800223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 854800222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2120b0e4d7d00484e815d3f876b14235, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _AnelloUIOther: {fileID: 854800221}
+  _NucleoUIOther: {fileID: 854800220}
+  _uiCounter: {fileID: 854800217}
 --- !u!4 &858990477 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1656063500980240002, guid: 5ff7863489807ef4d8d58017da1c0292,

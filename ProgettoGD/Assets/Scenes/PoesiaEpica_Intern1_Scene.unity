@@ -2743,6 +2743,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 7152264352789409303, guid: dd50365ac591f4610b2d25b60325f9ad,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7152264352795862754, guid: dd50365ac591f4610b2d25b60325f9ad,
         type: 3}
       propertyPath: m_Pivot.x
@@ -2865,6 +2870,51 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd50365ac591f4610b2d25b60325f9ad, type: 3}
+--- !u!1 &691409457 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7152264352795862766, guid: dd50365ac591f4610b2d25b60325f9ad,
+    type: 3}
+  m_PrefabInstance: {fileID: 691409456}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &691409458 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7152264353063272274, guid: dd50365ac591f4610b2d25b60325f9ad,
+    type: 3}
+  m_PrefabInstance: {fileID: 691409456}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &691409459 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7152264352702465528, guid: dd50365ac591f4610b2d25b60325f9ad,
+    type: 3}
+  m_PrefabInstance: {fileID: 691409456}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &691409460 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5593534390707248231, guid: dd50365ac591f4610b2d25b60325f9ad,
+    type: 3}
+  m_PrefabInstance: {fileID: 691409456}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 691409457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23a55453e4a8945c19ecbf286596a3fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &691409461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 691409457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2120b0e4d7d00484e815d3f876b14235, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _AnelloUIOther: {fileID: 691409459}
+  _NucleoUIOther: {fileID: 691409458}
+  _uiCounter: {fileID: 691409460}
 --- !u!1001 &706997707
 PrefabInstance:
   m_ObjectHideFlags: 0
