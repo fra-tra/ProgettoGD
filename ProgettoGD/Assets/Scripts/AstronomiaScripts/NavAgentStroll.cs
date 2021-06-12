@@ -85,6 +85,7 @@ public class NavAgentStroll : MonoBehaviour
     {
         Debug.Log("ChaseTarget");
         _navMeshAgent.SetDestination(_target.transform.position);
+        _Patrolling = true;
     }
 
     private bool DestinationReached()
