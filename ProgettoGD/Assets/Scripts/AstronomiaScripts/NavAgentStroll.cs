@@ -21,7 +21,8 @@ public class NavAgentStroll : MonoBehaviour
     {
         Debug.Log("Start");
         _navMeshAgent = GetComponent<NavMeshAgent>();
-        _navMeshAgent.SetDestination( GetRandomPositionOnGround() );
+        _navMeshAgent.SetDestination(GetRandomPositionOnGround());
+
         //_myCounter = (Counter)FindObjectOfType(typeof(Counter));
         //_firstObject = _myCounter.GetFirstObject();
 
@@ -29,7 +30,6 @@ public class NavAgentStroll : MonoBehaviour
 
     void Update()
     {
-
         if (!_stopped)
         {
             if ( DistanceFromTarget() <= _minChaseDistance)
@@ -42,11 +42,11 @@ public class NavAgentStroll : MonoBehaviour
             {
                 if( DestinationReached() && _Patrolling)
                 {
+                    Debug.Log("Setting new");
                     SetNewDestination();
                 }
             }
         }
-        
             
     }
 
@@ -64,6 +64,7 @@ public class NavAgentStroll : MonoBehaviour
         yield return new WaitForSeconds(_waitingTime);
         Debug.Log("Chasing paused");
         _stopped = false;
+        _Patrolling = true;
         StopCoroutine(_coroutine);
     }
 
@@ -105,8 +106,9 @@ public class NavAgentStroll : MonoBehaviour
         Debug.Log("random position");
         Vector3 min = _groundCollider.bounds.min;
         Vector3 max = _groundCollider.bounds.max;
-        return new Vector3(Random.Range(min.x, max.x), 1f, Random.Range(min.z, max.z)); //_altezzaTerreno è la misura per farlo stare poggiato coi piedi sul ground
+        Debug.Log(max);
+        return new Vector3(Random.Range(min.x, max.x), max.y, Random.Range(min.z, max.z));
     }
 
-    private float DistanceFromTarget() => Vector3.Distance(_target.transform.position, transform.position);
+   private float DistanceFromTarget() => Vector3.Distance(_target.transform.position, transform.position);
 }
