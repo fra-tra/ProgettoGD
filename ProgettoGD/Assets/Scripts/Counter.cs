@@ -74,6 +74,26 @@ public class Counter : MonoBehaviour
         return _myMemoriesCounter;
     }
 
+    public void SetIntern1(bool _entered)
+    {
+        _lowerRoomEntered = _entered;
+    }
+
+    public void SetIntern2(bool _entered)
+    {
+        _upperRoomEntered = _entered;
+    }
+
+    public bool GetIntern1()
+    {
+        return _lowerRoomEntered;
+    }
+
+    public bool GetIntern2()
+    {
+        return _upperRoomEntered;
+    }
+
     public void FirstChoosenObject(int first)
     {
         _firstChoosenObject = first;
