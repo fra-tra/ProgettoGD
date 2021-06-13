@@ -76,13 +76,13 @@ public class Rotation: MonoBehaviour
     
     void OnTriggerStay(Collider other)
     { 
-        /*if (other.tag == "Player")
+        if (other.tag == "Player")
         {
                 if (Input.GetButton("Horizontal") || Input.GetButton("Vertical") ||  Input.GetButton("Jump") )
                 {
                     _playerRB.isKinematic = false;
                 }
-        }*/
+        }
     }
     void OnTriggerExit(Collider other)
     { 

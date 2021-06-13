@@ -24,8 +24,6 @@ public class Example_path : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //_trueplatform.transform.SetParent(_platform.transform,true);
-
         _playerRB = _player.GetComponent<Rigidbody>();
         MoveAlongPath();
     }
@@ -79,25 +77,12 @@ public class Example_path : MonoBehaviour
     { 
         if (other.tag == "Player")
         {
-            //if (_isGrounded)
-            //{
                 if (Input.GetButton("Horizontal") || Input.GetButton("Vertical") ||  Input.GetButton("Jump") )
                 {
                     _playerRB.isKinematic = false;
                 }
-            //}
         }
     }
-
-    /*void OnCollisionStay(Collision collision)
-    {
-        _isGrounded = true;
-    }
-
-    void OnCollisionExit(Collision collision)
-    {
-        _isGrounded = false;
-    }*/
 
     void OnTriggerExit(Collider other)
     { 
@@ -108,16 +93,7 @@ public class Example_path : MonoBehaviour
             _playerRB.isKinematic = false;
         }
     }
-
-    /*private void SimpleRotation() //Levo giuro
-    {
-        Debug.Log("Rotate!");
-        moveSequence = DOTween.Sequence();
-        moveSequence.Append(transform.DORotate(new Vector3(0, _rotationAngle,0), _rotationTime, RotateMode.LocalAxisAdd)).SetLoops(-1, LoopType.Incremental).SetEase(Ease.Linear);
-        moveSequence.Play();
-    }*/
-
-
+    
     private void MoveAlongPath()
     {
         if (_waypointsRoot != null && _waypointsRoot.childCount > 0)
