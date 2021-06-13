@@ -1,6 +1,8 @@
 using System;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
+using System.Collections;
+using System.Collections.Generic;
 
 namespace UnityStandardAssets.Cameras
 {
@@ -28,9 +30,14 @@ namespace UnityStandardAssets.Cameras
 		private Quaternion m_PivotTargetRot;
 		private Quaternion m_TransformTargetRot;
 
+        
+
         protected override void Awake()
         {
             base.Awake();
+            
+            
+
             // Lock or unlock the cursor.
             Cursor.lockState = m_LockCursor ? CursorLockMode.Locked : CursorLockMode.None;
             Cursor.visible = !m_LockCursor;
@@ -63,9 +70,9 @@ namespace UnityStandardAssets.Cameras
         {
             if (m_Target == null) return;
             // Move the rig towards target position.
+
             transform.position = Vector3.Lerp(transform.position, m_Target.position, deltaTime*m_MoveSpeed);
         }
-
 
         private void HandleRotationMovement()
         {

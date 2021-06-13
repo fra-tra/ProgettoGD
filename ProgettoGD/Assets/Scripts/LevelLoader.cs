@@ -23,13 +23,13 @@ public class LevelLoader : MonoBehaviour
 
     private Counter _myCounter;
 
-     /*void Start()
+     void Start()
      {
         _myCounter = (Counter)FindObjectOfType(typeof(Counter));
         _easy = _myCounter.easy;
         _medium = _myCounter.medium;
         _difficult = _myCounter.difficult;
-     }*/
+     }
 
     public int CurrentLevel()
     {
