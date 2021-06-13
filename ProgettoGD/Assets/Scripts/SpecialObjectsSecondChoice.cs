@@ -111,11 +111,13 @@ public class SpecialObjectsSecondChoice : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        CheckAnalog();
+        /*CheckAnalog();
         if (CheckChoice())
         {
             ExitChoice();
-        }
+        }*/
+        CheckAnalog();
+        CheckChoice();
     }
 
     private void CheckAnalog()
@@ -158,7 +160,7 @@ public class SpecialObjectsSecondChoice : MonoBehaviour
         }
     }
 
-    private bool CheckChoice()
+    private void CheckChoice()
     {
         if (Input.GetButton("SpecialObject") && _notChoosen)
         {
@@ -176,10 +178,11 @@ public class SpecialObjectsSecondChoice : MonoBehaviour
                 _myCounter.SecondChoosenObject(_numberOfObjTwo); // sling
             }
 
-            return true;
+            //return true;
+            ExitChoice();
         }
-
-        return false;
+        
+        //return false;
     }
 
     private void MoveSelection()

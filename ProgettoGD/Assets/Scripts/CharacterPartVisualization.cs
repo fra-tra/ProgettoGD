@@ -9,6 +9,7 @@ public class CharacterPartVisualization : MonoBehaviour
     [SerializeField] GameObject _side;
 
     [SerializeField] GameObject _hammer;
+    [SerializeField] GameObject _scalpel;
     [SerializeField] GameObject _key;
     [SerializeField] GameObject _ivy;
     [SerializeField] GameObject _sling;
@@ -48,11 +49,12 @@ public class CharacterPartVisualization : MonoBehaviour
         {
             _arm.SetActive(false);
             _hammer.SetActive(true);
+            _scalpel.SetActive(true);
         }
         else if (_first == 3) //ivy
         {
             _side.SetActive(false);
-            _arm.SetActive(true);
+            _ivy.SetActive(true);
         }
         else if (_first == 5) //globe
         {
