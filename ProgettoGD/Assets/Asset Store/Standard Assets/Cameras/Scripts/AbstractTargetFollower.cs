@@ -19,7 +19,7 @@ namespace UnityStandardAssets.Cameras
         [SerializeField] private bool m_AutoTargetPlayer = true;  // Whether the rig should automatically target the player.
         [SerializeField] private UpdateType m_UpdateType;         // stores the selected update type
         [SerializeField] protected Transform m_memory;
-        [SerializeField] protected bool _viewMemory= false;
+        [SerializeField] protected bool _viewMemory= false;//
 
         protected Rigidbody targetRigidbody;
 
@@ -48,7 +48,7 @@ namespace UnityStandardAssets.Cameras
         {
             // we update from here if updatetype is set to Fixed, or in auto mode,
             // if the target has a rigidbody, and isn't kinematic.
-            if(_viewMemory)
+           if(_viewMemory)
                 {
                     _coroutine = StartCoroutine(CoroutineMemory());
                 }

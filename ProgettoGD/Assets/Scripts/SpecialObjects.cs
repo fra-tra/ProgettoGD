@@ -56,12 +56,12 @@ public class SpecialObjects : MonoBehaviour
     {
         _paused = _pauseScript.GetPaused();
 
-        if (Input.GetButton("SpecialObject") && _pressable && !_paused)//se il tasto del joypad o della tastiera è stato premuto 
+        if (Input.GetButton("SpecialObject") && _pressable) //&& !_paused)//se il tasto del joypad o della tastiera è stato premuto 
         {
             Debug.Log("Got button");
             _pressable = false;
             useObjects = true;
-            _coroutine = StartCoroutine( UseSpecialObject());
+            _coroutine = StartCoroutine(UseSpecialObject());
         }
     }
 
@@ -71,10 +71,11 @@ public class SpecialObjects : MonoBehaviour
         _firstObject = _myCounter.GetFirstObject();
         _secondObject = _myCounter.GetSecondObject();
 
-        if( _currentLevel == 3) //Poesia Epica
+        if( _currentLevel == 4) //Poesia Epica
         {
             if(_firstObject == 1) //martello
             {
+
                 useHammer();//Funzionamento di x
             }
             else if(_secondObject ==2) //chiave
@@ -82,7 +83,7 @@ public class SpecialObjects : MonoBehaviour
                 useKey();//Funzionamento di x
             }
         }
-        else if(_currentLevel == 7) //Astronomia
+        else if(_currentLevel == 8) //Astronomia
         {
             if(_firstObject == 5) //globo
             {
@@ -93,7 +94,7 @@ public class SpecialObjects : MonoBehaviour
                 useGear();//Funzionamento di x
             }
         }
-        else if(_currentLevel == 6) //Commedia
+        else if(_currentLevel == 7) //Commedia
         {
             if(_firstObject == 3) //edera
             {
