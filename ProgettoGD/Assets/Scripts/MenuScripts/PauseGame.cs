@@ -32,6 +32,11 @@ public class PauseGame : MonoBehaviour
 
     }
 
+    public bool GetPaused()
+    {
+        return GameIsPaused;
+    }
+
     public void Resume()
     {
         pauseMenuUI.SetActive(false); 

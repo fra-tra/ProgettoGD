@@ -7,19 +7,27 @@ public class Intern1Manager : MonoBehaviour
     private Counter _myCounter;
     [SerializeField] GameObject _player;
     [SerializeField] GameObject _position;
+    [SerializeField] private LevelLoader _levelLoader;
 
     // Start is called before the first frame update
     void Start()
     {
 
-        //_myCounter = (Counter)FindObjectOfType(typeof(Counter));
-        //_myCounter.SetIntern1(true); //Deve essere settato a false appena ricarichi la montagna, ma dopo che lo controlli
+        _myCounter = (Counter)FindObjectOfType(typeof(Counter));
+        _myCounter.SetIntern1(true); //Deve essere settato a false appena ricarichi la montagna, ma dopo che lo controlli
 
-        /*if (_myCounter.GetSecondObject() == 2 )
+        if (_myCounter.GetSecondObject() == 2 )
         {
             //Sposta la transform del player
            
-        }*/
+        }
 
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        _levelLoader.LoadLevelFromThis(-1);
+        Debug.Log("yey");
+    }
+    
 }

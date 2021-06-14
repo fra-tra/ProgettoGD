@@ -23,6 +23,9 @@ public class SpecialObjects : MonoBehaviour
     [SerializeField] private LevelLoader _levelLoader;
     [SerializeField] private int _hammerDistance;
     [SerializeField] private int _keyDistance;
+    PauseGame _pauseScript;
+    private bool _paused;
+
 
     private Coroutine _coroutine;
     private Counter _myCounter;
@@ -40,6 +43,7 @@ public class SpecialObjects : MonoBehaviour
     {
         _myCounter = (Counter)FindObjectOfType(typeof(Counter));
         m_Animator = GetComponent<Animator>();
+        _pauseScript =  (PauseGame)FindObjectOfType(typeof(PauseGame));
     }
 
     // Update is called once per frame
@@ -50,7 +54,9 @@ public class SpecialObjects : MonoBehaviour
 
     public void SpecialObjPressed()
     {
-        if (Input.GetButton("SpecialObject") && _pressable)//se il tasto del joypad o della tastiera è stato premuto 
+        _paused = _pauseScript.GetPaused();
+
+        if (Input.GetButton("SpecialObject") && _pressable && !_paused)//se il tasto del joypad o della tastiera è stato premuto 
         {
             Debug.Log("Got button");
             _pressable = false;
@@ -61,11 +67,11 @@ public class SpecialObjects : MonoBehaviour
 
     public IEnumerator UseSpecialObject()
     {
-        //_currentLevel = _levelLoader.CurrentLevel();
-        //_firstObject = _myCounter.GetFirstObject();
-        //_secondObject = _myCounter.GetSecondObject();
+        _currentLevel = _levelLoader.CurrentLevel();
+        _firstObject = _myCounter.GetFirstObject();
+        _secondObject = _myCounter.GetSecondObject();
 
-        /*if( _currentLevel == 3) //Poesia Epica
+        if( _currentLevel == 3) //Poesia Epica
         {
             if(_firstObject == 1) //martello
             {
@@ -97,9 +103,9 @@ public class SpecialObjects : MonoBehaviour
             {
                 useSling();//Funzionamento di x
             }
-        }*/
+        }
         //useKey();
-        useHammer();
+        //useHammer();
 
         
         yield return new WaitForSeconds(0.5f);

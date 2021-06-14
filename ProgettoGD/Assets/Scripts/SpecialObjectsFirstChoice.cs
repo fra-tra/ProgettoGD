@@ -5,10 +5,13 @@ using UnityEngine;
 public class SpecialObjectsFirstChoice : MonoBehaviour
 {
     [SerializeField] public Rigidbody _playerRigidBody; //RigidBody del player 
+
     [SerializeField] public GameObject _gameObjectA; //Per applicargli il glow
     [SerializeField] public GameObject _gameObjectB; 
     [SerializeField] public GameObject _gameObjectC;
+
     [SerializeField] public LevelLoader _levelLoader;
+
     [SerializeField] Material _emissionMaterialA;
     [SerializeField] Material _emissionMaterialB;
     [SerializeField] Material _emissionMaterialC;
@@ -88,46 +91,54 @@ public class SpecialObjectsFirstChoice : MonoBehaviour
 
     private void MoveSelection()
     {
-        //Play suono cambio scelta
+        if (_notChoosen)
+        {
+             //Play suono cambio scelta
+            Debug.Log(_analog);
         
-        if (_objA)
-        {
-            _objA = false;
+            if (_objA)
+            {
+                _objA = false;
 
-            if(_analog == 1)
-            {
-                _objB = true;
+                if(_analog >= 0.5)
+                {
+                    _objB = true;
+                }
+                else
+                {
+                    _objC = true;
+                }
             }
-            else
+            else if(_objB)
             {
-                _objC = true;
-            }
-        }
-        else if(_objB)
-        {
-            _objB = false;
+                _objB = false;
 
-            if(_analog == 1)
-            {
-                _objB = true;
+                if(_analog >= 0.5)
+                {
+                    _objC = true;
+                }
+                else
+                {
+                    _objA = true;
+                }
             }
-            else
+            else if(_objC)
             {
-                _objA = true;
-            }
-        }
-        else if(_objC)
-        {
-            _objC = false;
+                _objC = false;
 
-            if(_analog == 1)
-            {
-                _objA = true;
+                if(_analog >= 0.5)
+                {
+                    _objA = true;
+                }
+                else
+                { 
+                    _objB = true;
+                }
             }
-            else
-            { 
-                _objB = true;
-            }
+
+            Debug.Log(_objA);
+            Debug.Log(_objB);
+            Debug.Log(_objC);
         }
     }
 

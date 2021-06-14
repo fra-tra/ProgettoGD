@@ -6,6 +6,7 @@ public class ExitLevelDoor : MonoBehaviour
 {
     private bool _memoryTaken;
     private Counter _myCounter;
+    private bool _entered = false;
 
     [SerializeField] public Memory _myMemory;
     [SerializeField] public bool _isHubZero;
@@ -26,8 +27,9 @@ public class ExitLevelDoor : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player")
+        if (other.tag == "Player" && !_entered)
         {
+            _entered = true;
             ExitLevel();
         }
     }
@@ -41,14 +43,12 @@ public class ExitLevelDoor : MonoBehaviour
             _myCounter._takenMemoryZero = true;
             _levelLoader.LoadNextLevel();//chiama il level loader
         }
-
-        if (_isFinalHub)
+        else if (_isFinalHub)
         {
             _myCounter._takenMemoryFour = true;
             _levelLoader.LoadNext(); //chiama il level loader verso la scena finale
         }
-        
-        if (_memoryTaken)
+        else if (_memoryTaken)
         {
             _myCounter.UpdateCounter(); //incrementa il contatore del num. ricordi in counter
             _levelLoader.LoadNextLevel();//chiama il level loader

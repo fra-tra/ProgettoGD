@@ -169,13 +169,14 @@ public class SpecialObjectsSecondChoice : MonoBehaviour
             //Scelta oggetto comunicata al counter
             if (_objOne)
             { 
-                Debug.Log("One choosen");
-                _myCounter.SecondChoosenObject(_numberOfObjOne); // key
+                Debug.Log("One choosen" + _numberOfObjOne);
+
+                _myCounter.SecondChoosenObject(_numberOfObjOne);
             }
             else if(_objTwo)
             {
-                Debug.Log("Two choosen");
-                _myCounter.SecondChoosenObject(_numberOfObjTwo); // sling
+                Debug.Log("Two choosen" + _numberOfObjTwo);
+                _myCounter.SecondChoosenObject(_numberOfObjTwo);
             }
 
             //return true;
@@ -188,16 +189,18 @@ public class SpecialObjectsSecondChoice : MonoBehaviour
     private void MoveSelection()
     {
         //Play suono cambio scelta
-        
-        if (_objOne)
+         if (_notChoosen)
         {
-            _objOne = false;
-            _objTwo = true;
-        }
-        else if(_objTwo)
-        {
-            _objTwo = false;
-            _objOne = true;
+            if (_objOne)
+            {
+                _objOne = false;
+                _objTwo = true;
+            }
+            else if(_objTwo)
+            {
+                _objTwo = false;
+                _objOne = true;
+            }
         }
     }
 

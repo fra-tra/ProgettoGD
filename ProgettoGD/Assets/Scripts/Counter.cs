@@ -105,10 +105,12 @@ public class Counter : MonoBehaviour
         {
             easy = 7; //comm
         }
-        else //globe
+        else if (first == 5) //globe
         {
             easy = 8; //Astro
         }
+
+        Debug.Log("easy level is" + easy);
     }
 
     public void SecondChoosenObject(int second)

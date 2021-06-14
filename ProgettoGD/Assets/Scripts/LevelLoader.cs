@@ -11,15 +11,21 @@ public class LevelLoader : MonoBehaviour
 
     public float transitionTime = 1f;
     public Animator transition;
+
+    //Contengono gli indici dell'ordine dei livelli
     private int _easy;
     private int _medium;
     private int _difficult;
+
     private bool _easyLevel = true;
     private bool _mediumLevel = false;
     private bool _difficultLevel = false;
+
     private bool _dead = false;
     private bool _lastDeath = false;
     private bool _PlayVideoOnLoad = true;
+    private bool _choice = true;
+
 
     private Counter _myCounter;
 
@@ -36,7 +42,7 @@ public class LevelLoader : MonoBehaviour
         return SceneManager.GetActiveScene().buildIndex ;
     }
 
-    public void LoadNext() //Funziona da menu a caduta, da caduta a hub, da hubfinale a finale
+    public void LoadNext() //Funziona da menu a caduta1, da caduta1 a caduta 2 a  da caduta a hub, da hubfinale a finale
     {
         _PlayVideoOnLoad = true;
         StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex +1));
@@ -50,7 +56,9 @@ public class LevelLoader : MonoBehaviour
 
     public void LoadNextLevel() //Funzione chiamata da Hub e dai livelli
     {
-        StartCoroutine( LoadLevel(WhatNextLevel()) );
+        _choice = true;
+        int n = WhatNextLevel();
+        StartCoroutine(LoadLevel(n));
     }
 
     public int WhatNextLevel()
@@ -70,20 +78,26 @@ public class LevelLoader : MonoBehaviour
 
         _PlayVideoOnLoad = true;
 
-        if(_easyLevel)
+        if(_easyLevel && _choice) //Lo chiama l'hub
         {
+            _choice = false;
+            Debug.Log("To the easy level" + _easy);
             _easyLevel = false;
             _mediumLevel = true;
             return _easy;
         }
-        else if(_mediumLevel)
+        else if(_mediumLevel && _choice) //Lo chiama easy
         {
+            _choice = false;
+            Debug.Log("To the medium level" + _medium);
             _mediumLevel = false;
             _difficultLevel = true;
             return _medium;
         }
-        else if(_difficultLevel)
+        else if(_difficultLevel && _choice) //Lo chiama medium
         {
+            _choice = false;
+            Debug.Log("To the difficult level" + _difficult);
             _difficultLevel = false;
             return _difficult;
         }
