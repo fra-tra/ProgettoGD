@@ -19,6 +19,9 @@ public class CharacterPartVisualization : MonoBehaviour
     [SerializeField] GameObject _lifeOne;
     [SerializeField] GameObject _lifeTwo;
 
+    [SerializeField] Material _brokenMaterial;
+    [SerializeField] Material _veryBrokenMaterial;
+
     private Counter _myCounter;
     private int _first;
     private int _second;
@@ -88,12 +91,12 @@ public class CharacterPartVisualization : MonoBehaviour
         {
             _lifeOne.SetActive(false);
             _lifeTwo.SetActive(false);
-            //Assegnazione materiale rottissimo
+            gameObject.GetComponent<MeshRenderer> ().material = _veryBrokenMaterial;//Assegnazione materiale rottissimo
         }
         else if (_lifeCounter == 2)
         {
             _lifeOne.SetActive(false);
-            //Assegnazione materiale rotto
+            gameObject.GetComponent<MeshRenderer> ().material = _brokenMaterial;//Assegnazione materiale rotto
         }
         
     }

@@ -2251,7 +2251,7 @@ PrefabInstance:
     - target: {fileID: 696984684695766999, guid: 42e7ea487aba841a28c23f7324f76e23,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -44.02
+      value: -43.54
       objectReference: {fileID: 0}
     - target: {fileID: 696984684695766999, guid: 42e7ea487aba841a28c23f7324f76e23,
         type: 3}
@@ -2392,6 +2392,11 @@ PrefabInstance:
       propertyPath: _videoPanel
       value: 
       objectReference: {fileID: 5064386}
+    - target: {fileID: 6802929807813654835, guid: fb28ef058a3c640e0b754e6b62c39d57,
+        type: 3}
+      propertyPath: _PlayVideoOnLoad
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb28ef058a3c640e0b754e6b62c39d57, type: 3}
 --- !u!114 &415186028 stripped
@@ -10406,6 +10411,7 @@ MonoBehaviour:
   _player: {fileID: 844044151}
   _positionLower: {fileID: 1001329073}
   _positionUpper: {fileID: 1519192180}
+  _firstRock: {fileID: 4285960922432073048}
 --- !u!4 &1754149510
 Transform:
   m_ObjectHideFlags: 0
@@ -16351,12 +16357,12 @@ PrefabInstance:
     - target: {fileID: 8359024381457504442, guid: c1c770f1e4f24493ab81e3b9ffe9b326,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -18.737879
+      value: -54.8
       objectReference: {fileID: 0}
     - target: {fileID: 8359024381457504442, guid: c1c770f1e4f24493ab81e3b9ffe9b326,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 36.996048
+      value: 65.1
       objectReference: {fileID: 0}
     - target: {fileID: 8359024381457504442, guid: c1c770f1e4f24493ab81e3b9ffe9b326,
         type: 3}
@@ -16392,6 +16398,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8359024381684012173, guid: c1c770f1e4f24493ab81e3b9ffe9b326,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8359024381684012173, guid: c1c770f1e4f24493ab81e3b9ffe9b326,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 37.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8359024381684012173, guid: c1c770f1e4f24493ab81e3b9ffe9b326,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.6
       objectReference: {fileID: 0}
     - target: {fileID: 8359024382413117627, guid: c1c770f1e4f24493ab81e3b9ffe9b326,
         type: 3}

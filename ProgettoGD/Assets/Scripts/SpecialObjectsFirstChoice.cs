@@ -202,9 +202,6 @@ public class SpecialObjectsFirstChoice : MonoBehaviour
     {
         Debug.Log("ExitChoice");
         _coroutine = StartCoroutine(CoroutinePlayVideo());
-        //Fa partire il video
-        //coroutine con Yield oppure fine del fideo esplode (?)
-        //LevelLoaderMannaggia
         _levelLoader.LoadNext();
     }
 

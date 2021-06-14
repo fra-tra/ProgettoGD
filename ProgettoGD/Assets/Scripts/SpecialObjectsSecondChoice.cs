@@ -111,11 +111,6 @@ public class SpecialObjectsSecondChoice : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        /*CheckAnalog();
-        if (CheckChoice())
-        {
-            ExitChoice();
-        }*/
         CheckAnalog();
         CheckChoice();
     }
@@ -233,6 +228,5 @@ public class SpecialObjectsSecondChoice : MonoBehaviour
         }
     }
     
-
     
 }

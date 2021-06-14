@@ -694,6 +694,8 @@ MonoBehaviour:
   _gear: {fileID: 1624631167772495326}
   _lifeOne: {fileID: 1624631166386497684}
   _lifeTwo: {fileID: 1624631166053325007}
+  _brokenMaterial: {fileID: 2100000, guid: a1137e60cd51e4fec9517d2df066b63d, type: 2}
+  _veryBrokenMaterial: {fileID: 2100000, guid: a8962d67e25374c56830130ce61fb77b, type: 2}
 --- !u!1 &1624631166053325007
 GameObject:
   m_ObjectHideFlags: 0

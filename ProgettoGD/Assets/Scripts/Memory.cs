@@ -49,10 +49,6 @@ public class Memory : MonoBehaviour
 
     public void CollectMemory()
     {
-        //Inserisci condizioni del caso per ogni livello
-        //In quello della poesia epica deve essere libera dalla statua
-        //in quella dell’astronomia il droide deve essersi fermato
-        //La gestisce comunque la stessa variabile
         ObtainedMemory();
         gameObject.SetActive(false); //Non lo distruggo, lo faccio sparire, perché mi serve ancora che ci sia questo codice attivo per ottenere dati
         _AnelloUIThis.SetActive(true);

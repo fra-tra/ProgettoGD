@@ -23,8 +23,8 @@ public class NavAgentStroll : MonoBehaviour
         _navMeshAgent = GetComponent<NavMeshAgent>();
         _navMeshAgent.SetDestination(GetRandomPositionOnGround());
 
-        //_myCounter = (Counter)FindObjectOfType(typeof(Counter));
-        //_firstObject = _myCounter.GetFirstObject();
+        _myCounter = (Counter)FindObjectOfType(typeof(Counter));
+        _firstObject = _myCounter.GetFirstObject();
 
     }
 
@@ -52,7 +52,7 @@ public class NavAgentStroll : MonoBehaviour
 
     private void CheckGlobe()
     {
-        if ( /* _firstObject ==  5 &&*/ Input.GetButton("SpecialObject"))
+        if (  _firstObject ==  5 && Input.GetButton("SpecialObject"))
         {
             _stopped = true;
             _coroutine = StartCoroutine(WaitRestartChasing());

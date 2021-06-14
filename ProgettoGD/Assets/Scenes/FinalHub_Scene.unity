@@ -2416,6 +2416,11 @@ PrefabInstance:
       propertyPath: _videoPanel
       value: 
       objectReference: {fileID: 1554459569}
+    - target: {fileID: 6802929807813654835, guid: fb28ef058a3c640e0b754e6b62c39d57,
+        type: 3}
+      propertyPath: _PlayVideoOnLoad
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8921951513347856191, guid: fb28ef058a3c640e0b754e6b62c39d57,
         type: 3}
       propertyPath: m_IsActive

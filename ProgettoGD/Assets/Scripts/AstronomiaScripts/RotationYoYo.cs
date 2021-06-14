@@ -24,7 +24,7 @@ public class RotationYoYo : MonoBehaviour
     void Start()
     {
         _playerRB = _player.GetComponent<Rigidbody>();
-        //_myCounter = (Counter)FindObjectOfType(typeof(Counter));
+        _myCounter = (Counter)FindObjectOfType(typeof(Counter));
         YoYoRotation();
     }
 
@@ -36,7 +36,7 @@ public class RotationYoYo : MonoBehaviour
 
     private void GearPower()
     {
-        if (_isPlayerOn && /* _myCounter.GetFirstObject() == 6 &&*/ Input.GetButton("SpecialObject"))
+        if (_isPlayerOn && _myCounter.GetFirstObject() == 6 && Input.GetButton("SpecialObject"))
         {
             if (!_rotationStopped)
             {

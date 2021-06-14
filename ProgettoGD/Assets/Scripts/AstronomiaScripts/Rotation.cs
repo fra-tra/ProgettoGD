@@ -13,7 +13,6 @@ public class Rotation: MonoBehaviour
     [SerializeField] float _rotationTime = 30f;
     [SerializeField] GameObject _player;
     [SerializeField] GameObject _platform;
-    //[SerializeField] Rigidbody _playerRB;
 
     private Sequence moveSequence;
     private bool  _isPlayerOn = false;
@@ -27,7 +26,7 @@ public class Rotation: MonoBehaviour
     void Start()
     {
         _playerRB = _player.GetComponent<Rigidbody>();
-        //_myCounter = (Counter)FindObjectOfType(typeof(Counter));
+        _myCounter = (Counter)FindObjectOfType(typeof(Counter));
         SimpleRotation();
     }
 
@@ -39,7 +38,7 @@ public class Rotation: MonoBehaviour
     
     private void GearPower()
     {
-        if (_isPlayerOn && /* _myCounter.GetFirstObject() == 6 &&*/ Input.GetButton("SpecialObject"))
+        if (_isPlayerOn &&  _myCounter.GetFirstObject() == 6 && Input.GetButton("SpecialObject"))
         {
             if (!_rotationStopped)
             {

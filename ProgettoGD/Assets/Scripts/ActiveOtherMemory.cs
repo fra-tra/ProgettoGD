@@ -22,9 +22,6 @@ public class ActiveOtherMemory : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-
-
      public void NotFirstLevel()
     {
             _AnelloUIOther.SetActive(true);

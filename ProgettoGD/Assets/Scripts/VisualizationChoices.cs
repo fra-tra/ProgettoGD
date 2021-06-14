@@ -7,11 +7,10 @@ public class VisualizationChoices : MonoBehaviour
     // Start is called before the first frame update
     [SerializeField] GameObject _hammer;
     [SerializeField] GameObject _scalpel;
-    [SerializeField] GameObject _key;
     [SerializeField] GameObject _ivy;
-    [SerializeField] GameObject _sling;
     [SerializeField] GameObject _globe;
-    [SerializeField] GameObject _gear;
+
+
 
     private Counter _myCounter;
     private int _first;
@@ -21,12 +20,7 @@ public class VisualizationChoices : MonoBehaviour
         _myCounter = (Counter)FindObjectOfType(typeof(Counter));
         _first = _myCounter.GetFirstObject();
         VisualizeFirstObject();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+ 
     }
 
     private void VisualizeFirstObject()
@@ -45,4 +39,5 @@ public class VisualizationChoices : MonoBehaviour
             _globe.SetActive(true);
         }
     }
+
 }

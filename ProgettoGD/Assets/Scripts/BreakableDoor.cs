@@ -13,18 +13,6 @@ public class BreakableDoor : MonoBehaviour
 
     private bool _isOpened = false; //Pilota la possibilità della porta di funzionare come un trigger
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void hitHammer()
     {
         //Porta colpita dal martello

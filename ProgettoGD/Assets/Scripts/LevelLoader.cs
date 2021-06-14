@@ -8,6 +8,7 @@ public class LevelLoader : MonoBehaviour
 {
     [SerializeField] public VideoPlayer _video;
     [SerializeField] public GameObject _videoPanel;
+    [SerializeField] bool _PlayVideoOnLoad;
 
     public float transitionTime = 1f;
     public Animator transition;
@@ -23,7 +24,6 @@ public class LevelLoader : MonoBehaviour
 
     private bool _dead = false;
     private bool _lastDeath = false;
-    private bool _PlayVideoOnLoad = true;
     private bool _choice = true;
 
 
@@ -44,13 +44,13 @@ public class LevelLoader : MonoBehaviour
 
     public void LoadNext() //Funziona da menu a caduta1, da caduta1 a caduta 2 a  da caduta a hub, da hubfinale a finale
     {
-        _PlayVideoOnLoad = true;
+        //_PlayVideoOnLoad = true;
         StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex +1));
     }
     
     public void LoadLevelFromThis (int n) //Per andare e tornare dagli interni (che sono +1 e +2 dal loro livello di riferimento)
     {
-         _PlayVideoOnLoad = false;
+        _PlayVideoOnLoad = false;
         StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + n));
     }
 
@@ -76,7 +76,10 @@ public class LevelLoader : MonoBehaviour
             return 3; //Numero dell'hub iniziale perché sei morto del tutto
         }
 
-        _PlayVideoOnLoad = true;
+        if (SceneManager.GetActiveScene().buildIndex != 7)
+        {
+            _PlayVideoOnLoad = true;
+        }
 
         if(_easyLevel && _choice) //Lo chiama l'hub
         {
@@ -84,6 +87,7 @@ public class LevelLoader : MonoBehaviour
             Debug.Log("To the easy level" + _easy);
             _easyLevel = false;
             _mediumLevel = true;
+
             return _easy;
         }
         else if(_mediumLevel && _choice) //Lo chiama easy

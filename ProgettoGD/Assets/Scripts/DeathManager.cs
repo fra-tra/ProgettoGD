@@ -45,7 +45,7 @@ public class DeathManager : MonoBehaviour
 
     public void isDead() //Può essere chiamata anche a altre situazioni
     {
-       // _livesFinished = _myCounter.UpdateCounterOnDeath(); //Decrementa il contatore delle vite e ottiene un bool
+        _livesFinished = _myCounter.UpdateCounterOnDeath(); //Decrementa il contatore delle vite e ottiene un bool
 
         if (_livesFinished)
         {

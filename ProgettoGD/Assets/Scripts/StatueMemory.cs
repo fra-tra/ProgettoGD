@@ -19,11 +19,11 @@ public class StatueMemory : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         _myCounter = (Counter)FindObjectOfType(typeof(Counter));
 
-        //if (_myCounter.GetFirstObject() == 1) //Se si ha il martello
-        //{
-           //rb.isKinematic = true; //Le statue non sono più rompibili
+        if (_myCounter.GetFirstObject() == 1) //Se si ha il martello
+        {
+           rb.isKinematic = true; //Le statue non sono più rompibili
 
-        //}
+        }
     }
 
     // Update is called once per frame

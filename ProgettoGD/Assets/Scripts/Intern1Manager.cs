@@ -18,7 +18,7 @@ public class Intern1Manager : MonoBehaviour
 
         if (_myCounter.GetSecondObject() == 2 )
         {
-            //Sposta la transform del player
+            _player.transform.position = _position.transform.position; //Sposta la transform del player davanti la porta giusta
            
         }
 

@@ -134,6 +134,7 @@ MonoBehaviour:
   _video: {fileID: 0}
   _videoPanel: {fileID: 0}
   transitionTime: 1
+  transition: {fileID: 4452480787134558219}
 --- !u!1 &8921951513347856191
 GameObject:
   m_ObjectHideFlags: 0

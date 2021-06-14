@@ -167,11 +167,12 @@ public class Counter : MonoBehaviour
 
         if (_myLifeCounter == 0)
         {
+            _myMemoriesCounter = 0;
             return true; //Ritorna "True" a _livesFinished. Ci sarà una funzione che attiva la cutscene e chiama il level loader verso l'hub0
         }
         else
         {
-            return false; //Ritorna "False" a come _livesFinished. Ci sarà una funzione che attiva la cutscene e chiama il level loader verso l'inizio del livello stesso
+            return false; //Ritorna "False" a _livesFinished. Ci sarà una funzione che attiva la cutscene e chiama il level loader verso l'inizio del livello stesso
         }
     }
 }
