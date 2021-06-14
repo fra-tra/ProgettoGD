@@ -623,7 +623,7 @@ PrefabInstance:
     - target: {fileID: 1511447532114145000, guid: 997e3ee85c6934793a4a83060845f416,
         type: 3}
       propertyPath: _minDistance
-      value: 0.3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1511447532114145000, guid: 997e3ee85c6934793a4a83060845f416,
         type: 3}
@@ -1518,12 +1518,12 @@ VideoPlayer:
   m_VideoClip: {fileID: 32900000, guid: bcae3b513a49a4c5299d6468d817102f, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
-  m_TargetCamera: {fileID: 0}
+  m_TargetCamera: {fileID: 2008785667}
   m_TargetTexture: {fileID: 0}
   m_TimeReference: 0
   m_TargetMaterialRenderer: {fileID: 0}
   m_TargetMaterialProperty: _MainTex
-  m_RenderMode: 2
+  m_RenderMode: 1
   m_AspectRatio: 2
   m_DataSource: 0
   m_PlaybackSpeed: 1
@@ -1727,6 +1727,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5ff7863489807ef4d8d58017da1c0292, type: 3}
+--- !u!20 &2008785667 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 1656063500980240003, guid: 5ff7863489807ef4d8d58017da1c0292,
+    type: 3}
+  m_PrefabInstance: {fileID: 2008785666}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2128783697 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1656063500980240002, guid: 5ff7863489807ef4d8d58017da1c0292,

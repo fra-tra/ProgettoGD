@@ -1,6 +1,9 @@
-﻿using System.Collections;
+﻿
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.Video;
 
 public class Memory : MonoBehaviour
 {
@@ -12,6 +15,8 @@ public class Memory : MonoBehaviour
     
  
     [SerializeField] private CounterVisualize _uiCounter;
+
+
 
     
     // Start is called before the first frame update
@@ -28,6 +33,7 @@ public class Memory : MonoBehaviour
     public void ObtainedMemory() //viene chiamata quando prendi l’oggetto e sparisce
     {
     	_memoryTaken = true;
+
     }
 
     public void LoosedMemory() // viene chiamata quando muori prima della fine del livello
