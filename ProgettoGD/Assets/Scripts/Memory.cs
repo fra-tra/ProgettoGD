@@ -11,7 +11,12 @@ public class Memory : MonoBehaviour
     [SerializeField] private float _minDistance;
     [SerializeField] private GameObject _target; //Deve essere il third person controller
     [SerializeField] private GameObject _AnelloUIThis; 
-    [SerializeField] private GameObject _NucleoUIThis; 
+    [SerializeField] private GameObject _NucleoUIThis;
+
+    [SerializeField] GameObject _part1;
+    [SerializeField] GameObject _part2;
+    [SerializeField] GameObject _part3;
+    [SerializeField] GameObject _part4;
     
  
     [SerializeField] private CounterVisualize _uiCounter;
@@ -44,17 +49,23 @@ public class Memory : MonoBehaviour
     public bool IsTaken()
     {
         return _memoryTaken;
-
     }
 
     public void CollectMemory()
     {
         ObtainedMemory();
-        gameObject.SetActive(false); //Non lo distruggo, lo faccio sparire, perché mi serve ancora che ci sia questo codice attivo per ottenere dati
+
+        _part1.SetActive(false);
+        _part2.SetActive(false);
+        _part3.SetActive(false);
+        _part4.SetActive(false);
+         //Non lo distruggo, lo faccio sparire, perché mi serve ancora che ci sia questo codice attivo per ottenere dati
+
         _AnelloUIThis.SetActive(true);
         _NucleoUIThis.SetActive(true);
         _uiCounter.MemoryTakenUI();
 
+        Debug.Log("Presa memoria" + _memoryTaken);
     }
 
     private bool IsTargetWithinDistance(float distance)

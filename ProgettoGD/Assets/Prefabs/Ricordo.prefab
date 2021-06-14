@@ -141,6 +141,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _minDistance: 0
   _target: {fileID: 0}
+  _AnelloUIThis: {fileID: 0}
+  _NucleoUIThis: {fileID: 0}
+  _part1: {fileID: 7757764579350803902}
+  _part2: {fileID: 7757764578375428630}
+  _part3: {fileID: 7757764579694886168}
+  _part4: {fileID: 6400152564250531652}
+  _uiCounter: {fileID: 0}
 --- !u!1 &7757764578375428630
 GameObject:
   m_ObjectHideFlags: 0
