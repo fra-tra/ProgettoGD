@@ -1380,6 +1380,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 701774560562077526, guid: 1ba87b5eee2734fbca32a14203679c9e,
         type: 3}
+      propertyPath: _videoPanel
+      value: 
+      objectReference: {fileID: 1317371116}
+    - target: {fileID: 701774560562077526, guid: 1ba87b5eee2734fbca32a14203679c9e,
+        type: 3}
       propertyPath: _levelLoader
       value: 
       objectReference: {fileID: 6802929807129554606}
@@ -2462,6 +2467,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5593534390707248231, guid: dd50365ac591f4610b2d25b60325f9ad,
+        type: 3}
+      propertyPath: _videoPanel
+      value: 
+      objectReference: {fileID: 1317371116}
     - target: {fileID: 7152264351356347511, guid: dd50365ac591f4610b2d25b60325f9ad,
         type: 3}
       propertyPath: LightsModule.light

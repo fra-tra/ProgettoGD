@@ -13,6 +13,7 @@ public class PlayVideoInFinalHub : MonoBehaviour
     [SerializeField] public GameObject _videoPanel;
     [SerializeField] public LevelLoader _levelLoader;
     [SerializeField] public Memory _memory;
+    
 
     private int _level;
     private bool _mTaken = false;

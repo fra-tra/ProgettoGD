@@ -77,7 +77,9 @@ public class Rotation: MonoBehaviour
     { 
         if (other.tag == "Player")
         {
-                if (Input.GetButton("Horizontal") || Input.GetButton("Vertical") ||  Input.GetButton("Jump") )
+                if (Input.GetButton("Horizontal") || Input.GetButton("Vertical") ||
+                  Input.GetButton("Jump") || Input.GetAxis("Horizontal") >= 0.5 || Input.GetAxis("Vertical") >= 0.5
+                  || Input.GetAxis("Horizontal") <= -0.5 || Input.GetAxis("Vertical") <= -0.5 )
                 {
                     _playerRB.isKinematic = false;
                 }

@@ -635,6 +635,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 701774560562077526, guid: 1ba87b5eee2734fbca32a14203679c9e,
         type: 3}
+      propertyPath: _videoPanel
+      value: 
+      objectReference: {fileID: 366889612}
+    - target: {fileID: 701774560562077526, guid: 1ba87b5eee2734fbca32a14203679c9e,
+        type: 3}
       propertyPath: _levelLoader
       value: 
       objectReference: {fileID: 556622164}

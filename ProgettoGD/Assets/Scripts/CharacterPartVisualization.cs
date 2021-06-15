@@ -91,12 +91,12 @@ public class CharacterPartVisualization : MonoBehaviour
         {
             _lifeOne.SetActive(false);
             _lifeTwo.SetActive(false);
-            gameObject.GetComponent<MeshRenderer> ().material = _veryBrokenMaterial;//Assegnazione materiale rottissimo
+            //gameObject.GetComponent<MeshRenderer> ().material = _veryBrokenMaterial;//Assegnazione materiale rottissimo
         }
         else if (_lifeCounter == 2)
         {
             _lifeOne.SetActive(false);
-            gameObject.GetComponent<MeshRenderer> ().material = _brokenMaterial;//Assegnazione materiale rotto
+            //gameObject.GetComponent<MeshRenderer> ().material = _brokenMaterial;//Assegnazione materiale rotto
         }
         
     }

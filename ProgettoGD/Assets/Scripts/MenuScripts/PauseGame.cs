@@ -7,6 +7,7 @@ public class PauseGame : MonoBehaviour
 {
     [SerializeField] GameObject _commandsMenu;
     [SerializeField] LevelLoader _levelLoader;
+    [SerializeField] public GameObject _videoPanel;
     
     public static bool GameIsPaused = false; 
 
@@ -17,18 +18,20 @@ public class PauseGame : MonoBehaviour
 
     void Update()
     {
-
-        if(Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown("joystick button 9"))
+        if(!_videoPanel.activeSelf)
         {
-           if(GameIsPaused)
-           {
-               Resume();
-           } 
-           else
-           {
-               Pause();
-           }
-        }
+            if(Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown("joystick button 9"))
+            {
+                if(GameIsPaused)
+                {
+                    Resume();
+                } 
+                else
+                {
+                    Pause();
+                }
+            }
+        }    
 
     }
 

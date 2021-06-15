@@ -7,16 +7,13 @@ public class CounterVisualize : MonoBehaviour
     // Start is called before the first frame update
     [SerializeField] Animator _animator;
     [SerializeField] GameObject _ui;
+    [SerializeField] public GameObject _videoPanel;
     
 
     private bool _buttonCounterPressed = false;
     private bool _uiActive = false;
 
     private bool _paused;
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
@@ -25,6 +22,8 @@ public class CounterVisualize : MonoBehaviour
         OpenCounter();
         CloseCounter();
         _paused = PauseGame.GameIsPaused;
+        CloseOnPause();
+        CloseOnVideo();
     }
 
     public void OpenCounter()
@@ -51,21 +50,42 @@ public class CounterVisualize : MonoBehaviour
         Debug.Log("Open");
     }
 
+    public void CloseOnPause()
+    {
+        if(_paused)
+        {
+            Close();
+        }
+    }
+
+    public void CloseOnVideo()
+    {
+        if(_videoPanel.activeSelf)
+        {
+            Close();
+        }
+    }
+
     public void CloseCounter()
     {
         if(_uiActive)
         {
             if(_buttonCounterPressed)
             {
-                _ui.SetActive(false);
-                _buttonCounterPressed=false;
-                _animator.SetBool("IsOpen", false);
-                Debug.Log("Close");
-                _uiActive = false;
+                Close();
             }
         
         }
         
+    }
+
+    public void Close()
+    {
+        _ui.SetActive(false);
+        _buttonCounterPressed=false;
+        _animator.SetBool("IsOpen", false);
+        Debug.Log("Close");
+        _uiActive = false;
     }
 
     private void CheckPressed()

@@ -56,7 +56,7 @@ public class SpecialObjects : MonoBehaviour
     {
         _paused = _pauseScript.GetPaused();
 
-        if (Input.GetButton("SpecialObject") && _pressable) //&& !_paused)//se il tasto del joypad o della tastiera è stato premuto 
+        if (Input.GetButton("SpecialObject") && _pressable && !_paused) //se il tasto del joypad o della tastiera è stato premuto 
         {
             Debug.Log("Got button");
             _pressable = false;
