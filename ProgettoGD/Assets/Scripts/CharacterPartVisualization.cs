@@ -7,6 +7,7 @@ public class CharacterPartVisualization : MonoBehaviour
     [SerializeField] GameObject _arm;
     [SerializeField] GameObject _head;
     [SerializeField] GameObject _side;
+    [SerializeField] GameObject _body;
 
     [SerializeField] GameObject _hammer;
     [SerializeField] GameObject _scalpel;
@@ -91,12 +92,12 @@ public class CharacterPartVisualization : MonoBehaviour
         {
             _lifeOne.SetActive(false);
             _lifeTwo.SetActive(false);
-            //gameObject.GetComponent<MeshRenderer> ().material = _veryBrokenMaterial;//Assegnazione materiale rottissimo
+            _body.GetComponent<MeshRenderer> ().material = _veryBrokenMaterial;//Assegnazione materiale rottissimo
         }
         else if (_lifeCounter == 2)
         {
             _lifeOne.SetActive(false);
-            //gameObject.GetComponent<MeshRenderer> ().material = _brokenMaterial;//Assegnazione materiale rotto
+            _body.GetComponent<MeshRenderer> ().material = _brokenMaterial;//Assegnazione materiale rotto
         }
         
     }
