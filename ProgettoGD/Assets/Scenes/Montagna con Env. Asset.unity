@@ -11674,10 +11674,35 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2050636650}
     m_Modifications:
+    - target: {fileID: 2612537431923630866, guid: bc3743681528e47ea837add277bed76c,
+        type: 3}
+      propertyPath: m_TagString
+      value: BreakableDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 4318484166797854230, guid: bc3743681528e47ea837add277bed76c,
+        type: 3}
+      propertyPath: m_TagString
+      value: BreakableDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 5661973030909099240, guid: bc3743681528e47ea837add277bed76c,
+        type: 3}
+      propertyPath: m_TagString
+      value: BreakableDoor
+      objectReference: {fileID: 0}
     - target: {fileID: 5887778813534893891, guid: bc3743681528e47ea837add277bed76c,
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5887778813534893891, guid: bc3743681528e47ea837add277bed76c,
+        type: 3}
+      propertyPath: m_TagString
+      value: BreakableDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266932600990759030, guid: bc3743681528e47ea837add277bed76c,
+        type: 3}
+      propertyPath: m_TagString
+      value: BreakableDoor
       objectReference: {fileID: 0}
     - target: {fileID: 6683944876878241092, guid: bc3743681528e47ea837add277bed76c,
         type: 3}
@@ -11760,6 +11785,11 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7284317963498029078, guid: bc3743681528e47ea837add277bed76c,
+        type: 3}
+      propertyPath: m_TagString
+      value: BreakableDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 7856390066434745472, guid: bc3743681528e47ea837add277bed76c,
         type: 3}
       propertyPath: m_TagString
       value: BreakableDoor
@@ -13843,6 +13873,16 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2612537431923630866, guid: bc3743681528e47ea837add277bed76c,
+        type: 3}
+      propertyPath: m_TagString
+      value: BreakableDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 4318484166797854230, guid: bc3743681528e47ea837add277bed76c,
+        type: 3}
+      propertyPath: m_TagString
+      value: BreakableDoor
+      objectReference: {fileID: 0}
     - target: {fileID: 5132220667634931495, guid: bc3743681528e47ea837add277bed76c,
         type: 3}
       propertyPath: m_Size.x
@@ -13858,12 +13898,22 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: 0.06626315
       objectReference: {fileID: 0}
+    - target: {fileID: 5661973030909099240, guid: bc3743681528e47ea837add277bed76c,
+        type: 3}
+      propertyPath: m_TagString
+      value: BreakableDoor
+      objectReference: {fileID: 0}
     - target: {fileID: 5887778813534893891, guid: bc3743681528e47ea837add277bed76c,
         type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5887778813534893891, guid: bc3743681528e47ea837add277bed76c,
+        type: 3}
+      propertyPath: m_TagString
+      value: BreakableDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266932600990759030, guid: bc3743681528e47ea837add277bed76c,
         type: 3}
       propertyPath: m_TagString
       value: BreakableDoor
@@ -13939,6 +13989,11 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7284317963498029078, guid: bc3743681528e47ea837add277bed76c,
+        type: 3}
+      propertyPath: m_TagString
+      value: BreakableDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 7856390066434745472, guid: bc3743681528e47ea837add277bed76c,
         type: 3}
       propertyPath: m_TagString
       value: BreakableDoor

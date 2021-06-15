@@ -93,6 +93,9 @@ GameObject:
   - component: {fileID: 1150204737598857389}
   - component: {fileID: 4088392849432474349}
   - component: {fileID: 3402317099598239064}
+  - component: {fileID: 6424489710283556380}
+  - component: {fileID: 4143337996046486196}
+  - component: {fileID: 1908181627926403882}
   m_Layer: 0
   m_Name: StatuaB1
   m_TagString: BreakableStatue
@@ -145,8 +148,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.3012326, y: 6.9012356, z: 3.6786256}
-  m_Center: {x: -0.17746098, y: 3.409648, z: -0.7884754}
+  m_Size: {x: 0.98034227, y: 6.9012356, z: 2.6939611}
+  m_Center: {x: 0.03868472, y: 3.409648, z: -0.69241107}
 --- !u!54 &1150204737598857389
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -272,6 +275,45 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!65 &6424489710283556380
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3140860442853491008}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.42796934, y: 6.9012356, z: 1.3250382}
+  m_Center: {x: 0.7231467, y: 3.409648, z: 0.36430174}
+--- !u!65 &4143337996046486196
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3140860442853491008}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.84825397, y: 5.1156926, z: 0.77266586}
+  m_Center: {x: -0.891943, y: 4.3024197, z: -0.81249154}
+--- !u!65 &1908181627926403882
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3140860442853491008}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.8482535, y: 6.9012356, z: 0.5805372}
+  m_Center: {x: -0.7238295, y: 3.409648, z: -2.3255122}
 --- !u!1 &5521563951823131194
 GameObject:
   m_ObjectHideFlags: 0

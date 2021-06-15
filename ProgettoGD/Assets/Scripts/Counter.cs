@@ -39,6 +39,10 @@ public class Counter : MonoBehaviour
     // Comedy 7
     // Astronomy 8
 
+    public bool _easyLevel = true;
+    public bool _mediumLevel = false;
+    public bool _difficultLevel = false;
+
     void Awake()
     {
         DontDestroyOnLoad(this.gameObject);
@@ -54,10 +58,41 @@ public class Counter : MonoBehaviour
         //
     }
 
+    public bool GetEasy()
+    {
+        return _easyLevel;
+    }
+
+    public void SetEasy(bool e)
+    {
+        _easyLevel = e;
+    }
+
+    public bool GetMedium()
+    {
+        return _mediumLevel;
+    }
+
+    public void SetMedium(bool m)
+    {
+        _mediumLevel = m;
+    }
+
+    public bool GetDifficult()
+    {
+        return _difficultLevel;
+    }
+
+    public void SetDifficult(bool d)
+    {
+        _mediumLevel = d;
+    }
+
     public int GetFirstObject()
     {
         return _firstChoosenObject;
     }
+
 
     public int GetSecondObject()
     {

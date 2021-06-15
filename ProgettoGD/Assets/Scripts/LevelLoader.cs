@@ -18,10 +18,6 @@ public class LevelLoader : MonoBehaviour
     private int _medium;
     private int _difficult;
 
-    private bool _easyLevel = true;
-    private bool _mediumLevel = false;
-    private bool _difficultLevel = false;
-
     private bool _dead = false;
     private bool _lastDeath = false;
     private bool _choice = true;
@@ -81,28 +77,28 @@ public class LevelLoader : MonoBehaviour
             _PlayVideoOnLoad = true;
         }
 
-        if(_easyLevel && _choice) //Lo chiama l'hub
+        if(_myCounter.GetEasy() && _choice) //Lo chiama l'hub
         {
             _choice = false;
             Debug.Log("To the easy level" + _easy);
-            _easyLevel = false;
-            _mediumLevel = true;
+            _myCounter.SetEasy(false);
+            _myCounter.SetMedium(true);
 
             return _easy;
         }
-        else if(_mediumLevel && _choice) //Lo chiama easy
+        else if(_myCounter.GetMedium() && _choice) //Lo chiama easy
         {
             _choice = false;
             Debug.Log("To the medium level" + _medium);
-            _mediumLevel = false;
-            _difficultLevel = true;
+            _myCounter.SetMedium(false);
+            _myCounter.SetDifficult(true);
             return _medium;
         }
-        else if(_difficultLevel && _choice) //Lo chiama medium
+        else if(_myCounter.GetDifficult() && _choice) //Lo chiama medium
         {
             _choice = false;
             Debug.Log("To the difficult level" + _difficult);
-            _difficultLevel = false;
+            _myCounter.SetDifficult(false);
             return _difficult;
         }
         else return 9; //Valore del level loader per l'hub finale (Questa sarà chiamata dal livello difficile)
