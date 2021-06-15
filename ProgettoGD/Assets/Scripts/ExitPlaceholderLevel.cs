@@ -11,6 +11,7 @@ public class ExitPlaceholderLevel : MonoBehaviour
     {
         if (Input.GetButton("SpecialObject") && !_pressed)
         {
+            Debug.Log("Loading...");
             _pressed = true;
             _levelLoader.LoadNextLevel();
         }
