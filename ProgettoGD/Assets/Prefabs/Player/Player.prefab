@@ -685,6 +685,7 @@ MonoBehaviour:
   _arm: {fileID: 1624631165791965066}
   _head: {fileID: 1624631167416711258}
   _side: {fileID: 1624631165774113486}
+  _body: {fileID: 1624631166838561281}
   _hammer: {fileID: 1624631167120998293}
   _scalpel: {fileID: 1624631166995385630}
   _key: {fileID: 1624631167184474634}
