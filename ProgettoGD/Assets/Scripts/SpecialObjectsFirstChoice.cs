@@ -10,11 +10,14 @@ public class SpecialObjectsFirstChoice : MonoBehaviour
     [SerializeField] public GameObject _gameObjectB; 
     [SerializeField] public GameObject _gameObjectC;
 
+
     [SerializeField] public LevelLoader _levelLoader;
 
     [SerializeField] Material _emissionMaterialA;
     [SerializeField] Material _emissionMaterialB;
     [SerializeField] Material _emissionMaterialC;
+
+    [SerializeField] GameObject _ui;
 
     private bool _objA = true; //Hammer
     private bool _objB = false; //Ivy
@@ -52,6 +55,7 @@ public class SpecialObjectsFirstChoice : MonoBehaviour
     {
          //Blocca la caduta dell’omino rendendolo Kinematic
         _playerRigidBody.isKinematic = true;
+        _ui.SetActive(true);
     }
 
     private void OnTriggerStay(Collider other)

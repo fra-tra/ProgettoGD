@@ -8,6 +8,9 @@ public class CounterVisualize : MonoBehaviour
     [SerializeField] Animator _animator;
     [SerializeField] GameObject _ui;
     [SerializeField] public GameObject _videoPanel;
+    [SerializeField] GameObject _comands;
+
+    public bool _firsthub = false;
     
 
     private bool _buttonCounterPressed = false;
@@ -37,6 +40,7 @@ public class CounterVisualize : MonoBehaviour
                 _animator.SetBool("IsOpen", true);
                 _buttonCounterPressed = false;
                 Debug.Log("Open");
+                
             }
         }
     }
@@ -48,6 +52,10 @@ public class CounterVisualize : MonoBehaviour
         _animator.SetBool("IsOpen", true);
         _buttonCounterPressed = false;
         Debug.Log("Open");
+        if(_firsthub)
+        {
+            _comands.SetActive(true);
+        }
     }
 
     public void CloseOnPause()
@@ -86,6 +94,13 @@ public class CounterVisualize : MonoBehaviour
         _animator.SetBool("IsOpen", false);
         Debug.Log("Close");
         _uiActive = false;
+        if(_firsthub)
+        {
+            _comands.SetActive(false);
+            _firsthub = false;
+        }
+        
+        
     }
 
     private void CheckPressed()
