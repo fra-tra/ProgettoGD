@@ -17,6 +17,8 @@ public class Memory : MonoBehaviour
     [SerializeField] GameObject _part2;
     [SerializeField] GameObject _part3;
     [SerializeField] GameObject _part4;
+
+    [SerializeField] AudioSource audioSource; //AudioSource del ricordo
     
  
     [SerializeField] private CounterVisualize _uiCounter;
@@ -59,6 +61,7 @@ public class Memory : MonoBehaviour
         _part2.SetActive(false);
         _part3.SetActive(false);
         _part4.SetActive(false);
+        audioSource.mute = true ;
          //Non lo distruggo, lo faccio sparire, perché mi serve ancora che ci sia questo codice attivo per ottenere dati
 
         _AnelloUIThis.SetActive(true);

@@ -15,6 +15,8 @@ public class RocksGenerator : MonoBehaviour
     private bool _falling = false;
     private bool _rightTime = true;
 
+    public AudioClip audioClip;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -65,6 +67,7 @@ public class RocksGenerator : MonoBehaviour
         {
             Debug.Log("Spawn");
             Object obj = Instantiate(_rockPrefab, GetRandomPosition(), Quaternion.identity);
+            AudioSource.PlayClipAtPoint(audioClip, transform.position);
             Destroy(obj, 2);
         }
     }

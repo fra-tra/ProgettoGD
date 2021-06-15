@@ -12,6 +12,8 @@ public class Statue : MonoBehaviour
     private Counter _myCounter;
     private Coroutine _coroutine;
     public Rigidbody rb;
+    
+    [SerializeField] public AudioClip audioClip;
 
     // Start is called before the first frame update
     void Start()
@@ -58,6 +60,7 @@ public class Statue : MonoBehaviour
         //Istanzia un nuovo effetto particellare dello standard asset che si chiama Dust Cloud
         Instantiate(_myPrefab, this.transform.position , Quaternion.identity);
         Instantiate(_myPrefabBrokenPieces, this.transform.position , Quaternion.identity);
+        AudioSource.PlayClipAtPoint(audioClip, transform.position);
         Destroy(gameObject);//cancella l'oggetto
     }
 

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.25013176, g: 0.39838102, b: 0.5770473, a: 1}
+  m_IndirectSpecularColor: {r: 0.25013176, g: 0.39838105, b: 0.5770473, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1215,6 +1215,7 @@ GameObject:
   - component: {fileID: 360729741}
   - component: {fileID: 360729740}
   - component: {fileID: 360729742}
+  - component: {fileID: 360729743}
   m_Layer: 10
   m_Name: CutScenesCameraS
   m_TagString: Untagged
@@ -1387,6 +1388,30 @@ MonoBehaviour:
   blendDistance: 0
   weight: 1
   priority: 0
+--- !u!167 &360729743
+AudioReverbZone:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 360729737}
+  m_Enabled: 1
+  m_MinDistance: 40.3
+  m_MaxDistance: 97.3
+  m_ReverbPreset: 14
+  m_Room: -1000
+  m_RoomHF: -237
+  m_DecayTime: 2.7
+  m_DecayHFRatio: 0.79
+  m_Reflections: -1214
+  m_ReflectionsDelay: 0.013
+  m_Reverb: 395
+  m_ReverbDelay: 0.02
+  m_HFReference: 5000
+  m_Diffusion: 100
+  m_Density: 100
+  m_LFReference: 250
+  m_RoomLF: 0
 --- !u!1 &390445370 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7757764578240784084, guid: 997e3ee85c6934793a4a83060845f416,
