@@ -28,8 +28,9 @@ public class PlayerMemories : MonoBehaviour
     {
         if(_video.activeSelf)
         {
-            _cameraPlayer.SetActive(false);
             _cameraMemory.SetActive(true);
+            _cameraPlayer.SetActive(false);
+            
         }
         
     }

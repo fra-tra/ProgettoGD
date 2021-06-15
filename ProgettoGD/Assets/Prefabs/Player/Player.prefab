@@ -573,7 +573,7 @@ MonoBehaviour:
     m_Bits: 1
   groundMinDistance: 0.25
   groundMaxDistance: 0.5
-  slopeLimit: 15
+  slopeLimit: 75
 --- !u!114 &1624631166013607614
 MonoBehaviour:
   m_ObjectHideFlags: 0
