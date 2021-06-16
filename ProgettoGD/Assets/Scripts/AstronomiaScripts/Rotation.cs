@@ -69,7 +69,6 @@ public class Rotation: MonoBehaviour
             Debug.Log(_isPlayerOn);
             _player.transform.SetParent(_platform.transform,true);
             _playerRB.isKinematic = true;
-            Debug.Log("porcatroia");
         }
     }
     
@@ -78,8 +77,8 @@ public class Rotation: MonoBehaviour
         if (other.tag == "Player")
         {
                 if (Input.GetButton("Horizontal") || Input.GetButton("Vertical") ||
-                  Input.GetButton("Jump") || Input.GetAxis("Horizontal") >= 0.5 || Input.GetAxis("Vertical") >= 0.5
-                  || Input.GetAxis("Horizontal") <= -0.5 || Input.GetAxis("Vertical") <= -0.5 )
+                  Input.GetButton("Jump") || Input.GetAxis("Horizontal") >= 0.4 || Input.GetAxis("Vertical") >= 0.4
+                  || Input.GetAxis("Horizontal") <= -0.4 || Input.GetAxis("Vertical") <= -0.4 )
                 {
                     _playerRB.isKinematic = false;
                 }
@@ -97,7 +96,7 @@ public class Rotation: MonoBehaviour
 
     private void SimpleRotation()
     {
-        Debug.Log("Rotate!");
+        //Debug.Log("Rotate!");
         moveSequence = DOTween.Sequence();
         moveSequence.Append(transform.DORotate(new Vector3(0, _rotationAngle,0), _rotationTime, RotateMode.LocalAxisAdd)).SetLoops(-1, LoopType.Incremental).SetEase(Ease.Linear);
         moveSequence.Play();

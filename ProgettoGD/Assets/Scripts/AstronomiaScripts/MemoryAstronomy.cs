@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MemoryAstronomy : Memory
+public class MemoryAstronomy : MonoBehaviour
 {
     [SerializeField] LevelLoader _levelLoader;
+    [SerializeField] Memory _mem;
     private Counter _myCounter;
+    private bool _loaded = false;
     
     void Start()
     {
@@ -15,9 +17,12 @@ public class MemoryAstronomy : Memory
     // Update is called once per frame
     void Update()
     {
-        if(IsTaken())
+
+        if(_mem.IsTaken() && !_loaded)
         {
-             _myCounter.UpdateCounter();
+            _loaded = true;
+            Debug.Log("RICORDO PRESO");
+            _myCounter.UpdateCounter();
             _levelLoader.LoadNextLevel();
         }
     }

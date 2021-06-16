@@ -56,6 +56,7 @@ public class Memory : MonoBehaviour
     public void CollectMemory()
     {
         ObtainedMemory();
+        Debug.Log(_memoryTaken);
 
         _part1.SetActive(false);
         _part2.SetActive(false);
