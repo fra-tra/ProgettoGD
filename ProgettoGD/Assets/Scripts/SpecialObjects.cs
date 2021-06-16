@@ -171,7 +171,7 @@ public class SpecialObjects : MonoBehaviour
         m_Animator.SetTrigger("useKey");
         useObjects = false;
         
-        if( _objectDetected)
+        /*if( _objectDetected)
         {            
             if (_objectTag == "KeyDoor")
             {
@@ -179,9 +179,7 @@ public class SpecialObjects : MonoBehaviour
                 //Chiama il level loader che "Apre direttamente la porta e sticazzi è più veloce così senza fare la classe
                 _levelLoader.LoadLevelFromThis(1); //C'è un 1 perché progressivamente l'interno 1 è un +1 dal livello in cui è
             }
-        }
-
-
+        }*/
     }
 
     public void useGlobe()

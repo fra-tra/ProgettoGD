@@ -4232,6 +4232,85 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1742621486}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &765033451
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 765033452}
+  - component: {fileID: 765033454}
+  - component: {fileID: 765033453}
+  m_Layer: 0
+  m_Name: PortaChiaveAnta.L
+  m_TagString: KeyDoor
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &765033452
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 765033451}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2129048255}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &765033453
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 765033451}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: ac4fb3ac703554a488ecb1d1a652e9b4, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &765033454
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 765033451}
+  m_Mesh: {fileID: 2570836151580457563, guid: c80be7a0d276a4cefa8678883b4c454f, type: 3}
 --- !u!1001 &769569297
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4702,6 +4781,85 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e0df194c5f9247edb9677bcd95c8795, type: 3}
+--- !u!1 &891599494
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 891599495}
+  - component: {fileID: 891599497}
+  - component: {fileID: 891599496}
+  m_Layer: 0
+  m_Name: PortaChiaveVolta
+  m_TagString: KeyDoor
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &891599495
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 891599494}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2129048255}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &891599496
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 891599494}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: ac4fb3ac703554a488ecb1d1a652e9b4, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &891599497
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 891599494}
+  m_Mesh: {fileID: -5608782243404563673, guid: c80be7a0d276a4cefa8678883b4c454f, type: 3}
 --- !u!43 &907232447
 Mesh:
   m_ObjectHideFlags: 0
@@ -4922,6 +5080,85 @@ Transform:
   m_Father: {fileID: 447009694}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &943511229
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 943511230}
+  - component: {fileID: 943511232}
+  - component: {fileID: 943511231}
+  m_Layer: 0
+  m_Name: PortaChiaveAnta.R
+  m_TagString: KeyDoor
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &943511230
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 943511229}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2129048255}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &943511231
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 943511229}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: ac4fb3ac703554a488ecb1d1a652e9b4, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &943511232
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 943511229}
+  m_Mesh: {fileID: 3412596255509248537, guid: c80be7a0d276a4cefa8678883b4c454f, type: 3}
 --- !u!4 &950934382 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1948994218241513125, guid: 06bc994ea74b7427bb3ab0d685bea6a9,
@@ -8007,6 +8244,36 @@ PrefabInstance:
       propertyPath: m_TagString
       value: KeyDoor
       objectReference: {fileID: 0}
+    - target: {fileID: 2248289277720380551, guid: bee5253ed82844986bba1323f5ce7955,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 0.3565287
+      objectReference: {fileID: 0}
+    - target: {fileID: 2248289277720380551, guid: bee5253ed82844986bba1323f5ce7955,
+        type: 3}
+      propertyPath: m_Center.x
+      value: -0.002144526
+      objectReference: {fileID: 0}
+    - target: {fileID: 2248289277720380551, guid: bee5253ed82844986bba1323f5ce7955,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 2.003063
+      objectReference: {fileID: 0}
+    - target: {fileID: 2248289277720380551, guid: bee5253ed82844986bba1323f5ce7955,
+        type: 3}
+      propertyPath: m_Center.z
+      value: -0.02848467
+      objectReference: {fileID: 0}
+    - target: {fileID: 2248289277959860040, guid: bee5253ed82844986bba1323f5ce7955,
+        type: 3}
+      propertyPath: m_TagString
+      value: KeyDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 2248289277989466317, guid: bee5253ed82844986bba1323f5ce7955,
+        type: 3}
+      propertyPath: m_TagString
+      value: KeyDoor
+      objectReference: {fileID: 0}
     - target: {fileID: 2248289278255665864, guid: bee5253ed82844986bba1323f5ce7955,
         type: 3}
       propertyPath: m_RootOrder
@@ -8068,6 +8335,11 @@ PrefabInstance:
       value: DoorKey
       objectReference: {fileID: 0}
     - target: {fileID: 2248289278255665871, guid: bee5253ed82844986bba1323f5ce7955,
+        type: 3}
+      propertyPath: m_TagString
+      value: KeyDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 2248289278968007297, guid: bee5253ed82844986bba1323f5ce7955,
         type: 3}
       propertyPath: m_TagString
       value: KeyDoor
@@ -8144,6 +8416,38 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bee5253ed82844986bba1323f5ce7955, type: 3}
+--- !u!1 &1313034538 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2248289278255665871, guid: bee5253ed82844986bba1323f5ce7955,
+    type: 3}
+  m_PrefabInstance: {fileID: 1313034537}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1313034539
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1313034538}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.35144, y: 10.048603, z: 3.130515}
+  m_Center: {x: 0.4749993, y: 1.5785166, z: -0.9600082}
+--- !u!114 &1313034540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1313034538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16a9712838dde45dcad8b7ee9cc220f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _levelLoader: {fileID: 415186028}
 --- !u!1 &1326190158
 GameObject:
   m_ObjectHideFlags: 0
@@ -12351,7 +12655,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1930843619}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 49.62, y: -19.69, z: 38.92}
+  m_LocalPosition: {x: 40.57, y: -19.69, z: -6.62}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1696049957}
@@ -13820,6 +14124,53 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d45ea7a886b2c49948d12dfddc41318d, type: 3}
+--- !u!1 &2129048254
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2129048255}
+  - component: {fileID: 2129048256}
+  m_Layer: 0
+  m_Name: PortaChiave (1)
+  m_TagString: KeyDoor
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2129048255
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2129048254}
+  m_LocalRotation: {x: -0, y: 0.9999714, z: -0, w: 0.0075642457}
+  m_LocalPosition: {x: 0.40000057, y: -4.1800003, z: 1.010002}
+  m_LocalScale: {x: 2.0645947, y: 2.6440744, z: 1.7216774}
+  m_Children:
+  - {fileID: 765033452}
+  - {fileID: 943511230}
+  - {fileID: 891599495}
+  m_Father: {fileID: 1013484595}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 179.13301, z: 0}
+--- !u!65 &2129048256
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2129048254}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.2615259, y: 4.021995, z: 0.3565287}
+  m_Center: {x: -0.002144526, y: 2.003063, z: -0.02848467}
 --- !u!4 &2142691713 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5448549134943219160, guid: 7e0df194c5f9247edb9677bcd95c8795,
