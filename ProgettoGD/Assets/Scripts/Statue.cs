@@ -61,7 +61,8 @@ public class Statue : MonoBehaviour
         Instantiate(_myPrefab, this.transform.position , Quaternion.identity);
         Instantiate(_myPrefabBrokenPieces, this.transform.position , Quaternion.identity);
         AudioSource.PlayClipAtPoint(audioClip, transform.position);
-        Destroy(gameObject);//cancella l'oggetto
+        //Destroy(gameObject);//cancella l'oggetto
+        gameObject.SetActive(false);
     }
 
      public IEnumerator delayDestroyHammer()

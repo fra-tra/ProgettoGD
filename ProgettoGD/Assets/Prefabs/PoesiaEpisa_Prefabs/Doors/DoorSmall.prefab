@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 2248289277330923900}
   m_Layer: 0
   m_Name: PortaChiaveAnta.L
-  m_TagString: Untagged
+  m_TagString: KeyDoor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -263,7 +263,7 @@ GameObject:
   - component: {fileID: 2248289277597074354}
   m_Layer: 0
   m_Name: PortaChiaveVolta
-  m_TagString: Untagged
+  m_TagString: KeyDoor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -428,7 +428,7 @@ GameObject:
   - component: {fileID: 2248289277720380551}
   m_Layer: 0
   m_Name: PortaChiave
-  m_TagString: Untagged
+  m_TagString: KeyDoor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -463,8 +463,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.2615259, y: 4.021995, z: 0.4830799}
-  m_Center: {x: -0.0024853945, y: 2.0030663, z: 0.0347929}
+  m_Size: {x: 3.2615259, y: 4.021995, z: 0.44816115}
+  m_Center: {x: -0.0023913453, y: 2.0030663, z: 0.017332956}
 --- !u!1 &2248289277935013270
 GameObject:
   m_ObjectHideFlags: 0
@@ -942,7 +942,7 @@ GameObject:
   - component: {fileID: 2248289278681724055}
   m_Layer: 0
   m_Name: PortaChiaveAnta.R
-  m_TagString: Untagged
+  m_TagString: KeyDoor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

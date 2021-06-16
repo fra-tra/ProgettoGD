@@ -50,6 +50,9 @@ public class DeathManager : MonoBehaviour
         if (_livesFinished)
         {
             _myCounter._takenMemoryZero = false;
+            _myCounter.SetEasy(true);
+            _myCounter.SetMedium(false);
+            _myCounter.SetDifficult(false);
            _levelLoader.LastDeath(); //è morto definitivamente, setta la variabile morto 
         }
         else

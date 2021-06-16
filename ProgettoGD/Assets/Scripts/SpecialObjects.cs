@@ -131,16 +131,19 @@ public class SpecialObjects : MonoBehaviour
             _objectDetected = false;
             Debug.Log("Inside hammer distance");
             
-            if (_objectTag == "BreakableDoor")
+            if (_target.gameObject.activeInHierarchy)
             {
-                _targetDoor = (BreakableDoor)_target.GetComponentInParent(typeof(BreakableDoor)); //Se non funziona prova GetComponent
-                _targetDoor.hitHammer();
-            }
-            else if (_objectTag == "BreakableStatue")
-            {
-                Debug.Log("Inside breakable statue");
-                _targetStatue = (Statue)_target.GetComponentInParent(typeof(Statue)); //Se non funziona prova GetComponent
-                _targetStatue.hitHammer();
+                if (_objectTag == "BreakableDoor")
+                {
+                    _targetDoor = (BreakableDoor)_target.GetComponentInParent(typeof(BreakableDoor)); //Se non funziona prova GetComponent
+                    _targetDoor.hitHammer();
+                }
+                else if (_objectTag == "BreakableStatue")
+                {
+                    Debug.Log("Inside breakable statue");
+                    _targetStatue = (Statue)_target.GetComponentInParent(typeof(Statue)); //Se non funziona prova GetComponent
+                    _targetStatue.hitHammer();
+                }
             }
         }
 
