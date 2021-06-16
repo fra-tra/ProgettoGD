@@ -4,6 +4,8 @@ namespace Invector.vCharacterController
 {
     public class vThirdPersonController : vThirdPersonAnimator
     {
+
+        [SerializeField] public AudioSource jumpSound;
         public virtual void ControlAnimatorRootMotion()
         {
             if (!this.enabled) return;
@@ -117,6 +119,8 @@ namespace Invector.vCharacterController
             // trigger jump behaviour
             jumpCounter = jumpTimer;
             isJumping = true;
+
+            jumpSound.Play();
 
             // trigger jump animations
             if (input.sqrMagnitude < 0.1f)
