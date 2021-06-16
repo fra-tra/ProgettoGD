@@ -58,7 +58,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Hammer
-  m_Speed: 1
+  m_Speed: 2
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: -1077344313168125100}
@@ -74,7 +74,7 @@ AnimatorState:
   m_Motion: {fileID: 2073693694548410006, guid: 44b198fbf70994569b7fea733bdbb506,
     type: 3}
   m_Tag: 
-  m_SpeedParameter: 
+  m_SpeedParameter: InputHorizontal
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 

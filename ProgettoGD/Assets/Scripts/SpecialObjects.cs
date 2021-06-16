@@ -38,6 +38,8 @@ public class SpecialObjects : MonoBehaviour
     Animator m_Animator;
 
     public static bool useObjects = false;
+
+    [SerializeField] AudioClip keyAudioClip;
    
     void Start()
     {
@@ -170,6 +172,7 @@ public class SpecialObjects : MonoBehaviour
         {            
             if (_objectTag == "KeyDoor")
             {
+               AudioSource.PlayClipAtPoint(keyAudioClip, transform.position);
                 //Chiama il level loader che "Apre direttamente la porta e sticazzi è più veloce così senza fare la classe
                 _levelLoader.LoadLevelFromThis(1); //C'è un 1 perché progressivamente l'interno 1 è un +1 dal livello in cui è
             }
