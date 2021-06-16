@@ -13,6 +13,8 @@ public class LevelLoader : MonoBehaviour
     public float transitionTime = 1f;
     public Animator transition;
 
+    private Coroutine _coroutine;
+
     //Contengono gli indici dell'ordine dei livelli
     private int _easy;
     private int _medium;
@@ -41,20 +43,20 @@ public class LevelLoader : MonoBehaviour
     public void LoadNext() //Funziona da menu a caduta1, da caduta1 a caduta 2 a  da caduta a hub, da hubfinale a finale
     {
         //_PlayVideoOnLoad = true;
-        StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex +1));
+        _coroutine = StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex +1));
     }
     
     public void LoadLevelFromThis (int n) //Per andare e tornare dagli interni (che sono +1 e +2 dal loro livello di riferimento)
     {
         _PlayVideoOnLoad = false;
-        StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + n));
+        _coroutine = StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + n));
     }
 
     public void LoadNextLevel() //Funzione chiamata da Hub e dai livelli
     {
         _choice = true;
         int n = WhatNextLevel();
-        StartCoroutine(LoadLevel(n));
+       _coroutine = StartCoroutine(LoadLevel(n));
     }
 
     public int WhatNextLevel()
@@ -132,6 +134,7 @@ public class LevelLoader : MonoBehaviour
         }
 
         SceneManager.LoadScene(levelIndex);
+        StopCoroutine(_coroutine);
 
     }
 

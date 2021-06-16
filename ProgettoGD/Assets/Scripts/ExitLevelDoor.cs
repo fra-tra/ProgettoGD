@@ -34,11 +34,19 @@ public class ExitLevelDoor : MonoBehaviour
         }
     }
 
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "Player" && _entered)
+        {
+            _entered = false;
+        }
+    }
+
     public void ExitLevel() //(Chiamata on trigger enter)
     {
         _memoryTaken = _myMemory.IsTaken();
 
-        if (_isHubZero)
+        if (_isHubZero && _memoryTaken)
         {
             _myCounter._takenMemoryZero = true;
             _levelLoader.LoadNextLevel();//chiama il level loader

@@ -15,6 +15,7 @@ TagManager:
   - SpaceDeath
   - LevelArea
   - Attractor
+  - StatueMemory
   layers:
   - Default
   - TransparentFX

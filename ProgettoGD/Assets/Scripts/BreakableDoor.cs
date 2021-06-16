@@ -12,6 +12,8 @@ public class BreakableDoor : MonoBehaviour
     [SerializeField] public GameObject _myPrefabDust; //DustCloud
     [SerializeField] public AudioSource audioSource;
 
+    private bool _done = false;
+
     private bool _isOpened = false; //Pilota la possibilità della porta di funzionare come un trigger
 
     public void hitHammer()
@@ -19,17 +21,27 @@ public class BreakableDoor : MonoBehaviour
         //Porta colpita dal martello
         Instantiate(_myPrefabDust, this.transform.position , Quaternion.identity);
         _doorToBreak.SetActive(false);
-        audioSource.Play();
         _brokenDoor.SetActive(true);//cambio del game object con la versione rotta
+        audioSource.Play();
         _isOpened = true;
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (_isOpened)
+        if (other.tag == "Player" && _isOpened && !_done )
         {
+            _done = true;
+            Debug.Log("Minchia funziona sto cazzo di cambio scena");
             _levelLoader.LoadLevelFromThis(_chamberIndex);
+            
         }
     }
+
+    public bool GetOpenDoor()
+    {
+        return _done;
+    }
+    
+    
 
 }

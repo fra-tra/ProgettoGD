@@ -85,7 +85,7 @@ public class Counter : MonoBehaviour
 
     public void SetDifficult(bool d)
     {
-        _mediumLevel = d;
+        _difficultLevel = d;
     }
 
     public int GetFirstObject()
@@ -127,6 +127,11 @@ public class Counter : MonoBehaviour
     public bool GetIntern2()
     {
         return _upperRoomEntered;
+    }
+
+    public void ResetLives(int n)
+    {
+        _myLifeCounter = n;
     }
 
     public void FirstChoosenObject(int first)

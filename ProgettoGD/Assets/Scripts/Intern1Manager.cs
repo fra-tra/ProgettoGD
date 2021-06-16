@@ -26,8 +26,13 @@ public class Intern1Manager : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        _levelLoader.LoadLevelFromThis(-1);
-        Debug.Log("yey");
+        if(other.tag == "Player")
+        {
+            _levelLoader.LoadLevelFromThis(-1);
+            Debug.Log("yey");
+
+        }
+        
     }
     
 }

@@ -20,11 +20,11 @@ public class DoorKey : MonoBehaviour
         
     }
 
-     void OnTriggerStay(Collider other)
+    void OnTriggerStay(Collider other)
     { 
         if (other.tag == "Player")
         {
-            if ( _myCounter.GetFirstObject() == 2 && Input.GetButton("SpecialObject") && _notPressed)
+            if ( _myCounter.GetSecondObject() == 2 && Input.GetButton("SpecialObject") && _notPressed)
             {
                 Debug.Log("Chiama il loader INTERNO");
                 _notPressed = false;

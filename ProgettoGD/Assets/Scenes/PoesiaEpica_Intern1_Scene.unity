@@ -3883,8 +3883,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 10.079638, y: 1.0684671, z: 10.038315}
-  m_Center: {x: 0.039818555, y: 0.045311894, z: -0.019154914}
+  m_Size: {x: 10.079638, y: 0.6109649, z: 10.038315}
+  m_Center: {x: 0.039818555, y: -0.1834393, z: -0.019154914}
 --- !u!114 &871700780
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3955,7 +3955,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 7.96e-43, y: 7.1e-44, z: 0, w: -4.0261497}
+  m_BoundingSphereOverride: {x: 0, y: 6e-44, z: 1.5645e-41, w: 1.05e-43}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -6688,6 +6688,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1755203053}
     m_Modifications:
+    - target: {fileID: 2248289277330923890, guid: bee5253ed82844986bba1323f5ce7955,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 2248289277597074352, guid: bee5253ed82844986bba1323f5ce7955,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 2248289277720380549, guid: bee5253ed82844986bba1323f5ce7955,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 2248289278255665864, guid: bee5253ed82844986bba1323f5ce7955,
         type: 3}
       propertyPath: m_RootOrder
@@ -6757,6 +6772,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DoorSmall (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2248289278681724053, guid: bee5253ed82844986bba1323f5ce7955,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bee5253ed82844986bba1323f5ce7955, type: 3}
@@ -7431,7 +7451,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 9e-44, y: 0, z: 8e-44, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 4.543e-41, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0

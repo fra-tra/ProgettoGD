@@ -30,6 +30,7 @@ public class SpecialObjects : MonoBehaviour
     private Coroutine _coroutine;
     private Counter _myCounter;
     private Statue _targetStatue;
+    private StatueMemory _targetStatueMemory;
     private BreakableDoor _targetDoor;
     private bool _pressable = true;
     private bool _objectDetected = false;
@@ -136,13 +137,23 @@ public class SpecialObjects : MonoBehaviour
                 if (_objectTag == "BreakableDoor")
                 {
                     _targetDoor = (BreakableDoor)_target.GetComponentInParent(typeof(BreakableDoor)); //Se non funziona prova GetComponent
-                    _targetDoor.hitHammer();
+                    if(!_targetDoor.GetOpenDoor())
+                    {
+                        _targetDoor.hitHammer();
+                    }
+                    //_targetDoor.hitHammer();
                 }
                 else if (_objectTag == "BreakableStatue")
                 {
                     Debug.Log("Inside breakable statue");
                     _targetStatue = (Statue)_target.GetComponentInParent(typeof(Statue)); //Se non funziona prova GetComponent
                     _targetStatue.hitHammer();
+                }
+                else if(_objectTag == "StatueMemory")
+                {
+                    _targetStatueMemory = (StatueMemory)_target.GetComponentInParent(typeof(StatueMemory)); //Se non funziona prova GetComponent
+                    _targetStatueMemory.hitHammer();
+
                 }
             }
         }
@@ -171,15 +182,8 @@ public class SpecialObjects : MonoBehaviour
         m_Animator.SetTrigger("useKey");
         useObjects = false;
         
-        /*if( _objectDetected)
-        {            
-            if (_objectTag == "KeyDoor")
-            {
-               AudioSource.PlayClipAtPoint(keyAudioClip, transform.position);
-                //Chiama il level loader che "Apre direttamente la porta e sticazzi è più veloce così senza fare la classe
-                _levelLoader.LoadLevelFromThis(1); //C'è un 1 perché progressivamente l'interno 1 è un +1 dal livello in cui è
-            }
-        }*/
+        //AudioSource.PlayClipAtPoint(keyAudioClip, transform.position);
+
     }
 
     public void useGlobe()

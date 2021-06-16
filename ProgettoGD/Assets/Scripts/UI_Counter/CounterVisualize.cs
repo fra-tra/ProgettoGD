@@ -39,7 +39,7 @@ public class CounterVisualize : MonoBehaviour
                 _uiActive = true;
                 _animator.SetBool("IsOpen", true);
                 _buttonCounterPressed = false;
-                Debug.Log("Open");
+                //Debug.Log("Open");
                 
             }
         }
@@ -51,7 +51,7 @@ public class CounterVisualize : MonoBehaviour
         _uiActive = true;
         _animator.SetBool("IsOpen", true);
         _buttonCounterPressed = false;
-        Debug.Log("Open");
+        //Debug.Log("Open");
         if(_firsthub)
         {
             _comands.SetActive(true);
@@ -92,7 +92,7 @@ public class CounterVisualize : MonoBehaviour
         _ui.SetActive(false);
         _buttonCounterPressed=false;
         _animator.SetBool("IsOpen", false);
-        Debug.Log("Close");
+        //Debug.Log("Close");
         _uiActive = false;
         if(_firsthub)
         {
