@@ -35,19 +35,24 @@ public class TagGlow : MonoBehaviour
 
     public void glowTag()
     {
-        _currentLevel = _levelLoader.CurrentLevel();
+        //_currentLevel = _levelLoader.CurrentLevel();
         _firstObject = _myCounter.GetFirstObject();
         _secondObject = _myCounter.GetSecondObject();
 
         
-        if( _currentLevel == 4) //Poesia Epica
-        {
-            if(_firstObject == _numObj) //martello
+        //if( _currentLevel == 4) //Poesia Epica
+        //{
+            if(_firstObject == _numObj || _secondObject == _numObj ) //martello
             {
                 Glow();
                 done = true;
             }
-        }
+        /*}
+        else if ( _currentLevel == 8)
+        {
+            Glow();
+            done = true;
+        }*/
     }
 
     public void Glow()

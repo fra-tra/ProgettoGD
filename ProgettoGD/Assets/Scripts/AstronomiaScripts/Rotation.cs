@@ -38,7 +38,7 @@ public class Rotation: MonoBehaviour
     
     private void GearPower()
     {
-        if (_isPlayerOn &&  _myCounter.GetFirstObject() == 6 && Input.GetButton("SpecialObject"))
+        if (_isPlayerOn &&  _myCounter.GetSecondObject() == 6 && Input.GetButton("SpecialObject"))
         {
             if (!_rotationStopped)
             {
@@ -74,6 +74,7 @@ public class Rotation: MonoBehaviour
     
     void OnTriggerStay(Collider other)
     { 
+        Debug.Log(_isPlayerOn);
         if (other.tag == "Player")
         {
                 if (Input.GetButton("Horizontal") || Input.GetButton("Vertical") ||
