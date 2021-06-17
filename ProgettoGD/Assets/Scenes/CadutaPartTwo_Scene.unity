@@ -1413,6 +1413,7 @@ MonoBehaviour:
   _emissionMaterialA: {fileID: 2100000, guid: ea033bfcdf4ab5b48935a2aeabe14cb3, type: 2}
   _emissionMaterialB: {fileID: 2100000, guid: b650e2688e8484b178109715d829c473, type: 2}
   _emissionMaterialC: {fileID: 2100000, guid: 5ce1b9d0c8568e74b994366cb4fff960, type: 2}
+  _audioWind: {fileID: 896413794}
   _myCounter: {fileID: 0}
 --- !u!65 &1412242640
 BoxCollider:

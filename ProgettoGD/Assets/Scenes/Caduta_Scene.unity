@@ -2009,6 +2009,7 @@ MonoBehaviour:
   _emissionMaterialA: {fileID: 2100000, guid: ce5d0a30272c548cf85105b67d1348bb, type: 2}
   _emissionMaterialB: {fileID: 2100000, guid: ccbc47eb7e0044120a418ead8e272b80, type: 2}
   _emissionMaterialC: {fileID: 2100000, guid: 1fecd4f0f27de4745b0640f9426598ff, type: 2}
+  _audioWind: {fileID: 1850391095}
   _ui: {fileID: 1659238531}
   _myCounter: {fileID: 1342326778}
 --- !u!65 &2046255533
