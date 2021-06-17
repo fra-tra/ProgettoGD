@@ -42,7 +42,7 @@ public class LevelLoader : MonoBehaviour
 
     public void LoadNext() //Funziona da menu a caduta1, da caduta1 a caduta 2 a  da caduta a hub, da hubfinale a finale
     {
-        //_PlayVideoOnLoad = true;
+        _PlayVideoOnLoad = true;
         _coroutine = StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex +1));
     }
     

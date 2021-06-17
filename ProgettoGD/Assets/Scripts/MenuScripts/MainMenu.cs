@@ -11,11 +11,14 @@ public class MainMenu : MonoBehaviour
     [SerializeField] GameObject _mainMenu;
     [SerializeField] public GameObject _selectedButtonControls;
     [SerializeField] public GameObject _selectedButtonInfo;
+    [SerializeField] LevelLoader _levelLoader;
+
 
     public void PlayGame()
     {
         _mainMenu.SetActive(false);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +1);
+        _levelLoader.LoadNext();
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +1);
     }
 
     public void QuitGame()

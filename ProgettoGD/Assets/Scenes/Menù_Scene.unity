@@ -224,15 +224,15 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 82727298}
   m_Enabled: 1
-  m_VideoClip: {fileID: 0}
+  m_VideoClip: {fileID: 32900000, guid: dee2ad204a0fe4384828edb75257a7cc, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
-  m_TargetCamera: {fileID: 0}
+  m_TargetCamera: {fileID: 442594363}
   m_TargetTexture: {fileID: 0}
   m_TimeReference: 0
   m_TargetMaterialRenderer: {fileID: 0}
   m_TargetMaterialProperty: _MainTex
-  m_RenderMode: 2
+  m_RenderMode: 1
   m_AspectRatio: 2
   m_DataSource: 0
   m_PlaybackSpeed: 1
@@ -264,6 +264,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &154254931 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6802929807813654835, guid: fb28ef058a3c640e0b754e6b62c39d57,
+    type: 3}
+  m_PrefabInstance: {fileID: 180717155}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 454fb5a529a414047a1992612583773d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &180717155
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2426,6 +2438,7 @@ MonoBehaviour:
   _mainMenu: {fileID: 2106417148}
   _selectedButtonControls: {fileID: 1108844196}
   _selectedButtonInfo: {fileID: 829514631}
+  _levelLoader: {fileID: 154254931}
 --- !u!114 &2106417151
 MonoBehaviour:
   m_ObjectHideFlags: 0
