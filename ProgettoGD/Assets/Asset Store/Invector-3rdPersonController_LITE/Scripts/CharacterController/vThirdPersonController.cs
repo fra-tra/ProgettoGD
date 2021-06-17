@@ -6,6 +6,10 @@ namespace Invector.vCharacterController
     {
 
         [SerializeField] public AudioSource jumpSound;
+
+       //   AudioSource step;
+       //   [SerializeField] public AudioClip stepSound;       tentativo di capire come far partire il suono
+       //   step.PlayOneShot(stepSound);
         public virtual void ControlAnimatorRootMotion()
         {
             if (!this.enabled) return;
@@ -77,6 +81,7 @@ namespace Invector.vCharacterController
             else
             {
                 moveDirection = new Vector3(inputSmooth.x, 0, inputSmooth.z);
+                
             }
         }
 
