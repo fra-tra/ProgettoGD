@@ -205,6 +205,7 @@ public class SpecialObjectsFirstChoice : MonoBehaviour
     private void ExitChoice()
     {
         Debug.Log("ExitChoice");
+        _ui.SetActive(false);
         _coroutine = StartCoroutine(CoroutinePlayVideo());
         _levelLoader.LoadNext();
     }
