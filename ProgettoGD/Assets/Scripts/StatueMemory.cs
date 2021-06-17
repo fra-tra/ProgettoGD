@@ -43,7 +43,8 @@ public class StatueMemory : MonoBehaviour
     public void hitFloor()
     {
         //Statua colpisce terreno
-         DestroyStatue();
+        audioSource.Play();
+        DestroyStatue();
     }
 
     private void OnTriggerEnter(Collider other)
