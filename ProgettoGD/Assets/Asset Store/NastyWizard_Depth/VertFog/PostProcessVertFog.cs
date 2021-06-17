@@ -1,6 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+//sing UnityEditorInternal;
+
+
 [ExecuteInEditMode]
 public class PostProcessVertFog : MonoBehaviour {
 
@@ -25,7 +28,7 @@ public class PostProcessVertFog : MonoBehaviour {
 
     void OnRenderImage(RenderTexture source, RenderTexture destination)
     {
-        UnityEditorInternal.ComponentUtility.MoveComponentDown(this);
+        //UnityEditorInternal.ComponentUtility.MoveComponentDown(this);
         var p = GL.GetGPUProjectionMatrix(GetComponent<Camera>().projectionMatrix, false);
         p[2, 3] = p[3, 2] = 0.0f;
         p[3, 3] = 1.0f;

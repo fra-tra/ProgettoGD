@@ -35,7 +35,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FinalHub_Scene.unity
     guid: c1add156275704cf4b1337b35b1900d5
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Finale_Scene.unity
     guid: 0d615adc1e7d64f09ac499ee8a36c611
   m_configObjects: {}
