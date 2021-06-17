@@ -51,6 +51,8 @@ public class DeathManager : MonoBehaviour
         {
             _myCounter._takenMemoryZero = false;
             _myCounter.ResetLives(3);
+            _myCounter.SetIntern1(false);
+            _myCounter.SetIntern2(false);
             _myCounter.SetEasy(true);
             _myCounter.SetMedium(false);
             _myCounter.SetDifficult(false);
