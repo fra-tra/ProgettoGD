@@ -8,6 +8,7 @@ public class WoodenBoard : MonoBehaviour
     private bool _playerStanding = false;
     private Coroutine _coroutine;
     public Rigidbody rb;
+    [SerializeField] AudioSource soundWood;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -48,5 +49,6 @@ public class WoodenBoard : MonoBehaviour
         Sequence moveSequence = DOTween.Sequence();
         moveSequence.Append(transform.DOShakeScale(2f, new Vector3(0.3f, 0.3f, 0.3f)));
         moveSequence.Play();
+        soundWood.Play();
     }
 }
