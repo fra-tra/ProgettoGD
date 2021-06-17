@@ -7,6 +7,7 @@ public class StatueMemory : MonoBehaviour
     [SerializeField] public GameObject _myPrefab; //DustCloud
     [SerializeField] public GameObject _myPrefabBrokenPieces;
     [SerializeField] public GameObject _statue;
+    [SerializeField] public AudioSource audioSource;
 
     private Counter _myCounter;
     private Coroutine _coroutine;
@@ -36,6 +37,7 @@ public class StatueMemory : MonoBehaviour
     {
         //Statua colpita dal martello
         _coroutine = StartCoroutine(delayDestroyHammer());
+        audioSource.Play();
     }
 
     public void hitFloor()
