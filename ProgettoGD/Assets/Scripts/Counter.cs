@@ -163,7 +163,7 @@ public class Counter : MonoBehaviour
             {
                 difficult = 8; //astro
             }
-            else
+            else if (_firstChoosenObject == 5)
             {
                 difficult = 7; //comm
             }
@@ -175,19 +175,19 @@ public class Counter : MonoBehaviour
             {
                 difficult = 8; //astro
             }
-            else //
+            else if (_firstChoosenObject == 5) 
             {
                 difficult = 4; //epic
             }
         }
-        else //gear
+        else if ( second == 6) //gear
         {
             medium = 8; //astro
             if (_firstChoosenObject == 3)
             {
                 difficult = 7;
             }
-            else
+            else if (_firstChoosenObject == 1)
             {
                 difficult = 3;
             }
