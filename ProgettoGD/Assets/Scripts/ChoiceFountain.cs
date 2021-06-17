@@ -30,21 +30,24 @@ public class ChoiceFountain : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter()
+    private void OnTriggerEnter(Collider other)
     {
         _fountain.GetComponent<MeshRenderer> ().material = _matFountainGlow;
         _post.SetActive(true);
     }
 
-    private void OnTriggerExit()
+    private void OnTriggerExit(Collider other)
     {
         _fountain.GetComponent<MeshRenderer> ().material = _matF;
         _post.SetActive(false);
     }
 
-    private void OnTriggerStay()
+    private void OnTriggerStay(Collider other)
     {
-        CheckChoice();
+        if (other.tag =="Player")
+        {
+            CheckChoice();
+        }
     }
 
     private void CheckChoice()
@@ -66,7 +69,7 @@ public class ChoiceFountain : MonoBehaviour
         yield return new WaitForSeconds(transitionTime + 0.1f);
         
         _videoPanel.SetActive(false);
-        StopCoroutine(_coroutine);
         _levelLoader.ToMenu();
+        StopCoroutine(_coroutine);
     }
 }

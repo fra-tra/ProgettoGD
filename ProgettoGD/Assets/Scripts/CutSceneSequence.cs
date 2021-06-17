@@ -15,6 +15,8 @@ public class CutSceneSequence : MonoBehaviour
 
     [SerializeField] GameObject CutSceneEmpty;
 
+    private Rigidbody _rb;
+
     private Coroutine _coroutine;
     void Start()
     {
@@ -28,13 +30,16 @@ public class CutSceneSequence : MonoBehaviour
     }
 
 
-    void OnTriggerEnter()
+    void OnTriggerEnter(Collider other)
     {
+        _rb = other.gameObject.GetComponent<Rigidbody>();
+        _rb.isKinematic = true;
         _source.Play();
 
         _coroutine = StartCoroutine(Sequence());
 
     }
+
 
     IEnumerator Sequence()
     {
@@ -58,6 +63,7 @@ public class CutSceneSequence : MonoBehaviour
         Cam5.SetActive(false);
         yield return new WaitForSeconds(2.5f);
         CutSceneEmpty.SetActive(false);
+        _rb.isKinematic = false;
         StopCoroutine(_coroutine);
         
     }
