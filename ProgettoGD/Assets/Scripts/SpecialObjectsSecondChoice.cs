@@ -13,6 +13,8 @@ public class SpecialObjectsSecondChoice : MonoBehaviour
     [SerializeField] Material _emissionMaterialB;
     [SerializeField] Material _emissionMaterialC;
 
+    [SerializeField] AudioSource _audioWind;
+
     private bool _objOne = true;
     private bool _objTwo = false;
     private GameObject _One;
@@ -209,6 +211,7 @@ public class SpecialObjectsSecondChoice : MonoBehaviour
 
     private void ExitChoice()
     {
+        _audioWind.mute();
         _coroutine = StartCoroutine(CoroutinePlayVideo());//Fa partire il video di scelta oggetto e atterraggio nell'hub
         _levelLoader.LoadNext(); //Level loader
     }

@@ -16,6 +16,8 @@ public class SpecialObjectsFirstChoice : MonoBehaviour
     [SerializeField] Material _emissionMaterialA;
     [SerializeField] Material _emissionMaterialB;
     [SerializeField] Material _emissionMaterialC;
+    
+    [SerializeField] AudioSource _audioWind;
 
     [SerializeField] GameObject _ui;
 
@@ -206,6 +208,7 @@ public class SpecialObjectsFirstChoice : MonoBehaviour
     {
         Debug.Log("ExitChoice");
         _ui.SetActive(false);
+        _audioWind.mute();
         _coroutine = StartCoroutine(CoroutinePlayVideo());
         _levelLoader.LoadNext();
     }
