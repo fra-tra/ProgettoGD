@@ -56,6 +56,7 @@ public class LevelLoader : MonoBehaviour
     {
         _choice = true;
         int n = WhatNextLevel();
+        Debug.Log("Next level is" + n);
        _coroutine = StartCoroutine(LoadLevel(n));
     }
 
@@ -141,6 +142,8 @@ public class LevelLoader : MonoBehaviour
     public void ToMenu()
     {
         _myCounter._takenMemoryZero = false;
+        _myCounter._takenMemoryFour = false;
+        _myCounter.UpdateCounterToMenu();
         _myCounter.ResetLives(3);
         _myCounter.SetIntern1(false);
         _myCounter.SetIntern2(false);

@@ -199,6 +199,11 @@ public class Counter : MonoBehaviour
         _myMemoriesCounter++; //il counter fa +1
         Debug.Log(_myMemoriesCounter);
     }
+    
+    public void UpdateCounterToMenu() //Funzione che il DeathManager deve chiamare per decrementare il contatore di vite
+    {
+        _myMemoriesCounter = 0;
+    }
 
     public bool UpdateCounterOnDeath() //Funzione che il DeathManager deve chiamare per decrementare il contatore di vite
     {
