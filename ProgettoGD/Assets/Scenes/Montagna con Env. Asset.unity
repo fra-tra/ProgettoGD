@@ -578,12 +578,12 @@ PrefabInstance:
         type: 3}
       propertyPath: _AnelloUIOther
       value: 
-      objectReference: {fileID: 987192373}
+      objectReference: {fileID: 0}
     - target: {fileID: 1511447532114145000, guid: 997e3ee85c6934793a4a83060845f416,
         type: 3}
       propertyPath: _NucleoUIOther
       value: 
-      objectReference: {fileID: 987192372}
+      objectReference: {fileID: 0}
     - target: {fileID: 1511447532114145000, guid: 997e3ee85c6934793a4a83060845f416,
         type: 3}
       propertyPath: feedbackRaccolta
@@ -5373,6 +5373,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1754149510}
     m_Modifications:
+    - target: {fileID: 2301127648555918567, guid: dd50365ac591f4610b2d25b60325f9ad,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3972246114840999281, guid: dd50365ac591f4610b2d25b60325f9ad,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5593534390707248231, guid: dd50365ac591f4610b2d25b60325f9ad,
         type: 3}
       propertyPath: _videoPanel
@@ -5571,13 +5581,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 --- !u!1 &987192372 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 7152264353063272274, guid: dd50365ac591f4610b2d25b60325f9ad,
+  m_CorrespondingSourceObject: {fileID: 8004412346438468366, guid: dd50365ac591f4610b2d25b60325f9ad,
     type: 3}
   m_PrefabInstance: {fileID: 987192368}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &987192373 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 7152264352702465528, guid: dd50365ac591f4610b2d25b60325f9ad,
+  m_CorrespondingSourceObject: {fileID: 8803139719985094735, guid: dd50365ac591f4610b2d25b60325f9ad,
     type: 3}
   m_PrefabInstance: {fileID: 987192368}
   m_PrefabAsset: {fileID: 0}

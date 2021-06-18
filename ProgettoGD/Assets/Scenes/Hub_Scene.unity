@@ -715,12 +715,12 @@ PrefabInstance:
         type: 3}
       propertyPath: _AnelloUIThis
       value: 
-      objectReference: {fileID: 1069762251}
+      objectReference: {fileID: 1083821488}
     - target: {fileID: 1511447532114145000, guid: 997e3ee85c6934793a4a83060845f416,
         type: 3}
       propertyPath: _NucleoUIThis
       value: 
-      objectReference: {fileID: 983352876}
+      objectReference: {fileID: 546901226}
     - target: {fileID: 1511447532114145000, guid: 997e3ee85c6934793a4a83060845f416,
         type: 3}
       propertyPath: feedbackRaccolta
@@ -902,6 +902,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c799778e8fdfd4c82bebd7db990b2e93, type: 3}
+--- !u!1 &546901226 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2301127648555918567, guid: dd50365ac591f4610b2d25b60325f9ad,
+    type: 3}
+  m_PrefabInstance: {fileID: 7152264353420635736}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &686651629 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1656063500980240006, guid: 5ff7863489807ef4d8d58017da1c0292,
@@ -1250,7 +1256,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-22866
+  m_Name: pb_Mesh-1738
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1550,13 +1556,19 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 7152264353420635736}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1083821488 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3972246114840999281, guid: dd50365ac591f4610b2d25b60325f9ad,
+    type: 3}
+  m_PrefabInstance: {fileID: 7152264353420635736}
+  m_PrefabAsset: {fileID: 0}
 --- !u!43 &1281890183
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-22878
+  m_Name: pb_Mesh-1750
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
