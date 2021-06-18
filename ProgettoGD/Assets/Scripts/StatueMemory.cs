@@ -51,19 +51,23 @@ public class StatueMemory : MonoBehaviour
     {
         if (other.tag == "RockFloor" && _destroyable) //Controlla che abbia colpito il terreno
         {
-            _destroyable = false;
             hitFloor();
         }
     }
 
     public void DestroyStatue()
     {
-        Debug.Log("Destroy statue");
-        //Istanzia un nuovo effetto particellare dello standard asset che si chiama Dust Cloud
-        Instantiate(_myPrefab, this.transform.position , Quaternion.identity);
-        Instantiate(_myPrefabBrokenPieces, this.transform.position , Quaternion.identity);
-        Destroy(_statue);
-        Destroy(rb);
+        if(_destroyable)
+        {
+             Debug.Log("Destroy statue");
+            //Istanzia un nuovo effetto particellare dello standard asset che si chiama Dust Cloud
+            Instantiate(_myPrefab, this.transform.position , Quaternion.identity);
+            Instantiate(_myPrefabBrokenPieces, this.transform.position , Quaternion.identity);
+            Destroy(_statue);
+            Destroy(rb);
+            _destroyable = false;
+        }
+       
     }
 
      public IEnumerator delayDestroyHammer()

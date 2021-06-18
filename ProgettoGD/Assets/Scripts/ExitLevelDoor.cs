@@ -56,7 +56,7 @@ public class ExitLevelDoor : MonoBehaviour
             _myCounter._takenMemoryFour = true;
             _levelLoader.LoadNext(); //chiama il level loader verso la scena finale
         }
-        else if (_memoryTaken)
+        else if (_memoryTaken && !_isHubZero)
         {
             Debug.Log("lOADING MEMORY TAKEN");
             _myCounter.UpdateCounter(); //incrementa il contatore del num. ricordi in counter

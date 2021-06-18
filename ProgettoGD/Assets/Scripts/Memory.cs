@@ -32,7 +32,7 @@ public class Memory : MonoBehaviour
 
     void Update()
     {
-        if (IsTargetWithinDistance(_minDistance))
+        if (IsTargetWithinDistance(_minDistance) && !_memoryTaken)
         {
             Debug.Log("Target vicino");
             CollectMemory();

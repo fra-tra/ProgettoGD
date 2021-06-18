@@ -185,11 +185,11 @@ public class Counter : MonoBehaviour
             medium = 8; //astro
             if (_firstChoosenObject == 3)
             {
-                difficult = 7;
+                difficult = 4;
             }
             else if (_firstChoosenObject == 1)
             {
-                difficult = 3;
+                difficult = 7;
             }
         }
     }
