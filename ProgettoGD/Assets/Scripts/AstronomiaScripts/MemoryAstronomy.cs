@@ -21,7 +21,6 @@ public class MemoryAstronomy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         if(_mem.IsTaken() && !_loaded)
         {
             _loaded = true;

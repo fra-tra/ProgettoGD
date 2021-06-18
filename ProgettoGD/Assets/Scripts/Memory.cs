@@ -31,7 +31,7 @@ public class Memory : MonoBehaviour
 
     void Update()
     {
-        if (IsTargetWithinDistance(_minDistance))
+        if (IsTargetWithinDistance(_minDistance) && !_memoryTaken)
         {
             Debug.Log("Target vicino");
             CollectMemory();
@@ -65,7 +65,7 @@ public class Memory : MonoBehaviour
         _part4.SetActive(false);
         audioSource.mute = true ;
         _sourceCatch.PlayOneShot(feedbackRaccolta);
-         //Non lo distruggo, lo faccio sparire, perché mi serve ancora che ci sia questo codice attivo per ottenere dati
+        //Non lo distruggo, lo faccio sparire, perché mi serve ancora che ci sia questo codice attivo per ottenere dati
 
         _UiMemoryThis.SetActive(true);
         _uiCounter.MemoryTakenUI();
