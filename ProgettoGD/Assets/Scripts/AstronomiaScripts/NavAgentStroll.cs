@@ -52,7 +52,7 @@ public class NavAgentStroll : MonoBehaviour
 
     private void CheckGlobe()
     {
-        if (  _firstObject ==  5 && Input.GetButton("SpecialObject"))
+        if (  _firstObject ==  5 && Input.GetButton("SpecialObjectTwo"))
         {
             _stopped = true;
             _coroutine = StartCoroutine(WaitRestartChasing());

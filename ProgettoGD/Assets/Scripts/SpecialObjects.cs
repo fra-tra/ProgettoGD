@@ -59,12 +59,25 @@ public class SpecialObjects : MonoBehaviour
     {
         _paused = _pauseScript.GetPaused();
 
-        if (Input.GetButton("SpecialObject") && _pressable && !_paused) //se il tasto del joypad o della tastiera è stato premuto 
+        if (Input.GetButton("SpecialObject") ) //se il tasto del joypad o della tastiera è stato premuto 
         {
-            Debug.Log("Got button");
-            _pressable = false;
-            useObjects = true;
-            _coroutine = StartCoroutine(UseSpecialObject());
+            if(_pressable && !_paused)
+            {
+                Debug.Log("Got button");
+                _pressable = false;
+                useObjects = true;
+                _coroutine = StartCoroutine(UseSpecialObject());
+            }
+        }
+        else if(Input.GetButton("SpecialObjectTwo") )
+        {
+            if(_pressable && !_paused)
+            {
+                Debug.Log("Got button");
+                _pressable = false;
+                useObjects = true;
+                _coroutine = StartCoroutine(UseSpecialObjectTwo());
+            }
         }
     }
 
@@ -74,43 +87,15 @@ public class SpecialObjects : MonoBehaviour
         _firstObject = _myCounter.GetFirstObject();
         _secondObject = _myCounter.GetSecondObject();
 
-        if( _currentLevel == 4) //Poesia Epica
-        {
+        
             if(_firstObject == 1) //martello
             {
-
                 useHammer();//Funzionamento di x
             }
             else if(_secondObject ==2) //chiave
             {
                 useKey();//Funzionamento di x
             }
-        }
-        else if(_currentLevel == 8) //Astronomia
-        {
-            if(_firstObject == 5) //globo
-            {
-                useGlobe();//Funzionamento di x
-            }
-            else if(_secondObject == 6) //ingranaggio
-            {
-                useGear();//Funzionamento di x
-            }
-        }
-        else if(_currentLevel == 7) //Commedia
-        {
-            if(_firstObject == 3) //edera
-            {
-                useIvy();//Funzionamento di x
-            }
-            else if(_secondObject == 4) //fionda
-            {
-                useSling();//Funzionamento di x
-            }
-        }
-        //useKey();
-        //useHammer();
-
         
         yield return new WaitForSeconds(0.5f);
         _pressable = true;
@@ -119,6 +104,29 @@ public class SpecialObjects : MonoBehaviour
 
     }
 
+    public IEnumerator UseSpecialObjectTwo()
+    {
+        _firstObject = _myCounter.GetFirstObject();
+        _secondObject = _myCounter.GetSecondObject();
+
+        if(_firstObject == 5) //globo
+        {
+            useGlobe();//Funzionamento di globe
+        }
+        else if(_secondObject == 6) //ingranaggio
+        {
+            useGear();//Funzionamento di gear
+        }
+        
+        yield return new WaitForSeconds(0.5f);
+        _pressable = true;
+        Debug.Log("Dopo Yield coroutine use object");
+        StopCoroutine(_coroutine);
+
+    }
+
+
+    
     public void useHammer()
     {
         Debug.Log("Special Object Hammer");
@@ -126,8 +134,9 @@ public class SpecialObjects : MonoBehaviour
         //ANIMAZIONE CHIAMATA COMUNQUE
         m_Animator.SetTrigger("useHammer");
         useObjects = false;
+        _currentLevel = _levelLoader.CurrentLevel();
         
-        if(_objectDetected)
+        if(_currentLevel == 4 && _objectDetected)
         {
             _objectDetected = false;
             Debug.Log("Inside hammer distance");
@@ -192,7 +201,6 @@ public class SpecialObjects : MonoBehaviour
          m_Animator.SetTrigger("useGlobe");
         //ANIMAZIONE CHIAMATA COMUNQUE
 
-
     }
 
     public void useGear()
@@ -219,6 +227,5 @@ public class SpecialObjects : MonoBehaviour
 
 
     }
-
 
 }
