@@ -67,8 +67,8 @@ public class RocksGenerator : MonoBehaviour
         {
             Debug.Log("Spawn");
             Object obj = Instantiate(_rockPrefab, GetRandomPosition(), Quaternion.identity);
-            AudioSource.PlayClipAtPoint(audioClip, transform.position);
             Destroy(obj, 2);
+            AudioSource.PlayClipAtPoint(audioClip, transform.position);
         }
     }
 
