@@ -43,6 +43,19 @@ public class Counter : MonoBehaviour
     public bool _mediumLevel = false;
     public bool _difficultLevel = false;
 
+    public static bool _logoplayed=false;
+
+    public bool GetLogoPlayed()
+    {
+        return _logoplayed;
+    }
+
+    public void SetLogoPlayed(bool b)
+    {
+        _logoplayed=b;
+    }
+    
+
     void Awake()
     {
         DontDestroyOnLoad(this.gameObject);
