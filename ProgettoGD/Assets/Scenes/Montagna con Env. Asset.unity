@@ -9450,7 +9450,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rockPrefab: {fileID: 7273956540791742907, guid: 9cb5e7465eef1af4988889e41a071493,
     type: 3}
-  _rocksToSpawn: 5
+  _rocksToSpawn: 4
   _space: {fileID: 1450120007}
   audioClip: {fileID: 8300000, guid: 3748fa3afe9d14913a091d661802badf, type: 3}
 --- !u!1 &1452492655
@@ -13175,7 +13175,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rockPrefab: {fileID: 7273956540791742907, guid: 9cb5e7465eef1af4988889e41a071493,
     type: 3}
-  _rocksToSpawn: 4
+  _rocksToSpawn: 3
   _space: {fileID: 1930017568}
   audioClip: {fileID: 8300000, guid: 3748fa3afe9d14913a091d661802badf, type: 3}
 --- !u!65 &1930017568
@@ -14688,7 +14688,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rockPrefab: {fileID: 7273956540791742907, guid: 9cb5e7465eef1af4988889e41a071493,
     type: 3}
-  _rocksToSpawn: 4
+  _rocksToSpawn: 3
   _space: {fileID: 2104135105}
   audioClip: {fileID: 8300000, guid: 3748fa3afe9d14913a091d661802badf, type: 3}
 --- !u!1001 &2105521109

@@ -54,7 +54,7 @@ public class RocksGenerator : MonoBehaviour
         Debug.Log("In corout");
         SpawnRocks();
         _rightTime = false;
-        yield return new WaitForSeconds(Random.Range(1f , 5f));
+        yield return new WaitForSeconds(Random.Range(1f , 6f));
         Debug.Log("After Yield");
         _rightTime = true;
         StopCoroutine(_coroutine);
@@ -67,7 +67,7 @@ public class RocksGenerator : MonoBehaviour
         {
             Debug.Log("Spawn");
             Object obj = Instantiate(_rockPrefab, GetRandomPosition(), Quaternion.identity);
-            Destroy(obj, 2);
+            Destroy(obj, 1.8f);
             AudioSource.PlayClipAtPoint(audioClip, transform.position);
         }
     }

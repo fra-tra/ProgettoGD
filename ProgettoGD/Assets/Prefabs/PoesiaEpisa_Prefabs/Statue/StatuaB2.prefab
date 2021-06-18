@@ -93,6 +93,7 @@ GameObject:
   - component: {fileID: 6205665765515978244}
   - component: {fileID: 2944294615250770975}
   - component: {fileID: 5943281234706335741}
+  - component: {fileID: 2236877690707850966}
   m_Layer: 0
   m_Name: StatuaB2
   m_TagString: BreakableStatue
@@ -161,8 +162,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.7801814, y: 5.2425284, z: 1.9545002}
-  m_Center: {x: 0.021962747, y: 2.5460277, z: -0.24362989}
+  m_Size: {x: 1.6133546, y: 5.2425284, z: 1.3221197}
+  m_Center: {x: 0.10537632, y: 2.5460277, z: -0.5288207}
 --- !u!65 &2944294615250770975
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -272,6 +273,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!65 &2236877690707850966
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1173160519362874399}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.6583318, y: 1.3719404, z: 0.5759362}
+  m_Center: {x: -0.007132292, y: 0.6238502, z: 0.31769085}
 --- !u!1 &5371184687163985417
 GameObject:
   m_ObjectHideFlags: 0

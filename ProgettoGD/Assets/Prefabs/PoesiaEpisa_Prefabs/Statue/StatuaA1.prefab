@@ -244,8 +244,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.5179724, y: 6.3276744, z: 1.4266508}
-  m_Center: {x: 0.020646155, y: 3.1266773, z: 0.0006816536}
+  m_Size: {x: 1.5179724, y: 6.3276744, z: 1.2438564}
+  m_Center: {x: 0.020646155, y: 3.1266773, z: -0.09071551}
 --- !u!65 &976814118221205674
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -257,8 +257,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.4554753, y: 2.6043189, z: 2.147856}
-  m_Center: {x: 1.5312315, y: 4.1679006, z: -1.3326771}
+  m_Size: {x: 1.4554753, y: 2.6043189, z: 2.1883252}
+  m_Center: {x: 1.5312315, y: 4.1679006, z: -1.3124425}
 --- !u!65 &153092659668323518
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -283,8 +283,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.932618, y: 3.639673, z: 2.3669763}
-  m_Center: {x: 0.047136396, y: 2.7810836, z: -0.3770962}
+  m_Size: {x: 3.2944229, y: 3.639673, z: 2.3669763}
+  m_Center: {x: 0.13621166, y: 2.7810836, z: -0.37709618}
 --- !u!82 &-5336504808427589541
 AudioSource:
   m_ObjectHideFlags: 0
