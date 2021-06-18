@@ -158,7 +158,7 @@ public class SpecialObjectsSecondChoice : MonoBehaviour
 
     private void CheckChoice()
     {
-        if (Input.GetButton("SpecialObject") && _notChoosen)
+        if (Input.GetButton("Submit") && _notChoosen)
         {
             _notChoosen = false;
             //Play suono oggetto scelto

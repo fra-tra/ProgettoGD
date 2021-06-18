@@ -9,7 +9,7 @@ public class ExitPlaceholderLevel : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetButton("SpecialObject") && !_pressed)
+        if (Input.GetButton("Submit") && !_pressed)
         {
             Debug.Log("Loading...");
             _pressed = true;

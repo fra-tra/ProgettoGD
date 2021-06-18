@@ -598,6 +598,7 @@ MonoBehaviour:
   cc: {fileID: 0}
   tpCamera: {fileID: 0}
   cameraMain: {fileID: 0}
+  _jumpOne: 1
 --- !u!54 &1624631166013607617
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -671,8 +672,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.74815536, y: 1.1675435, z: 0.9964987}
-  m_Center: {x: -0.034342583, y: 1.113116, z: 0.45447665}
+  m_Size: {x: 0.74815536, y: 1.1675436, z: 1.190736}
+  m_Center: {x: -0.034342583, y: 1.1131104, z: 0.5515944}
 --- !u!114 &779000442030662412
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -108,7 +108,7 @@ MonoBehaviour:
   smoothFollow: 10
   xMouseSensitivity: 5
   yMouseSensitivity: 4
-  yMinLimit: -20
+  yMinLimit: -60
   yMaxLimit: 60
   indexList: 0
   indexLookPoint: 0

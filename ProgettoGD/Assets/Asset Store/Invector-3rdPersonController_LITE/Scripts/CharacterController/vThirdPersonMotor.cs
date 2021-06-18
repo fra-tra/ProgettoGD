@@ -103,6 +103,8 @@ namespace Invector.vCharacterController
         internal Vector3 inputSmooth;                       // generate smooth input based on the inputSmooth value       
         internal Vector3 moveDirection;                     // used to know the direction you're moving 
 
+        
+
         #endregion
 
         public void Init()
@@ -274,6 +276,8 @@ namespace Invector.vCharacterController
             targetVelocity.y = _rigidbody.velocity.y;
             _rigidbody.velocity = Vector3.Lerp(_rigidbody.velocity, targetVelocity, airSmooth * Time.deltaTime);
         }
+
+       
 
         protected virtual bool jumpFwdCondition
         {

@@ -21,6 +21,9 @@ namespace Invector.vCharacterController
         [HideInInspector] public vThirdPersonCamera tpCamera;
         [HideInInspector] public Camera cameraMain;
 
+        //NOSTRA
+        public bool _jumpOne=true;
+
         #endregion
 
         protected virtual void Start()
@@ -40,6 +43,9 @@ namespace Invector.vCharacterController
         {
             InputHandle();                  // update the input methods
             cc.UpdateAnimator();            // updates the Animator Parameters
+
+            //NOSTRO
+            NotConsecutive();
         }
 
         public virtual void OnAnimatorMove()
@@ -121,9 +127,9 @@ namespace Invector.vCharacterController
 
         protected virtual void SprintInput()
         {
-            if (Input.GetKeyDown(sprintInput))
+            if (Input.GetKeyDown(sprintInput) || Input.GetKeyDown("joystick button 7"))
                 cc.Sprint(true);
-            else if (Input.GetKeyUp(sprintInput))
+            else if (Input.GetKeyUp(sprintInput) || Input.GetKeyUp("joystick button 7"))
                 cc.Sprint(false);
         }
 
@@ -136,13 +142,28 @@ namespace Invector.vCharacterController
             return cc.isGrounded && cc.GroundAngle() < cc.slopeLimit && !cc.isJumping && !cc.stopMove;
         }
 
+        //NOSTRA FUNZIONE
+        public void NotConsecutive()
+        {
+            if (!Input.GetButton("Jump"))
+            {
+                _jumpOne = true;
+            }
+        }
+        //
+
         /// <summary>
         /// Input to trigger the Jump 
         /// </summary>
         protected virtual void JumpInput()
         {
-            if (Input.GetButton("Jump") && JumpConditions())
+            if (Input.GetButton("Jump") && JumpConditions() && _jumpOne)
+            {
+                _jumpOne = false;
                 cc.Jump();
+
+            }
+                
         }
 
         #endregion       
