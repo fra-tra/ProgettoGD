@@ -12,12 +12,14 @@ public class ChoiceFountain : MonoBehaviour
     [SerializeField] public GameObject _videoPanel;
     [SerializeField] public LevelLoader _levelLoader;
     [SerializeField] public GameObject _post;
+    [SerializeField] GameObject _ui;
 
     private Material _matF;
     private Coroutine _coroutine;
     private bool _notChoosen = true;
     private bool _memoryPlayed = false;
     public float transitionTime = 1f;
+
 
     void Start()
     {
@@ -64,11 +66,13 @@ public class ChoiceFountain : MonoBehaviour
         _videoPanel.SetActive(true);
         _video.playOnAwake = false;
 
+        _ui.SetActive(false);
+
         _video.Play();
         transitionTime = (float) _video.length;
         yield return new WaitForSeconds(transitionTime + 0.1f);
         
-        _videoPanel.SetActive(false);
+        //_videoPanel.SetActive(false);
         _levelLoader.ToMenu();
         StopCoroutine(_coroutine);
     }

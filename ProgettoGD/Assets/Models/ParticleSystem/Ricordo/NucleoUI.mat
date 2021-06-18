@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: NucleoUI
-  m_Shader: {fileID: 4800000, guid: d42dd6cdcd5f14753b7f377a654a4dc5, type: 3}
+  m_Shader: {fileID: 4800000, guid: 32349fe99e3e149669bfc7f48361363f, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0

@@ -4589,6 +4589,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1719915913}
     m_Modifications:
+    - target: {fileID: 2697032060927478826, guid: dd50365ac591f4610b2d25b60325f9ad,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5593534390707248231, guid: dd50365ac591f4610b2d25b60325f9ad,
         type: 3}
       propertyPath: _videoPanel
@@ -4759,13 +4764,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1710383633 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 8004412346438468366, guid: dd50365ac591f4610b2d25b60325f9ad,
-    type: 3}
-  m_PrefabInstance: {fileID: 1710383631}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1710383634 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8803139719985094735, guid: dd50365ac591f4610b2d25b60325f9ad,
+  m_CorrespondingSourceObject: {fileID: 2482495764575832630, guid: dd50365ac591f4610b2d25b60325f9ad,
     type: 3}
   m_PrefabInstance: {fileID: 1710383631}
   m_PrefabAsset: {fileID: 0}
@@ -4793,8 +4792,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2120b0e4d7d00484e815d3f876b14235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _AnelloUIOther: {fileID: 1710383634}
-  _NucleoUIOther: {fileID: 1710383633}
+  _memoryUIOther: {fileID: 1710383633}
   _uiCounter: {fileID: 1710383635}
 --- !u!224 &1710383637 stripped
 RectTransform:

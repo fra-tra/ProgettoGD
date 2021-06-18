@@ -4600,6 +4600,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2697032060927478826, guid: dd50365ac591f4610b2d25b60325f9ad,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3972246114840999281, guid: dd50365ac591f4610b2d25b60325f9ad,
         type: 3}
       propertyPath: m_IsActive
@@ -4786,25 +4791,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 --- !u!1 &854800218 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 8004412346438468366, guid: dd50365ac591f4610b2d25b60325f9ad,
+  m_CorrespondingSourceObject: {fileID: 2482495764575832630, guid: dd50365ac591f4610b2d25b60325f9ad,
     type: 3}
   m_PrefabInstance: {fileID: 854800216}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &854800219 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 8803139719985094735, guid: dd50365ac591f4610b2d25b60325f9ad,
-    type: 3}
-  m_PrefabInstance: {fileID: 854800216}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &854800220 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7152264352504106742, guid: dd50365ac591f4610b2d25b60325f9ad,
-    type: 3}
-  m_PrefabInstance: {fileID: 854800216}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &854800221 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7152264353014544728, guid: dd50365ac591f4610b2d25b60325f9ad,
+  m_CorrespondingSourceObject: {fileID: 1746484675730921116, guid: dd50365ac591f4610b2d25b60325f9ad,
     type: 3}
   m_PrefabInstance: {fileID: 854800216}
   m_PrefabAsset: {fileID: 0}
@@ -4826,8 +4819,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2120b0e4d7d00484e815d3f876b14235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _AnelloUIOther: {fileID: 854800221}
-  _NucleoUIOther: {fileID: 854800220}
+  _memoryUIOther: {fileID: 854800219}
   _uiCounter: {fileID: 854800217}
 --- !u!4 &858990477 stripped
 Transform:
@@ -8914,22 +8906,27 @@ PrefabInstance:
         type: 3}
       propertyPath: _AnelloUIThis
       value: 
-      objectReference: {fileID: 854800219}
+      objectReference: {fileID: 0}
     - target: {fileID: 1511447532114145000, guid: 997e3ee85c6934793a4a83060845f416,
         type: 3}
       propertyPath: _NucleoUIThis
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1511447532114145000, guid: 997e3ee85c6934793a4a83060845f416,
+        type: 3}
+      propertyPath: _UiMemoryThis
       value: 
       objectReference: {fileID: 854800218}
     - target: {fileID: 1511447532114145000, guid: 997e3ee85c6934793a4a83060845f416,
         type: 3}
       propertyPath: _AnelloUIOther
       value: 
-      objectReference: {fileID: 854800221}
+      objectReference: {fileID: 0}
     - target: {fileID: 1511447532114145000, guid: 997e3ee85c6934793a4a83060845f416,
         type: 3}
       propertyPath: _NucleoUIOther
       value: 
-      objectReference: {fileID: 854800220}
+      objectReference: {fileID: 0}
     - target: {fileID: 1511447532114145000, guid: 997e3ee85c6934793a4a83060845f416,
         type: 3}
       propertyPath: feedbackRaccolta
@@ -9128,6 +9125,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _levelLoader: {fileID: 1241596101}
   _mem: {fileID: 1616229815}
+  _player: {fileID: 1108949268}
 --- !u!82 &1616229803
 AudioSource:
   m_ObjectHideFlags: 0
