@@ -24,6 +24,8 @@ public class LevelLoader : MonoBehaviour
     private bool _lastDeath = false;
     private bool _choice = true;
 
+    private int _nextLevel;
+
 
     private Counter _myCounter;
 
@@ -42,6 +44,7 @@ public class LevelLoader : MonoBehaviour
 
     public void LoadNext() //Funziona da menu a caduta1, da caduta1 a caduta 2 a  da caduta a hub, da hubfinale a finale
     {
+        Debug.Log("Siamo nella scena" + SceneManager.GetActiveScene().buildIndex);
         _PlayVideoOnLoad = true;
         _coroutine = StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex +1));
     }
@@ -86,7 +89,7 @@ public class LevelLoader : MonoBehaviour
             Debug.Log("To the easy level" + _easy);
             _myCounter.SetEasy(false);
             _myCounter.SetMedium(true);
-
+            _nextLevel = _easy;
             return _easy;
         }
         else if(_myCounter.GetMedium() && _choice) //Lo chiama easy
@@ -95,6 +98,7 @@ public class LevelLoader : MonoBehaviour
             Debug.Log("To the medium level" + _medium);
             _myCounter.SetMedium(false);
             _myCounter.SetDifficult(true);
+            _nextLevel = _medium;
             return _medium;
         }
         else if(_myCounter.GetDifficult() && _choice) //Lo chiama medium
@@ -102,9 +106,14 @@ public class LevelLoader : MonoBehaviour
             _choice = false;
             Debug.Log("To the difficult level" + _difficult);
             _myCounter.SetDifficult(false);
+            _nextLevel = _difficult;
             return _difficult;
         }
-        else return 9; //Valore del level loader per l'hub finale (Questa sarà chiamata dal livello difficile)
+        else
+        {
+            _nextLevel = 9;
+            return 9;
+        } //Valore del level loader per l'hub finale (Questa sarà chiamata dal livello difficile)
     }
 
     public void Death()
@@ -138,6 +147,17 @@ public class LevelLoader : MonoBehaviour
         StopCoroutine(_coroutine);
 
     }
+
+    public void Skip(int Index) //Chiami da menu (1), da caduta1 (2) e caduta2 (3)
+    {
+        SceneManager.LoadScene(Index);
+    }
+
+    public void SkipPredicted() //Chiama questo quando sei in hub, livelli
+    {
+        SceneManager.LoadScene(_nextLevel);
+    }
+
 
     public void ToMenu()
     {
