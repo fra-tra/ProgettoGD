@@ -13,6 +13,8 @@ public class ExitLevelDoor : MonoBehaviour
     [SerializeField] public bool _isFinalHub;
     [SerializeField] public LevelLoader _levelLoader;
 
+    private Rigidbody _rb;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +32,8 @@ public class ExitLevelDoor : MonoBehaviour
         if (other.tag == "Player" && !_entered)
         {
             _entered = true;
+            _rb = other.gameObject.GetComponent<Rigidbody>();
+        
             ExitLevel();
         }
     }
@@ -45,6 +49,7 @@ public class ExitLevelDoor : MonoBehaviour
     public void ExitLevel() //(Chiamata on trigger enter)
     {
         _memoryTaken = _myMemory.IsTaken();
+        _rb.isKinematic = true;
 
         if (_isHubZero && _memoryTaken && _myCounter.GetEasy())
         {

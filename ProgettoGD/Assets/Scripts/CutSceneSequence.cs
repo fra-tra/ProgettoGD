@@ -62,8 +62,8 @@ public class CutSceneSequence : MonoBehaviour
         CamPlayer.SetActive(true);
         Cam5.SetActive(false);
         yield return new WaitForSeconds(2.5f);
-        CutSceneEmpty.SetActive(false);
         _rb.isKinematic = false;
+        CutSceneEmpty.SetActive(false);
         StopCoroutine(_coroutine);
         
     }

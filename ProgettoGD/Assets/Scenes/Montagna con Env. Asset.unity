@@ -538,12 +538,12 @@ PrefabInstance:
         type: 3}
       propertyPath: _AnelloUI
       value: 
-      objectReference: {fileID: 987192370}
+      objectReference: {fileID: 0}
     - target: {fileID: 1511447532114145000, guid: 997e3ee85c6934793a4a83060845f416,
         type: 3}
       propertyPath: _NucleoUI
       value: 
-      objectReference: {fileID: 987192369}
+      objectReference: {fileID: 0}
     - target: {fileID: 1511447532114145000, guid: 997e3ee85c6934793a4a83060845f416,
         type: 3}
       propertyPath: _uiCounter
@@ -568,22 +568,27 @@ PrefabInstance:
         type: 3}
       propertyPath: _AnelloUIThis
       value: 
-      objectReference: {fileID: 987192370}
+      objectReference: {fileID: 0}
     - target: {fileID: 1511447532114145000, guid: 997e3ee85c6934793a4a83060845f416,
         type: 3}
       propertyPath: _NucleoUIThis
       value: 
-      objectReference: {fileID: 987192369}
+      objectReference: {fileID: 0}
+    - target: {fileID: 1511447532114145000, guid: 997e3ee85c6934793a4a83060845f416,
+        type: 3}
+      propertyPath: _UiMemoryThis
+      value: 
+      objectReference: {fileID: 987192370}
     - target: {fileID: 1511447532114145000, guid: 997e3ee85c6934793a4a83060845f416,
         type: 3}
       propertyPath: _AnelloUIOther
       value: 
-      objectReference: {fileID: 987192373}
+      objectReference: {fileID: 0}
     - target: {fileID: 1511447532114145000, guid: 997e3ee85c6934793a4a83060845f416,
         type: 3}
       propertyPath: _NucleoUIOther
       value: 
-      objectReference: {fileID: 987192372}
+      objectReference: {fileID: 0}
     - target: {fileID: 1511447532114145000, guid: 997e3ee85c6934793a4a83060845f416,
         type: 3}
       propertyPath: feedbackRaccolta
@@ -5373,6 +5378,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1754149510}
     m_Modifications:
+    - target: {fileID: 2301127648555918567, guid: dd50365ac591f4610b2d25b60325f9ad,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2697032060927478826, guid: dd50365ac591f4610b2d25b60325f9ad,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3972246114840999281, guid: dd50365ac591f4610b2d25b60325f9ad,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5593534390707248231, guid: dd50365ac591f4610b2d25b60325f9ad,
         type: 3}
       propertyPath: _videoPanel
@@ -5547,13 +5567,13 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: dd50365ac591f4610b2d25b60325f9ad, type: 3}
 --- !u!1 &987192369 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 7152264352504106742, guid: dd50365ac591f4610b2d25b60325f9ad,
+  m_CorrespondingSourceObject: {fileID: 2482495764575832630, guid: dd50365ac591f4610b2d25b60325f9ad,
     type: 3}
   m_PrefabInstance: {fileID: 987192368}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &987192370 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 7152264353014544728, guid: dd50365ac591f4610b2d25b60325f9ad,
+  m_CorrespondingSourceObject: {fileID: 1746484675730921116, guid: dd50365ac591f4610b2d25b60325f9ad,
     type: 3}
   m_PrefabInstance: {fileID: 987192368}
   m_PrefabAsset: {fileID: 0}
@@ -5569,18 +5589,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23a55453e4a8945c19ecbf286596a3fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &987192372 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7152264353063272274, guid: dd50365ac591f4610b2d25b60325f9ad,
-    type: 3}
-  m_PrefabInstance: {fileID: 987192368}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &987192373 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7152264352702465528, guid: dd50365ac591f4610b2d25b60325f9ad,
-    type: 3}
-  m_PrefabInstance: {fileID: 987192368}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &987192374 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7152264352795862754, guid: dd50365ac591f4610b2d25b60325f9ad,
@@ -5876,8 +5884,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2120b0e4d7d00484e815d3f876b14235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _AnelloUIOther: {fileID: 987192373}
-  _NucleoUIOther: {fileID: 987192372}
+  _memoryUIOther: {fileID: 987192369}
   _uiCounter: {fileID: 987192371}
 --- !u!4 &1032196152 stripped
 Transform:

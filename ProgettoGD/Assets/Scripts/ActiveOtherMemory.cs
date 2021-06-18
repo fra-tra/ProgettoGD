@@ -5,8 +5,7 @@ using UnityEngine;
 public class ActiveOtherMemory : MonoBehaviour
 {
     // Start is called before the first frame update
-    [SerializeField] private GameObject _AnelloUIOther; 
-    [SerializeField] private GameObject _NucleoUIOther; //Deve essere il third person controller
+    [SerializeField] private GameObject _memoryUIOther;
     [SerializeField] private CounterVisualize _uiCounter;
 
     private Counter _myCounter;
@@ -24,8 +23,7 @@ public class ActiveOtherMemory : MonoBehaviour
 
      public void NotFirstLevel()
     {
-            _AnelloUIOther.SetActive(true);
-            _NucleoUIOther.SetActive(true);
+            _memoryUIOther.SetActive(true);
 
     }
 }

@@ -99,9 +99,8 @@ public class CounterVisualize : MonoBehaviour
             _comands.SetActive(false);
             _firsthub = false;
         }
-        
-        
     }
+
 
     private void CheckPressed()
     {

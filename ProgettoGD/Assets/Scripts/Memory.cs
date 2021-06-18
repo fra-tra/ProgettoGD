@@ -10,8 +10,7 @@ public class Memory : MonoBehaviour
     private bool _memoryTaken = false;
     [SerializeField] private float _minDistance;
     [SerializeField] private GameObject _target; //Deve essere il third person controller
-    [SerializeField] private GameObject _AnelloUIThis; 
-    [SerializeField] private GameObject _NucleoUIThis;
+    [SerializeField] private GameObject _UiMemoryThis; 
 
     [SerializeField] GameObject _part1;
     [SerializeField] GameObject _part2;
@@ -66,10 +65,9 @@ public class Memory : MonoBehaviour
         _part4.SetActive(false);
         audioSource.mute = true ;
         _sourceCatch.PlayOneShot(feedbackRaccolta);
-         //Non lo distruggo, lo faccio sparire, perché mi serve ancora che ci sia questo codice attivo per ottenere dati
+        //Non lo distruggo, lo faccio sparire, perché mi serve ancora che ci sia questo codice attivo per ottenere dati
 
-        _AnelloUIThis.SetActive(true);
-        _NucleoUIThis.SetActive(true);
+        _UiMemoryThis.SetActive(true);
         _uiCounter.MemoryTakenUI();
 
         Debug.Log("Presa memoria" + _memoryTaken);

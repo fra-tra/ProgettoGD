@@ -36,7 +36,7 @@ public class RotationYoYo : MonoBehaviour
 
     private void GearPower()
     {
-        if (_isPlayerOn && _myCounter.GetSecondObject() == 6 && Input.GetButton("SpecialObject"))
+        if (_isPlayerOn && _myCounter.GetSecondObject() == 6 && Input.GetButton("SpecialObjectTwo"))
         {
             if (!_rotationStopped)
             {
