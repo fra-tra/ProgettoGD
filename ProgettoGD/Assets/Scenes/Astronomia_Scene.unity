@@ -1286,7 +1286,7 @@ Transform:
   - {fileID: 543143382}
   - {fileID: 1145743994}
   m_Father: {fileID: 621670209}
-  m_RootOrder: 22
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &317893756
 BoxCollider:
@@ -3879,6 +3879,7 @@ Transform:
   - {fileID: 707108989}
   - {fileID: 83448580}
   - {fileID: 1357208894}
+  - {fileID: 317893754}
   - {fileID: 355490772}
   - {fileID: 2140174304}
   - {fileID: 3270640135283317497}
@@ -3890,7 +3891,6 @@ Transform:
   - {fileID: 228383279}
   - {fileID: 777319008}
   - {fileID: 1722504267}
-  - {fileID: 317893754}
   - {fileID: 742358762}
   - {fileID: 1598105975}
   - {fileID: 2035687894}
@@ -8878,7 +8878,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1414495386}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 1496fb7b97ee5417294340363a68e517, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 28c0f9eb29f5e0345aa073509ce5cb5b, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 107985096}
