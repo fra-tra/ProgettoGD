@@ -14,6 +14,8 @@ public class Rotation: MonoBehaviour
     [SerializeField] GameObject _player;
     [SerializeField] GameObject _platform;
 
+    [SerializeField] AudioSource feedbackGear;
+
     private Sequence moveSequence;
     private bool  _isPlayerOn = false;
     private bool _rotationStopped = false;
@@ -44,6 +46,7 @@ public class Rotation: MonoBehaviour
             {
                 Debug.Log("Paused");
                 moveSequence.Pause();
+                feedbackGear.Play();
                 _rotationStopped = true;
                 _coroutine = StartCoroutine(WaitRestartRotation());
 

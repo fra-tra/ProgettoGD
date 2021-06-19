@@ -11,6 +11,8 @@ public class RotationYoYo : MonoBehaviour
     [SerializeField] float _waitingTime = 5f;
     [SerializeField] GameObject _player;
     [SerializeField] GameObject _platform;
+
+    [SerializeField] AudioSource feedbackGear;
     
     private Sequence moveSequence;
     private bool _isPlayerOn = false;
@@ -42,6 +44,7 @@ public class RotationYoYo : MonoBehaviour
             {
                 Debug.Log("Paused");
                 moveSequence.Pause();
+                feedbackGear.Play();
                 _rotationStopped = true;
                 _coroutine = StartCoroutine(WaitRestartRotation());
 
