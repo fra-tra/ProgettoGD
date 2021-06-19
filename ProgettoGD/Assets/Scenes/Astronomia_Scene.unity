@@ -607,6 +607,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 68531260}
   m_PrefabAsset: {fileID: 0}
+--- !u!64 &68531262 stripped
+MeshCollider:
+  m_CorrespondingSourceObject: {fileID: 1707967698014673454, guid: 0fbe537ce7f1a49d2a04efdcb05ee715,
+    type: 3}
+  m_PrefabInstance: {fileID: 68531260}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &83448580 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3847930660843028383, guid: b30943249c18a419eae1ae5341462005,
@@ -993,6 +999,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 471537305}
     m_Modifications:
+    - target: {fileID: -5251928964232803460, guid: 7065de727e4f74e429a35c60d2ddbbb5,
+        type: 3}
+      propertyPath: _target
+      value: 
+      objectReference: {fileID: 1108949268}
+    - target: {fileID: -5251928964232803460, guid: 7065de727e4f74e429a35c60d2ddbbb5,
+        type: 3}
+      propertyPath: _groundCollider
+      value: 
+      objectReference: {fileID: 68531262}
     - target: {fileID: 2590387525031149457, guid: 7065de727e4f74e429a35c60d2ddbbb5,
         type: 3}
       propertyPath: m_Name
@@ -1262,6 +1278,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 471537305}
     m_Modifications:
+    - target: {fileID: -5251928964232803460, guid: 7065de727e4f74e429a35c60d2ddbbb5,
+        type: 3}
+      propertyPath: _target
+      value: 
+      objectReference: {fileID: 1108949268}
+    - target: {fileID: -5251928964232803460, guid: 7065de727e4f74e429a35c60d2ddbbb5,
+        type: 3}
+      propertyPath: _groundCollider
+      value: 
+      objectReference: {fileID: 68531262}
     - target: {fileID: 2590387525031149457, guid: 7065de727e4f74e429a35c60d2ddbbb5,
         type: 3}
       propertyPath: m_Name
@@ -3824,6 +3850,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 922817268}
     m_Modifications:
+    - target: {fileID: -5251928964232803460, guid: 7065de727e4f74e429a35c60d2ddbbb5,
+        type: 3}
+      propertyPath: _target
+      value: 
+      objectReference: {fileID: 1108949268}
+    - target: {fileID: -5251928964232803460, guid: 7065de727e4f74e429a35c60d2ddbbb5,
+        type: 3}
+      propertyPath: _groundCollider
+      value: 
+      objectReference: {fileID: 2062520932}
     - target: {fileID: 2590387525031149457, guid: 7065de727e4f74e429a35c60d2ddbbb5,
         type: 3}
       propertyPath: m_Name
@@ -5789,6 +5825,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 471537305}
     m_Modifications:
+    - target: {fileID: -5251928964232803460, guid: 7065de727e4f74e429a35c60d2ddbbb5,
+        type: 3}
+      propertyPath: _target
+      value: 
+      objectReference: {fileID: 1108949268}
+    - target: {fileID: -5251928964232803460, guid: 7065de727e4f74e429a35c60d2ddbbb5,
+        type: 3}
+      propertyPath: _groundCollider
+      value: 
+      objectReference: {fileID: 68531262}
     - target: {fileID: 2590387525031149457, guid: 7065de727e4f74e429a35c60d2ddbbb5,
         type: 3}
       propertyPath: m_Name
@@ -8680,6 +8726,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 922817268}
     m_Modifications:
+    - target: {fileID: -8626794418833092392, guid: b1de271841209460bb347c7a9219d2b0,
+        type: 3}
+      propertyPath: _target
+      value: 
+      objectReference: {fileID: 1108949268}
+    - target: {fileID: -8626794418833092392, guid: b1de271841209460bb347c7a9219d2b0,
+        type: 3}
+      propertyPath: _groundCollider
+      value: 
+      objectReference: {fileID: 2062520932}
     - target: {fileID: 5958195912142182779, guid: b1de271841209460bb347c7a9219d2b0,
         type: 3}
       propertyPath: m_Name
@@ -10142,6 +10198,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 922817268}
     m_Modifications:
+    - target: {fileID: -5251928964232803460, guid: 7065de727e4f74e429a35c60d2ddbbb5,
+        type: 3}
+      propertyPath: _target
+      value: 
+      objectReference: {fileID: 1108949268}
+    - target: {fileID: -5251928964232803460, guid: 7065de727e4f74e429a35c60d2ddbbb5,
+        type: 3}
+      propertyPath: _groundCollider
+      value: 
+      objectReference: {fileID: 2062520932}
     - target: {fileID: 2590387525031149457, guid: 7065de727e4f74e429a35c60d2ddbbb5,
         type: 3}
       propertyPath: m_Name
@@ -10739,6 +10805,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 471537305}
     m_Modifications:
+    - target: {fileID: -8626794418833092392, guid: b1de271841209460bb347c7a9219d2b0,
+        type: 3}
+      propertyPath: _target
+      value: 
+      objectReference: {fileID: 1108949268}
+    - target: {fileID: -8626794418833092392, guid: b1de271841209460bb347c7a9219d2b0,
+        type: 3}
+      propertyPath: _groundCollider
+      value: 
+      objectReference: {fileID: 68531262}
     - target: {fileID: 5958195912142182779, guid: b1de271841209460bb347c7a9219d2b0,
         type: 3}
       propertyPath: m_Name
@@ -12067,7 +12143,7 @@ PrefabInstance:
     - target: {fileID: 6802929807813654832, guid: fb28ef058a3c640e0b754e6b62c39d57,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6802929807813654834, guid: fb28ef058a3c640e0b754e6b62c39d57,
         type: 3}
@@ -12362,6 +12438,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 471537305}
     m_Modifications:
+    - target: {fileID: -8626794418833092392, guid: b1de271841209460bb347c7a9219d2b0,
+        type: 3}
+      propertyPath: _target
+      value: 
+      objectReference: {fileID: 1108949268}
+    - target: {fileID: -8626794418833092392, guid: b1de271841209460bb347c7a9219d2b0,
+        type: 3}
+      propertyPath: _groundCollider
+      value: 
+      objectReference: {fileID: 68531262}
     - target: {fileID: 5958195912142182779, guid: b1de271841209460bb347c7a9219d2b0,
         type: 3}
       propertyPath: m_Name
@@ -13083,6 +13169,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2062520930}
   m_PrefabAsset: {fileID: 0}
+--- !u!64 &2062520932 stripped
+MeshCollider:
+  m_CorrespondingSourceObject: {fileID: 1707967698014673454, guid: 0fbe537ce7f1a49d2a04efdcb05ee715,
+    type: 3}
+  m_PrefabInstance: {fileID: 2062520930}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2066659486
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13090,6 +13182,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 922817268}
     m_Modifications:
+    - target: {fileID: -8626794418833092392, guid: b1de271841209460bb347c7a9219d2b0,
+        type: 3}
+      propertyPath: _target
+      value: 
+      objectReference: {fileID: 1108949268}
+    - target: {fileID: -8626794418833092392, guid: b1de271841209460bb347c7a9219d2b0,
+        type: 3}
+      propertyPath: _groundCollider
+      value: 
+      objectReference: {fileID: 2062520932}
     - target: {fileID: 5958195912142182779, guid: b1de271841209460bb347c7a9219d2b0,
         type: 3}
       propertyPath: m_Name
