@@ -170,8 +170,8 @@ GameObject:
   - component: {fileID: 8916953500040547500}
   - component: {fileID: 7020944398369166846}
   - component: {fileID: 3156679659608016157}
-  - component: {fileID: 2757812985881443010}
   - component: {fileID: 5315508168189740364}
+  - component: {fileID: 2757812985881443010}
   - component: {fileID: 3327982471280118593}
   - component: {fileID: 3574339622944010473}
   m_Layer: 0
@@ -255,7 +255,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!145 &2757812985881443010
+--- !u!145 &5315508168189740364
 SpringJoint:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -263,9 +263,9 @@ SpringJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8916953500058813484}
   m_ConnectedBody: {fileID: 0}
-  m_Anchor: {x: 8, y: 0, z: -11}
+  m_Anchor: {x: 11, y: 0, z: 11}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 11.03296, y: 16.9, z: -84.04031}
+  m_ConnectedAnchor: {x: 12.05032, y: 16.9, z: -76.57968}
   serializedVersion: 2
   m_Spring: 2000
   m_Damper: 0
@@ -278,7 +278,7 @@ SpringJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
---- !u!145 &5315508168189740364
+--- !u!145 &2757812985881443010
 SpringJoint:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -286,9 +286,9 @@ SpringJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8916953500058813484}
   m_ConnectedBody: {fileID: 0}
-  m_Anchor: {x: 11, y: 0, z: 11}
+  m_Anchor: {x: 8, y: 0, z: -11}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 12.05032, y: 16.9, z: -76.57968}
+  m_ConnectedAnchor: {x: 11.03296, y: 16.9, z: -84.04031}
   serializedVersion: 2
   m_Spring: 2000
   m_Damper: 0
