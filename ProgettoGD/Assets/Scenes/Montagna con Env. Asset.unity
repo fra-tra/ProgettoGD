@@ -12854,10 +12854,60 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2050636650}
     m_Modifications:
+    - target: {fileID: 385751061111265687, guid: bc3743681528e47ea837add277bed76c,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 4.4280214
+      objectReference: {fileID: 0}
+    - target: {fileID: 385751061111265687, guid: bc3743681528e47ea837add277bed76c,
+        type: 3}
+      propertyPath: m_Center.x
+      value: 2.3513565
+      objectReference: {fileID: 0}
+    - target: {fileID: 385751061111265687, guid: bc3743681528e47ea837add277bed76c,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 2.9490602
+      objectReference: {fileID: 0}
+    - target: {fileID: 385751061111265687, guid: bc3743681528e47ea837add277bed76c,
+        type: 3}
+      propertyPath: m_Center.z
+      value: -1.3039998
+      objectReference: {fileID: 0}
     - target: {fileID: 2612537431923630866, guid: bc3743681528e47ea837add277bed76c,
         type: 3}
       propertyPath: m_TagString
       value: BreakableDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 4123619697425753024, guid: bc3743681528e47ea837add277bed76c,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1.862169
+      objectReference: {fileID: 0}
+    - target: {fileID: 4123619697425753024, guid: bc3743681528e47ea837add277bed76c,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 6.184471
+      objectReference: {fileID: 0}
+    - target: {fileID: 4123619697425753024, guid: bc3743681528e47ea837add277bed76c,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 3.8392465
+      objectReference: {fileID: 0}
+    - target: {fileID: 4123619697425753024, guid: bc3743681528e47ea837add277bed76c,
+        type: 3}
+      propertyPath: m_Center.x
+      value: -2.2447512
+      objectReference: {fileID: 0}
+    - target: {fileID: 4123619697425753024, guid: bc3743681528e47ea837add277bed76c,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 2.9958398
+      objectReference: {fileID: 0}
+    - target: {fileID: 4123619697425753024, guid: bc3743681528e47ea837add277bed76c,
+        type: 3}
+      propertyPath: m_Center.z
+      value: -0.9879954
       objectReference: {fileID: 0}
     - target: {fileID: 4318484166797854230, guid: bc3743681528e47ea837add277bed76c,
         type: 3}
@@ -12878,6 +12928,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: BreakableDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 5967980715934564523, guid: bc3743681528e47ea837add277bed76c,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 2.0482035
+      objectReference: {fileID: 0}
+    - target: {fileID: 5967980715934564523, guid: bc3743681528e47ea837add277bed76c,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 3.225695
+      objectReference: {fileID: 0}
+    - target: {fileID: 5967980715934564523, guid: bc3743681528e47ea837add277bed76c,
+        type: 3}
+      propertyPath: m_Center.x
+      value: 0.040540945
+      objectReference: {fileID: 0}
+    - target: {fileID: 5967980715934564523, guid: bc3743681528e47ea837add277bed76c,
+        type: 3}
+      propertyPath: m_Center.z
+      value: -1.112844
       objectReference: {fileID: 0}
     - target: {fileID: 6266932600990759030, guid: bc3743681528e47ea837add277bed76c,
         type: 3}

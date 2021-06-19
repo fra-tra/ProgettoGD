@@ -49,21 +49,24 @@ public class ExitLevelDoor : MonoBehaviour
     public void ExitLevel() //(Chiamata on trigger enter)
     {
         _memoryTaken = _myMemory.IsTaken();
-        _rb.isKinematic = true;
+        
 
         if (_isHubZero && _memoryTaken && _myCounter.GetEasy())
         {
             _myCounter._takenMemoryZero = true;
+            _rb.isKinematic = true;
             _levelLoader.LoadNextLevel();//chiama il level loader
         }
         else if (_isFinalHub)
         {
             _myCounter._takenMemoryFour = true;
+            _rb.isKinematic = true;
             _levelLoader.LoadNext(); //chiama il level loader verso la scena finale
         }
         else if (_memoryTaken && !_isHubZero)
         {
             Debug.Log("lOADING MEMORY TAKEN");
+            _rb.isKinematic = true;
             _myCounter.UpdateCounter(); //incrementa il contatore del num. ricordi in counter
             _levelLoader.LoadNextLevel();//chiama il level loader
             //Play della scena giusta Ricordo_x per ogni livello
