@@ -67,7 +67,7 @@ public class Statue : MonoBehaviour
 
      public IEnumerator delayDestroyHammer()
     {
-         yield return new WaitForSeconds(1f);
+         yield return new WaitForSeconds(0.5f);
 
         Debug.Log("Dopo Yield coroutine use object");
         DestroyStatue();

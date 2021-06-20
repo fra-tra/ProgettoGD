@@ -1286,6 +1286,7 @@ MonoBehaviour:
   _levelLoader: {fileID: 93987983}
   _buttonUI: {fileID: 622592537}
   _videoPanel: {fileID: 1164259849}
+  _post: {fileID: 0}
 --- !u!114 &1342326778 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6434896202228730614, guid: c554d7f6f102f4b2fbcc1493c74f7e45,
@@ -1782,6 +1783,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas_Pause
       objectReference: {fileID: 0}
+    - target: {fileID: 701774560562077526, guid: 1ba87b5eee2734fbca32a14203679c9e,
+        type: 3}
+      propertyPath: _rb
+      value: 
+      objectReference: {fileID: 1463008952}
     - target: {fileID: 701774560562077526, guid: 1ba87b5eee2734fbca32a14203679c9e,
         type: 3}
       propertyPath: _videoPanel

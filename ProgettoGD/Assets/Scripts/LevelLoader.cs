@@ -161,15 +161,9 @@ public class LevelLoader : MonoBehaviour
 
     public void ToMenu()
     {
-        _myCounter._takenMemoryZero = false;
-        _myCounter._takenMemoryFour = false;
-        _myCounter.UpdateCounterToMenu();
-        _myCounter.ResetLives(3);
-        _myCounter.SetIntern1(false);
-        _myCounter.SetIntern2(false);
-        _myCounter.SetEasy(true);
-        _myCounter.SetMedium(false);
-        _myCounter.SetDifficult(false);
+        _myCounter.Reset();
+        _PlayVideoOnLoad = false;
+        _myCounter._returnedMenu = true;
         StartCoroutine(LoadLevel(0));
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;

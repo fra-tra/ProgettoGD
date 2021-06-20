@@ -51,7 +51,7 @@ public class CounterVisualize : MonoBehaviour
         _uiActive = true;
         _animator.SetBool("IsOpen", true);
         _buttonCounterPressed = false;
-        //Debug.Log("Open");
+        Debug.Log("Open");
         if(_firsthub)
         {
             _comands.SetActive(true);
@@ -109,6 +109,7 @@ public class CounterVisualize : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Tab) || Input.GetKeyDown("joystick button 6") ) //Ciao Edoardo, lo sappiamo che questo linea di codice e la sua simile sono un abominio, ma altrimenti non funzionava #propotipo
             {
                 _buttonCounterPressed=true;
+                Debug.Log("buttonCounter");
             }
         }
     }

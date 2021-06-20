@@ -1964,6 +1964,12 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!54 &592584587 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 1624631166013607617, guid: 5b6dc4d5944024eb9b97e2c2629f395c,
+    type: 3}
+  m_PrefabInstance: {fileID: 592584582}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &621244523
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4351,6 +4357,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas_Pause
       objectReference: {fileID: 0}
+    - target: {fileID: 701774560562077526, guid: 1ba87b5eee2734fbca32a14203679c9e,
+        type: 3}
+      propertyPath: _rb
+      value: 
+      objectReference: {fileID: 592584587}
     - target: {fileID: 701774560562077526, guid: 1ba87b5eee2734fbca32a14203679c9e,
         type: 3}
       propertyPath: _videoPanel

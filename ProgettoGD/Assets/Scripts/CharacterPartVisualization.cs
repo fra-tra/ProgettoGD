@@ -19,6 +19,7 @@ public class CharacterPartVisualization : MonoBehaviour
 
     [SerializeField] GameObject _lifeOne;
     [SerializeField] GameObject _lifeTwo;
+    [SerializeField] GameObject _lifeThree;
 
     //[SerializeField] Material _brokenMaterial;
     //[SerializeField] Material _veryBrokenMaterial;
@@ -98,6 +99,12 @@ public class CharacterPartVisualization : MonoBehaviour
         {
             _lifeOne.SetActive(false);
             //_body.GetComponent<MeshRenderer> ().material = _brokenMaterial;//Assegnazione materiale rotto
+        }
+        else if(_lifeCounter == 3)
+        {
+            _lifeOne.SetActive(true);
+            _lifeTwo.SetActive(true);
+            _lifeThree.SetActive(true);
         }
         
     }

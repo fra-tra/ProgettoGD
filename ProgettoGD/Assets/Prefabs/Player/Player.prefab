@@ -699,6 +699,7 @@ MonoBehaviour:
   _gear: {fileID: 1624631167772495326}
   _lifeOne: {fileID: 1624631166386497684}
   _lifeTwo: {fileID: 1624631166053325007}
+  _lifeThree: {fileID: 1624631167045388292}
 --- !u!82 &2188892979954724310
 AudioSource:
   m_ObjectHideFlags: 0
@@ -807,6 +808,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a8b565b3e80fdd42919b60399247a2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _animationSoundPlayer: {fileID: 0}
 --- !u!1 &1624631166053325007
 GameObject:
   m_ObjectHideFlags: 0

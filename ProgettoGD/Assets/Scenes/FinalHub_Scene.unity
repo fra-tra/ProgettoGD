@@ -2029,6 +2029,7 @@ MonoBehaviour:
   _levelLoader: {fileID: 1612515987}
   _buttonUI: {fileID: 718048213}
   _videoPanel: {fileID: 477439852}
+  _post: {fileID: 663182541}
 --- !u!1 &489433121
 GameObject:
   m_ObjectHideFlags: 0
@@ -3225,6 +3226,12 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!54 &1285950523 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 1624631166013607617, guid: 5b6dc4d5944024eb9b97e2c2629f395c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1285950520}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1323597367
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4020,6 +4027,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 701774560562077526, guid: 1ba87b5eee2734fbca32a14203679c9e,
         type: 3}
+      propertyPath: _rb
+      value: 
+      objectReference: {fileID: 1285950523}
+    - target: {fileID: 701774560562077526, guid: 1ba87b5eee2734fbca32a14203679c9e,
+        type: 3}
       propertyPath: _videoPanel
       value: 
       objectReference: {fileID: 1482919311}
@@ -4391,6 +4403,7 @@ MonoBehaviour:
   _levelLoader: {fileID: 1612515987}
   _buttonUI: {fileID: 718048213}
   _videoPanel: {fileID: 1554459569}
+  _post: {fileID: 663182541}
 --- !u!1 &1566678074 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7356618855308765935, guid: 0cfcf2190bf184fcda97911ac2b19621,

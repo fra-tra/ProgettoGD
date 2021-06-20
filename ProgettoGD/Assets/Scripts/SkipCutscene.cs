@@ -8,7 +8,8 @@ public class SkipCutscene : MonoBehaviour
 {
     [SerializeField] LevelLoader _levelLoader; 
     [SerializeField] GameObject _buttonUI; 
-    [SerializeField] GameObject _videoPanel; 
+    [SerializeField] GameObject _videoPanel;
+    [SerializeField] GameObject _post;
 
     
     // Start is called before the first frame update
@@ -27,6 +28,7 @@ public class SkipCutscene : MonoBehaviour
         if(_videoPanel.activeSelf)
         {
             _buttonUI.SetActive(true);
+            _post.SetActive(false);
         }
         
             

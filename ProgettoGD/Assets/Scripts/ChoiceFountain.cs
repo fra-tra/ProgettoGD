@@ -75,6 +75,7 @@ public class ChoiceFountain : MonoBehaviour
         
         //_videoPanel.SetActive(false);
         _myCounter.Reset();
+        _myCounter._returnedMenu = true;
         _levelLoader.ToMenu();
         StopCoroutine(_coroutine);
     }

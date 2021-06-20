@@ -42,6 +42,7 @@ public class Counter : MonoBehaviour
     public bool _easyLevel = true;
     public bool _mediumLevel = false;
     public bool _difficultLevel = false;
+    public bool _returnedMenu = false;
 
     public static bool _logoplayed=false;
 
@@ -68,7 +69,10 @@ public class Counter : MonoBehaviour
     
     void Update()
     {
-        //
+        if(_returnedMenu)
+        {
+            Destroy(gameObject);
+        }
     }
 
     public bool GetEasy()
@@ -238,7 +242,8 @@ public class Counter : MonoBehaviour
     {
         _takenMemoryZero = false;
         _takenMemoryFour = false;
-        ResetLives(3);
+        _myMemoriesCounter = 0;
+        ResetLives(_maxLives);
         SetIntern1(false);
         SetIntern2(false);
         SetEasy(true);

@@ -12,6 +12,7 @@ public class PauseGame : MonoBehaviour
     public static bool GameIsPaused = false; 
 
     public GameObject pauseMenuUI;
+    public Rigidbody _rb;
 
     [SerializeField] public GameObject _selectedButton;
     [SerializeField] public GameObject _selectedButtonCommands;
@@ -42,6 +43,7 @@ public class PauseGame : MonoBehaviour
 
     public void Resume()
     {
+        _rb.isKinematic = false;
         pauseMenuUI.SetActive(false); 
         Time.timeScale= 1f; 
         GameIsPaused = false;
@@ -51,11 +53,13 @@ public class PauseGame : MonoBehaviour
 
     void Pause()
     {
+        _rb.isKinematic = true;
         pauseMenuUI.SetActive(true); 
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
         Time.timeScale = 0f; 
         GameIsPaused = true;
+        
 
         EventSystem.current.SetSelectedGameObject(null);
         EventSystem.current.SetSelectedGameObject(_selectedButton);
@@ -64,6 +68,8 @@ public class PauseGame : MonoBehaviour
 
     public void LoadMenu()
     {
+        GameIsPaused = false;
+        _rb.isKinematic = false;
         _levelLoader.ToMenu();
         Time.timeScale= 1f;
     }
