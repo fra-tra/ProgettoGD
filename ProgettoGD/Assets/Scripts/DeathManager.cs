@@ -8,6 +8,7 @@ public class DeathManager : MonoBehaviour
 
     private Counter _myCounter;
     [SerializeField] private LevelLoader _levelLoader;
+    [SerializeField] AudioSource feedbackDeath;
     
     private bool _livesFinished = false;
 
@@ -37,6 +38,7 @@ public class DeathManager : MonoBehaviour
         if (collision.gameObject.tag == "FallingRock")
         {
             Debug.Log("Colpito da una roccia aaaah ahia");
+            feedbackDeath.Play();
             isDead();
         }
 

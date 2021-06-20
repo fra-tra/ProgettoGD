@@ -5,6 +5,7 @@ using UnityEngine;
 public class DrawningDeath : MonoBehaviour
 {
     [SerializeField] DeathManager _death;
+    [SerializeField] AudioSource feedbackDeath;
 
     private bool _dead=false;
     
@@ -16,6 +17,7 @@ public class DrawningDeath : MonoBehaviour
         {
             Debug.Log("Drawning");
             _dead = true;
+            feedbackDeath.Play();
             _death.isDead();
         }
     }
