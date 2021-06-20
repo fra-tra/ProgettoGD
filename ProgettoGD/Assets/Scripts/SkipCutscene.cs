@@ -24,12 +24,12 @@ public class SkipCutscene : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        CallSkip(); 
         if(_videoPanel.activeSelf)
         {
             _buttonUI.SetActive(true);
             _post.SetActive(false);
-            CallSkip(); 
+            
         }
         
             
