@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 5064387}
   - component: {fileID: 5064389}
   - component: {fileID: 5064390}
+  - component: {fileID: 5064391}
   m_Layer: 0
   m_Name: VideoCutscene
   m_TagString: Untagged
@@ -196,7 +197,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5064386}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e86780428a8ec43758448d671321eadd, type: 3}
   m_Name: 
@@ -220,6 +221,19 @@ MonoBehaviour:
   _buttonUI: {fileID: 1745659689}
   _videoPanel: {fileID: 5064386}
   _post: {fileID: 475519729}
+--- !u!114 &5064391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5064386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54eb90bcca54cbe47808db0b12ce4184, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rb: {fileID: 0}
 --- !u!1 &10387346 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4015982789134106245, guid: ba4a73ff246f34b2f85b5333c39891f0,

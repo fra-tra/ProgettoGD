@@ -9,6 +9,7 @@ public class DeathManager : MonoBehaviour
     private Counter _myCounter;
     [SerializeField] private LevelLoader _levelLoader;
     [SerializeField] AudioSource feedbackDeath;
+    private bool _hittable = true;
     
     private bool _livesFinished = false;
 
@@ -38,8 +39,9 @@ public class DeathManager : MonoBehaviour
     {
         //Dovrebbe essere chiamata automaticamente ad ogni collisione
         Debug.Log("Colpito da oggetto");
-        if (collision.gameObject.tag == "FallingRock")
+        if (collision.gameObject.tag == "FallingRock" && _hittable)
         {
+            _hittable = false;
             Debug.Log("Colpito da una roccia aaaah ahia");
             feedbackDeath.Play();
             _animator.SetTrigger("isDead");

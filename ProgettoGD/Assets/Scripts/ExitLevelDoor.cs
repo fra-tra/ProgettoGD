@@ -13,7 +13,7 @@ public class ExitLevelDoor : MonoBehaviour
     [SerializeField] public bool _isFinalHub;
     [SerializeField] public LevelLoader _levelLoader;
 
-    private Rigidbody _rb;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -29,11 +29,10 @@ public class ExitLevelDoor : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player" && !_entered)
+        if (other.tag == "Player" && !_entered &&  _myMemory.IsTaken())
         {
+            Debug.Log("PORTA USCITA");
             _entered = true;
-            _rb = other.gameObject.GetComponent<Rigidbody>();
-        
             ExitLevel();
         }
     }
@@ -42,31 +41,29 @@ public class ExitLevelDoor : MonoBehaviour
     {
         if (other.tag == "Player" && _entered)
         {
+            Debug.Log("Uscito");
             _entered = false;
         }
     }
 
     public void ExitLevel() //(Chiamata on trigger enter)
     {
-        _memoryTaken = _myMemory.IsTaken();
+        //_memoryTaken = _myMemory.IsTaken();
         
 
-        if (_isHubZero && _memoryTaken && _myCounter.GetEasy())
+        if (_isHubZero /*&& _memoryTaken*/ && _myCounter.GetEasy())
         {
             _myCounter._takenMemoryZero = true;
-            _rb.isKinematic = true;
             _levelLoader.LoadNextLevel();//chiama il level loader
         }
-        else if (_isFinalHub)
+        /*else if (_isFinalHub)
         {
             _myCounter._takenMemoryFour = true;
-            _rb.isKinematic = true;
             _levelLoader.LoadNext(); //chiama il level loader verso la scena finale
-        }
-        else if (_memoryTaken && !_isHubZero)
+        }*/
+        else if (/*_memoryTaken && */!_isHubZero)
         {
             Debug.Log("lOADING MEMORY TAKEN");
-            _rb.isKinematic = true;
             _myCounter.UpdateCounter(); //incrementa il contatore del num. ricordi in counter
             _levelLoader.LoadNextLevel();//chiama il level loader
             //Play della scena giusta Ricordo_x per ogni livello
