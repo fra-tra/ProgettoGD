@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 312329134}
-  m_IndirectSpecularColor: {r: 0.49201518, g: 0.6829216, b: 0.78696775, a: 1}
+  m_IndirectSpecularColor: {r: 0.4919023, g: 0.68285495, b: 0.78691506, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1286,7 +1286,7 @@ MonoBehaviour:
   _levelLoader: {fileID: 93987983}
   _buttonUI: {fileID: 622592537}
   _videoPanel: {fileID: 1164259849}
-  _post: {fileID: 0}
+  _post: {fileID: 1073533605}
 --- !u!114 &1342326778 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6434896202228730614, guid: c554d7f6f102f4b2fbcc1493c74f7e45,
