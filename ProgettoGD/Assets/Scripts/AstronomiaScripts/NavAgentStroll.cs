@@ -11,6 +11,8 @@ public class NavAgentStroll : MonoBehaviour
     [SerializeField] private float _minChaseDistance = 1f;
     [SerializeField] float _waitingTime = 6f;
 
+    [SerializeField] AudioSource feedbackGlobe;
+
     private bool _Patrolling = true;
     private Counter _myCounter;
     private bool _stopped = false;
@@ -55,6 +57,7 @@ public class NavAgentStroll : MonoBehaviour
         if (  _firstObject ==  5 && Input.GetButton("SpecialObjectTwo"))
         {
             _stopped = true;
+            feedbackGlobe.Play();
             _coroutine = StartCoroutine(WaitRestartChasing());
         }
     }
