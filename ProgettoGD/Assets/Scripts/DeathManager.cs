@@ -12,10 +12,13 @@ public class DeathManager : MonoBehaviour
     
     private bool _livesFinished = false;
 
+    public Animator _animator;
+
     // Start is called before the first frame update
     void Start()
     {
         _myCounter = (Counter)FindObjectOfType(typeof(Counter));
+        _animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -39,6 +42,7 @@ public class DeathManager : MonoBehaviour
         {
             Debug.Log("Colpito da una roccia aaaah ahia");
             feedbackDeath.Play();
+            _animator.SetTrigger("isDead");
             isDead();
         }
 

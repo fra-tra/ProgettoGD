@@ -271,7 +271,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c651a178c143e5c4ba6d49a12595ae6e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4e9a3c1c0d2888249a3a1336f5dbb336, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -398,6 +398,7 @@ MonoBehaviour:
   _levelLoader: {fileID: 0}
   _videoPanel: {fileID: 0}
   pauseMenuUI: {fileID: 701774560337307689}
+  _rb: {fileID: 0}
   _selectedButton: {fileID: 701774560847139740}
   _selectedButtonCommands: {fileID: 701774560367070890}
 --- !u!1 &701774560695980830
