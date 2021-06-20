@@ -20,10 +20,11 @@ public class ChoiceFountain : MonoBehaviour
     private bool _memoryPlayed = false;
     public float transitionTime = 1f;
 
-
+    private Counter _myCounter;
     void Start()
     {
         _matF= _fountain.GetComponent<MeshRenderer> ().material;
+        _myCounter = (Counter)FindObjectOfType(typeof(Counter));
     }
 
     // Update is called once per frame
@@ -73,6 +74,7 @@ public class ChoiceFountain : MonoBehaviour
         yield return new WaitForSeconds(transitionTime + 0.1f);
         
         //_videoPanel.SetActive(false);
+        _myCounter.Reset();
         _levelLoader.ToMenu();
         StopCoroutine(_coroutine);
     }

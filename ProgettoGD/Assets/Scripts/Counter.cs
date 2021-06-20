@@ -233,4 +233,16 @@ public class Counter : MonoBehaviour
             return false; //Ritorna "False" a _livesFinished. Ci sarà una funzione che attiva la cutscene e chiama il level loader verso l'inizio del livello stesso
         }
     }
+
+    public void Reset()
+    {
+        _takenMemoryZero = false;
+        _takenMemoryFour = false;
+        ResetLives(3);
+        SetIntern1(false);
+        SetIntern2(false);
+        SetEasy(true);
+        SetMedium(false);
+        SetDifficult(false);
+    }
 }

@@ -49,14 +49,7 @@ public class DeathManager : MonoBehaviour
 
         if (_livesFinished)
         {
-            _myCounter._takenMemoryZero = false;
-            _myCounter._takenMemoryFour = false;
-            _myCounter.ResetLives(3);
-            _myCounter.SetIntern1(false);
-            _myCounter.SetIntern2(false);
-            _myCounter.SetEasy(true);
-            _myCounter.SetMedium(false);
-            _myCounter.SetDifficult(false);
+            _myCounter.Reset();
            _levelLoader.LastDeath(); //è morto definitivamente, setta la variabile morto 
         }
         else
