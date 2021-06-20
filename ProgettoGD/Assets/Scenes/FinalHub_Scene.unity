@@ -1959,6 +1959,7 @@ GameObject:
   - component: {fileID: 477439854}
   - component: {fileID: 477439853}
   - component: {fileID: 477439855}
+  - component: {fileID: 477439856}
   m_Layer: 0
   m_Name: Memory5Video
   m_TagString: Untagged
@@ -2030,6 +2031,23 @@ MonoBehaviour:
   _buttonUI: {fileID: 718048213}
   _videoPanel: {fileID: 477439852}
   _post: {fileID: 663182541}
+--- !u!114 &477439856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 477439852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eae608735abb9be4197f4b31a152494c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _videoPanel: {fileID: 477439852}
+  _player: {fileID: 1285950524}
+  _ricordo: {fileID: 390445373}
+  _musica: {fileID: 0}
+  _ambientale: {fileID: 0}
 --- !u!1 &489433121
 GameObject:
   m_ObjectHideFlags: 0
@@ -3232,6 +3250,12 @@ Rigidbody:
     type: 3}
   m_PrefabInstance: {fileID: 1285950520}
   m_PrefabAsset: {fileID: 0}
+--- !u!82 &1285950524 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 2188892979954724310, guid: 5b6dc4d5944024eb9b97e2c2629f395c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1285950520}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1323597367
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4158,6 +4182,7 @@ GameObject:
   - component: {fileID: 1482919313}
   - component: {fileID: 1482919312}
   - component: {fileID: 1482919314}
+  - component: {fileID: 1482919315}
   m_Layer: 0
   m_Name: FourthMemory
   m_TagString: Untagged
@@ -4228,6 +4253,23 @@ MonoBehaviour:
   _buttonUI: {fileID: 302393870}
   _videoPanel: {fileID: 1482919311}
   _video: {fileID: 1482919312}
+--- !u!114 &1482919315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1482919311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eae608735abb9be4197f4b31a152494c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _videoPanel: {fileID: 1482919311}
+  _player: {fileID: 1285950524}
+  _ricordo: {fileID: 390445373}
+  _musica: {fileID: 0}
+  _ambientale: {fileID: 0}
 --- !u!1 &1498650781
 GameObject:
   m_ObjectHideFlags: 0
@@ -4333,6 +4375,7 @@ GameObject:
   - component: {fileID: 1554459571}
   - component: {fileID: 1554459570}
   - component: {fileID: 1554459572}
+  - component: {fileID: 1554459573}
   m_Layer: 0
   m_Name: CadutaVideo
   m_TagString: Untagged
@@ -4404,6 +4447,23 @@ MonoBehaviour:
   _buttonUI: {fileID: 718048213}
   _videoPanel: {fileID: 1554459569}
   _post: {fileID: 663182541}
+--- !u!114 &1554459573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1554459569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eae608735abb9be4197f4b31a152494c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _videoPanel: {fileID: 1554459569}
+  _player: {fileID: 1285950524}
+  _ricordo: {fileID: 390445373}
+  _musica: {fileID: 0}
+  _ambientale: {fileID: 0}
 --- !u!1 &1566678074 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7356618855308765935, guid: 0cfcf2190bf184fcda97911ac2b19621,

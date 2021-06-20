@@ -1280,6 +1280,12 @@ Rigidbody:
     type: 3}
   m_PrefabInstance: {fileID: 893716565}
   m_PrefabAsset: {fileID: 0}
+--- !u!82 &893716567 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 2188892979954724310, guid: 5b6dc4d5944024eb9b97e2c2629f395c,
+    type: 3}
+  m_PrefabInstance: {fileID: 893716565}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &904142352
 GameObject:
   m_ObjectHideFlags: 0
@@ -2096,6 +2102,7 @@ GameObject:
   - component: {fileID: 1317371117}
   - component: {fileID: 1317371119}
   - component: {fileID: 1317371120}
+  - component: {fileID: 1317371121}
   m_Layer: 0
   m_Name: VideoCutscene
   m_TagString: Untagged
@@ -2182,6 +2189,21 @@ MonoBehaviour:
   _buttonUI: {fileID: 766611792}
   _videoPanel: {fileID: 1317371116}
   _post: {fileID: 349332181}
+--- !u!114 &1317371121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1317371116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eae608735abb9be4197f4b31a152494c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _videoPanel: {fileID: 1317371116}
+  _player: {fileID: 893716567}
+  _ricordo: {fileID: 1495155344}
 --- !u!1 &1495155342 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7757764578240784084, guid: 997e3ee85c6934793a4a83060845f416,

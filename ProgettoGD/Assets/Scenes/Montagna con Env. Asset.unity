@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 5064389}
   - component: {fileID: 5064390}
   - component: {fileID: 5064391}
+  - component: {fileID: 5064392}
   m_Layer: 0
   m_Name: VideoCutscene
   m_TagString: Untagged
@@ -234,6 +235,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rb: {fileID: 0}
+--- !u!114 &5064392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5064386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eae608735abb9be4197f4b31a152494c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _videoPanel: {fileID: 5064386}
+  _player: {fileID: 1279522864}
+  _ricordo: {fileID: 1551438911}
+  _musica: {fileID: 1707251529}
+  _ambientale: {fileID: 1326190160}
 --- !u!1 &10387346 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4015982789134106245, guid: ba4a73ff246f34b2f85b5333c39891f0,
@@ -8371,6 +8389,12 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!82 &1279522864 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 2188892979954724310, guid: 5b6dc4d5944024eb9b97e2c2629f395c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1279522858}
+  m_PrefabAsset: {fileID: 0}
 --- !u!54 &1279522869 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 1624631166013607617, guid: 5b6dc4d5944024eb9b97e2c2629f395c,
@@ -12148,7 +12172,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 6479e87848cb84df28e28765bbd75dbb, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 0d7df657163573145a5a9372c10e366b, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
