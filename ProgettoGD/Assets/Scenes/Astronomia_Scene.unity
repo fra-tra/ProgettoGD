@@ -5134,11 +5134,6 @@ PrefabInstance:
       propertyPath: _footstepClip
       value: 
       objectReference: {fileID: 8300000, guid: 18fe26a06ed0c574189797c55c45a1f0, type: 3}
-    - target: {fileID: -627517624479547098, guid: 5b6dc4d5944024eb9b97e2c2629f395c,
-        type: 3}
-      propertyPath: _animationSoundPlayer
-      value: 
-      objectReference: {fileID: 629732671}
     - target: {fileID: 779000442030662412, guid: 5b6dc4d5944024eb9b97e2c2629f395c,
         type: 3}
       propertyPath: m_Enabled
@@ -19142,6 +19137,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pianetino_Pivot
+      objectReference: {fileID: 0}
+    - target: {fileID: 176034728507619323, guid: c2b7866efc686404893699cc04bb02d7,
+        type: 3}
+      propertyPath: m_TagString
+      value: Metal
       objectReference: {fileID: 0}
     - target: {fileID: 650293259090266642, guid: c2b7866efc686404893699cc04bb02d7,
         type: 3}

@@ -39,14 +39,17 @@ public class PlayerAnimationSounds : MonoBehaviour
     private void PlayerFootstepSound()
     {
         RaycastHit hit;
+        Debug.Log("pre hit raycast");
 
         if (Physics.Raycast(_player.transform.position, Vector3.down, out hit))
         {
             var floortag = hit.collider.gameObject.tag;
+            Debug.Log("dentro if" + floortag);
 
             if (floortag == "Metal")
             {
                 //play concrete sound code
+                Debug.Log("metalFloor");
                 _animationSoundPlayer.clip = _footstepMetal;
                 _animationSoundPlayer.PlayOneShot(_animationSoundPlayer.clip);
                 // move picked sound to index 0 so it's not picked next time

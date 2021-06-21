@@ -817,6 +817,7 @@ MonoBehaviour:
   _footstepSand: {fileID: 8300000, guid: e9714160ce34f2b4ab63ff8c27bd68e1, type: 3}
   _footstepMetal: {fileID: 8300000, guid: 18fe26a06ed0c574189797c55c45a1f0, type: 3}
   _footstepWood: {fileID: 8300000, guid: 9ec4bf6f42a734a588c1c87e9428425e, type: 3}
+  _player: {fileID: 1624631166013607617}
 --- !u!1 &1624631166053325007
 GameObject:
   m_ObjectHideFlags: 0

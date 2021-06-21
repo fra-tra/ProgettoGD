@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 3729713388955443732}
   m_Layer: 0
   m_Name: Gancio 1
-  m_TagString: Untagged
+  m_TagString: Metal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -225,6 +225,7 @@ MonoBehaviour:
   _rotationTime: 60
   _player: {fileID: 0}
   _platform: {fileID: 4480316510426998053}
+  feedbackGear: {fileID: 0}
 --- !u!64 &3729713388955443732
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -251,7 +252,7 @@ GameObject:
   - component: {fileID: 6446228227194233255}
   m_Layer: 0
   m_Name: GameObject
-  m_TagString: Untagged
+  m_TagString: Metal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

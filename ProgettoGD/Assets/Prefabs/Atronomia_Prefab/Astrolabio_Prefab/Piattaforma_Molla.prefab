@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 5568704774472746064}
   m_Layer: 0
   m_Name: Piattaforma_Molla
-  m_TagString: Untagged
+  m_TagString: Metal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
