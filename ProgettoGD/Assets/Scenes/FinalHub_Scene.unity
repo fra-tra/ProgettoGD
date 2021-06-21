@@ -2845,7 +2845,7 @@ MonoBehaviour:
   _levelLoader: {fileID: 1612515987}
   _post: {fileID: 1727107744}
   _ui: {fileID: 1323597371}
-  _player: {fileID: 0}
+  _player: {fileID: 1285950524}
   transitionTime: 1
 --- !u!43 &1220570436
 Mesh:
@@ -3019,9 +3019,24 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -627517624479547098, guid: 5b6dc4d5944024eb9b97e2c2629f395c,
         type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -627517624479547098, guid: 5b6dc4d5944024eb9b97e2c2629f395c,
+        type: 3}
       propertyPath: _videoPanel
       value: 
       objectReference: {fileID: 1482919311}
+    - target: {fileID: -627517624479547098, guid: 5b6dc4d5944024eb9b97e2c2629f395c,
+        type: 3}
+      propertyPath: _videoPanel2
+      value: 
+      objectReference: {fileID: 477439852}
+    - target: {fileID: -627517624479547098, guid: 5b6dc4d5944024eb9b97e2c2629f395c,
+        type: 3}
+      propertyPath: _videoPanel3
+      value: 
+      objectReference: {fileID: 1554459569}
     - target: {fileID: -627517624479547098, guid: 5b6dc4d5944024eb9b97e2c2629f395c,
         type: 3}
       propertyPath: _animationSoundPlayer
@@ -3122,6 +3137,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1624631166013607615, guid: 5b6dc4d5944024eb9b97e2c2629f395c,
+        type: 3}
+      propertyPath: _videoPanel
+      value: 
+      objectReference: {fileID: 1482919311}
     - target: {fileID: 1624631166013607619, guid: 5b6dc4d5944024eb9b97e2c2629f395c,
         type: 3}
       propertyPath: m_Name
@@ -4475,8 +4495,8 @@ MonoBehaviour:
   _videoPanel: {fileID: 1554459569}
   _player: {fileID: 1285950524}
   _ricordo: {fileID: 390445373}
-  _musica: {fileID: 0}
-  _ambientale: {fileID: 0}
+  _musica: {fileID: 390445373}
+  _ambientale: {fileID: 1285950524}
 --- !u!1 &1566678074 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7356618855308765935, guid: 0cfcf2190bf184fcda97911ac2b19621,

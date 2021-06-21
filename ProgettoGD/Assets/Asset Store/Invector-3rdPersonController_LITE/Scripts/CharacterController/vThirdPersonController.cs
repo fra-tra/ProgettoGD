@@ -6,6 +6,7 @@ namespace Invector.vCharacterController
     {
 
         [SerializeField] public AudioSource jumpSound;
+        
 
        //   AudioSource step;
        //   [SerializeField] public AudioClip stepSound;       tentativo di capire come far partire il suono
@@ -124,8 +125,8 @@ namespace Invector.vCharacterController
             // trigger jump behaviour
             jumpCounter = jumpTimer;
             isJumping = true;
-
             jumpSound.Play();
+         
 
             // trigger jump animations
             if (input.sqrMagnitude < 0.1f)

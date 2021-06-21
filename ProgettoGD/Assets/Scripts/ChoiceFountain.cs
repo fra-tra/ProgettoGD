@@ -66,12 +66,12 @@ public class ChoiceFountain : MonoBehaviour
 
     public IEnumerator CoroutinePlayVideo()
     {   Debug.Log("ChoiceVideo");
-        _player.mute = true;
+        
         _videoPanel.SetActive(true);
         _video.playOnAwake = false;
 
         _ui.SetActive(false);
-
+        _player.mute = true;
         _video.Play();
         transitionTime = (float) _video.length;
         yield return new WaitForSeconds(transitionTime + 0.1f);
