@@ -2215,8 +2215,8 @@ MonoBehaviour:
   _videoPanel: {fileID: 1317371116}
   _player: {fileID: 893716567}
   _ricordo: {fileID: 1495155344}
-  _musica: {fileID: 0}
-  _ambientale: {fileID: 0}
+  _musica: {fileID: 893716567}
+  _ambientale: {fileID: 1495155344}
 --- !u!1 &1495155342 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7757764578240784084, guid: 997e3ee85c6934793a4a83060845f416,

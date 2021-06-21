@@ -11439,7 +11439,7 @@ MonoBehaviour:
   _player: {fileID: 629732671}
   _ricordo: {fileID: 1616229803}
   _musica: {fileID: 621670210}
-  _ambientale: {fileID: 0}
+  _ambientale: {fileID: 629732671}
 --- !u!1 &1433336251
 GameObject:
   m_ObjectHideFlags: 0

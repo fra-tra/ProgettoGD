@@ -4274,8 +4274,8 @@ MonoBehaviour:
   _videoPanel: {fileID: 1482919311}
   _player: {fileID: 1285950524}
   _ricordo: {fileID: 390445373}
-  _musica: {fileID: 0}
-  _ambientale: {fileID: 0}
+  _musica: {fileID: 1285950524}
+  _ambientale: {fileID: 390445373}
 --- !u!1 &1498650781
 GameObject:
   m_ObjectHideFlags: 0
