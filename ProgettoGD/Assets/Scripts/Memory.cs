@@ -20,6 +20,8 @@ public class Memory : MonoBehaviour
     [SerializeField] AudioSource audioSource; //AudioSource del ricordo
     [SerializeField] AudioClip feedbackRaccolta;
     public AudioSource _sourceCatch;
+
+    public Animator _animatorPlayer;
     
  
     [SerializeField] private CounterVisualize _uiCounter;
@@ -65,6 +67,7 @@ public class Memory : MonoBehaviour
         _part4.SetActive(false);
         audioSource.mute = true ;
         _sourceCatch.PlayOneShot(feedbackRaccolta);
+        _animatorPlayer.SetTrigger("joyMemory");
         //Non lo distruggo, lo faccio sparire, perché mi serve ancora che ci sia questo codice attivo per ottenere dati
 
         _UiMemoryThis.SetActive(true);

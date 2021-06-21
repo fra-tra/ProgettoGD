@@ -727,6 +727,11 @@ PrefabInstance:
       objectReference: {fileID: 7152264353420635737}
     - target: {fileID: 1511447532114145000, guid: 997e3ee85c6934793a4a83060845f416,
         type: 3}
+      propertyPath: _animatorPlayer
+      value: 
+      objectReference: {fileID: 893716568}
+    - target: {fileID: 1511447532114145000, guid: 997e3ee85c6934793a4a83060845f416,
+        type: 3}
       propertyPath: feedbackRaccolta
       value: 
       objectReference: {fileID: 8300000, guid: 0300fa9232adb4f41b4a1d935cfa0b01, type: 3}
@@ -1283,6 +1288,12 @@ Rigidbody:
 --- !u!82 &893716567 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 2188892979954724310, guid: 5b6dc4d5944024eb9b97e2c2629f395c,
+    type: 3}
+  m_PrefabInstance: {fileID: 893716565}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &893716568 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1624631166013607612, guid: 5b6dc4d5944024eb9b97e2c2629f395c,
     type: 3}
   m_PrefabInstance: {fileID: 893716565}
   m_PrefabAsset: {fileID: 0}
@@ -2204,6 +2215,8 @@ MonoBehaviour:
   _videoPanel: {fileID: 1317371116}
   _player: {fileID: 893716567}
   _ricordo: {fileID: 1495155344}
+  _musica: {fileID: 0}
+  _ambientale: {fileID: 0}
 --- !u!1 &1495155342 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7757764578240784084, guid: 997e3ee85c6934793a4a83060845f416,

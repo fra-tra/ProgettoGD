@@ -3256,6 +3256,12 @@ AudioSource:
     type: 3}
   m_PrefabInstance: {fileID: 1285950520}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &1285950525 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1624631166013607612, guid: 5b6dc4d5944024eb9b97e2c2629f395c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1285950520}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1323597367
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4684,6 +4690,11 @@ PrefabInstance:
       propertyPath: _UiMemoryThis
       value: 
       objectReference: {fileID: 1323597368}
+    - target: {fileID: 1511447532114145000, guid: 997e3ee85c6934793a4a83060845f416,
+        type: 3}
+      propertyPath: _animatorPlayer
+      value: 
+      objectReference: {fileID: 1285950525}
     - target: {fileID: 1511447532114145000, guid: 997e3ee85c6934793a4a83060845f416,
         type: 3}
       propertyPath: feedbackRaccolta
