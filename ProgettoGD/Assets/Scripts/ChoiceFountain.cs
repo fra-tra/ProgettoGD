@@ -14,6 +14,8 @@ public class ChoiceFountain : MonoBehaviour
     [SerializeField] public GameObject _post;
     [SerializeField] GameObject _ui;
 
+    [SerializeField] AudioSource _player;
+
     private Material _matF;
     private Coroutine _coroutine;
     private bool _notChoosen = true;
@@ -64,6 +66,7 @@ public class ChoiceFountain : MonoBehaviour
 
     public IEnumerator CoroutinePlayVideo()
     {   Debug.Log("ChoiceVideo");
+        _player.mute = true;
         _videoPanel.SetActive(true);
         _video.playOnAwake = false;
 

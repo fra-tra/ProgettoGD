@@ -18,9 +18,10 @@ public class Skip4thMemory : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        CallSkipMem(); 
+        
         if(_videoPanel.activeSelf)
         {
+            CallSkipMem();
             _buttonUI.SetActive(true);
         }
     }

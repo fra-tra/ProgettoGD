@@ -1106,6 +1106,7 @@ MonoBehaviour:
   _levelLoader: {fileID: 1612515987}
   _post: {fileID: 1375968232}
   _ui: {fileID: 1323597371}
+  _player: {fileID: 1285950524}
   transitionTime: 1
 --- !u!1 &285255982
 GameObject:
@@ -2046,8 +2047,8 @@ MonoBehaviour:
   _videoPanel: {fileID: 477439852}
   _player: {fileID: 1285950524}
   _ricordo: {fileID: 390445373}
-  _musica: {fileID: 0}
-  _ambientale: {fileID: 0}
+  _musica: {fileID: 1285950524}
+  _ambientale: {fileID: 390445373}
 --- !u!1 &489433121
 GameObject:
   m_ObjectHideFlags: 0
@@ -2844,6 +2845,7 @@ MonoBehaviour:
   _levelLoader: {fileID: 1612515987}
   _post: {fileID: 1727107744}
   _ui: {fileID: 1323597371}
+  _player: {fileID: 0}
   transitionTime: 1
 --- !u!43 &1220570436
 Mesh:
@@ -3015,6 +3017,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 119439068}
     m_Modifications:
+    - target: {fileID: -627517624479547098, guid: 5b6dc4d5944024eb9b97e2c2629f395c,
+        type: 3}
+      propertyPath: _videoPanel
+      value: 
+      objectReference: {fileID: 1482919311}
     - target: {fileID: -627517624479547098, guid: 5b6dc4d5944024eb9b97e2c2629f395c,
         type: 3}
       propertyPath: _animationSoundPlayer
