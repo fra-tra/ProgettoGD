@@ -419,6 +419,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piattaforma_Molla1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5171987278449480922, guid: e338011190c974818942cb0ea87b7a89,
+        type: 3}
+      propertyPath: m_TagString
+      value: Metal
+      objectReference: {fileID: 0}
     - target: {fileID: 5516143920920284768, guid: e338011190c974818942cb0ea87b7a89,
         type: 3}
       propertyPath: m_RootOrder
@@ -563,6 +568,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Base_Npc
+      objectReference: {fileID: 0}
+    - target: {fileID: 2353759417472314881, guid: 0fbe537ce7f1a49d2a04efdcb05ee715,
+        type: 3}
+      propertyPath: m_TagString
+      value: Metal
       objectReference: {fileID: 0}
     - target: {fileID: 2353759417472314881, guid: 0fbe537ce7f1a49d2a04efdcb05ee715,
         type: 3}
@@ -1420,6 +1430,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7663560154834681691, guid: 376471a0cae9241e0b642959d35d5d73,
+        type: 3}
+      propertyPath: m_TagString
+      value: Metal
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 376471a0cae9241e0b642959d35d5d73, type: 3}
 --- !u!1001 &228354798
@@ -1463,6 +1478,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Piattaforma_Molla3 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5171987278449480922, guid: e338011190c974818942cb0ea87b7a89,
+        type: 3}
+      propertyPath: m_TagString
+      value: Metal
       objectReference: {fileID: 0}
     - target: {fileID: 5516143920920284768, guid: e338011190c974818942cb0ea87b7a89,
         type: 3}
@@ -1901,7 +1921,7 @@ GameObject:
   - component: {fileID: 317893778}
   m_Layer: 0
   m_Name: Pianetino
-  m_TagString: Untagged
+  m_TagString: Metal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2682,6 +2702,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4208281523471742698, guid: 06c95b2d6b0864406ae02939850e00b2,
         type: 3}
+      propertyPath: m_TagString
+      value: Metal
+      objectReference: {fileID: 0}
+    - target: {fileID: 4208281523471742698, guid: 06c95b2d6b0864406ae02939850e00b2,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -3302,6 +3327,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6018524859512740978, guid: 3ad4153f609f54efca2fa01873f00bd6,
+        type: 3}
+      propertyPath: m_TagString
+      value: Metal
+      objectReference: {fileID: 0}
     - target: {fileID: 6398991460463347400, guid: 3ad4153f609f54efca2fa01873f00bd6,
         type: 3}
       propertyPath: m_RootOrder
@@ -3920,7 +3950,7 @@ GameObject:
   - component: {fileID: 471537305}
   m_Layer: 0
   m_Name: NPC_Platform
-  m_TagString: Untagged
+  m_TagString: Metal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4917,7 +4947,7 @@ GameObject:
   - component: {fileID: 621670210}
   m_Layer: 0
   m_Name: Astrolabio
-  m_TagString: Untagged
+  m_TagString: Metal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5101,9 +5131,14 @@ PrefabInstance:
       objectReference: {fileID: 1414495386}
     - target: {fileID: -627517624479547098, guid: 5b6dc4d5944024eb9b97e2c2629f395c,
         type: 3}
+      propertyPath: _footstepClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 18fe26a06ed0c574189797c55c45a1f0, type: 3}
+    - target: {fileID: -627517624479547098, guid: 5b6dc4d5944024eb9b97e2c2629f395c,
+        type: 3}
       propertyPath: _animationSoundPlayer
       value: 
-      objectReference: {fileID: 1108949269}
+      objectReference: {fileID: 629732671}
     - target: {fileID: 779000442030662412, guid: 5b6dc4d5944024eb9b97e2c2629f395c,
         type: 3}
       propertyPath: m_Enabled
@@ -5897,7 +5932,7 @@ GameObject:
   - component: {fileID: 742358764}
   m_Layer: 0
   m_Name: PianetaRicordoAnsamble
-  m_TagString: Untagged
+  m_TagString: Metal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6486,6 +6521,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Piattaforma_Molla2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5171987278449480922, guid: e338011190c974818942cb0ea87b7a89,
+        type: 3}
+      propertyPath: m_TagString
+      value: Metal
       objectReference: {fileID: 0}
     - target: {fileID: 5516143920920284768, guid: e338011190c974818942cb0ea87b7a89,
         type: 3}
@@ -7253,7 +7293,7 @@ GameObject:
   - component: {fileID: 922817268}
   m_Layer: 0
   m_Name: NPC_Platform (1)
-  m_TagString: Untagged
+  m_TagString: Metal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7600,6 +7640,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9149869394349790203, guid: aeeab1cef87e245aca48499e1a73489b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Metal
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aeeab1cef87e245aca48499e1a73489b, type: 3}
 --- !u!1001 &951698260
@@ -7688,6 +7733,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7663560154834681691, guid: 376471a0cae9241e0b642959d35d5d73,
+        type: 3}
+      propertyPath: m_TagString
+      value: Metal
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 376471a0cae9241e0b642959d35d5d73, type: 3}
@@ -8092,6 +8142,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4208281523471742698, guid: 06c95b2d6b0864406ae02939850e00b2,
+        type: 3}
+      propertyPath: m_TagString
+      value: Metal
       objectReference: {fileID: 0}
     - target: {fileID: 4208281523471742698, guid: 06c95b2d6b0864406ae02939850e00b2,
         type: 3}
@@ -8928,6 +8983,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7663560154834681691, guid: 376471a0cae9241e0b642959d35d5d73,
+        type: 3}
+      propertyPath: m_TagString
+      value: Metal
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 376471a0cae9241e0b642959d35d5d73, type: 3}
 --- !u!1001 &997762377
@@ -8971,6 +9031,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Piattaforma_Molla1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5171987278449480922, guid: e338011190c974818942cb0ea87b7a89,
+        type: 3}
+      propertyPath: m_TagString
+      value: Metal
       objectReference: {fileID: 0}
     - target: {fileID: 5516143920920284768, guid: e338011190c974818942cb0ea87b7a89,
         type: 3}
@@ -9491,6 +9556,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piattaforma_Molla (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5171987278449480922, guid: e338011190c974818942cb0ea87b7a89,
+        type: 3}
+      propertyPath: m_TagString
+      value: Metal
+      objectReference: {fileID: 0}
     - target: {fileID: 5516143920920284768, guid: e338011190c974818942cb0ea87b7a89,
         type: 3}
       propertyPath: m_RootOrder
@@ -9626,102 +9696,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 629732668}
   m_PrefabAsset: {fileID: 0}
---- !u!82 &1108949269
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1108949268}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 18fe26a06ed0c574189797c55c45a1f0, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 0.25
-  m_Pitch: 0.7
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!4 &1126807050 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6994582764354954721, guid: 376471a0cae9241e0b642959d35d5d73,
@@ -9956,6 +9930,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1833175557521444223, guid: 60a4ebe2019a54ad392f0b0132fe609c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Metal
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60a4ebe2019a54ad392f0b0132fe609c, type: 3}
 --- !u!4 &1147421647 stripped
@@ -9975,7 +9954,7 @@ GameObject:
   - component: {fileID: 1154319556}
   m_Layer: 0
   m_Name: NPC_Ring2
-  m_TagString: Untagged
+  m_TagString: Metal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10070,6 +10049,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5696828497705235816, guid: e3e486211d1b44b24861f4131200130c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Metal
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3e486211d1b44b24861f4131200130c, type: 3}
@@ -10430,6 +10414,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5287240846390591816, guid: fe3a983d17b0c484ca1ccd9f20ce5cba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Metal
       objectReference: {fileID: 0}
     - target: {fileID: 6940868125497493425, guid: fe3a983d17b0c484ca1ccd9f20ce5cba,
         type: 3}
@@ -11234,6 +11223,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7779556546396126120, guid: 808b50e97b9d54bde8b8b135024b673b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Metal
+      objectReference: {fileID: 0}
     - target: {fileID: 8351047603070482557, guid: 808b50e97b9d54bde8b8b135024b673b,
         type: 3}
       propertyPath: m_IsActive
@@ -11435,7 +11429,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _videoPanel: {fileID: 1414495386}
-  _player: {fileID: 629732671}
   _ricordo: {fileID: 1616229803}
   _musica: {fileID: 621670210}
   _ambientale: {fileID: 629732671}
@@ -12274,6 +12267,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piattaforma_Molla3 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5171987278449480922, guid: e338011190c974818942cb0ea87b7a89,
+        type: 3}
+      propertyPath: m_TagString
+      value: Metal
+      objectReference: {fileID: 0}
     - target: {fileID: 5516143920920284768, guid: e338011190c974818942cb0ea87b7a89,
         type: 3}
       propertyPath: m_RootOrder
@@ -13078,7 +13076,7 @@ GameObject:
   - component: {fileID: 1624379796}
   m_Layer: 0
   m_Name: NPC_Ring3
-  m_TagString: Untagged
+  m_TagString: Metal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13413,6 +13411,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 970261731262216110, guid: c058100e1ac4a43d296be09723fb83b6,
+        type: 3}
+      propertyPath: m_TagString
+      value: Metal
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c058100e1ac4a43d296be09723fb83b6, type: 3}
 --- !u!1001 &1691023083
@@ -13737,6 +13740,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9149869394349790203, guid: aeeab1cef87e245aca48499e1a73489b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Metal
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aeeab1cef87e245aca48499e1a73489b, type: 3}
@@ -14193,6 +14201,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Piattaforma_Molla3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5171987278449480922, guid: e338011190c974818942cb0ea87b7a89,
+        type: 3}
+      propertyPath: m_TagString
+      value: Metal
       objectReference: {fileID: 0}
     - target: {fileID: 5516143920920284768, guid: e338011190c974818942cb0ea87b7a89,
         type: 3}
@@ -14654,6 +14667,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5997787863322712917, guid: 5a8768fc43ae342868b6db473d83a2cc,
+        type: 3}
+      propertyPath: m_TagString
+      value: Metal
       objectReference: {fileID: 0}
     - target: {fileID: 6374771485773365743, guid: 5a8768fc43ae342868b6db473d83a2cc,
         type: 3}
@@ -15451,6 +15469,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piattaforma_Molla2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5171987278449480922, guid: e338011190c974818942cb0ea87b7a89,
+        type: 3}
+      propertyPath: m_TagString
+      value: Metal
+      objectReference: {fileID: 0}
     - target: {fileID: 5516143920920284768, guid: e338011190c974818942cb0ea87b7a89,
         type: 3}
       propertyPath: m_RootOrder
@@ -15763,6 +15786,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1833175557521444223, guid: 60a4ebe2019a54ad392f0b0132fe609c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Metal
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60a4ebe2019a54ad392f0b0132fe609c, type: 3}
 --- !u!4 &2024716668 stripped
@@ -15857,6 +15885,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1861562426765515556, guid: 3c8fc5bee59f5409291d9935aa0910eb,
+        type: 3}
+      propertyPath: m_TagString
+      value: Metal
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c8fc5bee59f5409291d9935aa0910eb, type: 3}
@@ -16104,6 +16137,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Base_Npc (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2353759417472314881, guid: 0fbe537ce7f1a49d2a04efdcb05ee715,
+        type: 3}
+      propertyPath: m_TagString
+      value: Metal
       objectReference: {fileID: 0}
     - target: {fileID: 2353759417472314881, guid: 0fbe537ce7f1a49d2a04efdcb05ee715,
         type: 3}
@@ -16537,6 +16575,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Piattaforma_Molla
+      objectReference: {fileID: 0}
+    - target: {fileID: 5171987278449480922, guid: e338011190c974818942cb0ea87b7a89,
+        type: 3}
+      propertyPath: m_TagString
+      value: Metal
       objectReference: {fileID: 0}
     - target: {fileID: 5516143920920284768, guid: e338011190c974818942cb0ea87b7a89,
         type: 3}
@@ -17134,6 +17177,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4208281523471742698, guid: 06c95b2d6b0864406ae02939850e00b2,
         type: 3}
+      propertyPath: m_TagString
+      value: Metal
+      objectReference: {fileID: 0}
+    - target: {fileID: 4208281523471742698, guid: 06c95b2d6b0864406ae02939850e00b2,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -17511,6 +17559,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Piattaforma_Molla3 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5171987278449480922, guid: e338011190c974818942cb0ea87b7a89,
+        type: 3}
+      propertyPath: m_TagString
+      value: Metal
       objectReference: {fileID: 0}
     - target: {fileID: 5516143920920284768, guid: e338011190c974818942cb0ea87b7a89,
         type: 3}
@@ -18215,6 +18268,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4208281523471742698, guid: 06c95b2d6b0864406ae02939850e00b2,
         type: 3}
+      propertyPath: m_TagString
+      value: Metal
+      objectReference: {fileID: 0}
+    - target: {fileID: 4208281523471742698, guid: 06c95b2d6b0864406ae02939850e00b2,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -18808,6 +18866,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7663560154834681691, guid: 376471a0cae9241e0b642959d35d5d73,
+        type: 3}
+      propertyPath: m_TagString
+      value: Metal
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 376471a0cae9241e0b642959d35d5d73, type: 3}
 --- !u!1001 &4145428520222629645
@@ -18896,6 +18959,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1861562426765515556, guid: 3c8fc5bee59f5409291d9935aa0910eb,
+        type: 3}
+      propertyPath: m_TagString
+      value: Metal
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c8fc5bee59f5409291d9935aa0910eb, type: 3}
@@ -19324,6 +19392,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8174772269102875929, guid: 51c573844416b4917ac57862c6703df4,
+        type: 3}
+      propertyPath: m_TagString
+      value: Metal
+      objectReference: {fileID: 0}
     - target: {fileID: 8807194506457194403, guid: 51c573844416b4917ac57862c6703df4,
         type: 3}
       propertyPath: m_RootOrder
@@ -19412,6 +19485,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1594182972389051349, guid: 538efbffebbe649febc594cf73df0be7,
+        type: 3}
+      propertyPath: m_TagString
+      value: Metal
       objectReference: {fileID: 0}
     - target: {fileID: 2113450855604261231, guid: 538efbffebbe649febc594cf73df0be7,
         type: 3}
@@ -19522,6 +19600,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5997787863322712917, guid: 5a8768fc43ae342868b6db473d83a2cc,
+        type: 3}
+      propertyPath: m_TagString
+      value: Metal
       objectReference: {fileID: 0}
     - target: {fileID: 6374771485773365743, guid: 5a8768fc43ae342868b6db473d83a2cc,
         type: 3}
@@ -19681,6 +19764,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2353759417472314881, guid: 0fbe537ce7f1a49d2a04efdcb05ee715,
+        type: 3}
+      propertyPath: m_TagString
+      value: Metal
+      objectReference: {fileID: 0}
     - target: {fileID: 3162066887603041467, guid: 0fbe537ce7f1a49d2a04efdcb05ee715,
         type: 3}
       propertyPath: m_RootOrder
@@ -19810,6 +19898,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5512372300207223599, guid: 98059ae43a6784e81bbaa9c9e54301fb,
+        type: 3}
+      propertyPath: m_TagString
+      value: Metal
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98059ae43a6784e81bbaa9c9e54301fb, type: 3}
 --- !u!4 &6107201382015760610 stripped
@@ -19889,6 +19982,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3274546220951494166, guid: cacfd71a1640c4f069e7992b34433ebc,
+        type: 3}
+      propertyPath: m_TagString
+      value: Metal
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cacfd71a1640c4f069e7992b34433ebc, type: 3}
@@ -20140,6 +20238,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7779556546396126120, guid: 808b50e97b9d54bde8b8b135024b673b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Metal
+      objectReference: {fileID: 0}
     - target: {fileID: 8351047603070482557, guid: 808b50e97b9d54bde8b8b135024b673b,
         type: 3}
       propertyPath: m_IsActive
@@ -20294,6 +20397,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6018524859512740978, guid: 3ad4153f609f54efca2fa01873f00bd6,
+        type: 3}
+      propertyPath: m_TagString
+      value: Metal
+      objectReference: {fileID: 0}
     - target: {fileID: 6398991460463347400, guid: 3ad4153f609f54efca2fa01873f00bd6,
         type: 3}
       propertyPath: m_RootOrder
@@ -20438,6 +20546,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5696828497705235816, guid: e3e486211d1b44b24861f4131200130c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Metal
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3e486211d1b44b24861f4131200130c, type: 3}
 --- !u!1001 &8436465028317625080
@@ -20526,6 +20639,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 970261731262216110, guid: c058100e1ac4a43d296be09723fb83b6,
+        type: 3}
+      propertyPath: m_TagString
+      value: Metal
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c058100e1ac4a43d296be09723fb83b6, type: 3}
@@ -20644,6 +20762,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4066979127827284635, guid: 3d185f9bc88a94b788855f767dc0ed8d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Metal
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d185f9bc88a94b788855f767dc0ed8d, type: 3}
 --- !u!1001 &9170594841993697923
@@ -20717,6 +20840,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5287240846390591816, guid: fe3a983d17b0c484ca1ccd9f20ce5cba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Metal
       objectReference: {fileID: 0}
     - target: {fileID: 6940868125497493425, guid: fe3a983d17b0c484ca1ccd9f20ce5cba,
         type: 3}

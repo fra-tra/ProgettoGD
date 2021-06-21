@@ -16,6 +16,8 @@ TagManager:
   - LevelArea
   - Attractor
   - StatueMemory
+  - Metal
+  - WoodFloor
   layers:
   - Default
   - TransparentFX

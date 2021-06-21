@@ -576,7 +576,8 @@ MonoBehaviour:
   groundMinDistance: 0.25
   groundMaxDistance: 0.5
   slopeLimit: 75
-  jumpSound: {fileID: 2188892979954724310}
+  _playerAudiosource: {fileID: 2188892979954724310}
+  _jumpSound: {fileID: 8300000, guid: 14c6e1b1be25e2843ae34c14ef51edba, type: 3}
 --- !u!114 &1624631166013607614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -643,6 +644,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _levelLoader: {fileID: 0}
+  feedbackDeath: {fileID: 0}
+  _animator: {fileID: 0}
 --- !u!114 &1624631166013607610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -710,7 +713,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 14c6e1b1be25e2843ae34c14ef51edba, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1.25
@@ -808,7 +811,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a8b565b3e80fdd42919b60399247a2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _animationSoundPlayer: {fileID: 0}
+  _animationSoundPlayer: {fileID: 2188892979954724310}
+  _videoPanel: {fileID: 0}
+  _footstepRock: {fileID: 8300000, guid: e9714160ce34f2b4ab63ff8c27bd68e1, type: 3}
+  _footstepSand: {fileID: 8300000, guid: e9714160ce34f2b4ab63ff8c27bd68e1, type: 3}
+  _footstepMetal: {fileID: 8300000, guid: 18fe26a06ed0c574189797c55c45a1f0, type: 3}
+  _footstepWood: {fileID: 8300000, guid: 9ec4bf6f42a734a588c1c87e9428425e, type: 3}
 --- !u!1 &1624631166053325007
 GameObject:
   m_ObjectHideFlags: 0

@@ -5,7 +5,8 @@ namespace Invector.vCharacterController
     public class vThirdPersonController : vThirdPersonAnimator
     {
 
-        [SerializeField] public AudioSource jumpSound;
+        [SerializeField] public AudioSource _playerAudiosource;
+        [SerializeField] public AudioClip _jumpSound;
         
 
        //   AudioSource step;
@@ -125,7 +126,7 @@ namespace Invector.vCharacterController
             // trigger jump behaviour
             jumpCounter = jumpTimer;
             isJumping = true;
-            jumpSound.Play();
+            _playerAudiosource.PlayOneShot(_jumpSound);
          
 
             // trigger jump animations

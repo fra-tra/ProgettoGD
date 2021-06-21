@@ -13,6 +13,7 @@ public class PlayVideoInFinalHub : MonoBehaviour
     [SerializeField] public GameObject _videoPanel;
     [SerializeField] public LevelLoader _levelLoader;
     [SerializeField] public Memory _memory;
+    public Rigidbody _playerRB;
     
 
     private int _level;
@@ -35,7 +36,8 @@ public class PlayVideoInFinalHub : MonoBehaviour
 
  
     public IEnumerator PlayVideoMemory()
-    {   
+    {
+        _playerRB.isKinematic = true;
         Debug.Log("memoriaPresaVideo");
         _videoPanel.SetActive(true);
         _video.playOnAwake = false;
@@ -44,7 +46,8 @@ public class PlayVideoInFinalHub : MonoBehaviour
         transitionTime = (float) _video.length;
         _memoryPlayed = true;
         yield return new WaitForSeconds(transitionTime + 0.1f);
-        
+        _playerRB.isKinematic = false;
+
         _videoPanel.SetActive(false);
         StopCoroutine(_coroutine);
     }
