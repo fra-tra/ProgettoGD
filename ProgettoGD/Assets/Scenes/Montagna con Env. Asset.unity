@@ -154,7 +154,7 @@ VideoPlayer:
   m_VideoClip: {fileID: 32900000, guid: de37c967f1990cd4397006e6daaace38, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
-  m_TargetCamera: {fileID: 1696049960}
+  m_TargetCamera: {fileID: 1589638844}
   m_TargetTexture: {fileID: 0}
   m_TimeReference: 0
   m_TargetMaterialRenderer: {fileID: 0}
@@ -11942,12 +11942,6 @@ MonoBehaviour:
   m_BeforeTransparentBundles: []
   m_BeforeStackBundles: []
   m_AfterStackBundles: []
---- !u!20 &1696049960 stripped
-Camera:
-  m_CorrespondingSourceObject: {fileID: 1656063500980240003, guid: 5ff7863489807ef4d8d58017da1c0292,
-    type: 3}
-  m_PrefabInstance: {fileID: 1696049956}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1703375007 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7346602686611798535, guid: 5426d06ed099b8548abc5b7ccbcddc66,
