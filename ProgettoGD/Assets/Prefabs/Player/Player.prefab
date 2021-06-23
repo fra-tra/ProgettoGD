@@ -577,7 +577,7 @@ MonoBehaviour:
   groundMaxDistance: 0.5
   slopeLimit: 75
   _playerAudiosource: {fileID: 2188892979954724310}
-  _jumpSound: {fileID: 8300000, guid: 14c6e1b1be25e2843ae34c14ef51edba, type: 3}
+  _jumpSound: {fileID: 8300000, guid: aeb40460326264742b044b48487646ca, type: 3}
 --- !u!114 &1624631166013607614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -715,8 +715,8 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1.25
+  m_Volume: 0.25
+  m_Pitch: 1
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -825,6 +825,10 @@ MonoBehaviour:
   _footstepWood:
   - {fileID: 8300000, guid: 9ec4bf6f42a734a588c1c87e9428425e, type: 3}
   - {fileID: 8300000, guid: c32c0d2bd05cfb74089223955a25c37a, type: 3}
+  _landRock: {fileID: 8300000, guid: 3b09d59f4499d45428baa7a21e954296, type: 3}
+  _landSand: {fileID: 8300000, guid: 459aa8a7a50831d47800706e3ce2d3c8, type: 3}
+  _landMetal: {fileID: 8300000, guid: 869edd54a819b134991f404afb059105, type: 3}
+  _landWood: {fileID: 8300000, guid: 4574154d33ec2934791fe39b6f34879e, type: 3}
   _player: {fileID: 1624631166013607617}
 --- !u!1 &1624631166053325007
 GameObject:

@@ -13,6 +13,11 @@ public class PlayerAnimationSounds : MonoBehaviour
     [SerializeField] private AudioClip[] _footstepMetal;
     [SerializeField] private AudioClip[] _footstepWood;
 
+    [SerializeField] private AudioClip _landRock;
+    [SerializeField] private AudioClip _landSand;
+    [SerializeField] private AudioClip _landMetal;
+    [SerializeField] private AudioClip _landWood;
+
     [SerializeField] Rigidbody _player;
 
 
@@ -84,7 +89,49 @@ public class PlayerAnimationSounds : MonoBehaviour
             }
             else if (floortag == "GlassFloor")
             {
-                
+                int n = Random.Range(1, _footstepRock.Length);
+                _animationSoundPlayer.clip = _footstepRock[n];
+                _animationSoundPlayer.PlayOneShot(_animationSoundPlayer.clip);
+                _footstepRock[n] = _footstepRock[0];
+                _footstepRock[0] = _animationSoundPlayer.clip;
+            }
+        }
+    }
+
+    private void PlayerLandSound()
+    {
+        RaycastHit hit;
+        Debug.Log("pre hit raycast");
+
+        if (Physics.Raycast(_player.transform.position, Vector3.down, out hit))
+        {
+            var floortag = hit.collider.gameObject.tag;
+            Debug.Log("dentro if" + floortag);
+
+            if (floortag == "Metal")
+            {
+                _animationSoundPlayer.clip = _landMetal;
+                _animationSoundPlayer.PlayOneShot(_animationSoundPlayer.clip);
+            }
+            else if (floortag == "RockFloor")
+            {
+                _animationSoundPlayer.clip = _landRock;
+                _animationSoundPlayer.PlayOneShot(_animationSoundPlayer.clip);
+            }
+            else if (floortag == "WoodFloor")
+            {
+                _animationSoundPlayer.clip = _landWood;
+                _animationSoundPlayer.PlayOneShot(_animationSoundPlayer.clip);
+            }
+            else if (floortag == "SandFloor")
+            {
+                _animationSoundPlayer.clip = _landSand;
+                _animationSoundPlayer.PlayOneShot(_animationSoundPlayer.clip);
+            }
+            else if (floortag == "GlassFloor")
+            {
+                _animationSoundPlayer.clip = _landRock;
+                _animationSoundPlayer.PlayOneShot(_animationSoundPlayer.clip);
             }
         }
     }

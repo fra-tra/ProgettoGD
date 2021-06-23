@@ -5126,6 +5126,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -627517624479547098, guid: 5b6dc4d5944024eb9b97e2c2629f395c,
         type: 3}
+      propertyPath: _landMetal
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: -627517624479547098, guid: 5b6dc4d5944024eb9b97e2c2629f395c,
+        type: 3}
       propertyPath: _videoPanel
       value: 
       objectReference: {fileID: 1414495386}
@@ -5273,6 +5278,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.153
+      objectReference: {fileID: 0}
+    - target: {fileID: 2188892979954724310, guid: 5b6dc4d5944024eb9b97e2c2629f395c,
+        type: 3}
+      propertyPath: m_Pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2188892979954724310, guid: 5b6dc4d5944024eb9b97e2c2629f395c,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b6dc4d5944024eb9b97e2c2629f395c, type: 3}
