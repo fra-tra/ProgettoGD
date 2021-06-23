@@ -46,7 +46,7 @@ public class PlayerAnimationSounds : MonoBehaviour
         RaycastHit hit;
         Debug.Log("pre hit raycast");
 
-        if (Physics.Raycast(_player.transform.position, Vector3.down, out hit))
+        if (Physics.Raycast(_player.transform.position, Vector3.down, out hit, Mathf.Infinity))
         {
             var floortag = hit.collider.gameObject.tag;
             Debug.Log("dentro if" + floortag);
@@ -103,7 +103,7 @@ public class PlayerAnimationSounds : MonoBehaviour
         RaycastHit hit;
         Debug.Log("pre hit raycast");
 
-        if (Physics.Raycast(_player.transform.position, Vector3.down, out hit))
+        if (Physics.Raycast(_player.transform.position, Vector3.down, out hit, Mathf.Infinity))
         {
             var floortag = hit.collider.gameObject.tag;
             Debug.Log("dentro if" + floortag);

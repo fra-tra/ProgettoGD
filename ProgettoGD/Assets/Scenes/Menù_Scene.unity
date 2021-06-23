@@ -395,7 +395,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _videoPanel: {fileID: 82727298}
-  _player: {fileID: 2104798629}
   _ricordo: {fileID: 2104798629}
   _musica: {fileID: 2104798629}
   _ambientale: {fileID: 2104798629}
@@ -939,7 +938,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: go back
+  m_Text: Back
 --- !u!222 &756784130
 CanvasRenderer:
   m_ObjectHideFlags: 0

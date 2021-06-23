@@ -1774,6 +1774,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -627517624479547098, guid: 5b6dc4d5944024eb9b97e2c2629f395c,
         type: 3}
+      propertyPath: _videoPanel
+      value: 
+      objectReference: {fileID: 2032867642}
+    - target: {fileID: -627517624479547098, guid: 5b6dc4d5944024eb9b97e2c2629f395c,
+        type: 3}
       propertyPath: _animationSoundPlayer
       value: 
       objectReference: {fileID: 592584589}
