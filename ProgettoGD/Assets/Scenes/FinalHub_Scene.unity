@@ -5236,6 +5236,16 @@ PrefabInstance:
       propertyPath: m_TagString
       value: RockFloor
       objectReference: {fileID: 0}
+    - target: {fileID: 3588182888418927969, guid: 2f5ae25a498ab4330891ff9c54953333,
+        type: 3}
+      propertyPath: m_TagString
+      value: RockFloor
+      objectReference: {fileID: 0}
+    - target: {fileID: 7444351729788592773, guid: 2f5ae25a498ab4330891ff9c54953333,
+        type: 3}
+      propertyPath: m_TagString
+      value: RockFloor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f5ae25a498ab4330891ff9c54953333, type: 3}
 --- !u!1001 &720570304296159433
