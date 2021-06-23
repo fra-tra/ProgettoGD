@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1768070940237888929}
   m_Layer: 0
   m_Name: Long Island
-  m_TagString: Untagged
+  m_TagString: RockFloor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

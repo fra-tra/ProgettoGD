@@ -18,6 +18,7 @@ TagManager:
   - StatueMemory
   - Metal
   - WoodFloor
+  - SandFloor
   layers:
   - Default
   - TransparentFX

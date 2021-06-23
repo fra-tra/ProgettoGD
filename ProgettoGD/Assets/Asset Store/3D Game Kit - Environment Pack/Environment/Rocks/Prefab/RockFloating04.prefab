@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8916953500056558318}
   m_Layer: 0
   m_Name: RockFloating04_LOD01
-  m_TagString: Untagged
+  m_TagString: RockFloor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 8916953500056558312}
   m_Layer: 0
   m_Name: RockFloating04_LOD02
-  m_TagString: Untagged
+  m_TagString: RockFloor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -176,7 +176,7 @@ GameObject:
   - component: {fileID: 3574339622944010473}
   m_Layer: 0
   m_Name: RockFloating04
-  m_TagString: Untagged
+  m_TagString: RockFloor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -360,7 +360,7 @@ GameObject:
   - component: {fileID: 8916953500056558316}
   m_Layer: 0
   m_Name: RockFloating04_LOD00
-  m_TagString: Untagged
+  m_TagString: RockFloor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

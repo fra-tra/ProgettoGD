@@ -8,10 +8,10 @@ public class PlayerAnimationSounds : MonoBehaviour
     [SerializeField] AudioSource _animationSoundPlayer;
     [SerializeField] GameObject _videoPanel;
 
-    [SerializeField] AudioClip _footstepRock;
-    [SerializeField] AudioClip _footstepSand;
-    [SerializeField] AudioClip _footstepMetal;
-    [SerializeField] AudioClip _footstepWood;
+    [SerializeField] private AudioClip[] _footstepRock;
+    [SerializeField] private AudioClip[] _footstepSand;
+    [SerializeField] private AudioClip[] _footstepMetal;
+    [SerializeField] private AudioClip[] _footstepWood;
 
     [SerializeField] Rigidbody _player;
 
@@ -49,26 +49,42 @@ public class PlayerAnimationSounds : MonoBehaviour
             if (floortag == "Metal")
             {
                 //play concrete sound code
+                int n = Random.Range(1, _footstepMetal.Length);
                 Debug.Log("metalFloor");
-                _animationSoundPlayer.clip = _footstepMetal;
+                _animationSoundPlayer.clip = _footstepMetal[n];
                 _animationSoundPlayer.PlayOneShot(_animationSoundPlayer.clip);
+                _footstepMetal[n] = _footstepMetal[0];
+                _footstepMetal[0] = _animationSoundPlayer.clip;
                 // move picked sound to index 0 so it's not picked next time
             }
             else if (floortag == "RockFloor")
             {
-                _animationSoundPlayer.clip = _footstepRock;
+                int n = Random.Range(1, _footstepRock.Length);
+                _animationSoundPlayer.clip = _footstepRock[n];
                 _animationSoundPlayer.PlayOneShot(_animationSoundPlayer.clip);
+                _footstepRock[n] = _footstepRock[0];
+                _footstepRock[0] = _animationSoundPlayer.clip;
             }
             else if (floortag == "WoodFloor")
             {
                 Debug.Log("LEGNOOOO");
-                _animationSoundPlayer.clip = _footstepWood;
+                int n = Random.Range(1, _footstepWood.Length);
+                _animationSoundPlayer.clip = _footstepWood[n];
                 _animationSoundPlayer.PlayOneShot(_animationSoundPlayer.clip);
+                _footstepWood[n] = _footstepWood[0];
+                _footstepWood[0] = _animationSoundPlayer.clip;
             }
             else if (floortag == "SandFloor")
             {
-                _animationSoundPlayer.clip = _footstepSand;
+                int n = Random.Range(1, _footstepSand.Length);
+                _animationSoundPlayer.clip = _footstepSand[n];
                 _animationSoundPlayer.PlayOneShot(_animationSoundPlayer.clip);
+                _footstepSand[n] = _footstepSand[0];
+                _footstepSand[0] = _animationSoundPlayer.clip;
+            }
+            else if (floortag == "GlassFloor")
+            {
+                
             }
         }
     }
