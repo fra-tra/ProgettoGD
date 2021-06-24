@@ -21,6 +21,7 @@ public class ChoiceFountain : MonoBehaviour
     private bool _notChoosen = true;
     private bool _memoryPlayed = false;
     public float transitionTime = 1f;
+    public Rigidbody _rb;
 
     private Counter _myCounter;
     void Start()
@@ -67,6 +68,7 @@ public class ChoiceFountain : MonoBehaviour
     public IEnumerator CoroutinePlayVideo()
     {   Debug.Log("ChoiceVideo");
         
+        _rb.isKinematic = true;
         _videoPanel.SetActive(true);
         _video.playOnAwake = false;
 
