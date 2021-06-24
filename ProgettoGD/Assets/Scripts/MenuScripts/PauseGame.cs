@@ -43,12 +43,13 @@ public class PauseGame : MonoBehaviour
 
     public void Resume()
     {
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
         _rb.isKinematic = false;
         pauseMenuUI.SetActive(false); 
         Time.timeScale= 1f; 
         GameIsPaused = false;
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
+        
     }
 
     void Pause()

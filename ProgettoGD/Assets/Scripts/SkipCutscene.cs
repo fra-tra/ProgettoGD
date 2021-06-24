@@ -29,7 +29,8 @@ public class SkipCutscene : MonoBehaviour
         {
             _buttonUI.SetActive(true);
             _post.SetActive(false);
-            
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
         }
         
             

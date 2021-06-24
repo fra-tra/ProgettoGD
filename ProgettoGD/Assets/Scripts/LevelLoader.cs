@@ -35,7 +35,20 @@ public class LevelLoader : MonoBehaviour
         _easy = _myCounter.easy;
         _medium = _myCounter.medium;
         _difficult = _myCounter.difficult;
-     }
+        if(SceneManager.GetActiveScene().buildIndex == 0)
+        {
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+        }
+        else
+        {
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
+
+        }
+        
+
+    }
 
     public int CurrentLevel()
     {
