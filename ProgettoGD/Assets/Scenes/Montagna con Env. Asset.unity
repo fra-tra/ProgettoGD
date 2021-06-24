@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.25014237, g: 0.3983817, b: 0.5770477, a: 1}
+  m_IndirectSpecularColor: {r: 0.25014237, g: 0.39838177, b: 0.5770477, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -368,7 +368,7 @@ MonoBehaviour:
     type: 3}
   _rocksToSpawn: 4
   _space: {fileID: 19932771}
-  audioClip: {fileID: 8300000, guid: 3748fa3afe9d14913a091d661802badf, type: 3}
+  audioClip: {fileID: 8300000, guid: 0f3e3d08c6a1bc843805ef038c85a8c3, type: 3}
 --- !u!1001 &34636449
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6155,7 +6155,7 @@ MonoBehaviour:
     type: 3}
   _rocksToSpawn: 4
   _space: {fileID: 1017993923}
-  audioClip: {fileID: 8300000, guid: 3748fa3afe9d14913a091d661802badf, type: 3}
+  audioClip: {fileID: 8300000, guid: 0f3e3d08c6a1bc843805ef038c85a8c3, type: 3}
 --- !u!1 &1026194584 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7152264352795862766, guid: dd50365ac591f4610b2d25b60325f9ad,
@@ -9752,7 +9752,7 @@ MonoBehaviour:
     type: 3}
   _rocksToSpawn: 4
   _space: {fileID: 1450120007}
-  audioClip: {fileID: 8300000, guid: 3748fa3afe9d14913a091d661802badf, type: 3}
+  audioClip: {fileID: 8300000, guid: 0f3e3d08c6a1bc843805ef038c85a8c3, type: 3}
 --- !u!1 &1452492655
 GameObject:
   m_ObjectHideFlags: 0
@@ -13702,7 +13702,7 @@ MonoBehaviour:
     type: 3}
   _rocksToSpawn: 5
   _space: {fileID: 1930017568}
-  audioClip: {fileID: 8300000, guid: 3748fa3afe9d14913a091d661802badf, type: 3}
+  audioClip: {fileID: 8300000, guid: 0f3e3d08c6a1bc843805ef038c85a8c3, type: 3}
 --- !u!65 &1930017568
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15215,7 +15215,7 @@ MonoBehaviour:
     type: 3}
   _rocksToSpawn: 5
   _space: {fileID: 2104135105}
-  audioClip: {fileID: 8300000, guid: 3748fa3afe9d14913a091d661802badf, type: 3}
+  audioClip: {fileID: 8300000, guid: 0f3e3d08c6a1bc843805ef038c85a8c3, type: 3}
 --- !u!1001 &2105521109
 PrefabInstance:
   m_ObjectHideFlags: 0
