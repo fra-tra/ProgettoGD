@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.35872698, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1992,7 +1992,11 @@ PrefabInstance:
       objectReference: {fileID: 1841804856}
     - target: {fileID: 11400000, guid: 49a0e923d39ec3c4c8bb97699e2f2903, type: 3}
       propertyPath: m_MoveSpeed
-      value: 2
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 49a0e923d39ec3c4c8bb97699e2f2903, type: 3}
+      propertyPath: m_TurnSpeed
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 49a0e923d39ec3c4c8bb97699e2f2903, type: 3}
       propertyPath: visualiseInEditor
@@ -2395,6 +2399,11 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 584528180}
+    - target: {fileID: -627517624479547098, guid: 5b6dc4d5944024eb9b97e2c2629f395c,
+        type: 3}
+      propertyPath: _videoPanel
+      value: 
+      objectReference: {fileID: 777191900}
     - target: {fileID: 779000442030662412, guid: 5b6dc4d5944024eb9b97e2c2629f395c,
         type: 3}
       propertyPath: m_Enabled
@@ -2407,6 +2416,11 @@ PrefabInstance:
       objectReference: {fileID: 1529456684}
     - target: {fileID: 1624631166013607611, guid: 5b6dc4d5944024eb9b97e2c2629f395c,
         type: 3}
+      propertyPath: _animator
+      value: 
+      objectReference: {fileID: 584528179}
+    - target: {fileID: 1624631166013607611, guid: 5b6dc4d5944024eb9b97e2c2629f395c,
+        type: 3}
       propertyPath: _levelLoader
       value: 
       objectReference: {fileID: 1529456684}
@@ -2414,7 +2428,7 @@ PrefabInstance:
         type: 3}
       propertyPath: feedbackDeath
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 871700782}
     - target: {fileID: 1624631166013607613, guid: 5b6dc4d5944024eb9b97e2c2629f395c,
         type: 3}
       propertyPath: m_RootOrder
@@ -2520,6 +2534,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7efecb61c82047a191549c292564d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &584528179 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1624631166013607612, guid: 5b6dc4d5944024eb9b97e2c2629f395c,
+    type: 3}
+  m_PrefabInstance: {fileID: 584528176}
+  m_PrefabAsset: {fileID: 0}
 --- !u!54 &584528180 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 1624631166013607617, guid: 5b6dc4d5944024eb9b97e2c2629f395c,
@@ -3996,7 +4016,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 2.1e-44, z: 0, w: 27.598938}
+  m_BoundingSphereOverride: {x: 9.11e-43, y: 4.1756e-41, z: 0, w: -1}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -4012,7 +4032,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 5641ed5ff42bdf54f9febc30e12b5e78, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.65
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -7589,8 +7609,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 2.6423694e+20, y: 0.000043914843, z: 1.3222047e+22,
-    w: 1.3000693e+22}
+  m_BoundingSphereOverride: {x: 0, y: 1.5e-44, z: 5.951e-42, w: 1.05e-43}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -8677,7 +8696,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 1.8665e-41, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 3e-45, z: 2.2014e-41, w: 1.05e-43}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0

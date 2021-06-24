@@ -1784,6 +1784,11 @@ PrefabInstance:
       objectReference: {fileID: 592584589}
     - target: {fileID: 1624631166013607611, guid: 5b6dc4d5944024eb9b97e2c2629f395c,
         type: 3}
+      propertyPath: _animator
+      value: 
+      objectReference: {fileID: 592584585}
+    - target: {fileID: 1624631166013607611, guid: 5b6dc4d5944024eb9b97e2c2629f395c,
+        type: 3}
       propertyPath: _levelLoader
       value: 
       objectReference: {fileID: 1229599908}
@@ -1791,7 +1796,7 @@ PrefabInstance:
         type: 3}
       propertyPath: feedbackDeath
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 919685371}
     - target: {fileID: 1624631166013607613, guid: 5b6dc4d5944024eb9b97e2c2629f395c,
         type: 3}
       propertyPath: m_RootOrder
@@ -1882,6 +1887,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7efecb61c82047a191549c292564d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &592584585 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1624631166013607612, guid: 5b6dc4d5944024eb9b97e2c2629f395c,
+    type: 3}
+  m_PrefabInstance: {fileID: 592584582}
+  m_PrefabAsset: {fileID: 0}
 --- !u!54 &592584587 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 1624631166013607617, guid: 5b6dc4d5944024eb9b97e2c2629f395c,
@@ -2421,7 +2432,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 5641ed5ff42bdf54f9febc30e12b5e78, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.65
   m_Pitch: 1
   Loop: 0
   Mute: 0
