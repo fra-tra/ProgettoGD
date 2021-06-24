@@ -6,7 +6,7 @@ public class CutSceneAstrolabio : MonoBehaviour
 {
     // Start is called before the first frame update
     [SerializeField] GameObject Cam1;
-    [SerializeField] GameObject Cam2;
+    //[SerializeField] GameObject Cam2;
     [SerializeField] GameObject CamPlayer;
     [SerializeField] GameObject CutSceneEmpty;
 
@@ -24,7 +24,7 @@ public class CutSceneAstrolabio : MonoBehaviour
         if(_end)
         {
             CamPlayer.SetActive(true);
-            Cam2.SetActive(false);
+            Cam1.SetActive(false);
             CutSceneEmpty.SetActive(false);
             _end = false;
         }
@@ -36,12 +36,12 @@ public class CutSceneAstrolabio : MonoBehaviour
     {
         Cam1.SetActive(true);
         CamPlayer.SetActive(false);
-        yield return new WaitForSeconds(2f);
-        Cam2.SetActive(true);
+        yield return new WaitForSeconds(5.5f);
+        /*Cam2.SetActive(true);
         Cam1.SetActive(false);
-        yield return new WaitForSeconds(3.5f);
-        //CamPlayer.SetActive(true);
-        //Cam2.SetActive(false);
+        yield return new WaitForSeconds(5f);*/
+        CamPlayer.SetActive(true);
+        Cam1.SetActive(false);
         
         _end = true;
         StopCoroutine(_coroutine);

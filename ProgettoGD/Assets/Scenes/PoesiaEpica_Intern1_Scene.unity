@@ -3509,7 +3509,7 @@ VideoPlayer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 777191900}
-  m_Enabled: 1
+  m_Enabled: 0
   m_VideoClip: {fileID: 0}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
@@ -6729,6 +6729,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6802929807813654835, guid: fb28ef058a3c640e0b754e6b62c39d57,
+        type: 3}
+      propertyPath: _video
+      value: 
+      objectReference: {fileID: 777191901}
+    - target: {fileID: 6802929807813654835, guid: fb28ef058a3c640e0b754e6b62c39d57,
+        type: 3}
+      propertyPath: _videoPanel
+      value: 
+      objectReference: {fileID: 777191900}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb28ef058a3c640e0b754e6b62c39d57, type: 3}
 --- !u!114 &1529456684 stripped
