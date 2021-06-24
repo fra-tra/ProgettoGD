@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.25013176, g: 0.398381, b: 0.5770473, a: 1}
+  m_IndirectSpecularColor: {r: 0.25013176, g: 0.39838105, b: 0.5770473, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1656,6 +1656,7 @@ GameObject:
   - component: {fileID: 477439853}
   - component: {fileID: 477439855}
   - component: {fileID: 477439856}
+  - component: {fileID: 477439857}
   m_Layer: 0
   m_Name: Memory5Video
   m_TagString: Untagged
@@ -1674,7 +1675,7 @@ VideoPlayer:
   m_VideoClip: {fileID: 32900000, guid: 5e7b8a0b06531644f84d10c08d7ed2ff, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
-  m_TargetCamera: {fileID: 1388385747}
+  m_TargetCamera: {fileID: 1952052297}
   m_TargetTexture: {fileID: 0}
   m_TimeReference: 0
   m_TargetMaterialRenderer: {fileID: 0}
@@ -1743,6 +1744,21 @@ MonoBehaviour:
   _ricordo: {fileID: 390445373}
   _musica: {fileID: 1285950524}
   _ambientale: {fileID: 390445373}
+--- !u!114 &477439857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 477439852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e86780428a8ec43758448d671321eadd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _video: {fileID: 477439852}
+  _cameraPlayer: {fileID: 1388385745}
+  _cameraMemory: {fileID: 1952052295}
 --- !u!1 &489433121
 GameObject:
   m_ObjectHideFlags: 0
@@ -4042,6 +4058,7 @@ GameObject:
   - component: {fileID: 1554459570}
   - component: {fileID: 1554459572}
   - component: {fileID: 1554459573}
+  - component: {fileID: 1554459574}
   m_Layer: 0
   m_Name: CadutaVideo
   m_TagString: Untagged
@@ -4060,7 +4077,7 @@ VideoPlayer:
   m_VideoClip: {fileID: 32900000, guid: c60b7c1df21c84e6997ac191dca1683f, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
-  m_TargetCamera: {fileID: 1388385747}
+  m_TargetCamera: {fileID: 1952052297}
   m_TargetTexture: {fileID: 0}
   m_TimeReference: 0
   m_TargetMaterialRenderer: {fileID: 0}
@@ -4129,6 +4146,21 @@ MonoBehaviour:
   _ricordo: {fileID: 390445373}
   _musica: {fileID: 390445373}
   _ambientale: {fileID: 1285950524}
+--- !u!114 &1554459574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1554459569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e86780428a8ec43758448d671321eadd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _video: {fileID: 1554459569}
+  _cameraPlayer: {fileID: 1388385745}
+  _cameraMemory: {fileID: 1952052295}
 --- !u!1 &1566678074 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7356618855308765935, guid: 0cfcf2190bf184fcda97911ac2b19621,
