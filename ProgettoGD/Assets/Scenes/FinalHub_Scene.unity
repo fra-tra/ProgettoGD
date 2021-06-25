@@ -1220,6 +1220,7 @@ GameObject:
   - component: {fileID: 360729740}
   - component: {fileID: 360729742}
   - component: {fileID: 360729743}
+  - component: {fileID: 360729744}
   m_Layer: 10
   m_Name: CutScenesCameraS
   m_TagString: Untagged
@@ -1416,6 +1417,22 @@ AudioReverbZone:
   m_Density: 100
   m_LFReference: 250
   m_RoomLF: 0
+--- !u!114 &360729744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 360729737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eae608735abb9be4197f4b31a152494c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _videoPanel: {fileID: 360729737}
+  _ricordo: {fileID: 390445373}
+  _musica: {fileID: 390445373}
+  _ambientale: {fileID: 390445373}
 --- !u!1 &390445370 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7757764578240784084, guid: 997e3ee85c6934793a4a83060845f416,
@@ -5168,7 +5185,8 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 920161800}
+  m_BoundingSphereOverride: {x: 1.07589524e+21, y: 7.8657017e+34, z: 7.6773555e+31,
+    w: 4.1578968e+21}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
